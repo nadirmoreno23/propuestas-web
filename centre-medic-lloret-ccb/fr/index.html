@@ -1,55 +1,63 @@
-<!DOCTYPE html><html lang="fr"><head>
+<!DOCTYPE html><html lang="fr" data-layout-blueprint-root=""><head>
 <!--wra:head--><meta name="robots" content="noindex, nofollow"><!--/wra:head-->
-
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Centre Mèdic Lloret CCB · Médecin 24 h/24 à Lloret de Mar</title>
-<meta name="description" content="Centre médical ouvert 24 h/24 sur l'Avenida Vila de Tossa, à Lloret de Mar. Doctor 24 horas, retrait de bouchons de cérumen, personnel anglophone et tarifs honnêtes.">
+<meta name="description" content="Centre Mèdic Lloret CCB : centre médical ouvert 24h/24 sur l'Avenida Vila de Tossa, à Lloret de Mar. Médecin sans rendez-vous, retrait de cérumen et personnel anglophone. Appelez le 972 361 646.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&amp;family=Newsreader:ital,wght@0,400;0,600;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700;900&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
-  theme: { extend: {
-    colors: { bg:'#07090F', bg2:'#111624', accent:'#19E3C2', accent2:'#3CACDD', ink:'#EAF4F2', mute:'#797F81', line:'rgba(234,244,242,.16)' },
-    fontFamily: { display:['"Schibsted Grotesk"','sans-serif'], body:['Newsreader','serif'] }
-  } }
+  theme: {
+    extend: {
+      colors: {
+        bg: '#FAF8F5',
+        bg2: '#F0EBE1',
+        accent: '#2F5D3A',
+        ink: '#26331F',
+        muted: '#6A6F64',
+        accent2: '#2F5D4F'
+      },
+      fontFamily: {
+        display: ['Epilogue', 'sans-serif'],
+        body: ['"Instrument Serif"', 'serif']
+      }
+    }
+  }
 }
 </script>
 <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
 <style>
-:root{--bg:#07090F;--bg2:#111624;--accent:#19E3C2;--ink:#EAF4F2;--mute:#797F81;--accent2:#3CACDD;--line:rgba(234,244,242,.16)}
+:root{--bg:#FAF8F5;--bg2:#F0EBE1;--accent:#2F5D3A;--ink:#26331F;--muted:#6A6F64;--accent2:#2F5D4F;--line:rgba(38,51,31,.16)}
 html{scroll-behavior:auto}
-body{background:var(--bg);color:var(--ink);font-family:'Newsreader',serif;font-size:1.125rem;line-height:1.6;overflow-x:hidden}
-h1,h2,h3,h4,.font-display{font-family:'Schibsted Grotesk',sans-serif}
-*{border-radius:0}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.75rem;background:var(--accent);color:var(--bg);border:1px solid var(--accent);padding:.95rem 1.4rem;font-family:'Schibsted Grotesk',sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;border-radius:0;transition:background .3s,color .3s,box-shadow .3s;cursor:pointer;white-space:nowrap}
-.btn .arr{width:1rem;height:1rem;transition:transform .3s}
-.btn:hover{background:var(--bg);color:var(--accent);box-shadow:0 0 26px rgba(25,227,194,.35)}
-.btn:hover .arr{transform:translateX(6px)}
-.glow{transition:box-shadow .4s,border-color .4s}
-.glow:hover{box-shadow:0 0 0 1px var(--accent),0 0 32px rgba(25,227,194,.18);border-color:var(--accent)}
+body{background:var(--bg);color:var(--ink);font-family:'Instrument Serif',serif;font-size:1.2rem;line-height:1.5}
+h1,h2,h3,.font-display{font-family:'Epilogue',sans-serif}
+img{display:block}
+.btn-brutal{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:2px solid var(--ink);border-radius:0;background:var(--bg);color:var(--ink);box-shadow:4px 4px 0 var(--ink);font-family:'Epilogue',sans-serif;font-weight:700;font-size:.9rem;padding:.8rem 1.3rem;transition:transform .15s,box-shadow .15s;cursor:pointer;text-decoration:none}
+.btn-brutal:hover,.btn-brutal:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink)}
+.btn-brutal.solid{background:var(--accent);color:#fff}
+.rule{border-top:1px solid var(--line)}
+.leader{display:flex;align-items:baseline;gap:.6rem}
+.leader .dots{flex:1;border-bottom:2px dotted rgba(38,51,31,.35);transform:translateY(-.3rem)}
 .is-open{display:flex}
-.glass{background:rgba(7,9,15,.62);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line)}
-.chip{border:1px solid var(--line);padding:.5rem .8rem;font-family:'Schibsted Grotesk',sans-serif;font-size:.78rem;font-weight:600;color:var(--ink);background:transparent;cursor:pointer;transition:all .25s}
-.chip:hover{border-color:var(--accent)}
-.chip[aria-pressed="true"]{background:var(--accent);color:var(--bg);border-color:var(--accent)}
-.tx{border-bottom:1px solid var(--line);padding:1.1rem 0;width:100%;text-align:left;display:flex;justify-content:space-between;gap:1rem;font-family:'Schibsted Grotesk',sans-serif;font-weight:600;font-size:1.15rem;color:var(--mute);transition:color .25s,padding .25s;cursor:pointer;background:none}
-.tx:hover{color:var(--ink)}
-.tx[aria-selected="true"]{color:var(--ink);padding-left:1rem;border-bottom-color:var(--accent)}
-.tx[aria-selected="true"] .n{color:var(--accent)}
-[data-faq-a]{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s}
+[data-menu]{display:none}
+[data-faq-a]{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
 [data-faq-a]>div{overflow:hidden}
 [data-faq-item].is-open [data-faq-a]{grid-template-rows:1fr}
-.wra-plus{color:var(--accent);font-size:1.6rem;line-height:1;transition:transform .3s}
 [data-faq-item].is-open .wra-plus{transform:rotate(45deg)}
-[data-line]{transform-origin:left center}
-.lbl{font-family:'Schibsted Grotesk',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
-iframe{filter:grayscale(1) invert(.92) contrast(.9)}
+.wra-plus{display:inline-block;transition:transform .3s;font-family:'Epilogue',sans-serif}
+.tab-btn[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.tab-btn[aria-selected="true"] .tn{color:var(--bg)}
+.hscroll-track{display:flex;gap:1.5rem;width:max-content;padding:0 2rem}
+#progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:60}
+.aside-link{display:flex;gap:.75rem;padding:.5rem 0;border-bottom:1px solid var(--line);font-family:'Epilogue',sans-serif;font-weight:500;font-size:.85rem}
+.aside-link span{color:var(--accent)}
+.aside-link:hover{color:var(--accent)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-
-<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(7,9,15,.86);--wra-bg:#07090F;--wra-accent:#19E3C2;--wra-on-accent:#0b0b0b;--wra-surface:#111624;--wra-fg:#EAF4F2;--wra-muted:#797F81;--wra-line:rgba(234,244,242,.16);--wra-display:'Schibsted Grotesk', sans-serif;--wra-body:'Newsreader', serif}
+<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(250,248,245,.86);--wra-bg:#FAF8F5;--wra-accent:#2F5D3A;--wra-on-accent:#ffffff;--wra-surface:#F0EBE1;--wra-fg:#26331F;--wra-muted:#6A6F64;--wra-line:rgba(38,51,31,.16);--wra-display:'Epilogue', sans-serif;--wra-body:'Instrument Serif', serif}
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
 .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
@@ -253,400 +261,333 @@ html.wrab-lock{overflow:hidden}
 .wrab-tip{margin:.7rem 0 0;font-size:.82rem;color:var(--wra-muted,#666)}
 </style><!--/kit:head-->
 </head>
-<body data-layout-motion="MOTION_CLIP_WIPE" data-layout-blueprint="BP_04_CINEMATICO_CITA">
+<body data-layout-blueprint="AR_05_SIDEBAR_STUDIO" data-layout-motion="MOTION_PIN_HORIZONTAL">
+<div id="progress" aria-hidden="true"></div>
 
-<!-- HEADER -->
-<header data-nav="" data-layout-nav="NAV_EDITORIAL_BORDER" class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-bg/80 border-b border-line">
-  <div class="hidden md:block border-b border-line">
-    <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between text-[0.8rem] font-display text-mute"><a href="tel:+34972361646" class="flex items-center gap-2 hover:text-accent transition-colors"><i data-lucide="phone" class="h-3.5 w-3.5"></i> 972 36 16 46</a>
-      <span class="flex items-center gap-2"><i data-lucide="map-pin" class="h-3.5 w-3.5"></i> Av. Vila de Tossa, nº 49, Loc 4, 17310 Lloret de Mar, Girona</span></div>
+<!-- DESKTOP SIDEBAR -->
+<aside data-nav="" data-layout-nav="NAV_SIDEBAR_DESKTOP" class="hidden lg:flex fixed inset-y-0 left-0 w-60 z-50 flex-col justify-between bg-bg border-r border-[color:var(--line)] px-6 py-8">
+  <div>
+    <a href="#top" class="block font-display font-black text-xl leading-tight tracking-tight">Centre Mèdic<br>Lloret CCB</a>
+    <p class="mt-2 text-sm text-muted">Doctor 24 horas · Centre médical 24h/24</p>
+    <nav class="mt-10" aria-label="Navigation principale"><a class="aside-link" href="#services"><span>01</span>Services</a>
+      <a class="aside-link" href="#treatments"><span>02</span>Soins</a>
+      <a class="aside-link" href="#reviews"><span>03</span>Avis</a>
+      <a class="aside-link" href="#gallery"><span>04</span>Le centre</a>
+      <a class="aside-link" href="#about"><span>05</span>À propos</a>
+      <a class="aside-link" href="#faq"><span>06</span>FAQ</a>
+      <a class="aside-link" href="#contact"><span>07</span>Contact</a>
+      <a class="aside-link" href="#pedir-cita"><span>08</span>Prendre rendez-vous</a></nav>
   </div>
-  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
-    <a href="#top" class="font-display font-extrabold text-lg leading-none tracking-tight">CENTRE MÈDIC <span class="text-accent">LLORET</span> CCB</a>
-    <nav class="hidden lg:flex items-center gap-7 font-display text-[0.8rem] font-semibold tracking-wide" aria-label="Principal"><a href="#services" class="hover:text-accent transition-colors">Services</a>
-      <a href="#treatments" class="hover:text-accent transition-colors">Traitements</a>
-      <a href="#reviews" class="hover:text-accent transition-colors">Avis</a>
-      <a href="#about" class="hover:text-accent transition-colors">À propos</a>
-      <a href="#faq" class="hover:text-accent transition-colors">FAQ</a>
-      <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
-      <a href="#pedir-cita" class="hover:text-accent transition-colors">Réserver</a></nav>
-    <div class="flex items-center gap-3"><button data-open-tool="" data-magnetic="" class="btn hidden sm:inline-flex">Book an appointment <i data-lucide="arrow-right" class="arr"></i></button>
-      <button data-burger="" aria-label="Open menu" class="lg:hidden border border-line p-2"><i data-lucide="menu" class="h-5 w-5"></i></button></div>
+  <div class="space-y-3"><a href="tel:972361646" class="font-display font-bold text-lg flex items-center gap-2"><i data-lucide="phone" class="h-4 w-4"></i>972 361 646</a>
+    <button data-open-tool="" class="btn-brutal solid w-full" data-magnetic="">Prendre rendez-vous</button></div>
+</aside>
+
+<!-- MOBILE BAR -->
+<header class="lg:hidden fixed top-0 inset-x-0 z-50 bg-bg/95 backdrop-blur-md border-b border-[color:var(--line)]">
+  <div class="flex items-center justify-between px-4 py-3"><a href="#top" class="font-display font-black text-base leading-tight">Centre Mèdic Lloret CCB</a>
+    <button data-burger="" aria-label="Open menu" class="p-2 border-2 border-ink"><i data-lucide="menu" class="h-5 w-5"></i></button></div>
+  <div data-menu="" class="flex-col bg-bg px-4 pb-6 border-t border-[color:var(--line)]">
+    <a class="aside-link" href="#services"><span>01</span>Services</a>
+    <a class="aside-link" href="#treatments"><span>02</span>Soins</a>
+    <a class="aside-link" href="#reviews"><span>03</span>Avis</a>
+    <a class="aside-link" href="#gallery"><span>04</span>Le centre</a>
+    <a class="aside-link" href="#about"><span>05</span>À propos</a>
+    <a class="aside-link" href="#faq"><span>06</span>FAQ</a>
+    <a class="aside-link" href="#contact"><span>07</span>Contact</a>
+    <a class="aside-link" href="#pedir-cita"><span>08</span>Prendre rendez-vous</a>
+    <div class="mt-5 flex flex-col gap-3"><a href="tel:972361646" class="btn-brutal"><i data-lucide="phone" class="h-4 w-4"></i>Appelez le 972 361 646</a>
+      <button data-open-tool="" class="btn-brutal solid">Prendre rendez-vous</button></div>
   </div>
-  <div data-menu="" class="hidden flex-col gap-1 px-6 pb-6 pt-2 border-t border-line bg-bg font-display font-semibold lg:hidden"><a href="#services" class="py-3 border-b border-line">Services</a>
-    <a href="#treatments" class="py-3 border-b border-line">Traitements</a>
-    <a href="#reviews" class="py-3 border-b border-line">Avis</a>
-    <a href="#about" class="py-3 border-b border-line">À propos</a>
-    <a href="#faq" class="py-3 border-b border-line">FAQ</a>
-    <a href="#contact" class="py-3 border-b border-line">Contact</a>
-    <a href="#pedir-cita" class="py-3 border-b border-line">Réserver</a>
-    <a href="tel:+34972361646" class="btn mt-4">Appeler maintenant <i data-lucide="arrow-right" class="arr"></i></a></div>
 </header>
 
-<main id="top">
+<main id="top" class="lg:pl-60 pt-16 lg:pt-0">
+
 <!-- HERO -->
-<section data-hero="" data-layout-hero="HERO_CINEMATIC_BOTTOM_LEFT" class="relative min-h-screen flex items-end overflow-hidden">
-  <div class="absolute inset-0" data-parallax-wrap="">
-    <img data-parallax="" src="../assets/photo-1.jpg" alt="Façade du centre médical avec son enseigne à croix rouge" width="1600" height="1200" class="w-full h-full object-cover">
-  </div>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/20"></div>
-  <div class="relative max-w-7xl mx-auto w-full px-6 pt-44 pb-12 lg:pb-16 grid lg:grid-cols-12 gap-10 items-end">
-    <div class="lg:col-span-7">
-      <p data-hero-item="" class="lbl mb-6">Doctor 24 horas · Lloret de Mar</p>
-      <h1 data-split="" class="font-display font-extrabold text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] leading-[0.98] tracking-tight">Le centre médical ouvert 24h/24 de Lloret, dans votre langue.</h1>
-      <p data-hero-item="" class="mt-7 max-w-xl text-lg text-ink/85">Le Centre Mèdic Lloret CCB assure des soins de médecine générale jour et nuit sur l'Avenida Vila de Tossa, avec un personnel anglophone et des tarifs et des délais d'attente honnêtes. Le Dr Pablo Padilla et son équipe remettent vacanciers et résidents sur pied rapidement.</p>
-      <div data-hero-item="" class="mt-8 flex flex-wrap gap-3"><button data-open-tool="" data-magnetic="" data-layout-btn="BTN_SQUARE_SOLID" class="btn">Prendre rendez-vous <i data-lucide="arrow-right" class="arr"></i></button>
-        <a href="tel:+34972361646" data-magnetic="" class="btn"><i data-lucide="phone" class="h-4 w-4"></i> Appeler maintenant</a></div>
+<section data-hero="" data-layout-hero="HERO_EDITORIAL_MAGAZINE" class="px-6 sm:px-10 lg:px-14 pt-10 lg:pt-14 pb-20 bg-bg">
+  <div class="flex items-center justify-between border-y border-[color:var(--line)] py-2 font-display text-xs uppercase tracking-widest text-muted" data-hero-item=""><span>Lloret de Mar · Costa Brava</span>
+    <span class="hidden sm:inline">Ouvert 24h/24</span>
+    <span>4,5 ★ sur Google</span></div>
+  <div class="grid lg:grid-cols-12 gap-10 mt-12">
+    <div class="lg:col-span-8">
+      <h1 data-split="" class="font-display font-black text-5xl sm:text-6xl xl:text-8xl leading-[0.98] tracking-tight">Un médecin sur la Costa Brava, à toute heure du jour et de la nuit.</h1>
     </div>
-    <aside data-hero-item="" class="lg:col-span-5 glass p-6 sm:p-7" aria-label="Demande de rendez-vous rapide">
-      <div class="flex items-center justify-between mb-5">
-        <h2 class="font-display font-extrabold text-xl">Prendre rendez-vous</h2>
-        <span class="lbl">3 étapes</span>
-      </div>
-      <div class="border-t border-line pt-4">
-        <p class="font-display text-xs font-semibold text-mute mb-2"><span class="text-accent">01</span> &nbsp;Choisissez un service</p>
-        <div class="flex flex-wrap gap-2" data-group="service"><button class="chip" aria-pressed="true" data-v="Doctor 24 horas">Doctor 24 horas</button>
-          <button class="chip" aria-pressed="false" data-v="Ear wax removal">Extraction de cérumen</button>
-          <button class="chip" aria-pressed="false" data-v="Something else">Autre chose</button></div>
-      </div>
-      <div class="border-t border-line mt-4 pt-4">
-        <p class="font-display text-xs font-semibold text-mute mb-2"><span class="text-accent">02</span> &nbsp;Choisissez un jour et une heure</p>
-        <div class="flex flex-wrap gap-2 mb-2" data-group="day"><button class="chip" aria-pressed="true" data-v="Today">Aujourd'hui</button>
-          <button class="chip" aria-pressed="false" data-v="Tomorrow">Demain</button>
-          <button class="chip" aria-pressed="false" data-v="Another day">Un autre jour</button></div>
-        <div class="flex flex-wrap gap-2" data-group="time"><button class="chip" aria-pressed="true" data-v="As soon as possible">Dès que possible</button>
-          <button class="chip" aria-pressed="false" data-v="Morning">Matin</button>
-          <button class="chip" aria-pressed="false" data-v="Afternoon">Après-midi</button>
-          <button class="chip" aria-pressed="false" data-v="Evening">Soir</button></div>
-      </div>
-      <div class="border-t border-line mt-4 pt-4">
-        <p class="font-display text-xs font-semibold text-mute mb-1"><span class="text-accent">03</span> &nbsp;Confirmez</p>
-        <p id="panelSummary" class="text-sm text-ink/80 mb-3">Doctor 24 horas · Aujourd'hui · Dès que possible</p>
-        <button data-open-tool="" data-open-booking="" class="btn w-full">Confirmer la demande <i data-lucide="arrow-right" class="arr"></i></button>
-      </div>
-    </aside>
+    <div class="lg:col-span-4 lg:pt-6 flex flex-col justify-end gap-6">
+      <p data-hero-item="" class="text-xl leading-snug max-w-md">Le Centre Mèdic Lloret CCB assure des soins de médecine générale jour et nuit sur l'Avenida Vila de Tossa, avec un personnel anglophone et des tarifs et des délais d'attente honnêtes. Le Dr Pablo Padilla et son équipe remettent vacanciers et résidents sur pied rapidement.</p>
+      <div data-hero-item="" class="flex flex-wrap gap-4"><button data-open-tool="" data-magnetic="" data-layout-btn="BTN_BRUTAL_SHADOW" class="btn-brutal solid">Prendre rendez-vous <i data-lucide="arrow-right" class="h-4 w-4"></i></button>
+        <a href="tel:972361646" data-magnetic="" class="btn-brutal"><i data-lucide="phone" class="h-4 w-4"></i>Appeler maintenant</a></div>
+    </div>
   </div>
+  <figure data-hero-item="" class="mt-14 grid lg:grid-cols-12 gap-4 items-end">
+    <div data-parallax-wrap="" class="group relative lg:col-span-9 overflow-hidden h-[340px] sm:h-[480px] lg:h-[600px]">
+      <img data-parallax="" src="../assets/photo-1.jpg" alt="Façade du centre médical avec son enseigne à croix rouge" width="1600" height="1200" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-transparent"></div>
+    </div>
+    <figcaption class="lg:col-span-3 text-sm text-muted border-t border-[color:var(--line)] pt-3 font-display">Fig. 1 — La façade sur l'Avenida Vila de Tossa, n° 49, avec la croix rouge repérable depuis la rue.</figcaption>
+  </figure>
 </section>
 
 <!-- MARQUEE -->
-<section class="bg-bg2 border-y border-line py-5 overflow-hidden" aria-label="Spécialités">
+<section class="border-y border-[color:var(--line)] bg-bg2 py-5 overflow-hidden" aria-label="Spécialités">
   <div data-marquee="">
-    <div class="flex gap-12 font-display font-extrabold text-2xl sm:text-3xl uppercase tracking-tight whitespace-nowrap"><span>Doctor 24 horas</span><span class="text-accent">/</span>
-      <span>Medical Centre 24h</span><span class="text-accent">/</span>
-      <span>Extraction de cérumen</span><span class="text-accent">/</span>
-      <span>Soins en plusieurs langues</span><span class="text-accent">/</span></div>
+    <div class="flex gap-12 font-display font-bold text-2xl uppercase tracking-tight whitespace-nowrap"><span>Doctor 24 horas</span><span class="text-accent">/</span>
+      <span>Centre médical 24h/24</span><span class="text-accent">/</span>
+      <span>Retrait de bouchons de cérumen</span><span class="text-accent">/</span>
+      <span>Accueil multilingue</span><span class="text-accent">/</span></div>
   </div>
 </section>
 
-<!-- STATS -->
-<section class="py-24 lg:py-32">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="h-px bg-line mb-12" data-line=""></div>
-    <div class="grid md:grid-cols-12 gap-10 items-end">
-      <div class="md:col-span-5" data-reveal="">
-        <p class="lbl mb-4">En chiffres</p>
-        <p class="font-display font-extrabold text-[7rem] sm:text-[9rem] leading-none text-accent"><span data-count="24" data-suffix="h">24h</span></p>
-        <p class="text-mute max-w-xs">Doctor 24 horas, comme l'indiquent les enseignes lumineuses de l'Avenida Vila de Tossa.</p>
-      </div>
-      <div class="md:col-span-4 md:border-l border-line md:pl-10" data-reveal="">
-        <p class="font-display font-extrabold text-6xl leading-none"><span data-count="46">46</span></p>
-        <p class="text-mute mt-3">Avis Google de patients venus sans rendez-vous.</p>
-      </div>
-      <div class="md:col-span-3 md:border-l border-line md:pl-10" data-reveal="">
-        <p class="font-display font-extrabold text-6xl leading-none text-accent">4.5 <span class="text-3xl text-ink">/ 5</span></p>
-        <p class="text-mute mt-3">Note moyenne sur Google Maps.</p>
-      </div>
+<!-- FIGURES -->
+<section class="px-6 sm:px-10 lg:px-14 py-24 bg-bg">
+  <div class="grid md:grid-cols-12 gap-10 items-end">
+    <p class="md:col-span-5 text-2xl leading-snug">Ce que disent les visiteurs et les habitants de l'équipe, d'après Google Maps.</p>
+    <div class="md:col-span-3 border-t border-ink pt-4">
+      <div class="font-display font-black text-7xl"><span data-count="4.5" data-suffix=" ★">4.5 ★</span></div>
+      <p class="text-muted text-sm font-display mt-1">Note Google Maps</p>
+    </div>
+    <div class="md:col-span-4 border-t border-ink pt-4">
+      <div class="font-display font-black text-7xl"><span data-count="46">46</span></div>
+      <p class="text-muted text-sm font-display mt-1">Avis Google</p>
     </div>
   </div>
 </section>
 
-<!-- SERVICES: STICKY STORYTELLING -->
-<section id="services" data-layout-menu="MENU_STICKY_STORYTELLING" class="bg-bg2 py-24 lg:py-32 border-y border-line">
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-5">
-      <div class="lg:sticky lg:top-28">
-        <p class="lbl mb-5">Ce que nous faisons</p>
-        <h2 data-split="" class="font-display font-extrabold text-5xl lg:text-6xl leading-[1.02] tracking-tight">Doctor 24 horas. Medical Centre 24h.</h2>
-        <div class="h-px bg-accent w-24 my-8" data-line=""></div>
-        <p class="text-ink/80 max-w-md">Des soins de médecine générale sans rendez-vous sur la Costa Brava. Vous voyez un médecin, vous connaissez le prix à l'avance et le temps d'attente est réaliste, le tout expliqué en anglais ou dans votre langue chaque fois que possible.</p>
-        <a href="tel:+34972361646" class="btn mt-8">972 36 16 46 <i data-lucide="arrow-right" class="arr"></i></a>
-      </div>
+<!-- SERVICES: PAPER MENU -->
+<section id="services" data-layout-menu="MENU_PAPER_EDITORIAL" class="px-6 sm:px-10 lg:px-14 py-24 bg-bg2">
+  <p class="font-display text-xs uppercase tracking-widest text-accent">01 — Services</p>
+  <h2 data-split="" class="font-display font-black text-4xl sm:text-6xl mt-4 max-w-3xl leading-[1.02]">Doctor 24 horas, sans rendez-vous préalable.</h2>
+  <div class="mt-16 grid md:grid-cols-2 gap-x-16 gap-y-12 max-w-6xl">
+    <div data-reveal="">
+      <h3 class="font-display font-bold text-2xl italic">Jour et nuit</h3>
+      <div class="rule mt-3"></div>
+      <div class="leader mt-5"><span class="font-display font-bold">Doctor 24 horas</span><span class="dots"></span><span class="text-muted text-sm">sans rendez-vous</span></div>
+      <p class="text-muted text-base mt-1 max-w-md">Médecin disponible 24h/24 pour les consultations de médecine générale, sans rendez-vous et en urgence.</p>
+      <div class="leader mt-5"><span class="font-display font-bold">Centre médical 24h/24</span><span class="dots"></span><span class="text-muted text-sm">jour &amp; nuit</span></div>
+      <p class="text-muted text-base mt-1 max-w-md">Le centre à la croix rouge sur l'Avenida Vila de Tossa, signalé par une enseigne lumineuse pour le trouver facilement la nuit.</p>
     </div>
-    <div class="lg:col-span-7 flex flex-col gap-10">
-      <article data-reveal="" class="border border-line bg-bg glow group">
-        <div class="overflow-hidden h-80" data-clip="">
-          <img src="../assets/photo-3.jpg" alt="Totem lumineux Doctor 24 horas avec une croix rouge, à l'extérieur" loading="lazy" width="681" height="1400" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105">
-        </div>
-        <div class="p-7">
-          <p class="lbl mb-2">01 · Soins sans rendez-vous</p>
-          <h3 class="font-display font-extrabold text-3xl mb-3">Atención médica 24 horas</h3>
-          <p class="text-ink/80">Un médecin disponible 24 h/24 pour les consultations sans rendez-vous et les soins urgents de médecine générale. Repérez le totem lumineux à l'extérieur, entrez et dites à l'accueil ce qui ne va pas.</p>
-          <p class="mt-5 pt-4 border-t border-line font-display text-sm text-mute">Tarif : annoncé en toute transparence avant la prise en charge.</p>
-        </div>
-      </article>
-      <article data-reveal="" class="border border-line bg-bg glow group">
-        <div class="overflow-hidden h-80" data-clip="">
-          <img src="../assets/photo-5.jpg" alt="Cabinet de consultation avec une table d'examen, des planches anatomiques et une chaise" loading="lazy" width="681" height="1400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-        </div>
-        <div class="p-7">
-          <p class="lbl mb-2">02 · Oreilles</p>
-          <h3 class="font-display font-extrabold text-3xl mb-3">Retrait de bouchon de cérumen</h3>
-          <p class="text-ink/80">Extraction rapide et soigneuse des bouchons de cérumen. Un visiteur récent, l'oreille bouchée après la baignade, est ressorti en moins de 40 minutes, temps d'attente compris, et a quand même rejoint le groupe à la plage.</p>
-          <p class="mt-5 pt-4 border-t border-line font-display text-sm text-mute">Tarif : annoncé en toute transparence avant la prise en charge.</p>
-        </div>
-      </article>
-      <article data-reveal="" class="border border-line bg-bg glow group">
-        <div class="overflow-hidden h-80" data-clip="">
-          <img src="../assets/photo-7.jpg" alt="Patient allongé avec des électrodes posées et une perfusion" loading="lazy" width="960" height="1280" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-        </div>
-        <div class="p-7">
-          <p class="lbl mb-2">03 · Salle de soins</p>
-          <h3 class="font-display font-extrabold text-3xl mb-3">Évaluation et traitement sur place</h3>
-          <p class="text-ink/80">Si le médecin le juge nécessaire, vous pouvez être examiné et soigné dans la salle de soins du centre. Si un autre endroit vous convient mieux ou coûte moins cher, l'équipe vous le dira.</p>
-          <p class="mt-5 pt-4 border-t border-line font-display text-sm text-mute">Tarif : annoncé en toute transparence avant la prise en charge.</p>
-        </div>
-      </article>
+    <div data-reveal="">
+      <h3 class="font-display font-bold text-2xl italic">Petits soins rapides</h3>
+      <div class="rule mt-3"></div>
+      <div class="leader mt-5"><span class="font-display font-bold">Retrait de bouchons de cérumen</span><span class="dots"></span><span class="text-muted text-sm">moins de 40 min*</span></div>
+      <p class="text-muted text-base mt-1 max-w-md">Retrait rapide et soigneux des bouchons de cérumen, en moins de 40 minutes attente comprise.</p>
+      <div class="leader mt-5"><span class="font-display font-bold">Accueil multilingue</span><span class="dots"></span><span class="text-muted text-sm">français, anglais &amp; plus</span></div>
+      <p class="text-muted text-base mt-1 max-w-md">Accueil en plusieurs langues : une équipe qui parle anglais et reste transparente sur les tarifs et les temps d'attente.</p>
+      <p class="text-muted text-xs mt-6 font-display">*D'après l'avis Google d'un visiteur. Les délais peuvent varier.</p>
+    </div>
+  </div>
+  <div data-reveal="" class="mt-16 max-w-xl border border-ink p-1">
+    <div class="border border-ink p-6 relative">
+      <span class="absolute -top-3 left-4 bg-bg2 px-2 font-display text-xs uppercase tracking-widest text-accent">La spécialité de la maison</span>
+      <p class="font-display font-black text-2xl">Retrait de bouchons de cérumen pour les nageurs et les vacanciers.</p>
+      <p class="mt-2">Des oreilles bouchées après une baignade peuvent gâcher un séjour. Entrez, faites-vous examiner et retournez à la plage.</p>
     </div>
   </div>
 </section>
 
-<!-- PARALLAX BAND -->
-<section class="relative">
-  <div data-parallax-wrap="" class="overflow-hidden h-[60vh] min-h-[360px]">
-    <img data-parallax="" src="../assets/photo-2.jpg" alt="Enseignes lumineuses indiquant Medical Centre 24h et Doctor 24 horas" loading="lazy" width="1200" height="672" class="w-full h-full object-cover">
+<!-- TREATMENT SELECTOR + TIMELINE (pinned horizontal) -->
+<section id="treatments" class="bg-bg">
+  <div class="px-6 sm:px-10 lg:px-14 pt-24">
+    <p class="font-display text-xs uppercase tracking-widest text-accent">02 — Soins</p>
+    <h2 data-split="" class="font-display font-black text-4xl sm:text-6xl mt-4 max-w-3xl leading-[1.02]">Choisissez la raison de votre visite.</h2>
   </div>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-  <div class="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-6 pb-10">
-    <p class="font-display font-extrabold text-3xl sm:text-5xl max-w-3xl leading-tight">Les lumières restent allumées. De jour comme de nuit, suivez l'enseigne.</p>
+  <div class="px-6 sm:px-10 lg:px-14 mt-12 grid lg:grid-cols-12 gap-0 border border-ink mx-6 sm:mx-10 lg:mx-14">
+    <div class="lg:col-span-4 border-b lg:border-b-0 lg:border-r border-ink" role="tablist" aria-label="Traitements">
+      <button role="tab" aria-selected="true" data-t="0" class="tab-btn w-full text-left px-5 py-5 border-b border-[color:var(--line)] font-display font-bold flex gap-3"><span class="tn text-accent">01</span>Doctor 24 horas</button>
+      <button role="tab" aria-selected="false" data-t="1" class="tab-btn w-full text-left px-5 py-5 border-b border-[color:var(--line)] font-display font-bold flex gap-3"><span class="tn text-accent">02</span>Centre médical 24h/24</button>
+      <button role="tab" aria-selected="false" data-t="2" class="tab-btn w-full text-left px-5 py-5 border-b border-[color:var(--line)] font-display font-bold flex gap-3"><span class="tn text-accent">03</span>Retrait de bouchons de cérumen</button>
+      <button role="tab" aria-selected="false" data-t="3" class="tab-btn w-full text-left px-5 py-5 font-display font-bold flex gap-3"><span class="tn text-accent">04</span>Soins multilingues</button>
+    </div>
+    <div class="lg:col-span-8 p-8 sm:p-12 bg-bg2" id="tpanel" aria-live="polite">
+      <h3 id="tt" class="font-display font-black text-3xl"></h3>
+      <p id="td" class="mt-4 text-xl max-w-xl"></p>
+      <p class="mt-6 font-display text-xs uppercase tracking-widest text-muted">Durée indicative</p>
+      <p id="tdur" class="font-display font-bold text-xl"></p>
+      <ul id="tb" class="mt-6 space-y-2 text-lg"></ul>
+      <button id="tbook" class="btn-brutal solid mt-8" data-magnetic="">Réserver une consultation</button>
+      <p class="text-xs text-muted mt-4 font-display">Les durées sont données à titre indicatif et peuvent varier selon chaque cas.</p>
+    </div>
   </div>
-</section>
 
-<!-- TREATMENT SELECTOR + TIMELINE -->
-<section id="treatments" class="py-24 lg:py-32">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid md:grid-cols-12 gap-8 mb-14">
-      <div class="md:col-span-7">
-        <p class="lbl mb-4">Trouvez votre consultation</p>
-        <h2 data-split="" class="font-display font-extrabold text-5xl lg:text-6xl leading-[1.02] tracking-tight">Vous ne savez pas de quoi vous avez besoin ? Commencez ici.</h2>
+  <!-- pinned horizontal timeline -->
+  <div id="pin" class="mt-24 overflow-hidden bg-ink text-bg">
+    <div class="h-screen flex flex-col justify-center">
+      <p class="px-8 sm:px-14 font-display text-xs uppercase tracking-widest text-bg/60">Votre visite, étape par étape</p>
+      <div class="hscroll-track mt-10" id="track">
+        <article class="w-[80vw] sm:w-[480px] shrink-0 border border-bg/40 p-8 min-h-[320px] flex flex-col justify-between">
+          <span class="font-display font-black text-7xl text-bg/30">01</span>
+          <div><h3 class="font-display font-black text-3xl">Première consultation</h3><p class="mt-3 text-bg/80 text-lg">Venez sans rendez-vous ou appelez le 972 361 646. L'accueil parle anglais et vous indique d'emblée le tarif et le temps d'attente.</p></div>
+        </article>
+        <article class="w-[80vw] sm:w-[480px] shrink-0 border border-bg/40 p-8 min-h-[320px] flex flex-col justify-between">
+          <span class="font-display font-black text-7xl text-bg/30">02</span>
+          <div><h3 class="font-display font-black text-3xl">Diagnostic</h3><p class="mt-3 text-bg/80 text-lg">Le médecin vous écoute, vous examine sur la table d'examen et vous explique ce qui se passe, dans une langue que vous comprenez.</p></div>
+        </article>
+        <article class="w-[80vw] sm:w-[480px] shrink-0 border border-bg/40 p-8 min-h-[320px] flex flex-col justify-between">
+          <span class="font-display font-black text-7xl text-bg/30">03</span>
+          <div><h3 class="font-display font-black text-3xl">Plan de soins</h3><p class="mt-3 text-bg/80 text-lg">Le traitement commence sur place quand c'est possible, ou vous repartez avec des consignes claires pour la suite.</p></div>
+        </article>
+        <article class="w-[80vw] sm:w-[480px] shrink-0 border border-bg/40 p-8 min-h-[320px] flex flex-col justify-between">
+          <span class="font-display font-black text-7xl text-bg/30">04</span>
+          <div><h3 class="font-display font-black text-3xl">Suivi</h3><p class="mt-3 text-bg/80 text-lg">Besoin d'un contrôle ? Le centre est ouvert 24 h/24, vous pouvez donc appeler ou passer nous voir.</p></div>
+        </article>
       </div>
-      <p class="md:col-span-4 md:col-start-9 text-mute self-end">Les durées sont données à titre indicatif. Le médecin confirme tout lors de votre visite.</p>
-    </div>
-    <div class="grid lg:grid-cols-12 gap-0 border border-line">
-      <div class="lg:col-span-5 p-6 lg:p-8 border-b lg:border-b-0 lg:border-r border-line bg-bg2" role="tablist" aria-label="Traitements" id="txList">
-        <button class="tx" role="tab" aria-selected="true" data-i="0"><span><span class="n font-extrabold mr-3">01</span>Doctor 24 horas</span><i data-lucide="arrow-right" class="h-5 w-5"></i></button>
-        <button class="tx" role="tab" aria-selected="false" data-i="1"><span><span class="n font-extrabold mr-3">02</span>Bouchon de cérumen</span><i data-lucide="arrow-right" class="h-5 w-5"></i></button>
-        <button class="tx" role="tab" aria-selected="false" data-i="2"><span><span class="n font-extrabold mr-3">03</span>Soins sur place</span><i data-lucide="arrow-right" class="h-5 w-5"></i></button>
-        <button class="tx" role="tab" aria-selected="false" data-i="3"><span><span class="n font-extrabold mr-3">04</span>Je ne sais pas trop</span><i data-lucide="arrow-right" class="h-5 w-5"></i></button>
-      </div>
-      <div class="lg:col-span-7 p-7 lg:p-12" role="tabpanel" id="txPanel">
-        <p class="lbl mb-3" id="txTag">Soins sans rendez-vous</p>
-        <h3 class="font-display font-extrabold text-4xl mb-4" id="txTitle"></h3>
-        <p class="text-ink/85 mb-6 max-w-xl" id="txDesc"></p>
-        <p class="font-display text-sm mb-6 border-l-2 border-accent pl-4"><span class="text-mute">Durée indicative :</span> <span id="txDur" class="font-semibold"></span></p>
-        <ul id="txBen" class="space-y-3 mb-8 font-display text-sm"></ul>
-        <button id="txBtn" data-open-contact="" data-prefill="" class="btn">Prendre rendez-vous <i data-lucide="arrow-right" class="arr"></i></button>
-      </div>
-    </div>
-
-    <div class="mt-20">
-      <p class="lbl mb-6">Comment se déroule une visite</p>
-      <div class="h-px bg-accent mb-8" data-line=""></div>
-      <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <li data-reveal=""><p class="font-display font-extrabold text-5xl text-accent mb-3">01</p><h4 class="font-display font-extrabold text-xl mb-2">Première consultation</h4><p class="text-mute text-base">Venez directement ou appelez. Dites-nous ce qui ne va pas, dans votre langue.</p></li>
-        <li data-reveal=""><p class="font-display font-extrabold text-5xl text-accent mb-3">02</p><h4 class="font-display font-extrabold text-xl mb-2">Diagnostic</h4><p class="text-mute text-base">Le médecin vous examine et vous explique ce qui se passe.</p></li>
-        <li data-reveal=""><p class="font-display font-extrabold text-5xl text-accent mb-3">03</p><h4 class="font-display font-extrabold text-xl mb-2">Plan de soins</h4><p class="text-mute text-base">Options, tarif et temps d'attente expliqués avant toute prise en charge.</p></li>
-        <li data-reveal=""><p class="font-display font-extrabold text-5xl text-accent mb-3">04</p><h4 class="font-display font-extrabold text-xl mb-2">Suivi</h4><p class="text-mute text-base">Des conseils clairs sur la suite à donner, et où aller si vous avez besoin de plus.</p></li>
-      </ol>
     </div>
   </div>
 </section>
 
 <!-- REVIEWS -->
-<section id="reviews" class="bg-bg2 border-y border-line py-24 lg:py-32">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-12 gap-10 items-end mb-14">
-      <div class="lg:col-span-8">
-        <p class="lbl mb-4">Avis Google vérifiés</p>
-        <h2 data-split="" class="font-display font-extrabold text-5xl lg:text-6xl leading-[1.02] tracking-tight">Nos patients en parlent mieux que nous.</h2>
-      </div>
-      <div class="lg:col-span-4 lg:text-right">
-        <p class="font-display font-extrabold text-6xl text-accent">4.5 <span class="text-2xl text-ink">★ sur Google Maps</span></p>
-        <p class="text-mute">Sur la base de 46 avis</p>
-      </div>
-    </div>
-    <div class="grid lg:grid-cols-12 gap-8" data-reveal-group="">
-      <figure class="lg:col-span-5 border border-line bg-bg p-8 glow">
-        <div class="flex items-center justify-between mb-6">
-          <span class="text-accent2 tracking-widest text-lg" aria-label="5 étoiles">★★★★★</span>
-          <svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg>
-        </div>
-        <blockquote class="text-xl leading-snug">« Soins et traitement excellents du Docteur Pablo Padilla, un vrai professionnel… »</blockquote>
-        <figcaption class="mt-6 pt-4 border-t border-line font-display text-sm"><strong>Javier Plasencia</strong> <span class="text-mute">· il y a 3 ans</span></figcaption>
-      </figure>
-      <figure class="lg:col-span-7 border border-line bg-bg p-8 glow">
-        <div class="flex items-center justify-between mb-6">
-          <span class="text-accent2 tracking-widest text-lg" aria-label="5 étoiles">★★★★★</span>
-          <svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg>
-        </div>
-        <blockquote class="text-xl leading-snug">« Le Dr Pablo a sauvé mon voyage ! Mes oreilles se sont remplies de cérumen et se sont complètement bouchées pendant que je nageais : j'avais une pression constante dans la tête et j'entendais mal. Le personnel a été très aimable, parlait bien anglais et s'est montré honnête sur les prix et les temps d'attente… L'attente et l'intervention ont duré moins de 40 minutes, et nous avons même rattrapé le reste du groupe en route pour la plage ! Merci encore, Dr Pablo ! »</blockquote>
-        <figcaption class="mt-6 pt-4 border-t border-line font-display text-sm"><strong>Miks Dāvis Eglītis</strong> <span class="text-mute">· il y a 3 mois · traduit de l'espagnol</span></figcaption>
-      </figure>
-    </div>
+<section id="reviews" class="px-6 sm:px-10 lg:px-14 py-24 bg-bg">
+  <div class="flex items-center gap-3">
+    <svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path></svg>
+    <p class="font-display text-xs uppercase tracking-widest text-accent">03 — Avis Google vérifiés · 4,5 ★ sur 46 avis</p>
   </div>
+  <h2 data-split="" class="font-display font-black text-4xl sm:text-6xl mt-4 max-w-3xl leading-[1.02]">Les patients parlent du docteur Pablo et de son équipe.</h2>
+  <div data-reveal-group="" class="mt-14 grid lg:grid-cols-12 gap-10">
+    <blockquote class="lg:col-span-5 border-l-2 border-ink pl-6">
+      <p class="text-2xl leading-snug">« Soins et traitement excellents du Docteur Pablo Padilla, un vrai professionnel… »</p>
+      <footer class="mt-4 font-display text-sm"><span class="text-accent">★★★★★</span> Javier Plasencia <span class="text-muted">· il y a 3 ans</span></footer>
+    </blockquote>
+    <blockquote class="lg:col-span-7 border-l-2 border-ink pl-6">
+      <p class="text-xl leading-snug">« Le Dr Pablo a sauvé mon voyage ! Mes oreilles se sont remplies de cérumen et se sont complètement bouchées en nageant : j'avais une pression constante dans la tête et j'entendais mal. Le personnel a été très aimable, parlait bien anglais et s'est montré honnête sur les prix et les délais d'attente, allant même jusqu'à recommander d'autres endroits où l'intervention serait moins chère (mais j'étais pressé !). L'attente et l'intervention ont duré moins de 40 minutes, nous avons même pu rejoindre le reste du groupe parti à la plage ! Merci encore, Dr Pablo ! »</p>
+      <footer class="mt-4 font-display text-sm"><span class="text-accent">★★★★★</span> Miks Dāvis Eglītis <span class="text-muted">· il y a 3 mois</span></footer>
+    </blockquote>
+  </div>
+  <p class="text-xs text-muted mt-8 font-display">Avis traduits à partir de l'original en espagnol et de celui d'un visiteur letton ; extraits de Google Maps.</p>
 </section>
 
-<!-- GALLERY BENTO -->
-<section class="py-24 lg:py-32">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="flex flex-wrap items-end justify-between gap-6 mb-12">
-      <h2 data-split="" class="font-display font-extrabold text-5xl lg:text-6xl leading-[1.02] tracking-tight max-w-2xl">À l'intérieur du centre.</h2>
-      <p class="text-mute max-w-xs">Photos issues de notre fiche Google Maps.</p>
-    </div>
-    <div class="grid grid-cols-2 md:grid-cols-12 gap-px bg-line border border-line">
-      <figure class="col-span-2 md:col-span-5 md:row-span-2 bg-bg group overflow-hidden relative">
-        <div class="h-[440px] md:h-full overflow-hidden" data-clip=""><img src="../assets/photo-6.jpg" alt="Couloir d'accueil avec un comptoir rouge" loading="lazy" width="681" height="1400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <figcaption class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/80 to-transparent font-display text-sm">Accueil, comptoir rouge</figcaption>
-      </figure>
-      <figure class="col-span-1 md:col-span-3 bg-bg group overflow-hidden relative">
-        <div class="h-72 overflow-hidden" data-clip=""><img src="../assets/photo-8.jpg" alt="Carte médicale indiquant les services et les numéros de téléphone de contact" loading="lazy" width="1050" height="1400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <figcaption class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/80 to-transparent font-display text-xs">Services et numéros de téléphone</figcaption>
-      </figure>
-      <figure class="col-span-1 md:col-span-4 bg-bg group overflow-hidden relative">
-        <div class="h-72 overflow-hidden" data-clip=""><img src="../assets/photo-9.jpg" alt="Bras avec une voie intraveineuse et une perfusion sur une table d'examen" loading="lazy" width="1050" height="1400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-        <figcaption class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/80 to-transparent font-display text-xs">Perfusion dans la salle de soins</figcaption>
-      </figure>
-      <div class="col-span-2 md:col-span-7 bg-bg2 p-8 flex flex-col justify-between min-h-[220px]">
-        <p class="lbl">Où nous trouver</p>
-        <p class="font-display font-extrabold text-3xl sm:text-4xl leading-tight">Avenida Vila de Tossa, 49. Suivez les enseignes lumineuses.</p>
-        <a href="#contact" class="font-display text-sm font-semibold text-accent underline underline-offset-4">Voir la carte</a>
-      </div>
-    </div>
+<!-- GALLERY: uneven columns -->
+<section id="gallery" class="px-6 sm:px-10 lg:px-14 py-24 bg-bg2">
+  <p class="font-display text-xs uppercase tracking-widest text-accent">04 — Le centre</p>
+  <h2 data-split="" class="font-display font-black text-4xl sm:text-6xl mt-4 max-w-3xl leading-[1.02]">Medical Centre 24h, vu de la rue et de l'intérieur.</h2>
+  <div class="mt-14 grid grid-cols-2 lg:grid-cols-12 gap-4 items-start">
+    <figure class="col-span-2 lg:col-span-6 group overflow-hidden" data-reveal="">
+      <div class="overflow-hidden"><img loading="lazy" src="../assets/photo-2.jpg" alt="Enseignes lumineuses indiquant Medical Centre 24h et Doctor 24 horas" width="1200" height="672" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="text-sm text-muted font-display mt-2">Enseignes lumineuses : Medical Centre 24h et Doctor 24 horas.</figcaption>
+    </figure>
+    <figure class="lg:col-span-3 group overflow-hidden lg:mt-24" data-reveal="">
+      <div class="overflow-hidden"><img loading="lazy" src="../assets/photo-3.jpg" alt="Totem extérieur Doctor 24 horas avec croix rouge" width="681" height="1400" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="text-sm text-muted font-display mt-2">Le totem Doctor 24 horas.</figcaption>
+    </figure>
+    <figure class="lg:col-span-3 group overflow-hidden" data-reveal="">
+      <div class="overflow-hidden"><img loading="lazy" src="../assets/photo-4.jpg" alt="Entrée ouverte du centre avec enseigne et numéro de téléphone" width="681" height="1400" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="text-sm text-muted font-display mt-2">L'entrée ouverte, avec enseigne et numéro de téléphone.</figcaption>
+    </figure>
+    <figure class="lg:col-span-4 group overflow-hidden" data-reveal="">
+      <div class="overflow-hidden"><img loading="lazy" src="../assets/photo-5.jpg" alt="Salle de consultation avec table d'examen, planches anatomiques et une chaise" width="681" height="1400" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="text-sm text-muted font-display mt-2">Salle de consultation : table d'examen, planches anatomiques, chaise.</figcaption>
+    </figure>
+    <figure class="lg:col-span-4 group overflow-hidden lg:mt-16" data-reveal="">
+      <div class="overflow-hidden"><img loading="lazy" src="../assets/photo-6.jpg" alt="Couloir de l'accueil avec comptoir rouge" width="681" height="1400" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="text-sm text-muted font-display mt-2">Couloir de l'accueil et comptoir rouge.</figcaption>
+    </figure>
+    <figure class="lg:col-span-4 group overflow-hidden" data-reveal="">
+      <div class="overflow-hidden"><img loading="lazy" src="../assets/photo-8.jpg" alt="Carte médicale indiquant les services et les numéros de téléphone de contact" width="1050" height="1400" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="text-sm text-muted font-display mt-2">Carte médicale avec services et numéros de téléphone.</figcaption>
+    </figure>
+    <figure class="col-span-1 lg:col-span-6 group overflow-hidden" data-reveal="">
+      <div class="overflow-hidden"><img loading="lazy" src="../assets/photo-7.jpg" alt="Patient allongé avec électrodes et perfusion" width="960" height="1280" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="text-sm text-muted font-display mt-2">Un patient avec électrodes et perfusion.</figcaption>
+    </figure>
+    <figure class="col-span-1 lg:col-span-6 group overflow-hidden" data-reveal="">
+      <div class="overflow-hidden"><img loading="lazy" src="../assets/photo-9.jpg" alt="Bras avec une voie intraveineuse et une perfusion sur une table d'examen" width="1050" height="1400" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="text-sm text-muted font-display mt-2">Un bras avec une voie intraveineuse sur la table d'examen.</figcaption>
+    </figure>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="bg-bg2 border-y border-line py-24 lg:py-32">
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
-    <div class="lg:col-span-6 lg:order-2 group overflow-hidden border border-line" data-parallax-wrap="" style="height:560px">
-      <img data-parallax="" src="../assets/photo-4.jpg" alt="Entrée ouverte du centre avec son enseigne et son numéro de téléphone" loading="lazy" width="681" height="1400" class="w-full h-full object-cover">
+<section id="about" class="px-6 sm:px-10 lg:px-14 py-24 bg-bg">
+  <div class="grid lg:grid-cols-12 gap-12">
+    <div class="lg:col-span-4">
+      <p class="font-display text-xs uppercase tracking-widest text-accent">05 — À propos</p>
+      <h2 data-split="" class="font-display font-black text-4xl sm:text-5xl mt-4 leading-[1.02]">Le centre médical ouvert 24h/24 de Lloret, dans votre langue.</h2>
     </div>
-    <div class="lg:col-span-6 lg:order-1" data-reveal="">
-      <p class="lbl mb-4">À propos de nous</p>
-      <h2 data-split="" class="font-display font-extrabold text-4xl lg:text-5xl leading-[1.05] tracking-tight mb-6">Un cabinet de quartier pour les personnes loin de chez elles.</h2>
-      <div class="h-px bg-accent w-24 mb-6" data-line=""></div>
-      <p class="text-ink/85 mb-4">Le Centre Mèdic Lloret CCB est un centre médical situé Avenida Vila de Tossa, ouvert 24 h/24 pour les visiteurs et les résidents qui ont besoin d'un médecin sans parcours du combattant.</p>
-      <p class="text-ink/85 mb-4">Le Dr Pablo Padilla et son équipe prennent en charge les problèmes du quotidien, de la nuit de fièvre aux oreilles bouchées après une baignade. L'accueil parle anglais, et nos patients nous disent que les tarifs et les temps d'attente annoncés étaient honnêtes.</p>
-      <p class="text-ink/85">Si quelqu'un d'autre peut mieux vous aider, ou à moindre coût, nous vous le dirons. C'est ainsi que doit fonctionner un bon centre médical de proximité.</p>
+    <div class="lg:col-span-7 lg:col-start-6 max-w-2xl space-y-6 text-xl" data-reveal="">
+      <p>Le Centre Mèdic Lloret CCB se trouve au 49, Avenida Vila de Tossa, local 4, en plein cœur de Lloret de Mar. La croix rouge et l'enseigne lumineuse Doctor 24 horas permettent de le repérer à toute heure.</p>
+      <p>Le Dr Pablo Padilla et son équipe prennent en charge aussi bien les visiteurs de la Costa Brava que les résidents. Les patients soulignent le personnel anglophone et la transparence avec laquelle les prix et les délais d'attente sont expliqués.</p>
+      <p>Aucun rendez-vous n'est nécessaire pour commencer : appelez, venez directement ou envoyez une demande via l'assistant de réservation, et l'équipe vous répondra.</p>
+      <button data-open-contact="" data-prefill="Bonjour, je souhaiterais avoir des informations sur le centre." class="btn-brutal">Poser une question rapide</button>
     </div>
   </div>
 </section>
 
 <!-- FAQ -->
-<section id="faq" class="py-24 lg:py-32">
-  <div class="max-w-5xl mx-auto px-6">
-    <p class="lbl mb-4">Avant de venir</p>
-    <h2 data-split="" class="font-display font-extrabold text-5xl lg:text-6xl leading-[1.02] tracking-tight mb-12">Les questions que nous posent nos visiteurs.</h2>
-    <div data-faq="" class="border-t border-line">
-      <div data-faq-item="" class="border-b border-line"><button data-faq-q="" class="w-full flex justify-between items-center gap-6 py-6 text-left font-display font-semibold text-xl">Faut-il prendre rendez-vous ? <span class="wra-plus">+</span></button><div data-faq-a=""><div><p class="pb-6 text-ink/80">Nous sommes faits pour accueillir sans rendez-vous. Si vous préférez en avoir le cœur net, utilisez le bouton de réservation ou appelez le 972 36 16 46 et nous vous dirons combien de temps vous devrez probablement attendre.</p></div></div></div>
-      <div data-faq-item="" class="border-b border-line"><button data-faq-q="" class="w-full flex justify-between items-center gap-6 py-6 text-left font-display font-semibold text-xl">Êtes-vous vraiment ouverts 24 heures sur 24 ? <span class="wra-plus">+</span></button><div data-faq-a=""><div><p class="pb-6 text-ink/80">Notre enseigne indique Doctor 24 horas et Medical Centre 24h. Pour toute urgence à une heure inhabituelle, appelez-nous d'abord afin que nous puissions vous confirmer et vous guider.</p></div></div></div>
-      <div data-faq-item="" class="border-b border-line"><button data-faq-q="" class="w-full flex justify-between items-center gap-6 py-6 text-left font-display font-semibold text-xl">Quelqu'un parlera-t-il ma langue ? <span class="wra-plus">+</span></button><div data-faq-a=""><div><p class="pb-6 text-ink/80">L'équipe reçoit les patients en plusieurs langues, et l'anglais est parlé au centre. Dites-nous au téléphone de quelle langue vous avez besoin.</p></div></div></div>
-      <div data-faq-item="" class="border-b border-line"><button data-faq-q="" class="w-full flex justify-between items-center gap-6 py-6 text-left font-display font-semibold text-xl">Combien ça coûte ? <span class="wra-plus">+</span></button><div data-faq-a=""><div><p class="pb-6 text-ink/80">Nous vous indiquons le prix et le temps d'attente prévu avant le soin, et nous vous orienterons ailleurs si cela vous convient mieux.</p></div></div></div>
-      <div data-faq-item="" class="border-b border-line"><button data-faq-q="" class="w-full flex justify-between items-center gap-6 py-6 text-left font-display font-semibold text-xl">Combien de temps dure l'extraction d'un bouchon de cérumen ? <span class="wra-plus">+</span></button><div data-faq-a=""><div><p class="pb-6 text-ink/80">Cela dépend de chaque cas. Un patient récent nous a indiqué que l'attente et l'intervention réunies avaient duré moins de 40 minutes. Le médecin vous donnera une estimation à votre arrivée.</p></div></div></div>
-      <div data-faq-item="" class="border-b border-line"><button data-faq-q="" class="w-full flex justify-between items-center gap-6 py-6 text-left font-display font-semibold text-xl">Où êtes-vous exactement ? <span class="wra-plus">+</span></button><div data-faq-a=""><div><p class="pb-6 text-ink/80">Av. Vila de Tossa, nº 49, Loc 4, 17310 Lloret de Mar, Girona. Repérez le totem lumineux orné d'une croix rouge.</p></div></div></div>
-    </div>
+<section id="faq" class="px-6 sm:px-10 lg:px-14 py-24 bg-bg2">
+  <p class="font-display text-xs uppercase tracking-widest text-accent">06 — FAQ</p>
+  <h2 data-split="" class="font-display font-black text-4xl sm:text-6xl mt-4 max-w-3xl leading-[1.02]">Coup de soleil, oreilles bouchées ou simple malaise ? Posez d'abord vos questions.</h2>
+  <div data-faq="" class="mt-12 max-w-3xl border-t border-ink">
+    <div data-faq-item="" class="border-b border-[color:var(--line)]"><button data-faq-q="" class="w-full flex justify-between items-center py-5 text-left font-display font-bold text-lg">Le centre est-il vraiment ouvert 24 h/24 ?<span class="wra-plus text-2xl">+</span></button><div data-faq-a=""><div><p class="pb-5 text-lg text-muted">Le centre se présente comme Medical Centre 24h et Doctor 24 horas. Pour plus de tranquillité, appelez le 972 361 646 avant de vous déplacer.</p></div></div></div>
+    <div data-faq-item="" class="border-b border-[color:var(--line)]"><button data-faq-q="" class="w-full flex justify-between items-center py-5 text-left font-display font-bold text-lg">Faut-il un rendez-vous ?<span class="wra-plus text-2xl">+</span></button><div data-faq-a=""><div><p class="pb-5 text-lg text-muted">Le médecin reçoit sans rendez-vous et prend en charge les soins primaires urgents. Vous pouvez aussi utiliser « Réserver une consultation » pour envoyer votre demande à l'avance.</p></div></div></div>
+    <div data-faq-item="" class="border-b border-[color:var(--line)]"><button data-faq-q="" class="w-full flex justify-between items-center py-5 text-left font-display font-bold text-lg">Parlez-vous anglais ?<span class="wra-plus text-2xl">+</span></button><div data-faq-a=""><div><p class="pb-5 text-lg text-muted">Oui. Les avis des patients mentionnent un personnel qui parle très bien anglais, et le centre propose des soins en plusieurs langues.</p></div></div></div>
+    <div data-faq-item="" class="border-b border-[color:var(--line)]"><button data-faq-q="" class="w-full flex justify-between items-center py-5 text-left font-display font-bold text-lg">Combien ça coûte et combien de temps faudra-t-il attendre ?<span class="wra-plus text-2xl">+</span></button><div data-faq-a=""><div><p class="pb-5 text-lg text-muted">L'accueil est connu pour sa franchise sur ces deux points. Demandez-le lors de votre appel ou à votre arrivée : vous aurez une réponse claire avant le traitement.</p></div></div></div>
+    <div data-faq-item="" class="border-b border-[color:var(--line)]"><button data-faq-q="" class="w-full flex justify-between items-center py-5 text-left font-display font-bold text-lg">Pouvez-vous retirer un bouchon de cérumen ?<span class="wra-plus text-2xl">+</span></button><div data-faq-a=""><div><p class="pb-5 text-lg text-muted">Oui, le retrait du cérumen fait partie des soins rapides que mentionnent les patients. Un visiteur a indiqué que l'attente et l'intervention avaient duré moins de 40 minutes.</p></div></div></div>
+    <div data-faq-item="" class="border-b border-[color:var(--line)]"><button data-faq-q="" class="w-full flex justify-between items-center py-5 text-left font-display font-bold text-lg">Où êtes-vous situés exactement ?<span class="wra-plus text-2xl">+</span></button><div data-faq-a=""><div><p class="pb-5 text-lg text-muted">Av. Vila de Tossa, nº 49, Loc 4, 17310 Lloret de Mar, Girona. Cherchez la croix rouge et l'enseigne lumineuse Doctor 24 horas.</p></div></div></div>
   </div>
 </section>
 
 <!-- CONTACT -->
-
 <!--kit:booking--><section id="pedir-cita" class="wrab-sec" data-tool-section data-bstyle="modern" aria-labelledby="wrab-title"><div class="wrab-inner"><div class="wrab" data-bstyle="modern"><span class="wrab-eyebrow">Première consultation</span><h2 class="wrab-h" id="wrab-title" data-split>Prenez rendez-vous</h2><p class="wrab-sub">Indiquez le motif et vous arriverez à l’accueil avec votre demande déjà claire.</p><ul class="wrab-perks"><li>Prise en charge prioritaire en cas d’urgence</li><li>Sans attente au téléphone</li><li>Réponse directe de l’accueil</li></ul></div><div class="wrab-card" data-bstyle="modern"><div data-wrab-inline></div></div></div></section><!--/kit:booking-->
-<section id="contact" class="bg-bg2 border-t border-line py-24 lg:py-32">
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-5" data-reveal="">
-      <p class="lbl mb-4">Contact</p>
-      <h2 data-split="" class="font-display font-extrabold text-5xl lg:text-6xl leading-[1.02] tracking-tight mb-8">Vous ne vous sentez pas bien ? Appelez-nous.</h2>
-      <a href="tel:+34972361646" class="block font-display font-extrabold text-4xl sm:text-5xl text-accent mb-8 hover:opacity-80 transition-opacity">972 36 16 46</a>
-      <ul class="space-y-4 mb-10">
-        <li class="flex gap-3 border-t border-line pt-4"><i data-lucide="map-pin" class="h-5 w-5 text-accent mt-1 shrink-0"></i><span>Av. Vila de Tossa, nº 49, Loc 4,<br>17310 Lloret de Mar, Girona</span></li>
-        <li class="flex gap-3 border-t border-line pt-4"><i data-lucide="languages" class="h-5 w-5 text-accent mt-1 shrink-0"></i><span>Accueil en plusieurs langues, anglais compris.</span></li>
-      </ul>
-      <div class="flex flex-wrap gap-3"><a href="tel:+34972361646" class="btn"><i data-lucide="phone" class="h-4 w-4"></i> Appeler maintenant</a>
-        <button data-open-contact="" data-prefill="Hello, I have a question about visiting the centre." class="btn">Envoyer un message <i data-lucide="arrow-right" class="arr"></i></button></div>
+<section id="contact" class="px-6 sm:px-10 lg:px-14 py-24 bg-bg">
+  <p class="font-display text-xs uppercase tracking-widest text-accent">07 — Contact</p>
+  <h2 data-split="" class="font-display font-black text-4xl sm:text-6xl mt-4 max-w-3xl leading-[1.02]">Medical Centre 24h, Avenida Vila de Tossa 49.</h2>
+  <div class="mt-12 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-4 space-y-6" data-reveal="">
+      <div class="border-t border-ink pt-3"><p class="font-display text-xs uppercase tracking-widest text-muted">Téléphone</p><a href="tel:972361646" class="font-display font-black text-3xl">972 361 646</a></div>
+      <div class="border-t border-ink pt-3"><p class="font-display text-xs uppercase tracking-widest text-muted">Adresse</p><p>Av. Vila de Tossa, nº 49, Loc 4<br>17310 Lloret de Mar, Girona</p></div>
+      <div class="flex flex-wrap gap-4"><a href="tel:972361646" class="btn-brutal solid" data-magnetic=""><i data-lucide="phone" class="h-4 w-4"></i>Appelez maintenant</a>
+        <button data-open-contact="" data-prefill="Hello, I would like to ask about a visit." class="btn-brutal">Envoyer un message</button></div>
     </div>
-    <div class="lg:col-span-7 border border-line h-[460px] lg:h-auto min-h-[420px]" data-clip="">
-      <iframe title="Map to Centre Mèdic Lloret CCB" src="https://www.google.com/maps?q=Av.%20Vila%20de%20Tossa%2C%20n%C2%BA%2049%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&amp;output=embed" loading="lazy" class="w-full h-full border-0" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="lg:col-span-8 border border-ink">
+      <iframe title="Map of Centre Mèdic Lloret CCB" src="https://www.google.com/maps?q=Av.%20Vila%20de%20Tossa%2C%20n%C2%BA%2049%2C%20Loc%204%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&amp;output=embed" loading="lazy" class="w-full h-[420px] border-0"></iframe>
     </div>
   </div>
 </section>
-</main>
 
-<footer class="border-t border-line py-10">
-  <div class="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-between gap-4 font-display text-sm text-mute">
-    <p><strong class="text-ink">CENTRE MÈDIC LLORET CCB</strong> · Av. Vila de Tossa, nº 49, Loc 4, 17310 Lloret de Mar, Girona</p>
-    <p>© 2026 Centre Mèdic Lloret CCB · <a href="tel:+34972361646" class="hover:text-accent">972 36 16 46</a></p>
-  </div>
-</footer>
+<footer class="px-6 sm:px-10 lg:px-14 py-10 bg-ink text-bg font-display text-sm flex flex-col sm:flex-row justify-between gap-3"><span>© <span id="yr">2026</span> Centre Mèdic Lloret CCB</span>
+  <span>Av. Vila de Tossa, nº 49, Loc 4, 17310 Lloret de Mar, Girona</span></footer>
+</main>
 
 <script>
 window.addEventListener('load', function () {
   if (window.lucide) lucide.createIcons();
+  document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // Hero panel chips
-  var sel = { service: 'Doctor 24 horas', day: 'Today', time: 'As soon as possible' };
-  var sum = document.getElementById('panelSummary');
-  document.querySelectorAll('[data-group]').forEach(function (g) {
-    g.addEventListener('click', function (e) {
-      var b = e.target.closest('.chip'); if (!b) return;
-      g.querySelectorAll('.chip').forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
-      b.setAttribute('aria-pressed', 'true');
-      sel[g.dataset.group] = b.dataset.v;
-      sum.textContent = sel.service + ' · ' + sel.day + ' · ' + sel.time;
-    });
-  });
-
-  // Close mobile menu on link click
-  document.querySelectorAll('[data-menu] a').forEach(function (a) {
-    a.addEventListener('click', function () { document.querySelector('[data-menu]').classList.remove('is-open'); });
-  });
-
-  // Treatment selector
   var T = [
-    { tag: 'Walk-in care', t: 'Doctor 24 horas', d: 'A doctor available around the clock for walk-in and urgent primary care. Come in, explain what is wrong, and be seen by Dr. Pablo Padilla or the team on duty.', dur: 'Varies by case; the doctor will give you an estimate on arrival.', b: ['Walk in without a long-term commitment', 'English-speaking staff', 'Price and waiting time explained honestly'] },
-    { tag: 'Ears', t: 'Ear wax removal', d: 'Quick, careful removal of blocked earwax, the kind that leaves pressure in your head and muffled hearing after swimming.', dur: 'One recent patient reported under 40 minutes in total, waiting included.', b: ['Careful removal by the doctor', 'Relief from pressure and muffled hearing', 'Honest quote before you start'] },
-    { tag: 'Treatment room', t: 'Treatment on site', d: 'When the doctor decides it is needed, assessment and treatment can be carried out in the centre\'s treatment room.', dur: 'Depends entirely on what the doctor advises.', b: ['Assessed by the doctor first', 'Done in the centre itself', 'Questions answered in your language'] },
-    { tag: 'Guidance', t: 'Just not sure', d: 'Describe your symptoms by phone and the team will tell you whether to come in, and point you elsewhere if that would serve you better.', dur: 'A short phone call.', b: ['Describe symptoms by phone', 'Straight answer on whether to come in', 'Honest about alternatives'] }
+    {t:'Doctor 24 horas', d:'Doctor available around the clock for walk-in and urgent primary care.', dur:'Varies by case', b:['Walk in at any hour','Primary care for visitors and residents','Clear explanation of what is going on']},
+    {t:'Medical Centre 24h', d:'A red-cross medical centre on Avenida Vila de Tossa, lit up day and night so it is easy to spot.', dur:'Varies by case', b:['Easy to find on the street','Open-door reception','Phone line: 972 361 646']},
+    {t:'Ear wax removal', d:'Quick, careful removal of blocked earwax, done in under 40 minutes including the wait.', dur:'Around 40 minutes including the wait (patient-reported)', b:['Relief from pressure and muffled hearing','Straight talk on price and waiting time','Back to your day fast']},
+    {t:'Multilingual care', d:'Atención en varios idiomas: English-speaking staff who explain things plainly.', dur:'Part of every visit', b:['English-speaking reception and doctor','Honest prices and waiting times','Comfortable for visitors abroad']}
   ];
-  var tabs = document.querySelectorAll('#txList .tx');
-  function show(i) {
-    var x = T[i];
-    tabs.forEach(function (b, k) { b.setAttribute('aria-selected', k === i ? 'true' : 'false'); });
-    document.getElementById('txTag').textContent = x.tag;
-    document.getElementById('txTitle').textContent = x.t;
-    document.getElementById('txDesc').textContent = x.d;
-    document.getElementById('txDur').textContent = x.dur;
-    document.getElementById('txBen').innerHTML = x.b.map(function (s) {
-      return '<li class="flex gap-3 border-t border-[color:var(--line)] pt-3"><span class="text-accent font-extrabold">+</span>' + s + '</li>';
-    }).join('');
-    document.getElementById('txBtn').setAttribute('data-prefill', 'Hello, I would like an appointment for: ' + x.t);
+  var cur = 0;
+  function show(i){
+    cur = i; var x = T[i];
+    document.getElementById('tt').textContent = x.t;
+    document.getElementById('td').textContent = x.d;
+    document.getElementById('tdur').textContent = x.dur;
+    document.getElementById('tb').innerHTML = x.b.map(function(s){return '<li class="flex gap-3"><span class="text-accent font-display">—</span>'+s+'</li>';}).join('');
+    document.querySelectorAll('.tab-btn').forEach(function(b,k){b.setAttribute('aria-selected', k===i?'true':'false');});
   }
-  tabs.forEach(function (b) { b.addEventListener('click', function () { show(+b.dataset.i); }); });
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.addEventListener('click',function(){show(+b.dataset.t);});});
+  document.getElementById('tbook').addEventListener('click', function(){
+    var txt = 'Hello, I would like to book a visit for: ' + T[cur].t;
+    if (window.wraContact) window.wraContact(txt);
+  });
   show(0);
 
-  // Clip-wipe + drawn lines
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!reduce && window.gsap && window.ScrollTrigger) {
+  if (window.gsap && window.ScrollTrigger && !reduce) {
     gsap.registerPlugin(ScrollTrigger);
-    document.querySelectorAll('[data-clip]').forEach(function (el) {
-      gsap.fromTo(el, { clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0)', duration: 1.2, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 85%' } });
+    var track = document.getElementById('track');
+    function dist(){ return Math.max(0, track.scrollWidth - window.innerWidth + 64); }
+    gsap.to(track, {
+      x: function(){ return -dist(); }, ease: 'none',
+      scrollTrigger: { trigger: '#pin', start: 'top top', end: function(){ return '+=' + dist(); }, pin: true, scrub: 1, invalidateOnRefresh: true }
     });
-    document.querySelectorAll('[data-line]').forEach(function (el) {
-      gsap.fromTo(el, { scaleX: 0 }, { scaleX: 1, duration: 1.1, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 90%' } });
-    });
+    gsap.to('#progress', { width: '100%', ease: 'none', scrollTrigger: { trigger: document.body, start: 'top top', end: 'bottom bottom', scrub: true } });
+  } else {
+    var tr = document.getElementById('track');
+    document.getElementById('pin').style.overflowX = 'auto';
   }
 });
 </script>
-
-
 
 <!--wra:body--><script>window.__WRA__={"name":"CENTRE MÈDIC LLORET CCB","wa":"https://wa.me/34670256353?text=Hola%2C%20acabo%20de%20ver%20la%20propuesta%20de%20dise%C3%B1o%20para%20mi%20web%20CENTRE%20M%C3%88DIC%20LLORET%20CCB%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s","original":"../original.jpg","id":107,"slug":"centre-medic-lloret-ccb","phone":"972361646","lang":"fr","pk":"BLWCUkRwvbZ4WF6ry+cfQF+SaFP2J3fTyGxCFzgDOLCKSxgORfMrzFS5/pN0IReMjwUOEaP70DNXvbLga1+AyKw=","ntfy":{"alerts":"https://ntfy.sh/autoweb-alerts-7f74a1f4afc54cf8","updates":"https://ntfy.sh/autoweb-updates-7f74a1f4afc54cf8"},"ocss":"\n:host{all:initial}\n*{box-sizing:border-box}\n.trig{font:500 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;background:transparent;color:inherit;border:1px solid currentColor;opacity:.5;border-radius:6px;padding:7px 11px;cursor:pointer}\n.trig:hover{opacity:.9}\n.dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);z-index:2147483646;background:#fff;color:#0f172a;box-shadow:-10px 0 40px rgba(2,8,23,.35);display:flex;flex-direction:column;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;transform:translateX(105%);transition:transform .3s}\n.dr.on{transform:none}\n.hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;background:#0f172a;color:#fff}\n.hd h2{margin:0;font-size:15px;font-weight:650}\n.x{background:transparent;border:0;color:#cbd5e1;font-size:22px;cursor:pointer;line-height:1}\n.bd{flex:1;overflow:auto;padding:18px;display:grid;gap:12px;align-content:start}\nlabel{font-weight:600;font-size:13px;display:block;margin-bottom:5px}\ninput,textarea{width:100%;font:inherit;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;color:#0f172a;background:#fff}\ntextarea{min-height:120px;resize:vertical}\ninput:focus,textarea:focus{outline:2px solid #2563eb;border-color:#2563eb}\n.pin{letter-spacing:.6em;text-align:center;font-size:22px}\n.b{font:600 14px/1 inherit;border:0;border-radius:10px;padding:12px 14px;cursor:pointer;background:#e2e8f0;color:#0f172a}\n.b.p{background:#16a34a;color:#fff}\n.b.on{background:#f59e0b;color:#1c1100}\n.b[disabled]{opacity:.5;cursor:wait}\n.note{font-size:12px;color:#64748b}\n.st{font-size:13px;font-weight:600;min-height:18px}\n.ok{color:#15803d}.er{color:#b91c1c}\n","edit":"https://wa.me/34670256353?text=Bonjour%2C%20j'ai%20vu%20la%20maquette%20de%20CENTRE%20M%C3%88DIC%20LLORET%20CCB%20et%20j'aimerais%20changer%20quelques%20photos%20ou%20textes","editText":"🎨 Maquette 100% modifiable avec vos propres photos, textes et suggestions","improvements":[{"title":"El dominio no muestra ninguna web","before":"Tanto en escritorio como en móvil aparece solo una página en blanco con un mensaje técnico de Cloudron: 'You are seeing this page because the DNS record of www.centrosmedicosccb.com is set to this server's IP but Cloudron has no app configured for this domain'. El servidor responde, pero no hay ninguna web publicada. Un paciente que busque el centro médico no encuentra nada y puede pensar que el negocio ha cerrado.","fix":"El rediseño publica una web completa y operativa en su dominio, con la información del centro visible desde el primer segundo."},{"title":"Sin información de contacto ni forma de pedir cita","before":"No hay teléfono, WhatsApp, formulario, dirección ni mapa. Las señales técnicas no detectan ningún teléfono ni enlace de contacto, y no hay ningún botón sobre el pliegue. Un paciente de Lloret de Mar no tiene ninguna forma de contactar ni de reservar cita desde la web.","fix":"El rediseño añade un botón de pedir cita y un acceso a llamada y WhatsApp siempre visibles, para que los pacientes contacten en un toque."},{"title":"Sin identidad de marca ni contenido","before":"Solo hay una línea de texto negro sobre fondo blanco, sin logo, sin nombre del centro, sin especialidades, sin fotos ni encabezados (no hay H1, H2 ni estructura HTML). No se transmite confianza médica y el título de la pestaña es 'Cloudron - Not Found'. Tampoco hay nada que Google pueda indexar.","fix":"El rediseño presenta el centro con su logo, sus especialidades, fotos del equipo y las instalaciones, y un diseño sanitario que transmite confianza."}],"tool":{"text":"Incluye asistente de triaje y primera cita directo a tu recepción por WhatsApp/Email","button":"Probar Triaje","target":"pedir-cita"},"track":null,"ping":null,"css":"\n:host{all:initial}\n*{box-sizing:border-box}\n.bar{position:fixed;top:0;left:0;right:0;z-index:2147483647;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 14px;background:linear-gradient(90deg,#0b1220,#16233f);color:#e6ecf7;font:500 13px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;box-shadow:0 2px 14px rgba(2,8,23,.35);border-bottom:1px solid rgba(255,255,255,.08)}\n.txt{display:flex;align-items:center;gap:9px;min-width:0}\n.txt span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.txt b{font-weight:650;color:#fff}\n.tag{flex:0 0 auto;max-width:46vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:6px 11px;border-radius:999px;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.4);color:#fde68a;font-size:12px;font-weight:600;text-decoration:none}\na.tag:hover{background:rgba(251,191,36,.24);color:#fff}\n@media (max-width:1560px){.sub{display:none}}\n.sub{color:#9fb0cf}\n.dot{flex:none;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.7);animation:p 2s infinite}\n@keyframes p{70%{box-shadow:0 0 0 7px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}\n.act{display:flex;align-items:center;gap:8px;flex:none}\nbutton,a.cta{font:inherit;cursor:pointer;border-radius:999px;border:0;text-decoration:none;line-height:1}\n.ghost{padding:8px 13px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18);transition:background .15s}\n.ghost:hover{background:rgba(255,255,255,.18)}\n.cta{display:inline-flex;align-items:center;gap:7px;padding:9px 15px;background:#16a34a;color:#fff;font-weight:650;box-shadow:0 2px 10px rgba(22,163,74,.4);transition:transform .15s,background .15s}\n.cta:hover{background:#15803d;transform:translateY(-1px)}\n.cta svg{width:15px;height:15px;fill:currentColor}\n.cta small{font-weight:500;opacity:.9}\n.min{width:28px;height:28px;padding:0;background:transparent;color:#9fb0cf;font-size:18px}\n.min:hover{color:#fff}\n.pill{position:fixed;top:8px;right:10px;z-index:2147483647;padding:8px 13px;background:#0f1b33;color:#fff;border:1px solid rgba(255,255,255,.2);box-shadow:0 2px 10px rgba(2,8,23,.4);font:600 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,sans-serif;display:flex;align-items:center;gap:7px}\n.pill[hidden],.bar[hidden],.ov[hidden]{display:none}\n.ov{position:fixed;left:0;right:0;bottom:0;z-index:2147483646;background:#f4f6fb;color:#0f172a;font:400 15px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;display:flex;flex-direction:column}\n.tabs{display:flex;gap:6px;padding:10px 14px;background:#fff;border-bottom:1px solid #e2e8f0}\n.tab{padding:8px 14px;background:#eef2f9;color:#334155;font-weight:600}\n.tab[aria-selected=true]{background:#0f172a;color:#fff}\n.pane{flex:1;overflow:auto;padding:18px 14px}\n.pane img{display:block;width:100%;max-width:1100px;margin:0 auto;border-radius:10px;box-shadow:0 6px 30px rgba(15,23,42,.18);border:1px solid #dbe2ee}\n.cap{max-width:1100px;margin:10px auto 0;color:#64748b;font-size:13px;text-align:center}\n.list{max-width:820px;margin:0 auto;display:grid;gap:12px;counter-reset:i}\n.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 16px 58px;position:relative;counter-increment:i}\n.card::before{content:counter(i);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:#16a34a;color:#fff;display:grid;place-items:center;font-weight:700}\n.card h3{margin:0 0 4px;font-size:16px}\n.card p{margin:0;color:#475569;font-size:14px}\n.card .b{color:#b45309}\n.card .f{color:#15803d;margin-top:4px}\n.short{display:none}\n@media (max-width:720px){\n  .bar{flex-wrap:wrap;padding:7px 10px;gap:7px}\n  .sub,.long{display:none}\n  .short{display:inline}\n  .txt{flex:1 1 100%}\n  .tag{flex:1 1 100%;white-space:normal;text-align:center;border-radius:10px}\n  .act{flex:1 1 100%;justify-content:space-between}\n  .cta{flex:1;justify-content:center;white-space:nowrap;padding:9px 10px}\n  .ghost{white-space:nowrap;padding:8px 11px}\n  button,a.cta{font-size:12.5px}\n}\n"};</script><script>(function(){
 var C=window.__WRA__;
