@@ -2,79 +2,49 @@
 <html lang="es">
 <head>
 <!--wra:head--><meta name="robots" content="noindex, nofollow"><!--/wra:head-->
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Policlinic Lloret · Medicina general, especialidades y pruebas médicas en Lloret de Mar</title>
-<meta name="description" content="Policlinic Lloret: medicina general, especialidades, radiodiagnóstico, dermatología y pruebas médicas en la Av. Vila de Blanes, Lloret de Mar. Pide cita o llama al 972 36 79 94.">
+<title>Policlinic Lloret · Medicina cercana en Lloret de Mar</title>
+<meta name="description" content="Policlínic Lloret: medicina general, especialidades y pruebas diagnósticas con las últimas tecnologías en la Av. Vila de Blanes, Lloret de Mar.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
   theme: {
     extend: {
-      colors: {
-        bg: '#FBF6EF', bg2: '#F1E5D6', accent: '#D6455D', ink: '#2A1F24',
-        muted: '#736B6A', accent2: '#A74C25'
-      },
-      fontFamily: {
-        display: ['"Libre Caslon Text"', 'serif'],
-        body: ['"Libre Franklin"', 'sans-serif']
-      }
+      colors: { bg:'#F7F8F4', bg2:'#E9EEE4', accent:'#2F5D50', ink:'#17241F', muted:'#676E6A', accent2:'#2F555D' },
+      fontFamily: { display:['Fraunces','serif'], body:['Schibsted Grotesk','sans-serif'], mono:['ui-monospace','SFMono-Regular','Menlo','monospace'] }
     }
   }
 }
 </script>
 <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
 <style>
-:root{--bg:#FBF6EF;--bg2:#F1E5D6;--accent:#D6455D;--ink:#2A1F24;--muted:#736B6A;--accent2:#A74C25;--line:rgba(42,31,36,.16)}
-html{scroll-behavior:auto}
-body{background:var(--bg);color:var(--ink);font-family:'Libre Franklin',sans-serif;overflow-x:hidden}
-h1,h2,h3,.font-display{font-family:'Libre Caslon Text',serif}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-/* Botón Etiqueta + cuadrado de flecha */
-.sbtn{display:inline-flex;align-items:stretch;text-decoration:none;font-weight:600;cursor:pointer;border:0;background:none;padding:0;font-family:'Libre Franklin',sans-serif}
-.sbtn .lbl{display:inline-flex;align-items:center;padding:.85rem 1.25rem;border:2px solid var(--ink);background:var(--bg);color:var(--ink);font-size:.95rem;letter-spacing:.01em}
-.sbtn .sq{display:inline-flex;align-items:center;justify-content:center;width:3rem;border:2px solid var(--ink);border-left:0;background:var(--ink);color:var(--bg);transition:margin-left .25s ease,width .25s ease,background .25s}
-.sbtn .sq svg{transition:transform .3s ease;width:20px;height:20px}
-.sbtn:hover .sq{margin-left:-4px;width:calc(3rem + 4px)}
-.sbtn:hover .sq svg{transform:rotate(45deg)}
-.sbtn.acc .lbl{background:var(--accent);color:#fff}
-.sbtn.acc .sq{background:var(--ink)}
-.sbtn.dark .lbl{background:var(--bg);color:var(--ink);border-color:var(--bg)}
-.sbtn.dark .sq{background:var(--accent);border-color:var(--bg);color:#fff}
-.sbtn.sm .lbl{padding:.55rem .85rem;font-size:.82rem}
-.sbtn.sm .sq{width:2.25rem}
-.sbtn.sm:hover .sq{width:calc(2.25rem + 4px)}
-.sbtn.sm .sq svg{width:16px;height:16px}
-/* nav */
-[data-nav]{background:rgba(251,246,239,.92);border-bottom:2px solid var(--ink)}
+:root{--bg:#F7F8F4;--bg2:#E9EEE4;--accent:#2F5D50;--ink:#17241F;--muted:#676E6A;--accent2:#2F555D;--line:rgba(23,36,31,.16)}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Schibsted Grotesk',sans-serif}
+h1,h2,h3,.font-display{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-.02em}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border:2px solid var(--ink);border-radius:0;box-shadow:4px 4px 0 var(--ink);background:var(--bg);color:var(--ink);padding:.7rem 1.1rem;font-weight:600;font-size:.9rem;transition:transform .15s,box-shadow .15s;cursor:pointer}
+.btn:hover,.btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink)}
+.btn-acc{background:var(--accent);color:#fff}
+.cell{border:1px solid var(--line);background:var(--bg);border-radius:0}
+.rule{height:1px;background:var(--ink);transform-origin:left;opacity:.5}
+.is-open{display:flex}
 [data-menu]{display:none}
-[data-menu].is-open{display:flex}
-/* acordeón */
-.acc-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.2,.7,.2,1)}
-.acc-panel>div{overflow:hidden}
-.acc-row.open .acc-panel{grid-template-rows:1fr}
-.acc-row .acc-ico{transition:transform .35s}
-.acc-row.open .acc-ico{transform:rotate(45deg)}
-.acc-row.open .acc-num{color:var(--accent)}
-/* faq */
-[data-faq-a]{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}
-[data-faq-a]>div{overflow:hidden}
-[data-faq-item].is-open [data-faq-a],[data-faq-item].open [data-faq-a]{grid-template-rows:1fr}
-.wra-plus{display:inline-block;transition:transform .3s;font-size:1.6rem;line-height:1;color:var(--accent)}
-.is-open>[data-faq-q] .wra-plus,.open>[data-faq-q] .wra-plus{transform:rotate(45deg)}
-/* selector */
-.tsel.active{background:var(--ink);color:var(--bg)}
-.tsel.active .tn{color:#fff}
-.hpin-viewport{overflow-x:auto}
-.hpin-viewport.pinned{overflow:hidden}
-@media (prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}}
+.tick{display:inline-block;white-space:nowrap}
+.spec-row{cursor:pointer;transition:background .2s,color .2s}
+.spec-row.on{background:var(--accent);color:#fff}
+.tr-item.on{background:var(--accent);color:#fff}
+[data-faq-a]{overflow:hidden;max-height:0;transition:max-height .35s ease}
+[data-faq-item].open [data-faq-a]{max-height:300px}
+[data-faq-item].open .wra-plus{transform:rotate(45deg)}
+.wra-plus{display:inline-block;transition:transform .3s}
+.photo-wipe{clip-path:inset(0 0 0 0)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
-
-<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(251,246,239,.86);--wra-bg:#FBF6EF;--wra-accent:#D6455D;--wra-on-accent:#ffffff;--wra-surface:#F1E5D6;--wra-fg:#2A1F24;--wra-muted:#736B6A;--wra-line:rgba(42,31,36,.16);--wra-display:'Libre Caslon Text', serif;--wra-body:'Libre Franklin', sans-serif}
+<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(247,248,244,.86);--wra-bg:#F7F8F4;--wra-accent:#2F5D50;--wra-on-accent:#ffffff;--wra-surface:#E9EEE4;--wra-fg:#17241F;--wra-muted:#676E6A;--wra-line:rgba(23,36,31,.16);--wra-display:'Fraunces', serif;--wra-body:'Schibsted Grotesk', sans-serif}
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
 .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
@@ -278,499 +248,340 @@ html.wrab-lock{overflow:hidden}
 .wrab-tip{margin:.7rem 0 0;font-size:.82rem;color:var(--wra-muted,#666)}
 </style><!--/kit:head-->
 </head>
-<body data-layout-motion="MOTION_PIN_HORIZONTAL" class="bg-bg text-ink font-body antialiased">
+<body data-layout-motion="MOTION_CLIP_WIPE" data-layout-blueprint="BP_02_BENTO_TECNICO">
 
-<!-- HEADER -->
-<header data-nav data-layout-nav="NAV_SPLIT_CENTER_LOGO" class="fixed top-0 inset-x-0 z-50 backdrop-blur-md">
-  <div class="mx-auto max-w-[1500px] px-4 md:px-8 py-3 md:py-4 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-    <div class="flex items-center">
-      <button data-burger class="lg:hidden p-2 border-2 border-ink" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium" aria-label="Principal">
-        <a href="#especialidades" class="hover:text-accent">Especialidades</a>
-        <a href="#tratamientos" class="hover:text-accent">Tratamientos</a>
-        <a href="#pedir-cita" class="hover:text-accent">Pedir cita</a>
-        <a href="#opiniones" class="hover:text-accent">Opiniones</a>
-        <a href="#contacto" class="hover:text-accent">Contacto</a>
-      </nav>
-    </div>
-    <a href="#inicio" class="flex items-center gap-3" aria-label="Policlinic Lloret, inicio">
-      <img src="./assets/logo.png" alt="Logo de Policlinic Lloret" class="h-8 md:h-10 w-auto">
-      <span class="hidden sm:block font-display font-bold text-xl md:text-3xl tracking-tight">Policlinic Lloret</span>
-    </a>
-    <div class="flex items-center justify-end gap-3">
-      <a href="tel:+34972367994" class="hidden xl:inline text-sm font-semibold">972 36 79 94</a>
-      <button data-open-tool data-layout-btn="BTN_SPLIT_LABEL" class="sbtn acc sm hidden md:inline-flex"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button>
-      <a href="tel:+34972367994" class="sbtn sm lg:inline-flex md:hidden" aria-label="Llamar al 972 36 79 94"><span class="lbl">Llamar</span><span class="sq"><i data-lucide="phone"></i></span></a>
-    </div>
+<header data-nav data-layout-nav="NAV_TOP_TICKER" class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-bg/90 border-b border-ink/15">
+  <div class="bg-accent text-white h-7 overflow-hidden flex items-center text-[10px] uppercase tracking-widest">
+    <div data-marquee class="w-full"><div class="flex gap-12 items-center">
+      <span class="tick">Av. Vila de Blanes, 136 · Lloret de Mar</span>
+      <span class="tick">Tel. 972 36 79 94</span>
+      <span class="tick">4,1 ★ en Google · 311 reseñas</span>
+      <span class="tick">Medicina general · Especialidades · Pruebas médicas</span>
+    </div></div>
   </div>
-  <div data-menu class="lg:hidden flex-col gap-1 px-4 pb-5 pt-2 border-t-2 border-ink bg-bg text-lg font-display">
-    <a href="#especialidades" class="py-2">Especialidades</a>
-    <a href="#tratamientos" class="py-2">Tratamientos</a>
-    <a href="#pedir-cita" class="py-2">Pedir cita</a>
-    <a href="#opiniones" class="py-2">Opiniones</a>
-    <a href="#contacto" class="py-2">Contacto</a>
-    <button data-open-tool class="sbtn acc mt-3 self-start"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button>
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+    <a href="#inicio" class="flex items-center gap-2">
+      <img src="./assets/logo.png" alt="Logo de Policlinic Lloret" class="h-9 w-auto">
+      <span class="font-display text-lg hidden sm:inline">Policlinic Lloret</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-6 font-mono text-xs">
+      <a href="#especialidades" class="hover:text-accent">Especialidades</a>
+      <a href="#tratamientos" class="hover:text-accent">Tratamientos</a>
+      <a href="#opiniones" class="hover:text-accent">Opiniones</a>
+      <a href="#app" class="hover:text-accent">App</a>
+      <a href="#faq" class="hover:text-accent">FAQ</a>
+      <a href="#contacto" class="hover:text-accent">Contacto</a>
+      <a href="#pedir-cita" class="underline underline-offset-4 decoration-2 decoration-accent">Pedir cita</a>
+      <a href="tel:+34972367994" class="btn btn-acc !py-2" data-magnetic><i data-lucide="phone" class="h-4 w-4"></i>972 36 79 94</a>
+      <button class="btn !py-2" data-open-tool>Pedir cita</button>
+    </nav>
+    <button data-burger class="lg:hidden btn !p-2" aria-label="Abrir menú"><i data-lucide="menu" class="h-5 w-5"></i></button>
+  </div>
+  <div data-menu class="lg:hidden flex-col gap-3 px-4 pb-4 bg-bg font-mono text-sm border-t border-ink/15">
+    <a href="#especialidades" class="pt-3">Especialidades</a>
+    <a href="#tratamientos">Tratamientos</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#app">App</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#pedir-cita" class="underline">Pedir cita</a>
+    <a href="tel:+34972367994" class="btn btn-acc w-fit">Llamar ahora</a>
   </div>
 </header>
 
 <main id="inicio">
-<!-- HERO -->
-<section data-hero data-layout-hero="HERO_MINIMAL_CENTER_FLOATING" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-bg pt-28 pb-20 px-5">
-  <div class="absolute left-1/2 -translate-x-1/2 bottom-0 w-[min(92vw,900px)] h-[62%] bg-bg2" style="border-radius:999px 999px 0 0" aria-hidden="true"></div>
-
-  <div class="absolute z-0 top-24 left-3 md:top-32 md:left-[6%] w-28 md:w-60" data-float="30">
-    <div data-parallax-wrap class="h-20 md:h-44 overflow-hidden rounded-2xl border-2 border-ink group">
-      <img data-parallax src="./assets/photo-4.jpg" alt="Fachada del Policlinic Lloret con rótulo azul" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-    </div>
-  </div>
-  <div class="absolute z-0 bottom-20 left-4 md:bottom-24 md:left-[12%] w-24 md:w-44" data-float="-22">
-    <div data-parallax-wrap class="h-24 md:h-44 overflow-hidden rounded-xl border-2 border-ink group">
-      <img data-parallax src="./assets/photo-6.jpg" alt="Gabinete dental con sillón y radiografía en pantalla" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-    </div>
-  </div>
-  <div class="absolute z-0 top-28 right-3 md:top-28 md:right-[7%] w-24 md:w-52" data-float="-38">
-    <div data-parallax-wrap class="h-36 md:h-72 overflow-hidden rounded-3xl border-2 border-ink group">
-      <img data-parallax src="./assets/photo-7.jpg" alt="Cirujana operando con monitores de endoscopia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-    </div>
-  </div>
-
-  <div class="relative z-10 max-w-4xl text-center">
-    <p data-hero-item class="inline-block border-2 border-ink bg-bg px-3 py-1 text-xs font-semibold uppercase tracking-[.18em]">Av. Vila de Blanes, 136 · Lloret de Mar</p>
-    <h1 data-split class="font-display font-bold text-[2.6rem] leading-[1.02] sm:text-6xl md:text-7xl lg:text-[5.6rem] mt-6 tracking-tight">Medicina general en Lloret, de la consulta al <em class="text-accent">diagnóstico</em></h1>
-    <p data-hero-item class="mt-7 mx-auto max-w-xl text-base md:text-lg text-ink/85">Medicina general, especialidades y pruebas diagnósticas bajo un mismo techo en la Av. Vila de Blanes, con un equipo que te explica las cosas claras y una app para pedir cita y ver tus resultados.</p>
-    <div data-hero-item class="mt-9 flex flex-col items-center gap-4">
-      <button data-open-tool data-magnetic data-layout-btn="BTN_SPLIT_LABEL" class="sbtn acc"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button>
-      <a href="tel:+34972367994" class="text-sm font-semibold underline decoration-accent decoration-2 underline-offset-4">o llama ahora: 972 36 79 94</a>
-    </div>
-  </div>
-</section>
-
-<!-- MARQUESINA -->
-<section class="bg-accent text-white border-y-2 border-ink overflow-hidden py-4" aria-label="Especialidades">
-  <div data-marquee>
-    <div class="flex gap-10 whitespace-nowrap font-display text-2xl md:text-3xl font-bold">
-      <span>Medicina general</span><span aria-hidden="true">/</span>
-      <span>Especialidades</span><span aria-hidden="true">/</span>
-      <span>Pruebas médicas</span><span aria-hidden="true">/</span>
-      <span>Radiodiagnóstico</span><span aria-hidden="true">/</span>
-      <span>Dermatología</span><span aria-hidden="true">/</span>
-      <span>Exploración mamaria</span><span aria-hidden="true">/</span>
-      <span>Carnet de conducir</span><span aria-hidden="true">/</span>
-      <span>Mutuas asociadas</span><span aria-hidden="true">/</span>
-    </div>
-  </div>
-</section>
-
-<!-- CIFRAS -->
-<section class="bg-bg2 border-b-2 border-ink">
-  <div class="mx-auto max-w-[1400px] px-5 md:px-8 py-16 md:py-24 grid md:grid-cols-12 gap-10 items-end">
-    <div class="md:col-span-5" data-reveal>
-      <p class="text-xs font-semibold uppercase tracking-[.18em] text-accent2">Lo que dicen los pacientes</p>
-      <h2 data-split class="font-display font-bold text-4xl md:text-6xl leading-[1.03] mt-3">Tu centro médico en Lloret de Mar</h2>
-    </div>
-    <div class="md:col-span-7 grid grid-cols-2 border-2 border-ink bg-bg" data-reveal-group>
-      <div class="p-6 md:p-10 border-r-2 border-ink">
-        <p class="font-display font-bold text-6xl md:text-8xl text-accent leading-none">4,1<span class="text-3xl md:text-5xl text-ink"> ★</span></p>
-        <p class="mt-3 text-sm text-muted">Nota media en Google Maps</p>
-      </div>
-      <div class="p-6 md:p-10">
-        <p class="font-display font-bold text-6xl md:text-8xl leading-none"><span data-count="311">311</span></p>
-        <p class="mt-3 text-sm text-muted">Reseñas de pacientes en Google</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICIOS ACORDEÓN XL -->
-<section id="especialidades" data-layout-menu="MENU_ACCORDION_XL" class="bg-bg border-b-2 border-ink">
-  <div class="mx-auto max-w-[1400px] px-5 md:px-8 pt-16 md:pt-24 pb-6">
-    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-      <h2 data-split class="font-display font-bold text-5xl md:text-8xl leading-[0.98]">Especialidades</h2>
-      <p class="max-w-sm text-muted">Ocho áreas, una sola dirección. Despliega cada una para ver de qué se trata y pide cita con el servicio ya escrito.</p>
-    </div>
-  </div>
-  <div class="mx-auto max-w-[1400px] px-5 md:px-8 pb-16 md:pb-24" id="acordeon">
-    <div class="border-t-2 border-ink">
-
-      <div class="acc-row border-b-2 border-ink open">
-        <button class="acc-btn w-full flex items-center gap-4 md:gap-10 py-5 md:py-7 text-left" aria-expanded="true" aria-controls="p1" id="b1">
-          <span class="acc-num font-display font-bold text-5xl md:text-8xl leading-none w-20 md:w-44 shrink-0">01</span>
-          <span class="font-display font-bold text-2xl sm:text-4xl md:text-6xl flex-1">Medicina general</span>
-          <i data-lucide="plus" class="acc-ico w-8 h-8 md:w-10 md:h-10 shrink-0"></i>
-        </button>
-        <div class="acc-panel" id="p1" role="region" aria-labelledby="b1"><div>
-          <div class="grid md:grid-cols-[1.1fr_1fr] gap-6 md:gap-10 pb-8 md:pl-[11rem]">
-            <figure class="border-2 border-ink overflow-hidden group"><img src="./assets/photo-2.jpg" alt="Sala de espera con sillas y mostrador" loading="lazy" class="w-full h-60 md:h-72 object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="text-xs text-muted p-2 border-t-2 border-ink bg-bg2">Sala de espera con sillas y mostrador</figcaption></figure>
-            <div class="flex flex-col justify-between gap-6"><p class="text-lg">Atención médica general cercana, profesional y adaptada a las necesidades de cada paciente.</p>
-            <button data-open-contact data-prefill="Hola, quiero pedir cita para Medicina general" class="sbtn acc self-start"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button></div>
-          </div>
-        </div></div>
-      </div>
-
-      <div class="acc-row border-b-2 border-ink">
-        <button class="acc-btn w-full flex items-center gap-4 md:gap-10 py-5 md:py-7 text-left" aria-expanded="false" aria-controls="p2" id="b2">
-          <span class="acc-num font-display font-bold text-5xl md:text-8xl leading-none w-20 md:w-44 shrink-0">02</span>
-          <span class="font-display font-bold text-2xl sm:text-4xl md:text-6xl flex-1">Especialidades médicas</span>
-          <i data-lucide="plus" class="acc-ico w-8 h-8 md:w-10 md:h-10 shrink-0"></i>
-        </button>
-        <div class="acc-panel" id="p2" role="region" aria-labelledby="b2"><div>
-          <div class="grid md:grid-cols-[1.1fr_1fr] gap-6 md:gap-10 pb-8 md:pl-[11rem]">
-            <figure class="border-2 border-ink overflow-hidden group"><img src="./assets/photo-3.jpg" alt="Equipo oftalmológico con anillos rojos iluminados" loading="lazy" class="w-full h-72 object-cover object-center transition-transform duration-700 group-hover:scale-105"><figcaption class="text-xs text-muted p-2 border-t-2 border-ink bg-bg2">Equipo oftalmológico con anillos rojos iluminados</figcaption></figure>
-            <div class="flex flex-col justify-between gap-6"><p class="text-lg">Atención especializada con un equipo de profesionales, como Dermatología, que los pacientes citan en sus opiniones.</p>
-            <button data-open-contact data-prefill="Hola, quiero pedir cita para una especialidad médica" class="sbtn acc self-start"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button></div>
-          </div>
-        </div></div>
-      </div>
-
-      <div class="acc-row border-b-2 border-ink">
-        <button class="acc-btn w-full flex items-center gap-4 md:gap-10 py-5 md:py-7 text-left" aria-expanded="false" aria-controls="p3" id="b3">
-          <span class="acc-num font-display font-bold text-5xl md:text-8xl leading-none w-20 md:w-44 shrink-0">03</span>
-          <span class="font-display font-bold text-2xl sm:text-4xl md:text-6xl flex-1">Dermatología</span>
-          <i data-lucide="plus" class="acc-ico w-8 h-8 md:w-10 md:h-10 shrink-0"></i>
-        </button>
-        <div class="acc-panel" id="p3" role="region" aria-labelledby="b3"><div>
-          <div class="grid md:grid-cols-[1.1fr_1fr] gap-6 md:gap-10 pb-8 md:pl-[11rem]">
-            <blockquote class="border-2 border-ink bg-bg2 p-6 font-display italic text-lg">«Solo entrar observó el problema y, al seguir sus indicaciones, el tratamiento va genial.»<footer class="not-italic font-body text-xs text-muted mt-3">Opinión de un paciente sobre el Dr. Néstor Luis · Google Maps</footer></blockquote>
-            <div class="flex flex-col justify-between gap-6"><p class="text-lg">Consulta con el Dr. Néstor Luis, valorado por detectar el problema nada más entrar y acertar con el tratamiento.</p>
-            <button data-open-contact data-prefill="Hola, quiero pedir cita para Dermatología" class="sbtn acc self-start"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button></div>
-          </div>
-        </div></div>
-      </div>
-
-      <div class="acc-row border-b-2 border-ink">
-        <button class="acc-btn w-full flex items-center gap-4 md:gap-10 py-5 md:py-7 text-left" aria-expanded="false" aria-controls="p4" id="b4">
-          <span class="acc-num font-display font-bold text-5xl md:text-8xl leading-none w-20 md:w-44 shrink-0">04</span>
-          <span class="font-display font-bold text-2xl sm:text-4xl md:text-6xl flex-1">Pruebas médicas</span>
-          <i data-lucide="plus" class="acc-ico w-8 h-8 md:w-10 md:h-10 shrink-0"></i>
-        </button>
-        <div class="acc-panel" id="p4" role="region" aria-labelledby="b4"><div>
-          <div class="grid md:grid-cols-[1.1fr_1fr] gap-6 md:gap-10 pb-8 md:pl-[11rem]">
-            <figure class="border-2 border-ink overflow-hidden group"><img src="./assets/photo-5.jpg" alt="Consulta con ecógrafo y camilla ginecológica" loading="lazy" class="w-full h-60 md:h-72 object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="text-xs text-muted p-2 border-t-2 border-ink bg-bg2">Consulta con ecógrafo y camilla ginecológica</figcaption></figure>
-            <div class="flex flex-col justify-between gap-6"><p class="text-lg">Diferentes pruebas diagnósticas con las últimas tecnologías.</p>
-            <button data-open-contact data-prefill="Hola, quiero pedir cita para unas pruebas médicas" class="sbtn acc self-start"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button></div>
-          </div>
-        </div></div>
-      </div>
-
-      <div class="acc-row border-b-2 border-ink">
-        <button class="acc-btn w-full flex items-center gap-4 md:gap-10 py-5 md:py-7 text-left" aria-expanded="false" aria-controls="p5" id="b5">
-          <span class="acc-num font-display font-bold text-5xl md:text-8xl leading-none w-20 md:w-44 shrink-0">05</span>
-          <span class="font-display font-bold text-2xl sm:text-4xl md:text-6xl flex-1">Radiodiagnóstico</span>
-          <i data-lucide="plus" class="acc-ico w-8 h-8 md:w-10 md:h-10 shrink-0"></i>
-        </button>
-        <div class="acc-panel" id="p5" role="region" aria-labelledby="b5"><div>
-          <div class="grid md:grid-cols-[1.1fr_1fr] gap-6 md:gap-10 pb-8 md:pl-[11rem]">
-            <figure class="border-2 border-ink overflow-hidden group"><img src="./assets/photo-6.jpg" alt="Gabinete dental con sillón y radiografía en pantalla" loading="lazy" class="w-full h-60 md:h-72 object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="text-xs text-muted p-2 border-t-2 border-ink bg-bg2">Gabinete dental con sillón y radiografía en pantalla</figcaption></figure>
-            <div class="flex flex-col justify-between gap-6"><p class="text-lg">Servicio de radiología con un radiólogo amable y cuidadoso. «La salud de nuestro paciente es nuestro lema.»</p>
-            <button data-open-contact data-prefill="Hola, quiero pedir cita para Radiodiagnóstico" class="sbtn acc self-start"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button></div>
-          </div>
-        </div></div>
-      </div>
-
-      <div class="acc-row border-b-2 border-ink">
-        <button class="acc-btn w-full flex items-center gap-4 md:gap-10 py-5 md:py-7 text-left" aria-expanded="false" aria-controls="p6" id="b6">
-          <span class="acc-num font-display font-bold text-5xl md:text-8xl leading-none w-20 md:w-44 shrink-0">06</span>
-          <span class="font-display font-bold text-2xl sm:text-4xl md:text-6xl flex-1">Exploración mamaria</span>
-          <i data-lucide="plus" class="acc-ico w-8 h-8 md:w-10 md:h-10 shrink-0"></i>
-        </button>
-        <div class="acc-panel" id="p6" role="region" aria-labelledby="b6"><div>
-          <div class="grid md:grid-cols-[1.1fr_1fr] gap-6 md:gap-10 pb-8 md:pl-[11rem]">
-            <p class="border-2 border-ink bg-bg2 p-6 font-display text-2xl leading-snug">Regálate una exploración mamaria cada año.</p>
-            <div class="flex flex-col justify-between gap-6"><p class="text-lg">Campaña del centro para que una revisión mamaria anual entre en tu rutina.</p>
-            <button data-open-contact data-prefill="Hola, quiero pedir cita para una exploración mamaria" class="sbtn acc self-start"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button></div>
-          </div>
-        </div></div>
-      </div>
-
-      <div class="acc-row border-b-2 border-ink">
-        <button class="acc-btn w-full flex items-center gap-4 md:gap-10 py-5 md:py-7 text-left" aria-expanded="false" aria-controls="p7" id="b7">
-          <span class="acc-num font-display font-bold text-5xl md:text-8xl leading-none w-20 md:w-44 shrink-0">07</span>
-          <span class="font-display font-bold text-2xl sm:text-4xl md:text-6xl flex-1">Carnet de conducir</span>
-          <i data-lucide="plus" class="acc-ico w-8 h-8 md:w-10 md:h-10 shrink-0"></i>
-        </button>
-        <div class="acc-panel" id="p7" role="region" aria-labelledby="b7"><div>
-          <div class="grid md:grid-cols-[1.1fr_1fr] gap-6 md:gap-10 pb-8 md:pl-[11rem]">
-            <p class="border-2 border-ink bg-bg2 p-6 text-lg">Reconocimiento médico para el carnet de conducir. Pregúntanos por teléfono o WhatsApp qué necesitas llevar.</p>
-            <div class="flex flex-col justify-end gap-6">
-            <button data-open-contact data-prefill="Hola, quiero pedir cita para el reconocimiento médico del carnet de conducir" class="sbtn acc self-start"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button></div>
-          </div>
-        </div></div>
-      </div>
-
-      <div class="acc-row border-b-2 border-ink">
-        <button class="acc-btn w-full flex items-center gap-4 md:gap-10 py-5 md:py-7 text-left" aria-expanded="false" aria-controls="p8" id="b8">
-          <span class="acc-num font-display font-bold text-5xl md:text-8xl leading-none w-20 md:w-44 shrink-0">08</span>
-          <span class="font-display font-bold text-2xl sm:text-4xl md:text-6xl flex-1">App de pacientes</span>
-          <i data-lucide="plus" class="acc-ico w-8 h-8 md:w-10 md:h-10 shrink-0"></i>
-        </button>
-        <div class="acc-panel" id="p8" role="region" aria-labelledby="b8"><div>
-          <div class="grid md:grid-cols-[1.1fr_1fr] gap-6 md:gap-10 pb-8 md:pl-[11rem]">
-            <figure class="border-2 border-ink overflow-hidden group"><img src="./assets/photo-11.jpg" alt="Pantalla de app móvil con citas" loading="lazy" class="w-full h-72 object-cover object-top transition-transform duration-700 group-hover:scale-105"><figcaption class="text-xs text-muted p-2 border-t-2 border-ink bg-bg2">Pantalla de app móvil con citas</figcaption></figure>
-            <div class="flex flex-col justify-between gap-6"><p class="text-lg">Gestiona tus citas y consulta tu información médica desde nuestra app.</p>
-            <button data-open-contact data-prefill="Hola, quiero información sobre la app de pacientes" class="sbtn acc self-start"><span class="lbl">Preguntar por la app</span><span class="sq"><i data-lucide="arrow-right"></i></span></button></div>
-          </div>
-        </div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SELECTOR DE TRATAMIENTOS + LÍNEA DE TIEMPO -->
-<section id="tratamientos" class="bg-bg2 border-b-2 border-ink">
-  <div class="mx-auto max-w-[1400px] px-5 md:px-8 py-16 md:py-24">
-    <div class="grid md:grid-cols-12 gap-6 mb-10">
-      <h2 data-split class="md:col-span-7 font-display font-bold text-4xl md:text-7xl leading-[1.02]">Pruebas médicas y consultas, una a una</h2>
-      <p class="md:col-span-4 md:col-start-9 text-muted self-end">Elige qué necesitas y mira cómo funciona. Las duraciones son meramente orientativas: el médico te confirma los tiempos reales.</p>
-    </div>
-    <div class="grid lg:grid-cols-[360px_1fr] border-2 border-ink bg-bg" data-reveal>
-      <ul class="border-b-2 lg:border-b-0 lg:border-r-2 border-ink" id="tlist" role="tablist" aria-label="Tratamientos"></ul>
-      <div class="p-6 md:p-12 min-h-[340px] flex flex-col justify-between gap-8" id="tpanel" role="tabpanel" aria-live="polite">
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-[.18em] text-accent2" id="tdur"></p>
-          <h3 class="font-display font-bold text-3xl md:text-5xl mt-2" id="ttitle"></h3>
-          <p class="mt-4 text-lg max-w-2xl" id="tdesc"></p>
-          <ul class="mt-6 grid sm:grid-cols-2 gap-3" id="tben"></ul>
+<section data-hero data-layout-hero="HERO_BENTO_SHOWCASE" class="pt-28 pb-4 px-2">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 gap-2">
+    <!-- 1 propuesta -->
+    <div class="cell md:col-span-4 p-6 md:p-10 flex flex-col justify-between min-h-[22rem]">
+      <p class="font-mono text-xs uppercase tracking-widest text-accent" data-hero-item>Centro médico · Lloret de Mar</p>
+      <h1 data-split class="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] my-6">Medicina cercana en Lloret, de la consulta al diagnóstico</h1>
+      <div>
+        <p data-hero-item class="max-w-xl text-muted text-sm md:text-base mb-6">Medicina general, especialidades y pruebas diagnósticas bajo un mismo techo en la Av. Vila de Blanes, con un equipo que te explica las cosas claras y una app para pedir cita y ver tus resultados.</p>
+        <div data-hero-item class="flex flex-wrap gap-4">
+          <button data-open-tool data-magnetic data-layout-btn="BTN_BRUTAL_SHADOW" class="btn btn-acc">Pedir cita</button>
+          <a href="tel:+34972367994" class="btn"><i data-lucide="phone" class="h-4 w-4"></i>Llamar ahora</a>
+          <a href="https://api.whatsapp.com/send?phone=34972367994&text=Hola%21" class="btn"><i data-lucide="message-circle" class="h-4 w-4"></i>Escribir por WhatsApp</a>
         </div>
-        <button id="tcta" class="sbtn acc self-start"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button>
       </div>
     </div>
-
-    <div class="mt-20" data-reveal>
-      <h3 class="font-display font-bold text-3xl md:text-4xl mb-8">Cómo es tu primera vez</h3>
-      <ol class="grid md:grid-cols-4 border-2 border-ink bg-bg">
-        <li class="p-6 border-b-2 md:border-b-0 md:border-r-2 border-ink"><span class="font-display font-bold text-5xl text-accent">01</span><p class="font-display font-bold text-2xl mt-2">Primera visita</p><p class="text-sm text-muted mt-2">Pides cita por la herramienta, por teléfono o WhatsApp y te recibimos en recepción.</p></li>
-        <li class="p-6 border-b-2 md:border-b-0 md:border-r-2 border-ink"><span class="font-display font-bold text-5xl text-accent">02</span><p class="font-display font-bold text-2xl mt-2">Diagnóstico</p><p class="text-sm text-muted mt-2">Consulta y, si hace falta, pruebas médicas o radiodiagnóstico en el mismo centro.</p></li>
-        <li class="p-6 border-b-2 md:border-b-0 md:border-r-2 border-ink"><span class="font-display font-bold text-5xl text-accent">03</span><p class="font-display font-bold text-2xl mt-2">Plan</p><p class="text-sm text-muted mt-2">Tu médico te explica el tratamiento con claridad y resuelve tus dudas.</p></li>
-        <li class="p-6"><span class="font-display font-bold text-5xl text-accent">04</span><p class="font-display font-bold text-2xl mt-2">Seguimiento</p><p class="text-sm text-muted mt-2">Gestiona tus citas y consulta tu información médica desde la app.</p></li>
-      </ol>
+    <!-- 4 foto -->
+    <div class="cell md:col-span-2 overflow-hidden group min-h-[18rem] relative" data-parallax-wrap>
+      <img data-parallax src="./assets/photo-1.jpg" alt="Pasillo del Policlinic Lloret con puertas de madera y máquina de café" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+      <p class="absolute bottom-3 left-3 right-3 text-white text-xs font-mono">Pasillo con puertas y máquina de café</p>
+    </div>
+    <!-- 2 especialidades -->
+    <div id="especialidades" class="cell md:col-span-2 p-4">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-3">Cuadro médico</p>
+      <ul id="specList" class="divide-y divide-ink/15 border-y border-ink/15">
+        <li class="spec-row on px-3 py-2 flex justify-between text-sm">Medicina general <span>01</span></li>
+        <li class="spec-row px-3 py-2 flex justify-between text-sm">Dermatología <span>02</span></li>
+        <li class="spec-row px-3 py-2 flex justify-between text-sm">Radiodiagnóstico <span>03</span></li>
+        <li class="spec-row px-3 py-2 flex justify-between text-sm">Exploración mamaria <span>04</span></li>
+        <li class="spec-row px-3 py-2 flex justify-between text-sm">Carnet de conducir <span>05</span></li>
+        <li class="spec-row px-3 py-2 flex justify-between text-sm">Mutuas asociadas <span>06</span></li>
+      </ul>
+      <p id="specNote" class="text-xs text-muted mt-3">Atención médica general cercana y adaptada a cada paciente.</p>
+    </div>
+    <!-- 3 horarios + mapa -->
+    <div class="cell md:col-span-2 p-4 flex flex-col gap-3">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted">Dónde y cuándo</p>
+      <p id="openState" class="font-display text-2xl">Consulta nuestro horario</p>
+      <p class="text-xs text-muted">El horario no consta públicamente: llámanos al 972 36 79 94 para confirmarlo.</p>
+      <iframe title="Mapa de Policlinic Lloret" src="https://www.google.com/maps?q=Av.%20Vila%20de%20Blanes%2C%20136%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&output=embed" loading="lazy" class="w-full h-40 border border-ink/15"></iframe>
+    </div>
+    <!-- 5 reseñas -->
+    <div class="cell md:col-span-2 p-4 bg-bg2">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Opiniones verificadas de Google</p>
+      <p class="font-display text-5xl"><span data-count="4.1">4,1</span> <span class="text-accent">★</span></p>
+      <p class="text-xs text-muted mb-3">311 reseñas en Google Maps</p>
+      <p class="text-sm">«Excelente atención en Policlinic Lloret. La Dra. Marta Fité Grau es muy profesional, cercana y clara…»</p>
+      <p class="text-xs text-muted mt-2">— Farmatural RUBIO ALONSO</p>
     </div>
   </div>
 </section>
 
-<!-- GALERÍA PIN HORIZONTAL -->
-<section id="galeria" class="relative bg-ink text-bg border-b-2 border-ink overflow-hidden" data-hpin>
-  <div class="absolute top-0 inset-x-0 h-1.5 bg-bg/20 z-10"><div id="hbar" class="h-full bg-accent origin-left" style="transform:scaleX(0)"></div></div>
-  <div class="min-h-screen flex flex-col justify-center py-16">
-    <div class="px-5 md:px-8 mb-8 flex flex-col md:flex-row md:items-end md:justify-between gap-4 max-w-[1500px] w-full mx-auto">
-      <h2 data-split class="font-display font-bold text-5xl md:text-8xl leading-[0.98]">El centro por dentro</h2>
-      <p class="text-bg/70 max-w-xs text-sm">Fotos reales de Policlinic Lloret. Sigue bajando y la galería avanza.</p>
-    </div>
-    <div class="hpin-viewport" id="hview">
-      <div class="flex gap-5 md:gap-8 px-5 md:px-8 w-max items-end" id="htrack">
-        <figure class="group overflow-hidden border-2 border-bg w-[78vw] md:w-[42vw] shrink-0"><img src="./assets/photo-4.jpg" alt="Fachada del Policlinic Lloret con rótulo azul" loading="lazy" class="w-full h-[46vh] md:h-[56vh] object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="p-2 text-xs border-t-2 border-bg">Fachada con rótulo azul · Av. Vila de Blanes</figcaption></figure>
-        <figure class="group overflow-hidden border-2 border-bg w-[60vw] md:w-[26vw] shrink-0"><img src="./assets/photo-3.jpg" alt="Equipo oftalmológico con anillos rojos iluminados" loading="lazy" class="w-full h-[56vh] md:h-[66vh] object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="p-2 text-xs border-t-2 border-bg">Equipo oftalmológico con anillos rojos iluminados</figcaption></figure>
-        <figure class="group overflow-hidden border-2 border-bg w-[78vw] md:w-[36vw] shrink-0"><img src="./assets/photo-2.jpg" alt="Sala de espera con sillas y mostrador" loading="lazy" class="w-full h-[40vh] md:h-[46vh] object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="p-2 text-xs border-t-2 border-bg">Sala de espera con sillas y mostrador</figcaption></figure>
-        <figure class="group overflow-hidden border-2 border-bg w-[60vw] md:w-[24vw] shrink-0"><img src="./assets/photo-7.jpg" alt="Cirujana operando con monitores de endoscopia" loading="lazy" class="w-full h-[56vh] md:h-[68vh] object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="p-2 text-xs border-t-2 border-bg">Cirujana operando con monitores de endoscopia</figcaption></figure>
-        <figure class="group overflow-hidden border-2 border-bg w-[78vw] md:w-[38vw] shrink-0"><img src="./assets/photo-5.jpg" alt="Consulta con ecógrafo y camilla ginecológica" loading="lazy" class="w-full h-[42vh] md:h-[50vh] object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="p-2 text-xs border-t-2 border-bg">Consulta con ecógrafo y camilla ginecológica</figcaption></figure>
-        <figure class="group overflow-hidden border-2 border-bg w-[70vw] md:w-[26vw] shrink-0"><img src="./assets/photo-6.jpg" alt="Gabinete dental con sillón y radiografía en pantalla" loading="lazy" class="w-full h-[50vh] md:h-[52vh] object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="p-2 text-xs border-t-2 border-bg">Gabinete dental con sillón y radiografía en pantalla</figcaption></figure>
-        <figure class="group overflow-hidden border-2 border-bg w-[60vw] md:w-[22vw] shrink-0 mr-5 md:mr-8"><img src="./assets/photo-10.jpg" alt="Cartel del asistente IA en español" loading="lazy" class="w-full h-[56vh] md:h-[62vh] object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="p-2 text-xs border-t-2 border-bg">Cartel del asistente IA en español</figcaption></figure>
+<section class="py-6 border-y border-ink/15 bg-bg2 overflow-hidden">
+  <div data-marquee><div class="flex gap-10 font-display text-3xl md:text-5xl whitespace-nowrap">
+    <span>Medicina general</span><span>·</span><span>Especialidades</span><span>·</span><span>Pruebas médicas</span><span>·</span><span>Radiodiagnóstico</span><span>·</span><span>Dermatología</span><span>·</span><span>Exploración mamaria</span><span>·</span><span>Carnet de conducir</span><span>·</span><span>Mutuas asociadas</span><span>·</span>
+  </div></div>
+</section>
+
+<section class="py-20 px-4 max-w-7xl mx-auto grid md:grid-cols-12 gap-8 items-end">
+  <h2 data-split class="md:col-span-7 font-display text-4xl md:text-6xl leading-none">Tu centro médico en Lloret de Mar, con el diagnóstico en la misma casa</h2>
+  <div class="md:col-span-5 grid grid-cols-2 gap-px bg-ink/15 border border-ink/15">
+    <div class="bg-bg p-4"><p class="font-display text-4xl text-accent"><span data-count="311">311</span></p><p class="text-xs text-muted">reseñas en Google</p></div>
+    <div class="bg-bg p-4"><p class="font-display text-4xl text-accent"><span data-count="4.1">4,1</span> ★</p><p class="text-xs text-muted">nota media en Google Maps</p></div>
+  </div>
+</section>
+
+<section data-layout-menu="MENU_BENTO_MASONRY" class="py-16 px-2 bg-bg2">
+  <div class="max-w-7xl mx-auto">
+    <h2 data-split class="font-display text-4xl md:text-6xl mb-2 px-2">Medicina general, especialidades y pruebas médicas</h2>
+    <div class="rule mb-8 mx-2" data-reveal></div>
+    <div data-reveal-group class="grid grid-cols-1 md:grid-cols-4 auto-rows-[minmax(11rem,auto)] gap-2">
+      <div class="cell md:col-span-2 md:row-span-2 p-6 flex flex-col justify-between">
+        <span class="font-mono text-xs text-accent">01</span>
+        <div><i data-lucide="stethoscope" class="h-7 w-7 text-accent mb-3"></i><h3 class="font-display text-3xl mb-2">Medicina general</h3><p class="text-sm text-muted">Atención médica general cercana, profesional y adaptada a las necesidades de cada paciente.</p></div>
+      </div>
+      <div class="overflow-hidden group relative border border-ink/15 md:row-span-2 min-h-[18rem]">
+        <img src="./assets/photo-5.jpg" alt="Consulta con ecógrafo y camilla ginecológica" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+      </div>
+      <div class="bg-accent text-white p-6 flex flex-col justify-between">
+        <span class="font-mono text-xs">02</span>
+        <div><h3 class="font-display text-2xl mb-1">Dermatología</h3><p class="text-sm text-white/80">Consulta con el Dr. Néstor Luis, valorado por detectar el problema nada más entrar.</p></div>
+      </div>
+      <div class="cell p-6 flex flex-col justify-between">
+        <span class="font-mono text-xs text-accent">03</span>
+        <div><h3 class="font-display text-2xl mb-1">Radiodiagnóstico</h3><p class="text-sm text-muted">Radiología con las últimas tecnologías. La salud del paciente es nuestro lema.</p></div>
+      </div>
+      <div class="cell md:col-span-2 p-6 bg-bg">
+        <p class="font-display text-xl">«El doctor Néstor Luis, lo que puede decir mi señora que fue genial: solo entrar observó el problema…»</p>
+        <p class="text-xs text-muted mt-3">— Jose Antonio Cabrera · Hace 7 meses</p>
+      </div>
+      <div class="overflow-hidden group border border-ink/15 min-h-[14rem]">
+        <img src="./assets/photo-6.jpg" alt="Gabinete dental con sillón y radiografía en pantalla" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+      </div>
+      <div class="cell p-6 flex flex-col justify-between">
+        <span class="font-mono text-xs text-accent">04</span>
+        <div><h3 class="font-display text-2xl mb-1">Exploración mamaria</h3><p class="text-sm text-muted">Campaña para regalarte una exploración mamaria cada año.</p></div>
+      </div>
+      <div class="cell md:col-span-2 p-6 flex flex-col justify-between">
+        <span class="font-mono text-xs text-accent">05</span>
+        <div><h3 class="font-display text-2xl mb-1">Carnet de conducir</h3><p class="text-sm text-muted">Reconocimiento médico para el carnet de conducir, y pruebas médicas con las últimas tecnologías.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- OPINIONES -->
-<section id="opiniones" class="bg-bg border-b-2 border-ink">
-  <div class="mx-auto max-w-[1400px] px-5 md:px-8 py-16 md:py-24">
-    <div class="grid md:grid-cols-12 gap-8 md:gap-12">
-      <div class="md:col-span-4" data-reveal>
-        <p class="text-xs font-semibold uppercase tracking-[.18em] text-accent2">Opiniones verificadas de Google</p>
-        <h2 data-split class="font-display font-bold text-4xl md:text-6xl leading-[1.03] mt-3">Trato con cariño y empatía</h2>
-        <p class="mt-6 font-display font-bold text-6xl text-accent leading-none">4,1 ★</p>
-        <p class="text-sm text-muted mt-2">en Google Maps · 311 reseñas</p>
+<section id="tratamientos" class="py-20 px-4 max-w-7xl mx-auto">
+  <div class="flex items-end justify-between gap-6 mb-8">
+    <h2 data-split class="font-display text-4xl md:text-6xl max-w-3xl">Elige un servicio y mira qué te espera</h2>
+    <span class="font-mono text-xs text-muted hidden md:block">Duraciones orientativas</span>
+  </div>
+  <div class="grid md:grid-cols-12 border border-ink/15">
+    <ul id="trList" class="md:col-span-4 divide-y divide-ink/15 border-b md:border-b-0 md:border-r border-ink/15"></ul>
+    <div class="md:col-span-8 p-6 md:p-10 bg-bg2">
+      <p id="trNum" class="font-mono text-xs text-accent mb-2"></p>
+      <h3 id="trTitle" class="font-display text-4xl mb-3"></h3>
+      <p id="trDesc" class="text-muted mb-6 max-w-xl"></p>
+      <div class="grid sm:grid-cols-2 gap-px bg-ink/15 border border-ink/15 mb-6">
+        <div class="bg-bg p-4"><p class="font-mono text-[11px] uppercase text-muted">Duración orientativa</p><p id="trDur" class="font-display text-2xl"></p></div>
+        <div class="bg-bg p-4"><p class="font-mono text-[11px] uppercase text-muted">Qué incluye</p><p id="trBen" class="text-sm"></p></div>
       </div>
-      <div class="md:col-span-8 grid gap-6" data-reveal-group>
-        <article class="border-2 border-ink bg-bg2 p-6 md:p-8 md:mr-16">
-          <div class="flex items-center justify-between gap-4 mb-4">
-            <div class="flex items-center gap-3"><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><span class="text-accent2 tracking-widest" aria-label="5 estrellas">★★★★★</span></div>
-            <span class="text-xs text-muted">Hace 10 meses</span>
-          </div>
-          <p class="font-display text-lg md:text-xl leading-relaxed">«Excelente atención en Policlinic Lloret. La Dra. Marta Fité Grau es muy profesional, cercana y clara, transmitiendo mucha tranquilidad. Mónica (chica de lila), empática y atenta, y Laura en recepción, súper resolutiva, completan un equipo totalmente profesional. El radiólogo también fue muy amable, atento y cuidadoso. Atención con mucho cariño y empatía. ¡Muy recomendable!»</p>
-          <p class="mt-4 text-sm font-semibold">Farmatural RUBIO ALONSO</p>
-        </article>
-        <article class="border-2 border-ink bg-bg p-6 md:p-8 md:ml-16">
-          <div class="flex items-center justify-between gap-4 mb-4">
-            <div class="flex items-center gap-3"><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><span class="text-accent2 tracking-widest" aria-label="5 estrellas">★★★★★</span></div>
-            <span class="text-xs text-muted">Hace 7 meses</span>
-          </div>
-          <p class="font-display text-lg md:text-xl leading-relaxed">«El otro día fue visitada mi señora por el Dermatólogo, el doctor Néstor Luis… solo entrar observó el problema y al seguir sus indicaciones el tratamiento y mi problema va genial, por eso desde aquí quiere dar las gracias mi señora al doctor Néstor Luis.»</p>
-          <p class="mt-4 text-sm font-semibold">Jose Antonio Cabrera</p>
-        </article>
-      </div>
+      <button id="trBtn" class="btn btn-acc" data-open-contact>Pedir cita</button>
+    </div>
+  </div>
+  <div class="mt-12">
+    <p class="font-mono text-xs uppercase tracking-widest text-muted mb-3">Así es el proceso</p>
+    <ol class="grid grid-cols-2 md:grid-cols-4 gap-px bg-ink/15 border border-ink/15">
+      <li class="bg-bg p-5"><span class="font-mono text-xs text-accent">01</span><p class="font-display text-2xl">Primera visita</p><p class="text-xs text-muted">Te escuchamos y valoramos tu caso.</p></li>
+      <li class="bg-bg p-5"><span class="font-mono text-xs text-accent">02</span><p class="font-display text-2xl">Diagnóstico</p><p class="text-xs text-muted">Pruebas médicas en el propio centro cuando hacen falta.</p></li>
+      <li class="bg-bg p-5"><span class="font-mono text-xs text-accent">03</span><p class="font-display text-2xl">Plan</p><p class="text-xs text-muted">Te explicamos el tratamiento con claridad.</p></li>
+      <li class="bg-bg p-5"><span class="font-mono text-xs text-accent">04</span><p class="font-display text-2xl">Seguimiento</p><p class="text-xs text-muted">Citas y resultados desde la app.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="opiniones" class="py-20 px-4 bg-bg2">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-10">
+      <h2 data-split class="font-display text-4xl md:text-6xl">Opiniones verificadas de Google</h2>
+      <p class="font-display text-3xl">4,1 ★ <span class="text-sm text-muted font-body">· 311 reseñas</span></p>
+    </div>
+    <div data-reveal-group class="grid md:grid-cols-5 gap-2">
+      <article class="cell md:col-span-3 p-6">
+        <div class="flex items-center gap-2 mb-3"><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><span class="text-accent">★★★★★</span></div>
+        <p class="font-display text-xl md:text-2xl mb-4">«Excelente atención en Policlinic Lloret. La Dra. Marta Fité Grau es muy profesional, cercana y clara, transmitiendo mucha tranquilidad. Mónica (chica de lila), empática y atenta, y Laura en recepción, súper resolutiva, completan un equipo totalmente profesional. El radiólogo también fue muy amable, atento y cuidadoso. Atención con mucho cariño y empatía. ¡Muy recomendable!»</p>
+        <p class="text-sm text-muted">Farmatural RUBIO ALONSO · Hace 10 meses</p>
+      </article>
+      <article class="cell md:col-span-2 p-6 bg-accent text-white">
+        <div class="flex items-center gap-2 mb-3"><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg><span>★★★★★</span></div>
+        <p class="font-display text-xl mb-4">«El otro día fui visitada mi señora por el Dermatólogo el doctor, Néstor Luis, lo que puede decir mi señora que fue genial solo entrar observo el problema y al seguir sus indicaciones el tratamiento y mi problema va genial…»</p>
+        <p class="text-sm text-white/80">Jose Antonio Cabrera · Hace 7 meses</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- SOBRE NOSOTROS -->
-<section id="nosotros" class="bg-bg2 border-b-2 border-ink">
-  <div class="mx-auto max-w-[1400px] px-5 md:px-8 py-16 md:py-24 grid md:grid-cols-12 gap-10 items-center">
-    <div class="md:col-span-5 md:order-2" data-reveal>
-      <div data-parallax-wrap class="h-[420px] md:h-[560px] overflow-hidden border-2 border-ink group">
-        <img data-parallax src="./assets/photo-1.jpg" alt="Pasillo con puertas y máquina de café" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-      </div>
-      <p class="text-xs text-muted mt-2">Pasillo con puertas y máquina de café</p>
+<section class="py-20 px-2 max-w-7xl mx-auto">
+  <h2 data-split class="font-display text-4xl md:text-6xl mb-8 px-2">Radiodiagnóstico y pruebas médicas, por dentro del centro</h2>
+  <div data-reveal-group class="grid grid-cols-2 md:grid-cols-6 auto-rows-[10rem] md:auto-rows-[12rem] gap-2">
+    <figure class="group overflow-hidden border border-ink/15 col-span-2 md:col-span-3 row-span-2 relative"><img src="./assets/photo-4.jpg" alt="Fachada del Policlinic Lloret con rótulo azul" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"><figcaption class="absolute bottom-0 inset-x-0 bg-black/55 text-white text-xs p-2">Fachada en Av. Vila de Blanes</figcaption></figure>
+    <figure class="group overflow-hidden border border-ink/15 md:col-span-1 row-span-2"><img src="./assets/photo-3.jpg" alt="Equipo oftalmológico con anillos rojos iluminados" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></figure>
+    <figure class="group overflow-hidden border border-ink/15 md:col-span-2"><img src="./assets/photo-2.jpg" alt="Sala de espera con sillas y mostrador" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></figure>
+    <figure class="group overflow-hidden border border-ink/15 md:col-span-2"><img src="./assets/photo-7.jpg" alt="Cirujana operando con monitores de endoscopia" loading="lazy" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"></figure>
+  </div>
+</section>
+
+<section id="app" class="py-20 px-4 bg-bg2">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-8 items-center">
+    <div class="md:col-span-5 overflow-hidden group border border-ink/15 max-w-xs" data-parallax-wrap style="height:30rem">
+      <img data-parallax src="./assets/photo-11.jpg" alt="Pantalla de la app móvil del centro con citas" loading="lazy" class="w-full h-full object-cover">
     </div>
-    <div class="md:col-span-7 md:order-1" data-reveal>
-      <p class="text-xs font-semibold uppercase tracking-[.18em] text-accent2">Sobre nosotros</p>
-      <h2 data-split class="font-display font-bold text-4xl md:text-6xl leading-[1.03] mt-3">Una policlínica de barrio, abierta a vecinos y visitantes</h2>
-      <p class="mt-6 text-lg max-w-2xl">En Policlinic Lloret encontrarás atención médica general y especializada, diferentes pruebas diagnósticas y un equipo de profesionales comprometido con tu bienestar. Trabajamos para ofrecerte una atención cercana, profesional y adaptada a tus necesidades.</p>
-      <p class="mt-4 text-muted max-w-2xl">Medicina general, especialidades, pruebas médicas y mutuas asociadas, todo en la Av. Vila de Blanes, 136. Y si prefieres hacerlo desde el móvil, la app te deja gestionar tus citas y consultar tu información médica.</p>
-      <div class="mt-8 flex flex-wrap gap-4">
-        <button data-open-tool class="sbtn acc"><span class="lbl">Pedir cita</span><span class="sq"><i data-lucide="arrow-right"></i></span></button>
-        <a href="https://www.instagram.com/policliniclloret/" target="_blank" rel="noopener" class="sbtn"><span class="lbl">Instagram</span><span class="sq"><i data-lucide="arrow-up-right"></i></span></a>
+    <div class="md:col-span-7">
+      <p class="font-mono text-xs uppercase tracking-widest text-accent mb-3">App de pacientes</p>
+      <h2 data-split class="font-display text-4xl md:text-6xl mb-4">Policlinic Lloret, también en tu móvil</h2>
+      <p class="text-muted max-w-xl mb-6">Gestiona tus citas y consulta tu información médica desde nuestra App. Pide cita, consulta resultados y recibe avisos sin esperar al teléfono.</p>
+      <div class="grid grid-cols-2 gap-2 max-w-md mb-6">
+        <figure class="overflow-hidden border border-ink/15"><img src="./assets/photo-10.jpg" alt="Cartel del asistente IA en español" loading="lazy" class="w-full h-48 object-cover object-top"></figure>
+        <figure class="overflow-hidden border border-ink/15"><img src="./assets/photo-8.jpg" alt="Cartel del asistente IA en ruso" loading="lazy" class="w-full h-48 object-cover object-top"></figure>
       </div>
+      <button data-open-tool class="btn btn-acc" data-magnetic>Pedir cita</button>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section id="faq" class="bg-bg border-b-2 border-ink">
-  <div class="mx-auto max-w-[1100px] px-5 md:px-8 py-16 md:py-24">
-    <h2 data-split class="font-display font-bold text-4xl md:text-7xl leading-[1.02] mb-10">Preguntas frecuentes</h2>
-    <div data-faq class="border-t-2 border-ink">
-      <div data-faq-item class="border-b-2 border-ink"><button data-faq-q class="w-full flex items-center justify-between gap-6 py-5 text-left font-display font-bold text-xl md:text-2xl">¿Cómo pido cita? <span class="wra-plus">+</span></button><div data-faq-a><div><p class="pb-6 text-muted max-w-2xl">Puedes pedirla desde el botón «Pedir cita» de esta web, llamando al 972 36 79 94, por WhatsApp o desde la app de pacientes.</p></div></div></div>
-      <div data-faq-item class="border-b-2 border-ink"><button data-faq-q class="w-full flex items-center justify-between gap-6 py-5 text-left font-display font-bold text-xl md:text-2xl">¿Trabajáis con mi mutua? <span class="wra-plus">+</span></button><div data-faq-a><div><p class="pb-6 text-muted max-w-2xl">Contamos con mutuas asociadas. Llámanos o escríbenos por WhatsApp con el nombre de la tuya y te confirmamos si trabajamos con ella.</p></div></div></div>
-      <div data-faq-item class="border-b-2 border-ink"><button data-faq-q class="w-full flex items-center justify-between gap-6 py-5 text-left font-display font-bold text-xl md:text-2xl">¿Puedo hacerme el reconocimiento para el carnet de conducir? <span class="wra-plus">+</span></button><div data-faq-a><div><p class="pb-6 text-muted max-w-2xl">Sí, ofrecemos el reconocimiento médico para el carnet de conducir. Pide cita y pregúntanos qué documentación llevar.</p></div></div></div>
-      <div data-faq-item class="border-b-2 border-ink"><button data-faq-q class="w-full flex items-center justify-between gap-6 py-5 text-left font-display font-bold text-xl md:text-2xl">¿Hacéis pruebas diagnósticas en el propio centro? <span class="wra-plus">+</span></button><div data-faq-a><div><p class="pb-6 text-muted max-w-2xl">Sí, ofrecemos diferentes pruebas médicas y servicio de radiodiagnóstico. Consúltanos cuál necesitas y te orientamos.</p></div></div></div>
-      <div data-faq-item class="border-b-2 border-ink"><button data-faq-q class="w-full flex items-center justify-between gap-6 py-5 text-left font-display font-bold text-xl md:text-2xl">¿Qué puedo hacer desde la app? <span class="wra-plus">+</span></button><div data-faq-a><div><p class="pb-6 text-muted max-w-2xl">Gestionar tus citas y consultar tu información médica desde el móvil.</p></div></div></div>
-      <div data-faq-item class="border-b-2 border-ink"><button data-faq-q class="w-full flex items-center justify-between gap-6 py-5 text-left font-display font-bold text-xl md:text-2xl">¿Cuál es el horario y qué hago si es algo urgente? <span class="wra-plus">+</span></button><div data-faq-a><div><p class="pb-6 text-muted max-w-2xl">Para confirmar horarios o consultar tu caso, llama al 972 36 79 94. Ante una urgencia vital, llama siempre al 112.</p></div></div></div>
-    </div>
+<section class="py-20 px-4 max-w-7xl mx-auto grid md:grid-cols-12 gap-8">
+  <div class="md:col-span-4"><h2 data-split class="font-display text-4xl md:text-5xl">Un centro de barrio, sin pretensiones</h2></div>
+  <div class="md:col-span-8" data-reveal>
+    <p class="text-lg mb-4">En Policlinic Lloret encontrarás atención médica general y especializada, diferentes pruebas diagnósticas y un equipo de profesionales comprometido con tu bienestar.</p>
+    <p class="text-muted">Trabajamos para ofrecerte una atención cercana, profesional y adaptada a tus necesidades. Radiodiagnóstico, la salud de nuestro paciente es nuestro lema. Trabajamos con mutuas asociadas: consúltanos la tuya por teléfono.</p>
   </div>
 </section>
 
-<!-- CONTACTO -->
+<section id="faq" class="py-20 px-4 bg-bg2">
+  <div class="max-w-4xl mx-auto">
+    <h2 data-split class="font-display text-4xl md:text-6xl mb-8">Preguntas frecuentes</h2>
+    <div data-faq class="border-t border-ink/15">
+      <div data-faq-item class="border-b border-ink/15"><button data-faq-q class="w-full flex justify-between py-4 text-left font-medium">¿Cómo pido cita?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-4 text-muted text-sm">Con el botón «Pedir cita» de esta web, por teléfono en el 972 36 79 94, por WhatsApp o desde nuestra app de pacientes.</div></div></div>
+      <div data-faq-item class="border-b border-ink/15"><button data-faq-q class="w-full flex justify-between py-4 text-left font-medium">¿Trabajáis con mutuas?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-4 text-muted text-sm">Sí, tenemos mutuas asociadas. Llámanos y te confirmamos si tu mutua está incluida.</div></div></div>
+      <div data-faq-item class="border-b border-ink/15"><button data-faq-q class="w-full flex justify-between py-4 text-left font-medium">¿Puedo hacerme aquí el reconocimiento para el carnet de conducir?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-4 text-muted text-sm">Sí, ofrecemos el reconocimiento médico para el carnet de conducir. Pregúntanos por la documentación necesaria.</div></div></div>
+      <div data-faq-item class="border-b border-ink/15"><button data-faq-q class="w-full flex justify-between py-4 text-left font-medium">¿Hacéis pruebas diagnósticas en el centro?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-4 text-muted text-sm">Sí: pruebas médicas y radiodiagnóstico con las últimas tecnologías, para que el diagnóstico quede bajo el mismo techo.</div></div></div>
+      <div data-faq-item class="border-b border-ink/15"><button data-faq-q class="w-full flex justify-between py-4 text-left font-medium">¿Puedo consultar mis resultados?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-4 text-muted text-sm">Desde la app de pacientes puedes gestionar tus citas y consultar tu información médica.</div></div></div>
+      <div data-faq-item class="border-b border-ink/15"><button data-faq-q class="w-full flex justify-between py-4 text-left font-medium">¿Cuál es el horario del centro?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-4 text-muted text-sm">Para confirmar el horario actualizado, llámanos al 972 36 79 94 o escríbenos por WhatsApp.</div></div></div>
+    </div>
+  </div>
+</section>
 
 <!--kit:booking--><section id="pedir-cita" class="wrab-sec" data-tool-section data-bstyle="modern" aria-labelledby="wrab-title"><div class="wrab-inner"><div class="wrab" data-bstyle="modern"><span class="wrab-eyebrow">Primera cita</span><h2 class="wrab-h" id="wrab-title" data-split>Pide tu cita</h2><p class="wrab-sub">Cuéntanos el motivo y llegarás a recepción con tu consulta ya clara.</p><ul class="wrab-perks"><li>Atención prioritaria si es urgente</li><li>Sin esperas al teléfono</li><li>Respuesta directa de recepción</li></ul></div><div class="wrab-card" data-bstyle="modern"><div data-wrab-inline></div></div></div></section><!--/kit:booking-->
-<section id="contacto" class="bg-bg2">
-  <div class="mx-auto max-w-[1400px] px-5 md:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-10">
-    <div data-reveal>
-      <h2 data-split class="font-display font-bold text-5xl md:text-7xl leading-[1]">Contacto</h2>
-      <ul class="mt-8 border-2 border-ink bg-bg divide-y-2 divide-ink">
-        <li class="p-5 flex items-start gap-4"><i data-lucide="phone"></i><div><p class="text-xs uppercase tracking-widest text-muted">Teléfono</p><a href="tel:+34972367994" class="font-display font-bold text-2xl">972 36 79 94</a></div></li>
-        <li class="p-5 flex items-start gap-4"><i data-lucide="message-circle"></i><div><p class="text-xs uppercase tracking-widest text-muted">WhatsApp</p><a href="https://api.whatsapp.com/send?phone=34972367994&amp;text=Hola%21" target="_blank" rel="noopener" class="font-semibold underline decoration-accent decoration-2 underline-offset-4">Escribir por WhatsApp</a></div></li>
-        <li class="p-5 flex items-start gap-4"><i data-lucide="mail"></i><div><p class="text-xs uppercase tracking-widest text-muted">Email</p><a href="mailto:info@policliniclloret.com" class="font-semibold break-all">info@policliniclloret.com</a></div></li>
-        <li class="p-5 flex items-start gap-4"><i data-lucide="map-pin"></i><div><p class="text-xs uppercase tracking-widest text-muted">Dirección</p><p class="font-semibold">Av. Vila de Blanes, 136, 17310 Lloret de Mar, Girona</p></div></li>
-      </ul>
-      <div class="mt-8 flex flex-wrap gap-4">
-        <button data-open-contact data-prefill="Hola, quiero hacer una consulta" class="sbtn acc"><span class="lbl">Escríbenos</span><span class="sq"><i data-lucide="arrow-right"></i></span></button>
-        <a href="tel:+34972367994" class="sbtn"><span class="lbl">Llamar ahora</span><span class="sq"><i data-lucide="phone"></i></span></a>
-      </div>
+<section id="contacto" class="py-20 px-4 max-w-7xl mx-auto grid md:grid-cols-12 gap-8">
+  <div class="md:col-span-5">
+    <h2 data-split class="font-display text-4xl md:text-6xl mb-6">Pasa por la Av. Vila de Blanes</h2>
+    <ul class="space-y-3 text-sm mb-6">
+      <li class="flex gap-3"><i data-lucide="map-pin" class="h-5 w-5 text-accent"></i>Av. Vila de Blanes, 136, 17310 Lloret de Mar, Girona</li>
+      <li class="flex gap-3"><i data-lucide="phone" class="h-5 w-5 text-accent"></i><a href="tel:+34972367994" class="underline">972 36 79 94</a></li>
+      <li class="flex gap-3"><i data-lucide="mail" class="h-5 w-5 text-accent"></i><a href="mailto:info@policliniclloret.com" class="underline">info@policliniclloret.com</a></li>
+      <li class="flex gap-3"><i data-lucide="instagram" class="h-5 w-5 text-accent"></i><a href="https://www.instagram.com/policliniclloret/" class="underline">@policliniclloret</a></li>
+    </ul>
+    <div class="flex flex-wrap gap-4">
+      <a href="tel:+34972367994" class="btn btn-acc">Llamar ahora</a>
+      <a href="https://api.whatsapp.com/send?phone=34972367994&text=Hola%21" class="btn">WhatsApp</a>
+      <button data-open-contact data-prefill="Hola, quisiera hacer una consulta" class="btn">Escribir consulta</button>
     </div>
-    <div class="border-2 border-ink min-h-[380px] md:min-h-full bg-bg" data-reveal>
-      <iframe title="Mapa de Policlinic Lloret" src="https://www.google.com/maps?q=Av.%20Vila%20de%20Blanes%2C%20136%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&amp;output=embed" loading="lazy" class="w-full h-full min-h-[380px]" style="border:0" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+  </div>
+  <div class="md:col-span-7 border border-ink/15 min-h-[22rem]">
+    <iframe title="Ubicación de Policlinic Lloret" src="https://www.google.com/maps?q=Av.%20Vila%20de%20Blanes%2C%20136%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&output=embed" loading="lazy" class="w-full h-full min-h-[22rem]"></iframe>
   </div>
 </section>
 </main>
 
-<footer class="bg-ink text-bg border-t-2 border-ink">
-  <div class="mx-auto max-w-[1400px] px-5 md:px-8 py-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm">
-    <p class="font-display font-bold text-2xl">Policlinic Lloret</p>
-    <p class="text-bg/70">Av. Vila de Blanes, 136, 17310 Lloret de Mar, Girona</p>
-    <p class="text-bg/70">© <span id="year">2026</span> Policlinic Lloret</p>
+<footer class="border-t border-ink/15 py-8 px-4 text-xs text-muted">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-between gap-2">
+    <span>© <span id="yr">2026</span> Policlinic Lloret · Av. Vila de Blanes, 136, 17310 Lloret de Mar, Girona</span>
+    <a href="https://www.instagram.com/policliniclloret/">Instagram</a>
   </div>
 </footer>
 
-<!-- Botones flotantes móvil -->
-<div class="fixed right-3 bottom-3 z-40 flex flex-col gap-2 md:hidden">
-  <a href="tel:+34972367994" aria-label="Llamar al 972 36 79 94" class="w-12 h-12 bg-accent text-white border-2 border-ink flex items-center justify-center"><i data-lucide="phone"></i></a>
-  <a href="https://api.whatsapp.com/send?phone=34972367994&amp;text=Hola%21" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" class="w-12 h-12 bg-bg text-ink border-2 border-ink flex items-center justify-center"><i data-lucide="message-circle"></i></a>
-</div>
-
-<!-- Aviso de cookies compacto -->
-<div id="cookies" class="fixed left-3 bottom-3 z-40 max-w-[calc(100vw-5.5rem)] md:max-w-sm bg-bg border-2 border-ink p-3 text-xs" role="dialog" aria-label="Aviso de cookies">
-  <p>Usamos cookies para mejorar tu experiencia y analizar el tráfico.</p>
-  <div class="flex gap-2 mt-2">
-    <button data-cookie class="border-2 border-ink bg-ink text-bg px-3 py-1 font-semibold">Aceptar</button>
-    <button data-cookie class="border-2 border-ink px-3 py-1 font-semibold">Rechazar</button>
-  </div>
-</div>
-
 <script>
 lucide.createIcons();
-window.addEventListener('load', function () {
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Cookies
-  var ck = document.getElementById('cookies');
-  try { if (localStorage.getItem('pl-ck')) ck.remove(); } catch (e) {}
-  document.querySelectorAll('[data-cookie]').forEach(function (b) {
-    b.addEventListener('click', function () { try { localStorage.setItem('pl-ck', '1'); } catch (e) {} ck.remove(); });
-  });
-
-  // Acordeón XL (una abierta a la vez)
-  var rows = document.querySelectorAll('.acc-row');
-  rows.forEach(function (row) {
-    row.querySelector('.acc-btn').addEventListener('click', function () {
-      var wasOpen = row.classList.contains('open');
-      rows.forEach(function (r) { r.classList.remove('open'); r.querySelector('.acc-btn').setAttribute('aria-expanded', 'false'); });
-      if (!wasOpen) { row.classList.add('open'); row.querySelector('.acc-btn').setAttribute('aria-expanded', 'true'); }
-      if (window.ScrollTrigger) setTimeout(function () { ScrollTrigger.refresh(); }, 560);
-    });
-  });
-
-  // Selector de tratamientos
-  var T = [
-    { n: 'Medicina general', d: 'Duración orientativa: 15–30 min', t: 'Atención médica general cercana, profesional y adaptada a las necesidades de cada paciente.', b: ['Trato cercano y claro', 'Derivación a especialistas del centro', 'Pruebas en el mismo centro'] },
-    { n: 'Dermatología', d: 'Duración orientativa: 15–30 min', t: 'Consulta con el Dr. Néstor Luis, valorado por los pacientes por detectar el problema nada más entrar y acertar con el tratamiento.', b: ['Valoración directa del problema', 'Indicaciones de tratamiento claras', 'Opiniones de pacientes en Google'] },
-    { n: 'Radiodiagnóstico', d: 'Duración orientativa: consulta al pedir cita', t: 'Servicio de radiología con un radiólogo amable y cuidadoso. La salud del paciente es nuestro lema.', b: ['Radiólogo atento y cuidadoso', 'Servicio dentro del centro', 'Resultados en tu app'] },
-    { n: 'Pruebas médicas', d: 'Duración orientativa: según la prueba', t: 'Diferentes pruebas diagnósticas con las últimas tecnologías.', b: ['Tecnología actual', 'Todo bajo un mismo techo', 'Explicación clara del resultado'] },
-    { n: 'Exploración mamaria', d: 'Duración orientativa: consulta al pedir cita', t: 'Campaña para regalarte una exploración mamaria cada año.', b: ['Revisión anual', 'Profesionales del centro', 'Cita fácil por teléfono o WhatsApp'] },
-    { n: 'Carnet de conducir', d: 'Duración orientativa: consulta al pedir cita', t: 'Reconocimiento médico para el carnet de conducir.', b: ['Trámite en un solo centro', 'Cita rápida', 'Te indicamos qué llevar'] }
+document.getElementById('yr').textContent=new Date().getFullYear();
+window.addEventListener('load',function(){
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  // especialidades del hero
+  var notes={
+    'Medicina general':'Atención médica general cercana y adaptada a cada paciente.',
+    'Dermatología':'Consulta con el Dr. Néstor Luis, citado por los pacientes.',
+    'Radiodiagnóstico':'La salud de nuestro paciente es nuestro lema.',
+    'Exploración mamaria':'Campaña para regalarte una exploración mamaria cada año.',
+    'Carnet de conducir':'Reconocimiento médico para el carnet de conducir.',
+    'Mutuas asociadas':'Trabajamos con mutuas: consulta la tuya por teléfono.'
+  };
+  var rows=document.querySelectorAll('#specList .spec-row');
+  rows.forEach(function(r){r.addEventListener('click',function(){
+    rows.forEach(function(x){x.classList.remove('on')});r.classList.add('on');
+    document.getElementById('specNote').textContent=notes[r.firstChild.textContent.trim()]||'';
+  })});
+  // selector de tratamientos
+  var T=[
+    {n:'Medicina general',d:'Atención médica general cercana, profesional y adaptada a las necesidades de cada paciente.',t:'20–30 min',b:'Valoración clínica, explicación clara y derivación a especialista si hace falta.'},
+    {n:'Dermatología',d:'Consulta con el Dr. Néstor Luis, valorado por los pacientes por detectar el problema nada más entrar.',t:'20–30 min',b:'Exploración de la piel, diagnóstico e indicaciones de tratamiento.'},
+    {n:'Radiodiagnóstico',d:'Servicio de radiología con las últimas tecnologías y un radiólogo atento y cuidadoso.',t:'10–20 min',b:'Prueba de imagen en el propio centro.'},
+    {n:'Pruebas médicas',d:'Diferentes pruebas diagnósticas con las últimas tecnologías.',t:'Según prueba',b:'Pruebas diagnósticas sin salir del centro.'},
+    {n:'Exploración mamaria',d:'Campaña para regalarte una exploración mamaria cada año.',t:'20–30 min',b:'Revisión anual preventiva con trato cercano.'},
+    {n:'Carnet de conducir',d:'Reconocimiento médico para el carnet de conducir.',t:'15–30 min',b:'Reconocimiento médico para tu trámite.'}
   ];
-  var list = document.getElementById('tlist');
-  T.forEach(function (x, i) {
-    var li = document.createElement('li');
-    li.className = 'border-b-2 border-ink last:border-b-0';
-    li.innerHTML = '<button role="tab" class="tsel w-full text-left px-5 py-4 flex items-center gap-4 font-display font-bold text-xl hover:bg-bg2" aria-selected="false"><span class="tn text-accent text-sm font-body">0' + (i + 1) + '</span>' + x.n + '</button>';
-    list.appendChild(li);
-    li.firstChild.addEventListener('click', function () { show(i); });
-  });
-  var cur = 0;
-  function show(i) {
-    cur = i; var x = T[i];
-    document.querySelectorAll('.tsel').forEach(function (b, k) { b.classList.toggle('active', k === i); b.setAttribute('aria-selected', k === i); });
-    document.getElementById('ttitle').textContent = x.n;
-    document.getElementById('tdur').textContent = x.d;
-    document.getElementById('tdesc').textContent = x.t;
-    document.getElementById('tben').innerHTML = x.b.map(function (s) { return '<li class="flex items-start gap-2 border-2 border-ink p-3 text-sm"><span class="text-accent font-bold">+</span>' + s + '</li>'; }).join('');
+  var ul=document.getElementById('trList');
+  function show(i){
+    var x=T[i];
+    document.getElementById('trNum').textContent='0'+(i+1);
+    document.getElementById('trTitle').textContent=x.n;
+    document.getElementById('trDesc').textContent=x.d;
+    document.getElementById('trDur').textContent=x.t+' (orientativo)';
+    document.getElementById('trBen').textContent=x.b;
+    document.getElementById('trBtn').setAttribute('data-prefill','Hola, quisiera pedir cita para: '+x.n);
+    ul.querySelectorAll('li').forEach(function(l,j){l.classList.toggle('on',j===i)});
   }
-  document.getElementById('tcta').addEventListener('click', function () {
-    var txt = 'Hola, quiero pedir cita para ' + T[cur].n;
-    if (window.wraContact) window.wraContact(txt); else if (window.wraWhatsApp) window.open(window.wraWhatsApp(txt), '_blank');
+  T.forEach(function(x,i){
+    var li=document.createElement('li');
+    li.className='tr-item px-5 py-4 cursor-pointer flex justify-between font-display text-xl';
+    li.innerHTML='<span>'+x.n+'</span><span class="font-mono text-xs">0'+(i+1)+'</span>';
+    li.addEventListener('click',function(){show(i)});
+    ul.appendChild(li);
   });
   show(0);
-
-  // Fotos flotantes con el ratón
-  if (!reduced && window.matchMedia('(pointer:fine)').matches) {
-    var fl = document.querySelectorAll('[data-float]');
-    window.addEventListener('mousemove', function (e) {
-      var x = e.clientX / innerWidth - .5, y = e.clientY / innerHeight - .5;
-      fl.forEach(function (el) { var m = parseFloat(el.dataset.float); el.style.transform = 'translate3d(' + (x * m) + 'px,' + (y * m) + 'px,0)'; el.style.transition = 'transform .25s ease-out'; });
+  // wipe de fotos y filetes
+  if(!reduce&&window.gsap&&window.ScrollTrigger){
+    document.querySelectorAll('figure.group, [data-parallax-wrap]').forEach(function(el){
+      gsap.fromTo(el,{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:1,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 88%'}});
     });
-  }
-
-  // Pin + scroll horizontal
-  var sec = document.querySelector('[data-hpin]'), track = document.getElementById('htrack'), view = document.getElementById('hview'), bar = document.getElementById('hbar');
-  if (window.gsap && window.ScrollTrigger && !reduced && innerWidth >= 768) {
-    gsap.registerPlugin(ScrollTrigger);
-    view.classList.add('pinned');
-    var dist = function () { return Math.max(0, track.scrollWidth - innerWidth); };
-    gsap.to(track, {
-      x: function () { return -dist(); }, ease: 'none',
-      scrollTrigger: { trigger: sec, start: 'top top', end: function () { return '+=' + dist(); }, pin: true, scrub: 1, invalidateOnRefresh: true,
-        onUpdate: function (s) { bar.style.transform = 'scaleX(' + s.progress + ')'; } }
+    document.querySelectorAll('.rule').forEach(function(el){
+      gsap.fromTo(el,{scaleX:0},{scaleX:1,duration:1,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 92%'}});
     });
-  } else {
-    view.addEventListener('scroll', function () {
-      var m = view.scrollWidth - view.clientWidth; bar.style.transform = 'scaleX(' + (m ? view.scrollLeft / m : 0) + ')';
-    }, { passive: true });
   }
 });
 </script>
-
-
 <!--wra:body--><script>window.__WRA__={"name":"POLICLINIC LLORET","wa":"https://wa.me/34670256353?text=Hola%2C%20acabo%20de%20ver%20la%20propuesta%20de%20dise%C3%B1o%20para%20mi%20web%20POLICLINIC%20LLORET%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s","original":"./original.jpg","id":110,"slug":"policlinic-lloret","phone":"972367994","lang":"es","pk":"BLWCUkRwvbZ4WF6ry+cfQF+SaFP2J3fTyGxCFzgDOLCKSxgORfMrzFS5/pN0IReMjwUOEaP70DNXvbLga1+AyKw=","ntfy":{"alerts":"https://ntfy.sh/autoweb-alerts-7f74a1f4afc54cf8","updates":"https://ntfy.sh/autoweb-updates-7f74a1f4afc54cf8"},"ocss":"\n:host{all:initial}\n*{box-sizing:border-box}\n.trig{font:500 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;background:transparent;color:inherit;border:1px solid currentColor;opacity:.5;border-radius:6px;padding:7px 11px;cursor:pointer}\n.trig:hover{opacity:.9}\n.dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);z-index:2147483646;background:#fff;color:#0f172a;box-shadow:-10px 0 40px rgba(2,8,23,.35);display:flex;flex-direction:column;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;transform:translateX(105%);transition:transform .3s}\n.dr.on{transform:none}\n.hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;background:#0f172a;color:#fff}\n.hd h2{margin:0;font-size:15px;font-weight:650}\n.x{background:transparent;border:0;color:#cbd5e1;font-size:22px;cursor:pointer;line-height:1}\n.bd{flex:1;overflow:auto;padding:18px;display:grid;gap:12px;align-content:start}\nlabel{font-weight:600;font-size:13px;display:block;margin-bottom:5px}\ninput,textarea{width:100%;font:inherit;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;color:#0f172a;background:#fff}\ntextarea{min-height:120px;resize:vertical}\ninput:focus,textarea:focus{outline:2px solid #2563eb;border-color:#2563eb}\n.pin{letter-spacing:.6em;text-align:center;font-size:22px}\n.b{font:600 14px/1 inherit;border:0;border-radius:10px;padding:12px 14px;cursor:pointer;background:#e2e8f0;color:#0f172a}\n.b.p{background:#16a34a;color:#fff}\n.b.on{background:#f59e0b;color:#1c1100}\n.b[disabled]{opacity:.5;cursor:wait}\n.note{font-size:12px;color:#64748b}\n.st{font-size:13px;font-weight:600;min-height:18px}\n.ok{color:#15803d}.er{color:#b91c1c}\n","edit":"https://wa.me/34670256353?text=Hola%2C%20he%20visto%20el%20boceto%20de%20POLICLINIC%20LLORET%20y%20me%20gustar%C3%ADa%20cambiar%20algunas%20fotos%20o%20textos","editText":"🎨 Boceto 100% editable con tus propias fotos, textos y sugerencias","improvements":[{"title":"Cabecera sin llamada a la acción ni teléfono","before":"Sobre el pliegue, en escritorio, solo se ven el logo y un icono de hamburguesa. No hay botón de «Pedir cita», ni teléfono, ni el menú de Especialidades o Pruebas médicas a la vista. Un paciente que llega a la web no sabe cómo contactar. El único elemento de conversión es el pequeño icono de WhatsApp en la esquina.","fix":"El rediseño pone en la cabecera un botón destacado de «Pedir cita» y el teléfono 972 36 79 94 con llamada en un toque, para que cada paciente pueda contactar en segundos."},{"title":"Hero vacío con foto inadecuada","before":"El hero ocupa toda la pantalla con una imagen de stock muy recortada de una mujer en una exploración mamaria. Una sola campaña estacional domina la portada. El titular azul con sombra, «Regálate una exploración mamaria cada año», flota en un gran espacio blanco, sin subtítulo ni botón. No dice qué centro es ni qué ofrece. En móvil la foto ocupa casi toda la pantalla y el titular queda cortado en «Regálate».","fix":"El rediseño presenta Policlinic Lloret con un titular claro sobre su atención médica general y especializada, una fotografía cuidada del centro y de su equipo, y un botón de cita visible desde el primer momento."},{"title":"Móvil tapado por el banner de cookies","before":"En 390x844 el banner de cookies ocupa más de un tercio de la pantalla, con tres botones apilados. Tapa el contenido y el icono de WhatsApp se solapa con el botón «Rechazar todo». Además, el hero no deja ver ninguna información útil. En escritorio el banner también tapa el inicio del texto de «Tu centro médico en Lloret de Mar».","fix":"El rediseño usa un aviso de cookies compacto que no tapa el contenido, y un botón flotante de WhatsApp y de llamada bien colocado, para que el móvil sea cómodo de usar."}],"tool":{"text":"Incluye asistente de triaje y primera cita directo a tu recepción por WhatsApp/Email","button":"Probar Triaje","target":"pedir-cita"},"track":null,"ping":null,"css":"\n:host{all:initial}\n*{box-sizing:border-box}\n.bar{position:fixed;top:0;left:0;right:0;z-index:2147483647;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 14px;background:linear-gradient(90deg,#0b1220,#16233f);color:#e6ecf7;font:500 13px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;box-shadow:0 2px 14px rgba(2,8,23,.35);border-bottom:1px solid rgba(255,255,255,.08)}\n.txt{display:flex;align-items:center;gap:9px;min-width:0}\n.txt span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.txt b{font-weight:650;color:#fff}\n.tag{flex:0 0 auto;max-width:46vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:6px 11px;border-radius:999px;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.4);color:#fde68a;font-size:12px;font-weight:600;text-decoration:none}\na.tag:hover{background:rgba(251,191,36,.24);color:#fff}\n@media (max-width:1560px){.sub{display:none}}\n.sub{color:#9fb0cf}\n.dot{flex:none;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.7);animation:p 2s infinite}\n@keyframes p{70%{box-shadow:0 0 0 7px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}\n.act{display:flex;align-items:center;gap:8px;flex:none}\nbutton,a.cta{font:inherit;cursor:pointer;border-radius:999px;border:0;text-decoration:none;line-height:1}\n.ghost{padding:8px 13px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18);transition:background .15s}\n.ghost:hover{background:rgba(255,255,255,.18)}\n.cta{display:inline-flex;align-items:center;gap:7px;padding:9px 15px;background:#16a34a;color:#fff;font-weight:650;box-shadow:0 2px 10px rgba(22,163,74,.4);transition:transform .15s,background .15s}\n.cta:hover{background:#15803d;transform:translateY(-1px)}\n.cta svg{width:15px;height:15px;fill:currentColor}\n.cta small{font-weight:500;opacity:.9}\n.min{width:28px;height:28px;padding:0;background:transparent;color:#9fb0cf;font-size:18px}\n.min:hover{color:#fff}\n.pill{position:fixed;top:8px;right:10px;z-index:2147483647;padding:8px 13px;background:#0f1b33;color:#fff;border:1px solid rgba(255,255,255,.2);box-shadow:0 2px 10px rgba(2,8,23,.4);font:600 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,sans-serif;display:flex;align-items:center;gap:7px}\n.pill[hidden],.bar[hidden],.ov[hidden]{display:none}\n.ov{position:fixed;left:0;right:0;bottom:0;z-index:2147483646;background:#f4f6fb;color:#0f172a;font:400 15px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;display:flex;flex-direction:column}\n.tabs{display:flex;gap:6px;padding:10px 14px;background:#fff;border-bottom:1px solid #e2e8f0}\n.tab{padding:8px 14px;background:#eef2f9;color:#334155;font-weight:600}\n.tab[aria-selected=true]{background:#0f172a;color:#fff}\n.pane{flex:1;overflow:auto;padding:18px 14px}\n.pane img{display:block;width:100%;max-width:1100px;margin:0 auto;border-radius:10px;box-shadow:0 6px 30px rgba(15,23,42,.18);border:1px solid #dbe2ee}\n.cap{max-width:1100px;margin:10px auto 0;color:#64748b;font-size:13px;text-align:center}\n.list{max-width:820px;margin:0 auto;display:grid;gap:12px;counter-reset:i}\n.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 16px 58px;position:relative;counter-increment:i}\n.card::before{content:counter(i);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:#16a34a;color:#fff;display:grid;place-items:center;font-weight:700}\n.card h3{margin:0 0 4px;font-size:16px}\n.card p{margin:0;color:#475569;font-size:14px}\n.card .b{color:#b45309}\n.card .f{color:#15803d;margin-top:4px}\n.short{display:none}\n@media (max-width:720px){\n  .bar{flex-wrap:wrap;padding:7px 10px;gap:7px}\n  .sub,.long{display:none}\n  .short{display:inline}\n  .txt{flex:1 1 100%}\n  .tag{flex:1 1 100%;white-space:normal;text-align:center;border-radius:10px}\n  .act{flex:1 1 100%;justify-content:space-between}\n  .cta{flex:1;justify-content:center;white-space:nowrap;padding:9px 10px}\n  .ghost{white-space:nowrap;padding:8px 11px}\n  button,a.cta{font-size:12.5px}\n}\n"};</script><script>(function(){
 var C=window.__WRA__;
 if(!C||window.__WRA_LOADED__)return;
