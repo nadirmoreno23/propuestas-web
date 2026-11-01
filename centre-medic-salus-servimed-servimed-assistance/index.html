@@ -4,48 +4,78 @@
 <!--wra:head--><meta name="robots" content="noindex, nofollow"><!--/wra:head-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Centre Mèdic Salus Servimed · Médico en Lloret de Mar</title>
-<meta name="description" content="Centro médico en Lloret de Mar con atención individualizada, traumatología y médicos multilingües. Llama al 972 36 85 61 o pide cita.">
+<title>Centre Mèdic Salus Servimed · Tu médico en Lloret de Mar, en tu idioma</title>
+<meta name="description" content="Centro médico en Lloret de Mar con atención individualizada, traumatología y médicos multilingües. Carrer de Francesc Cambó, 41. Tel. 972 36 85 61.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
   theme: { extend: {
-    colors: { bg:'#FBF5EE', sec:'#F1E3D3', acc:'#B5482A', ink:'#2B1A14', mute:'#796F68', gold:'#A67D26', line:'rgba(43,26,20,.16)' },
-    fontFamily: { display:['Italiana','serif'], body:['Montserrat','sans-serif'] }
+    colors: { bg:'#0E2A2E', bg2:'#16393E', accent:'#7FD1B9', accent2:'#7FC3D1', ink:'#EAF5F1', muted:'#839696', line:'rgba(234,245,241,.16)' },
+    fontFamily: { display:['Fraunces','serif'], body:['"Schibsted Grotesk"','sans-serif'] }
   } }
 }
 </script>
 <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
 <style>
-:root{--bg:#FBF5EE;--sec:#F1E3D3;--acc:#B5482A;--ink:#2B1A14;--mute:#796F68;--gold:#A67D26;--line:rgba(43,26,20,.16)}
-html{-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font-family:'Montserrat',sans-serif;overflow-x:hidden}
-body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.05;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
-.font-display{font-family:'Italiana',serif;font-weight:400}
-.mpanel{display:none}.mpanel.is-open{display:flex}
-.btn-db{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:.9rem 1.5rem;border:1px solid var(--ink);outline:1px solid var(--ink);outline-offset:4px;border-radius:2px;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:transparent;transition:outline-offset .3s ease,background .3s,color .3s;cursor:pointer}
-.btn-db:hover{outline-offset:0}
-.btn-db.pri{background:var(--acc);border-color:var(--acc);outline-color:var(--acc);color:#FBF5EE}
-.btn-db.pri:hover{background:#9a3a20}
-.btn-db.lt{color:#FBF5EE;border-color:#FBF5EE;outline-color:#FBF5EE}
-.btn-db.sm{padding:.6rem 1rem;font-size:.7rem}
-.frame{background:#FFFBF5;padding:.5rem;border:1px solid var(--line);outline:1px solid var(--line);outline-offset:4px}
-.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;padding:10px 10px 14px}
-.track::-webkit-scrollbar{display:none}
-.track.drag{cursor:grabbing;scroll-snap-type:none;user-select:none}
-.track>*{scroll-snap-align:start;flex:none}
-.track img{-webkit-user-drag:none;user-select:none}
-.wra-plus{font-family:'Italiana',serif;font-size:1.8rem;line-height:1;color:var(--acc)}
-.tbtn[aria-selected="true"]{background:var(--ink);color:var(--bg)}
-.tbtn[aria-selected="true"] .n{color:var(--gold)}
-.giant{white-space:nowrap}
-a:focus-visible,button:focus-visible,.track:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+:root{--bg:#0E2A2E;--bg2:#16393E;--accent:#7FD1B9;--accent2:#7FC3D1;--ink:#EAF5F1;--muted:#839696;--line:rgba(234,245,241,.16)}
+html{scroll-behavior:auto}
+body{background:var(--bg);color:var(--ink);font-family:'Schibsted Grotesk',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.font-display{font-family:'Fraunces',serif;font-weight:300;letter-spacing:-.02em}
+*{border-radius:0}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.rule{border-top:1px solid var(--line)}
+/* Buttons: icon swap */
+.btn{display:inline-flex;align-items:center;gap:.75rem;border-radius:.5rem !important;padding:.9rem 1.25rem;font-weight:600;font-size:.95rem;background:var(--accent);color:#0E2A2E;cursor:pointer;border:1px solid var(--accent);white-space:nowrap}
+.btn .t{display:inline-block;transition:transform .3s}
+.btn:hover .t{transform:translateX(4px)}
+.btn .ic{position:relative;display:inline-block;width:1.25rem;height:1.25rem;overflow:hidden;flex:none}
+.btn .ic svg{position:absolute;inset:0;width:100%;height:100%;transition:transform .35s}
+.btn .ic svg:first-child{transform:translateX(0)}
+.btn:hover .ic svg:first-child{transform:translateX(130%)}
+.btn .ic svg:last-child{transform:translateX(-130%)}
+.btn:hover .ic svg:last-child{transform:translateX(0)}
+.btn-light{background:var(--ink);border-color:var(--ink)}
+.btn-alt{background:var(--bg2);color:var(--ink);border-color:var(--line)}
+.btn-sm{padding:.65rem 1rem;font-size:.875rem}
+/* Letter split */
+.lw{display:inline-block;white-space:nowrap}
+.lo{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
+.li{display:inline-block}
+/* Menu */
+[data-menu]{display:none}
+[data-menu].is-open{display:flex}
+/* Accordion XL */
+.acc-panel{display:grid;grid-template-rows:0fr;visibility:hidden;transition:grid-template-rows .6s cubic-bezier(.6,0,.2,1),visibility 0s .6s}
+.acc-q[aria-expanded="true"]+.acc-panel{grid-template-rows:1fr;visibility:visible;transition:grid-template-rows .6s cubic-bezier(.6,0,.2,1),visibility 0s 0s}
+.acc-panel>div{min-height:0;overflow:hidden}
+.acc-q .acc-plus{transition:transform .4s}
+.acc-q[aria-expanded="true"] .acc-plus{transform:rotate(45deg)}
+.acc-q:hover .acc-name{color:var(--accent)}
+.acc-name{transition:color .3s}
+/* Gallery */
+.g-track{display:flex;align-items:center;gap:2rem;padding:0 1.5rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.g-track::-webkit-scrollbar{display:none}
+.g-track>*{scroll-snap-align:center}
+@media(min-width:768px){.g-track{overflow:visible;width:max-content;height:100vh;padding:0 4vw;gap:3rem;scroll-snap-type:none}}
+.photo{filter:brightness(.88) contrast(1.08)}
+/* Carousel */
+.car{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.car::-webkit-scrollbar{display:none}
+.car>article{flex:0 0 100%;scroll-snap-align:start}
+/* Selector */
+.sel-b[aria-selected="true"]{background:var(--bg);color:var(--accent)}
+.sel-b[aria-selected="true"] .sel-n{color:var(--accent)}
+/* FAQ */
+.wra-plus{color:var(--accent);font-family:'Fraunces',serif;font-size:1.75rem;line-height:1}
+[data-faq-q]{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;text-align:left;padding:1.5rem 0;font-family:'Fraunces',serif;font-size:clamp(1.25rem,2.4vw,1.9rem);font-weight:300}
+[data-faq-a]>div{padding-bottom:1.5rem;color:var(--muted);max-width:60ch;line-height:1.7}
+[data-faq-item]{border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){*{transition:none !important;animation:none !important}}
 </style>
-<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(251,245,238,.86);--wra-bg:#FBF5EE;--wra-accent:#B5482A;--wra-on-accent:#ffffff;--wra-surface:#F1E3D3;--wra-fg:#2B1A14;--wra-muted:#796F68;--wra-line:rgba(43,26,20,.16);--wra-display:'Italiana', serif;--wra-body:'Montserrat', sans-serif}
+<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(14,42,46,.86);--wra-bg:#0E2A2E;--wra-accent:#7FD1B9;--wra-on-accent:#0b0b0b;--wra-surface:#16393E;--wra-fg:#EAF5F1;--wra-muted:#839696;--wra-line:rgba(234,245,241,.16);--wra-display:'Fraunces', serif;--wra-body:'Schibsted Grotesk', sans-serif}
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
 .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
@@ -249,472 +279,453 @@ html.wrab-lock{overflow:hidden}
 .wrab-tip{margin:.7rem 0 0;font-size:.82rem;color:var(--wra-muted,#666)}
 </style><!--/kit:head-->
 </head>
-<body data-layout-motion="MOTION_VELOCITY_MARQUEE" data-layout-blueprint="BP_03_EDITORIAL_SIDEBAR" class="font-body antialiased">
+<body data-layout-motion="MOTION_SPLIT_LETTERS" data-layout-blueprint="AR_03_LUXURY_EDITORIAL" class="bg-bg text-ink font-body">
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="g" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="gicon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></symbol></svg>
 
-<!-- SIDEBAR escritorio -->
-<aside data-nav data-layout-nav="NAV_SIDEBAR_DESKTOP" class="hidden lg:flex fixed inset-y-0 left-0 z-50 w-60 flex-col justify-between border-r border-line bg-bg/90 backdrop-blur-md px-6 py-8">
-  <div>
-    <a href="#inicio" class="block" aria-label="Centre Mèdic Salus Servimed, ir al inicio">
-      <img src="./assets/logo.png" alt="Logo de Centre Mèdic Salus Servimed" class="h-12 w-auto mb-4">
-      <span class="font-display text-2xl leading-none block">Centre Mèdic<br>Salus Servimed</span>
+<!-- HEADER -->
+<header data-nav data-layout-nav="NAV_SPLIT_CENTER_LOGO" class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-bg/70 border-b border-line transition-all">
+  <div class="mx-auto max-w-[1600px] px-4 md:px-10 py-4 md:py-5 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+    <div class="flex items-center">
+      <button data-burger aria-label="Abrir menú" class="lg:hidden h-11 w-11 flex items-center justify-center border border-line"><i data-lucide="menu" class="h-5 w-5"></i></button>
+      <nav class="hidden lg:flex items-center gap-7 text-sm" aria-label="Principal">
+        <a href="#especialidades" class="hover:text-accent transition-colors">Especialidades</a>
+        <a href="#tratamientos" class="hover:text-accent transition-colors">Tratamientos</a>
+        <a href="#opiniones" class="hover:text-accent transition-colors">Opiniones</a>
+        <a href="#pedir-cita" class="hover:text-accent transition-colors">Cita</a>
+      </nav>
+    </div>
+    <a href="#inicio" class="flex items-center gap-3 justify-center" aria-label="Centre Mèdic Salus Servimed, inicio">
+      <span class="bg-ink p-1 flex"><img src="./assets/logo.png" alt="Logo de Centre Mèdic Salus Servimed" class="h-8 md:h-10 w-auto"></span>
+      <span class="hidden sm:block font-display text-xl md:text-3xl leading-none">Salus <span class="text-muted">Servimed</span></span>
     </a>
-    <nav class="mt-10 border-t border-line" aria-label="Principal">
-      <ul class="text-[.8rem] font-medium tracking-wide">
-        <li><a class="flex gap-3 py-3 border-b border-line hover:text-acc" href="#servicios"><span class="text-gold">01</span>Especialidades</a></li>
-        <li><a class="flex gap-3 py-3 border-b border-line hover:text-acc" href="#tratamientos"><span class="text-gold">02</span>Tratamientos</a></li>
-        <li><a class="flex gap-3 py-3 border-b border-line hover:text-acc" href="#opiniones"><span class="text-gold">03</span>Opiniones</a></li>
-        <li><a class="flex gap-3 py-3 border-b border-line hover:text-acc" href="#centro"><span class="text-gold">04</span>El centro</a></li>
-        <li><a class="flex gap-3 py-3 border-b border-line hover:text-acc" href="#faq"><span class="text-gold">05</span>Preguntas</a></li>
-        <li><a class="flex gap-3 py-3 border-b border-line hover:text-acc" href="#contacto"><span class="text-gold">06</span>Contacto</a></li>
-        <li><a class="flex gap-3 py-3 border-b border-line text-acc" href="#pedir-cita"><span class="text-gold">07</span>Pedir cita</a></li>
-      </ul>
-    </nav>
+    <div class="flex items-center justify-end gap-3">
+      <button data-open-tool data-magnetic class="btn btn-sm hidden lg:inline-flex"><span class="t">Pedir cita</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="calendar-check"></i></span></button>
+      <a href="tel:972368561" class="btn btn-sm btn-alt hidden md:inline-flex"><span class="t">Llamar</span><span class="ic"><i data-lucide="phone"></i><i data-lucide="phone-call"></i></span></a>
+      <a href="tel:972368561" aria-label="Llamar al 972 36 85 61" class="md:hidden h-11 w-11 flex items-center justify-center bg-accent text-bg rounded-lg"><i data-lucide="phone" class="h-5 w-5"></i></a>
+    </div>
   </div>
-  <div class="space-y-4">
-    <a href="tel:972368561" class="flex items-center gap-2 text-sm font-semibold"><i data-lucide="phone" class="h-4 w-4 text-acc"></i>972 36 85 61</a>
-    <button type="button" data-open-tool class="btn-db pri w-full">Pedir cita</button>
-  </div>
-</aside>
-
-<!-- Barra móvil -->
-<header class="lg:hidden fixed top-0 inset-x-0 z-50 bg-bg/90 backdrop-blur-md border-b border-line">
-  <div class="flex items-center justify-between px-4 py-3">
-    <a href="#inicio" class="flex items-center gap-3" aria-label="Centre Mèdic Salus Servimed">
-      <img src="./assets/logo.png" alt="Logo de Centre Mèdic Salus Servimed" class="h-9 w-auto">
-      <span class="font-display text-lg leading-none">Salus Servimed</span>
-    </a>
-    <button type="button" data-burger aria-label="Abrir menú" class="p-2 border border-line rounded-sm"><i data-lucide="menu" class="h-5 w-5"></i></button>
+  <div data-menu class="lg:hidden flex-col gap-1 px-6 pb-8 pt-4 bg-bg border-t border-line text-2xl font-display">
+    <a href="#especialidades" class="py-3 border-b border-line">Especialidades</a>
+    <a href="#tratamientos" class="py-3 border-b border-line">Tratamientos</a>
+    <a href="#opiniones" class="py-3 border-b border-line">Opiniones</a>
+    <a href="#pedir-cita" class="py-3 border-b border-line">Cita</a>
+    <a href="#contacto" class="py-3 border-b border-line">Contacto</a>
+    <button data-open-tool class="btn mt-6 justify-center font-body"><span class="t">Pedir cita</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="calendar-check"></i></span></button>
   </div>
 </header>
-<div data-menu class="mpanel fixed inset-0 z-40 flex-col justify-center gap-5 bg-bg px-8 pt-16 lg:hidden">
-  <a class="font-display text-4xl" href="#servicios">Especialidades</a>
-  <a class="font-display text-4xl" href="#tratamientos">Tratamientos</a>
-  <a class="font-display text-4xl" href="#opiniones">Opiniones</a>
-  <a class="font-display text-4xl" href="#centro">El centro</a>
-  <a class="font-display text-4xl" href="#faq">Preguntas</a>
-  <a class="font-display text-4xl" href="#contacto">Contacto</a>
-  <a class="font-display text-4xl text-acc" href="#pedir-cita">Pedir cita</a>
-  <div class="flex flex-col gap-4 pt-4">
-    <button type="button" data-open-tool class="btn-db pri">Pedir cita</button>
-    <a href="tel:972368561" class="btn-db">Llamar al 972 36 85 61</a>
+
+<main id="inicio">
+<!-- HERO -->
+<section data-hero data-layout-hero="HERO_CINEMATIC_BOTTOM_LEFT" class="relative min-h-[100svh] flex items-end overflow-hidden">
+  <div data-parallax-wrap class="absolute inset-0 h-full overflow-hidden">
+    <img data-parallax src="./assets/photo-1.jpg" alt="Entrada exterior del centro médico con el rótulo Centre Medic Salus Servimed" width="1280" height="960" class="photo h-full w-full object-cover">
   </div>
-</div>
-
-<main id="inicio" class="lg:pl-60 pt-14 lg:pt-0">
-
-<!-- 1 HERO -->
-<section data-hero data-layout-hero="HERO_EDITORIAL_MAGAZINE" data-bg="#FBF5EE" class="px-5 sm:px-8 lg:px-10 pt-10 lg:pt-12 pb-16">
-  <div class="flex flex-wrap items-center justify-between gap-2 border-y border-line py-3 text-[.68rem] font-medium uppercase tracking-[.18em] text-mute" data-hero-item>
-    <span>Nº 01 · Lloret de Mar · 2026</span>
-    <a href="tel:972368561" class="text-ink hover:text-acc">Tel. 972 36 85 61</a>
-    <span><span class="text-gold">★</span> 4,6 en Google · 44 reseñas</span>
-    <span class="hidden md:inline">Carrer de Francesc Cambó, 41</span>
-  </div>
-
-  <h1 data-split class="font-display text-[15vw] sm:text-[13vw] lg:text-[11vw] leading-[.88] tracking-tight mt-8 lg:mt-10">Tu médico en Lloret, en tu idioma</h1>
-
-  <div class="mt-10 grid gap-8 lg:grid-cols-12 items-end">
-    <p data-hero-item class="lg:col-span-6 text-base sm:text-lg leading-relaxed text-ink/85 max-w-xl">Centro médico en Lloret de Mar con atención individualizada, traumatología y un equipo que habla todos los idiomas. Recepción inmediata y trato cercano para ti y tu familia.</p>
-    <div data-hero-item class="lg:col-span-6 flex flex-wrap gap-x-8 gap-y-6 lg:justify-end p-1">
-      <button type="button" data-open-tool data-magnetic data-layout-btn="BTN_DOUBLE_BORDER" class="btn-db pri">Pedir cita <i data-lucide="arrow-right" class="h-4 w-4"></i></button>
-      <a href="tel:972368561" data-magnetic class="btn-db"><i data-lucide="phone" class="h-4 w-4"></i>Llamar ahora</a>
-    </div>
-  </div>
-
-  <div data-hero-item class="mt-14">
-    <div class="flex items-end justify-between mb-3">
-      <p class="text-[.68rem] uppercase tracking-[.2em] text-mute">El centro · desliza →</p>
-      <div class="flex gap-2">
-        <button type="button" class="btn-db sm" data-prev="hg" aria-label="Foto anterior"><i data-lucide="chevron-left" class="h-4 w-4"></i></button>
-        <button type="button" class="btn-db sm" data-next="hg" aria-label="Foto siguiente"><i data-lucide="chevron-right" class="h-4 w-4"></i></button>
+  <div class="absolute inset-0 bg-gradient-to-t from-bg via-bg/50 to-bg/10"></div>
+  <div class="absolute inset-0 bg-gradient-to-r from-bg/70 via-transparent to-transparent"></div>
+  <div class="relative w-full mx-auto max-w-[1600px] px-6 md:px-10 pb-12 md:pb-16 pt-40">
+    <p data-hero-item class="text-xs md:text-sm uppercase tracking-[.25em] text-accent mb-6 flex items-center gap-4"><span class="inline-block h-px w-12 bg-accent"></span>Centro médico · Lloret de Mar</p>
+    <h1 data-split class="split-l font-display font-light leading-[.95] max-w-[15ch] md:max-w-[16ch]" style="font-size:clamp(2.9rem,9.5vw,9rem)">Tu médico en Lloret, en tu idioma</h1>
+    <div class="mt-10 grid md:grid-cols-12 gap-8 items-end">
+      <p data-hero-item class="md:col-span-6 lg:col-span-5 text-base md:text-lg text-ink/85 leading-relaxed">Centro médico en Lloret de Mar con atención individualizada, traumatología y un equipo que habla todos los idiomas. Recepción inmediata y trato cercano para ti y tu familia.</p>
+      <div data-hero-item class="md:col-span-6 lg:col-span-7 flex flex-wrap gap-3 md:justify-end">
+        <button data-open-tool data-magnetic data-layout-btn="BTN_ICON_SWAP" class="btn"><span class="t">Pedir cita</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="calendar-check"></i></span></button>
+        <a href="tel:972368561" data-magnetic class="btn btn-light"><span class="t">Llamar ahora · 972 36 85 61</span><span class="ic"><i data-lucide="phone"></i><i data-lucide="phone-call"></i></span></a>
       </div>
-    </div>
-    <div id="hg" class="track gap-6" data-lenis-prevent tabindex="0" aria-label="Galería del centro">
-      <figure class="w-[82vw] sm:w-[34rem]">
-        <div class="frame"><img src="./assets/photo-1.jpg" alt="Entrada exterior con rótulo Centre Medic Salus Servimed" width="1280" height="960" class="w-full h-72 sm:h-[24rem] object-cover"></div>
-        <figcaption class="mt-4 text-xs uppercase tracking-[.14em] text-mute"><span class="text-gold">01</span> · Entrada exterior del Centre Mèdic Salus Servimed</figcaption>
-      </figure>
-      <figure class="w-[60vw] sm:w-[20rem]">
-        <div class="frame"><img src="./assets/photo-4.jpg" alt="Recepción y pasillo con sillas y mostrador" width="900" height="1600" class="w-full h-72 sm:h-[24rem] object-cover"></div>
-        <figcaption class="mt-4 text-xs uppercase tracking-[.14em] text-mute"><span class="text-gold">02</span> · Recepción y pasillo con sillas y mostrador</figcaption>
-      </figure>
-      <figure class="w-[70vw] sm:w-[24rem]">
-        <div class="frame"><img src="./assets/photo-3.jpg" alt="Cartel con logo, teléfono y texto Doctor Arzt" width="1327" height="1400" class="w-full h-72 sm:h-[24rem] object-cover"></div>
-        <figcaption class="mt-4 text-xs uppercase tracking-[.14em] text-mute"><span class="text-gold">03</span> · Cartel con logo, teléfono y texto «Doctor Arzt»</figcaption>
-      </figure>
-      <figure class="w-[82vw] sm:w-[32rem]">
-        <div class="frame"><img src="./assets/photo-2.jpg" alt="Mapa de Lloret de Mar con la ubicación del centro" width="1146" height="809" class="w-full h-72 sm:h-[24rem] object-cover"></div>
-        <figcaption class="mt-4 text-xs uppercase tracking-[.14em] text-mute"><span class="text-gold">04</span> · Mapa de Lloret de Mar con la ubicación del centro</figcaption>
-      </figure>
     </div>
   </div>
 </section>
 
-<!-- 2 MARQUESINA -->
-<div data-skew class="border-y border-ink bg-ink text-bg overflow-hidden py-5" aria-label="Especialidades del centro">
+<!-- FRANJA DE DATOS -->
+<section class="bg-bg2 border-y border-line">
+  <div class="mx-auto max-w-[1600px] grid grid-cols-2 lg:grid-cols-4 [&>*]:border-line [&>*]:p-6 md:[&>*]:p-8 divide-x divide-line">
+    <div data-reveal><p class="text-xs uppercase tracking-widest text-muted">Valoración en Google</p><p class="font-display text-4xl md:text-5xl mt-2"><span class="text-accent">4,6</span> ★</p></div>
+    <div data-reveal><p class="text-xs uppercase tracking-widest text-muted">Opiniones verificadas</p><p class="font-display text-4xl md:text-5xl mt-2 text-accent"><span data-count="44" data-suffix=" reseñas">44 reseñas</span></p></div>
+    <div data-reveal class="border-t border-line lg:border-t-0"><p class="text-xs uppercase tracking-widest text-muted">Dónde</p><p class="font-display text-2xl md:text-3xl mt-2 leading-tight">Carrer de Francesc Cambó, 41</p></div>
+    <div data-reveal class="border-t border-line lg:border-t-0"><p class="text-xs uppercase tracking-widest text-muted">Idiomas</p><p class="font-display text-2xl md:text-3xl mt-2 leading-tight">Médicos multilingües</p></div>
+  </div>
+</section>
+
+<!-- MARQUESINA -->
+<section class="bg-bg py-8 overflow-hidden border-b border-line" aria-label="Especialidades">
   <div data-marquee>
-    <div class="flex gap-12 pr-12 font-display text-3xl sm:text-5xl whitespace-nowrap">
-      <span>Traumatología</span><span class="text-gold">✦</span>
-      <span>Asistencia sanitaria individualizada</span><span class="text-gold">✦</span>
-      <span>Asesoramiento médico</span><span class="text-gold">✦</span>
-      <span>Médicos multilingües</span><span class="text-gold">✦</span>
-      <span>Atención a familias</span><span class="text-gold">✦</span>
-    </div>
-  </div>
-</div>
-
-<!-- 3 CIFRAS -->
-<section data-bg="#F1E3D3" class="px-5 sm:px-8 lg:px-10 py-20 lg:py-28">
-  <div class="grid lg:grid-cols-12 gap-10 items-start">
-    <h2 data-split class="lg:col-span-5 font-display text-5xl sm:text-6xl leading-[.95]">Lo que dicen de nosotros quienes ya han pasado por recepción</h2>
-    <div class="lg:col-span-7 grid sm:grid-cols-3 border border-line bg-bg/60" data-reveal-group>
-      <div class="p-6 border-b sm:border-b-0 sm:border-r border-line">
-        <p class="font-display text-7xl text-acc leading-none">4,6</p>
-        <p class="mt-3 text-xs uppercase tracking-[.16em] text-mute">★ Nota media en Google Maps</p>
-      </div>
-      <div class="p-6 border-b sm:border-b-0 sm:border-r border-line">
-        <p class="font-display text-7xl text-acc leading-none"><span data-count="44">44</span></p>
-        <p class="mt-3 text-xs uppercase tracking-[.16em] text-mute">Reseñas de pacientes en Google</p>
-      </div>
-      <div class="p-6">
-        <p class="font-display text-7xl text-acc leading-none"><span data-count="5">5</span></p>
-        <p class="mt-3 text-xs uppercase tracking-[.16em] text-mute">Áreas de atención en el centro</p>
-      </div>
+    <div class="flex gap-10 items-center font-display text-4xl md:text-6xl whitespace-nowrap">
+      <span>Traumatología</span><span class="inline-block h-2 w-2 bg-accent"></span>
+      <span>Asistencia sanitaria individualizada</span><span class="inline-block h-2 w-2 bg-accent"></span>
+      <span>Asesoramiento médico</span><span class="inline-block h-2 w-2 bg-accent"></span>
+      <span>Médicos multilingües</span><span class="inline-block h-2 w-2 bg-accent"></span>
+      <span>Atención a familias</span><span class="inline-block h-2 w-2 bg-accent"></span>
     </div>
   </div>
 </section>
 
-<!-- 4 SERVICIOS · DRAG SLIDER -->
-<section id="servicios" data-layout-menu="MENU_DRAG_SLIDER" data-bg="#FBF5EE" class="py-20 lg:py-28 px-5 sm:px-8 lg:px-10">
-  <div class="flex flex-wrap items-end justify-between gap-6 mb-8">
-    <div>
-      <p class="text-[.68rem] uppercase tracking-[.2em] text-gold mb-3">Especialidades · Nº 02</p>
-      <h2 data-split class="font-display text-5xl sm:text-7xl leading-[.9] max-w-3xl">Traumatología, atención individualizada y médicos multilingües</h2>
+<!-- GALERÍA HORIZONTAL CINE -->
+<section id="centro" data-gallery class="relative bg-bg overflow-hidden md:h-screen py-16 md:py-0" aria-label="Galería del centro">
+  <div class="g-track">
+    <div class="shrink-0 min-w-[82vw] md:min-w-[36vw] md:max-w-[36vw] pr-4">
+      <p class="text-xs uppercase tracking-[.25em] text-accent mb-5">Galería · 4 imágenes</p>
+      <h2 class="split-l text-[clamp(2.5rem,6vw,5.5rem)] leading-[.98]">Un centro de barrio, a un paso de la Costa Brava</h2>
+      <p class="mt-6 text-muted max-w-sm leading-relaxed">Del rótulo en la puerta a la recepción: así es el sitio donde te escuchamos con calma. Desliza para recorrerlo.</p>
+      <p class="mt-8 hidden md:flex items-center gap-3 text-sm text-accent"><i data-lucide="arrow-right" class="h-4 w-4"></i> Sigue haciendo scroll</p>
     </div>
-    <div class="flex items-center gap-4 p-1">
-      <span id="sc" class="font-display text-2xl tracking-widest" aria-live="polite">01 / 06</span>
-      <button type="button" class="btn-db sm" data-prev="sl" aria-label="Anterior"><i data-lucide="chevron-left" class="h-4 w-4"></i></button>
-      <button type="button" class="btn-db sm" data-next="sl" aria-label="Siguiente"><i data-lucide="chevron-right" class="h-4 w-4"></i></button>
-    </div>
-  </div>
-  <div id="sl" class="track gap-6" data-lenis-prevent tabindex="0" aria-label="Carrusel de especialidades, usa las flechas del teclado">
-    <article class="w-[20rem] sm:w-[22rem] h-[30rem] flex flex-col frame">
-      <img src="./assets/photo-4.jpg" alt="Recepción y pasillo con sillas y mostrador" loading="lazy" class="h-48 w-full object-cover">
-      <div class="p-4 flex flex-col flex-1">
-        <p class="text-xs text-gold font-semibold tracking-widest">01</p>
-        <h3 class="font-display text-3xl leading-none mt-1">Traumatología</h3>
-        <p class="text-sm leading-relaxed mt-3 text-ink/85">Un traumatólogo que resolvió una lesión de muñeca con éxito; los pacientes valoran su atención por encima de la de un hospital.</p>
-        <p class="mt-auto pt-3 border-t border-line text-[.7rem] uppercase tracking-[.14em] text-mute">Precio: bajo consulta</p>
-      </div>
-    </article>
-    <article class="w-[20rem] sm:w-[22rem] h-[30rem] flex flex-col frame">
-      <img src="./assets/photo-1.jpg" alt="Entrada exterior con rótulo Centre Medic Salus Servimed" loading="lazy" class="h-48 w-full object-cover">
-      <div class="p-4 flex flex-col flex-1">
-        <p class="text-xs text-gold font-semibold tracking-widest">02</p>
-        <h3 class="font-display text-3xl leading-none mt-1">Asistencia sanitaria individualizada</h3>
-        <p class="text-sm leading-relaxed mt-3 text-ink/85">Tratamiento a medida de cada paciente, tras escuchar con calma sus necesidades.</p>
-        <p class="mt-auto pt-3 border-t border-line text-[.7rem] uppercase tracking-[.14em] text-mute">Precio: bajo consulta</p>
-      </div>
-    </article>
-    <article class="w-[20rem] sm:w-[22rem] h-[30rem] flex flex-col frame">
-      <img src="./assets/photo-2.jpg" alt="Mapa de Lloret de Mar con la ubicación del centro" loading="lazy" class="h-48 w-full object-cover">
-      <div class="p-4 flex flex-col flex-1">
-        <p class="text-xs text-gold font-semibold tracking-widest">03</p>
-        <h3 class="font-display text-3xl leading-none mt-1">Asesoramiento médico</h3>
-        <p class="text-sm leading-relaxed mt-3 text-ink/85">Orientación para ti o para cualquier ser querido que necesite consejo o asistencia sanitaria.</p>
-        <p class="mt-auto pt-3 border-t border-line text-[.7rem] uppercase tracking-[.14em] text-mute">Precio: bajo consulta</p>
-      </div>
-    </article>
-    <article class="w-[20rem] sm:w-[22rem] h-[30rem] flex flex-col frame">
-      <img src="./assets/photo-3.jpg" alt="Cartel con logo, teléfono y texto Doctor Arzt" loading="lazy" class="h-48 w-full object-cover">
-      <div class="p-4 flex flex-col flex-1">
-        <p class="text-xs text-gold font-semibold tracking-widest">04</p>
-        <h3 class="font-display text-3xl leading-none mt-1">Médicos multilingües</h3>
-        <p class="text-sm leading-relaxed mt-3 text-ink/85">Doctores que hablan todos los idiomas, ideal para residentes y visitantes de la Costa Brava.</p>
-        <p class="mt-auto pt-3 border-t border-line text-[.7rem] uppercase tracking-[.14em] text-mute">Precio: bajo consulta</p>
-      </div>
-    </article>
-    <article class="w-[20rem] sm:w-[22rem] h-[30rem] flex flex-col frame">
-      <img src="./assets/photo-4.jpg" alt="Recepción y pasillo con sillas y mostrador" loading="lazy" class="h-48 w-full object-cover object-top">
-      <div class="p-4 flex flex-col flex-1">
-        <p class="text-xs text-gold font-semibold tracking-widest">05</p>
-        <h3 class="font-display text-3xl leading-none mt-1">Atención a familias</h3>
-        <p class="text-sm leading-relaxed mt-3 text-ink/85">Nuestra meta es maximizar la salud, la independencia y la comodidad de nuestros pacientes y sus familias.</p>
-        <p class="mt-auto pt-3 border-t border-line text-[.7rem] uppercase tracking-[.14em] text-mute">Precio: bajo consulta</p>
-      </div>
-    </article>
-    <article class="w-[20rem] sm:w-[22rem] h-[30rem] flex flex-col frame">
-      <img src="./assets/photo-1.jpg" alt="Entrada exterior con rótulo Centre Medic Salus Servimed" loading="lazy" class="h-48 w-full object-cover object-right">
-      <div class="p-4 flex flex-col flex-1">
-        <p class="text-xs text-gold font-semibold tracking-widest">06</p>
-        <h3 class="font-display text-3xl leading-none mt-1">Servimed Assistance</h3>
-        <p class="text-sm leading-relaxed mt-3 text-ink/85">Servicio de asistencia asociado al centro, presente en su nombre comercial. Pregúntanos por teléfono cómo funciona.</p>
-        <p class="mt-auto pt-3 border-t border-line text-[.7rem] uppercase tracking-[.14em] text-mute">Precio: bajo consulta</p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- 5 TITULAR GIGANTE -->
-<div class="overflow-hidden border-y border-line py-6 bg-sec" aria-hidden="true">
-  <div data-skew class="giant font-display text-[22vw] lg:text-[14vw] leading-[.9] text-ink/90" id="giant">Traumatología · Médicos multilingües · Traumatología · Médicos multilingües ·</div>
-</div>
-
-<!-- 6 TRATAMIENTOS + LÍNEA DE TIEMPO -->
-<section id="tratamientos" data-bg="#F1E3D3" class="px-5 sm:px-8 lg:px-10 py-20 lg:py-28">
-  <p class="text-[.68rem] uppercase tracking-[.2em] text-gold mb-3">Tratamientos · Nº 03</p>
-  <h2 data-split class="font-display text-5xl sm:text-7xl leading-[.9] mb-12 max-w-4xl">Asistencia sanitaria individualizada, paso a paso</h2>
-
-  <div class="grid lg:grid-cols-12 border border-ink bg-bg">
-    <div role="tablist" aria-label="Tratamientos" class="lg:col-span-5 border-b lg:border-b-0 lg:border-r border-ink" id="tlist"></div>
-    <div class="lg:col-span-7 p-6 sm:p-10 min-h-[26rem]" id="tpanel" role="tabpanel" aria-live="polite"></div>
-  </div>
-
-  <div class="mt-16">
-    <p class="text-[.68rem] uppercase tracking-[.2em] text-mute mb-6">Cómo es el proceso</p>
-    <ol class="grid sm:grid-cols-2 lg:grid-cols-4 border-t border-l border-line" data-reveal-group>
-      <li class="p-6 border-r border-b border-line"><span class="inline-flex h-9 w-9 items-center justify-center bg-acc text-bg text-sm font-semibold rounded-sm">1</span><h3 class="font-display text-3xl mt-4">Primera visita</h3><p class="text-sm mt-2 text-ink/80">Te recibimos en recepción y te escuchamos con calma: qué te pasa y qué necesitas.</p></li>
-      <li class="p-6 border-r border-b border-line"><span class="inline-flex h-9 w-9 items-center justify-center bg-acc text-bg text-sm font-semibold rounded-sm">2</span><h3 class="font-display text-3xl mt-4">Diagnóstico</h3><p class="text-sm mt-2 text-ink/80">El médico valora tu caso y te lo explica sin tecnicismos, en tu idioma.</p></li>
-      <li class="p-6 border-r border-b border-line"><span class="inline-flex h-9 w-9 items-center justify-center bg-acc text-bg text-sm font-semibold rounded-sm">3</span><h3 class="font-display text-3xl mt-4">Plan</h3><p class="text-sm mt-2 text-ink/80">Un tratamiento individualizado, el que mejor se adapta a ti y a tu familia.</p></li>
-      <li class="p-6 border-r border-b border-line"><span class="inline-flex h-9 w-9 items-center justify-center bg-acc text-bg text-sm font-semibold rounded-sm">4</span><h3 class="font-display text-3xl mt-4">Seguimiento</h3><p class="text-sm mt-2 text-ink/80">Seguimos pendientes de tu evolución. Si dudas, nos llamas.</p></li>
-    </ol>
-    <p class="mt-4 text-xs text-mute">Las duraciones indicadas en cada tratamiento son orientativas y pueden variar según cada caso.</p>
-  </div>
-</section>
-
-<!-- 7 FAVORITO + OPINIONES GOOGLE -->
-<section id="opiniones" data-bg="#FBF5EE" class="px-5 sm:px-8 lg:px-10 py-20 lg:py-28">
-  <div class="grid lg:grid-cols-12 gap-10">
-    <div class="lg:col-span-4">
-      <p class="text-[.68rem] uppercase tracking-[.2em] text-gold mb-3">Opiniones verificadas de Google · Nº 04</p>
-      <h2 data-split class="font-display text-5xl sm:text-6xl leading-[.92]">Opiniones verificadas de Google</h2>
-      <div class="mt-8 flex items-center gap-4 border border-line p-4 bg-sec/60">
-        <svg class="h-8 w-8" viewBox="0 0 48 48" aria-hidden="true"><use href="#g"/></svg>
-        <div><p class="font-display text-4xl leading-none">4,6 <span class="text-gold">★</span></p><p class="text-xs uppercase tracking-[.14em] text-mute mt-1">en Google Maps · 44 reseñas</p></div>
-      </div>
-      <div class="mt-8 border border-acc p-5 outline outline-1 outline-acc outline-offset-4" data-reveal>
-        <p class="text-[.68rem] uppercase tracking-[.2em] text-acc font-semibold">El favorito de nuestros clientes</p>
-        <p class="font-display text-3xl leading-tight mt-2">Profesionalidad y trato cercano del equipo médico</p>
-        <p class="text-xs text-mute mt-2">3 de 3 reseñas destacadas elogian la atención del personal.</p>
-      </div>
-    </div>
-    <div class="lg:col-span-8 grid gap-6 md:grid-cols-2 auto-rows-auto" data-reveal-group>
-      <blockquote class="md:col-span-2 border border-line bg-sec/60 p-6 sm:p-8">
-        <div class="flex items-center justify-between"><span class="text-gold tracking-widest" aria-label="5 estrellas">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><use href="#g"/></svg></div>
-        <p class="font-display text-3xl sm:text-4xl leading-tight mt-4">«El mejor centro medico de la Costa Brava y Maresme. Profesionalidad absoluta y con el plus de disponer de doctores que hablan todos los idiomas.»</p>
-        <footer class="mt-5 text-sm"><strong>Monica Barrabes</strong> <span class="text-mute">· Hace 2 años</span></footer>
-      </blockquote>
-      <blockquote class="border border-line bg-bg p-6">
-        <div class="flex items-center justify-between"><span class="text-gold tracking-widest" aria-label="5 estrellas">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><use href="#g"/></svg></div>
-        <p class="mt-4 text-[.95rem] leading-relaxed">«Fui con mi hijo en el Centro Médico por un problema de muñeca, el traumatólogo que nos atendió le arreglo perfectamente. Fuimos atendidos excepcionalmente. Agradecidos Traumatólogo fenomenal, mejor que en un Hospital»</p>
-        <footer class="mt-5 text-sm"><strong>Joaquim Teira</strong> <span class="text-mute">· Hace un año</span></footer>
-      </blockquote>
-      <blockquote class="border border-line bg-bg p-6">
-        <div class="flex items-center justify-between"><span class="text-gold tracking-widest" aria-label="5 estrellas">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><use href="#g"/></svg></div>
-        <p class="mt-4 text-[.95rem] leading-relaxed">«Servicio excelente! Me trataron con mucha atención y amabilidad, en recepción se aseguraron de atenderme inmediatamente.»</p>
-        <footer class="mt-5 text-sm"><strong>lena</strong> <span class="text-mute">· Hace 2 meses</span></footer>
-      </blockquote>
-    </div>
-  </div>
-</section>
-
-<!-- 8 GALERÍA BENTO -->
-<section id="centro" data-bg="#F1E3D3" class="px-5 sm:px-8 lg:px-10 py-20 lg:py-28">
-  <div class="flex flex-wrap items-end justify-between gap-6 mb-10">
-    <h2 data-split class="font-display text-5xl sm:text-7xl leading-[.9]">El centro, por dentro y por fuera</h2>
-    <p class="text-sm text-mute max-w-xs">Edificio de ladrillo visto, entrada luminosa y una recepción tranquila.</p>
-  </div>
-  <div class="grid grid-cols-2 md:grid-cols-6 gap-4 md:auto-rows-[13rem]">
-    <figure class="group col-span-2 md:col-span-4 md:row-span-2 frame flex flex-col">
-      <div data-parallax-wrap class="overflow-hidden h-72 md:h-full flex-1"><img data-parallax src="./assets/photo-1.jpg" alt="Entrada exterior con rótulo Centre Medic Salus Servimed" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-      <figcaption class="pt-2 text-xs uppercase tracking-[.14em] text-mute">Entrada exterior del Centre Mèdic Salus Servimed</figcaption>
+    <figure class="shrink-0 w-[82vw] md:w-[52vw]">
+      <div class="group overflow-hidden h-[55vh] md:h-[66vh]"><img src="./assets/photo-1.jpg" loading="lazy" alt="Entrada exterior con el rótulo Centre Medic Salus Servimed" class="photo h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="flex gap-4 mt-3 text-sm text-muted border-t border-line pt-3"><span class="font-display text-accent">01 / 04</span><span>Entrada exterior con el rótulo Centre Medic Salus Servimed</span></figcaption>
     </figure>
-    <figure class="group col-span-1 md:col-span-2 md:row-span-3 frame flex flex-col">
-      <div class="overflow-hidden h-72 md:h-full flex-1"><img src="./assets/photo-4.jpg" alt="Recepción y pasillo con sillas y mostrador" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-      <figcaption class="pt-2 text-xs uppercase tracking-[.14em] text-mute">Recepción y pasillo</figcaption>
+    <figure class="shrink-0 w-[70vw] md:w-[30vw]">
+      <div class="group overflow-hidden h-[55vh] md:h-[66vh]"><img src="./assets/photo-4.jpg" loading="lazy" alt="Recepción y pasillo con sillas y mostrador" class="photo h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="flex gap-4 mt-3 text-sm text-muted border-t border-line pt-3"><span class="font-display text-accent">02 / 04</span><span>Recepción y pasillo con sillas y mostrador</span></figcaption>
     </figure>
-    <figure class="group col-span-1 md:col-span-2 frame flex flex-col">
-      <div class="overflow-hidden h-40 md:h-full flex-1"><img src="./assets/photo-3.jpg" alt="Cartel con logo, teléfono y texto Doctor Arzt" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-      <figcaption class="pt-2 text-xs uppercase tracking-[.14em] text-mute">Cartel «Doctor Arzt»</figcaption>
+    <figure class="shrink-0 w-[78vw] md:w-[36vw]">
+      <div class="group overflow-hidden h-[55vh] md:h-[66vh]"><img src="./assets/photo-3.jpg" loading="lazy" alt="Cartel con el logo, el teléfono y el texto Doctor Arzt" class="photo h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="flex gap-4 mt-3 text-sm text-muted border-t border-line pt-3"><span class="font-display text-accent">03 / 04</span><span>Cartel con logo, teléfono y el texto «Doctor Arzt»</span></figcaption>
     </figure>
-    <figure class="group col-span-2 md:col-span-2 frame flex flex-col">
-      <div class="overflow-hidden h-40 md:h-full flex-1"><img src="./assets/photo-2.jpg" alt="Mapa de Lloret de Mar con la ubicación del centro" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-      <figcaption class="pt-2 text-xs uppercase tracking-[.14em] text-mute">Mapa de Lloret de Mar</figcaption>
+    <figure class="shrink-0 w-[82vw] md:w-[46vw]">
+      <div class="group overflow-hidden h-[55vh] md:h-[66vh]"><img src="./assets/photo-2.jpg" loading="lazy" alt="Mapa de Lloret de Mar con la ubicación del centro" class="photo h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <figcaption class="flex gap-4 mt-3 text-sm text-muted border-t border-line pt-3"><span class="font-display text-accent">04 / 04</span><span>Mapa de Lloret de Mar con la ubicación del centro</span></figcaption>
     </figure>
+    <div class="shrink-0 hidden md:block w-[8vw]"></div>
   </div>
 </section>
 
-<!-- 9 SOBRE NOSOTROS -->
-<section data-bg="#FBF5EE" class="px-5 sm:px-8 lg:px-10 py-20 lg:py-28">
-  <div class="grid lg:grid-cols-12 gap-12 items-center">
-    <div class="lg:col-span-5 frame order-2 lg:order-1" data-reveal>
-      <div data-parallax-wrap class="overflow-hidden h-[28rem]"><img data-parallax src="./assets/photo-4.jpg" alt="Recepción y pasillo con sillas y mostrador" loading="lazy" class="h-full w-full object-cover"></div>
+<!-- ACORDEÓN XL -->
+<section id="especialidades" data-layout-menu="MENU_ACCORDION_XL" class="bg-bg2 py-24 md:py-36">
+  <div class="mx-auto max-w-[1600px] px-6 md:px-10">
+    <div class="grid md:grid-cols-12 gap-8 mb-16">
+      <p class="md:col-span-3 text-xs uppercase tracking-[.25em] text-accent">Cuadro médico</p>
+      <h2 class="split-l md:col-span-9 text-[clamp(2.5rem,6.5vw,6.5rem)] leading-[.98]">Traumatología y asistencia sanitaria individualizada</h2>
     </div>
-    <div class="lg:col-span-7 order-1 lg:order-2" data-reveal>
-      <p class="text-[.68rem] uppercase tracking-[.2em] text-gold mb-3">Sobre nosotros · Nº 05</p>
-      <h2 data-split class="font-display text-5xl sm:text-7xl leading-[.9]">Te escuchamos con calma. Te tratamos como a uno de casa.</h2>
-      <div class="mt-8 grid sm:grid-cols-2 gap-6 text-[.95rem] leading-relaxed text-ink/85">
+    <div id="acc" class="border-b border-line">
+      <div class="border-t border-line">
+        <button class="acc-q w-full flex items-center gap-4 md:gap-10 py-6 md:py-8 text-left" aria-expanded="true" aria-controls="ap1" id="aq1">
+          <span class="font-display text-accent text-4xl md:text-7xl w-16 md:w-40 shrink-0">01</span>
+          <span class="acc-name font-display flex-1 text-[clamp(1.9rem,5.5vw,5.5rem)] leading-none">Traumatología</span>
+          <i data-lucide="plus" class="acc-plus h-7 w-7 md:h-9 md:w-9 shrink-0 text-accent"></i>
+        </button>
+        <div class="acc-panel" id="ap1" role="region" aria-labelledby="aq1"><div>
+          <div class="grid md:grid-cols-12 gap-8 pb-12 md:pl-[11rem]">
+            <figure class="md:col-span-5"><div class="group overflow-hidden aspect-[4/3]"><img src="./assets/photo-1.jpg" loading="lazy" alt="Entrada exterior del centro" class="photo h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div><figcaption class="text-xs text-muted mt-2">Entrada exterior del centro, en Carrer de Francesc Cambó.</figcaption></figure>
+            <div class="md:col-span-7 flex flex-col justify-between gap-6">
+              <p class="text-lg text-ink/85 leading-relaxed max-w-xl">Un traumatólogo que resolvió con éxito una lesión de muñeca, con una atención que los pacientes valoran por encima de la de un hospital.</p>
+              <div><button data-open-contact data-prefill="Hola, quiero pedir cita de Traumatología" class="btn"><span class="t">Consultar por Traumatología</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="message-square"></i></span></button></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+      <div class="border-t border-line">
+        <button class="acc-q w-full flex items-center gap-4 md:gap-10 py-6 md:py-8 text-left" aria-expanded="false" aria-controls="ap2" id="aq2">
+          <span class="font-display text-accent text-4xl md:text-7xl w-16 md:w-40 shrink-0">02</span>
+          <span class="acc-name font-display flex-1 text-[clamp(1.9rem,5.5vw,5.5rem)] leading-none">Asistencia sanitaria individualizada</span>
+          <i data-lucide="plus" class="acc-plus h-7 w-7 md:h-9 md:w-9 shrink-0 text-accent"></i>
+        </button>
+        <div class="acc-panel" id="ap2" role="region" aria-labelledby="aq2"><div>
+          <div class="grid md:grid-cols-12 gap-8 pb-12 md:pl-[11rem]">
+            <figure class="md:col-span-5"><div class="group overflow-hidden aspect-[4/3]"><img src="./assets/photo-4.jpg" loading="lazy" alt="Recepción y pasillo con sillas y mostrador" class="photo h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"></div><figcaption class="text-xs text-muted mt-2">Recepción y pasillo con sillas y mostrador.</figcaption></figure>
+            <div class="md:col-span-7 flex flex-col justify-between gap-6">
+              <p class="text-lg text-ink/85 leading-relaxed max-w-xl">Tratamiento a medida de cada paciente y de su familia, tras escuchar con calma sus necesidades.</p>
+              <div><button data-open-contact data-prefill="Hola, quiero pedir cita de asistencia sanitaria individualizada" class="btn"><span class="t">Consultar mi caso</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="message-square"></i></span></button></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+      <div class="border-t border-line">
+        <button class="acc-q w-full flex items-center gap-4 md:gap-10 py-6 md:py-8 text-left" aria-expanded="false" aria-controls="ap3" id="aq3">
+          <span class="font-display text-accent text-4xl md:text-7xl w-16 md:w-40 shrink-0">03</span>
+          <span class="acc-name font-display flex-1 text-[clamp(1.9rem,5.5vw,5.5rem)] leading-none">Asesoramiento médico</span>
+          <i data-lucide="plus" class="acc-plus h-7 w-7 md:h-9 md:w-9 shrink-0 text-accent"></i>
+        </button>
+        <div class="acc-panel" id="ap3" role="region" aria-labelledby="aq3"><div>
+          <div class="grid md:grid-cols-12 gap-8 pb-12 md:pl-[11rem]">
+            <figure class="md:col-span-5"><div class="group overflow-hidden aspect-[4/3]"><img src="./assets/photo-2.jpg" loading="lazy" alt="Mapa de Lloret de Mar con la ubicación del centro" class="photo h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div><figcaption class="text-xs text-muted mt-2">Mapa de Lloret de Mar con la ubicación del centro.</figcaption></figure>
+            <div class="md:col-span-7 flex flex-col justify-between gap-6">
+              <p class="text-lg text-ink/85 leading-relaxed max-w-xl">Orientación para ti o para cualquier ser querido que necesite consejo o asistencia sanitaria. Estamos encantados de ayudarte.</p>
+              <div><button data-open-contact data-prefill="Hola, necesito asesoramiento médico" class="btn"><span class="t">Pedir asesoramiento</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="message-square"></i></span></button></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+      <div class="border-t border-line">
+        <button class="acc-q w-full flex items-center gap-4 md:gap-10 py-6 md:py-8 text-left" aria-expanded="false" aria-controls="ap4" id="aq4">
+          <span class="font-display text-accent text-4xl md:text-7xl w-16 md:w-40 shrink-0">04</span>
+          <span class="acc-name font-display flex-1 text-[clamp(1.9rem,5.5vw,5.5rem)] leading-none">Médicos multilingües</span>
+          <i data-lucide="plus" class="acc-plus h-7 w-7 md:h-9 md:w-9 shrink-0 text-accent"></i>
+        </button>
+        <div class="acc-panel" id="ap4" role="region" aria-labelledby="aq4"><div>
+          <div class="grid md:grid-cols-12 gap-8 pb-12 md:pl-[11rem]">
+            <figure class="md:col-span-5"><div class="group overflow-hidden aspect-[4/3]"><img src="./assets/photo-3.jpg" loading="lazy" alt="Cartel con logo, teléfono y el texto Doctor Arzt" class="photo h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"></div><figcaption class="text-xs text-muted mt-2">Cartel con logo, teléfono y el texto «Doctor Arzt».</figcaption></figure>
+            <div class="md:col-span-7 flex flex-col justify-between gap-6">
+              <p class="text-lg text-ink/85 leading-relaxed max-w-xl">Doctores que hablan todos los idiomas, según cuentan nuestros pacientes: ideal para residentes y visitantes de la Costa Brava.</p>
+              <div><button data-open-contact data-prefill="Hola, quiero una consulta con un médico que hable mi idioma" class="btn"><span class="t">Consulta en mi idioma</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="message-square"></i></span></button></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+      <div class="border-t border-line">
+        <button class="acc-q w-full flex items-center gap-4 md:gap-10 py-6 md:py-8 text-left" aria-expanded="false" aria-controls="ap5" id="aq5">
+          <span class="font-display text-accent text-4xl md:text-7xl w-16 md:w-40 shrink-0">05</span>
+          <span class="acc-name font-display flex-1 text-[clamp(1.9rem,5.5vw,5.5rem)] leading-none">Atención a familias</span>
+          <i data-lucide="plus" class="acc-plus h-7 w-7 md:h-9 md:w-9 shrink-0 text-accent"></i>
+        </button>
+        <div class="acc-panel" id="ap5" role="region" aria-labelledby="aq5"><div>
+          <div class="grid md:grid-cols-12 gap-8 pb-12 md:pl-[11rem]">
+            <figure class="md:col-span-5"><div class="group overflow-hidden aspect-[4/3]"><img src="./assets/photo-4.jpg" loading="lazy" alt="Recepción con sillas y mostrador" class="photo h-full w-full object-cover object-bottom transition-transform duration-700 group-hover:scale-105"></div><figcaption class="text-xs text-muted mt-2">Recepción con sillas y mostrador.</figcaption></figure>
+            <div class="md:col-span-7 flex flex-col justify-between gap-6">
+              <p class="text-lg text-ink/85 leading-relaxed max-w-xl">Nuestra meta es maximizar la salud, la independencia y la comodidad de nuestros pacientes y sus familias. Puedes venir con quien necesites.</p>
+              <div><button data-open-contact data-prefill="Hola, quiero pedir cita para mi familia" class="btn"><span class="t">Pedir cita en familia</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="message-square"></i></span></button></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section id="opiniones" class="bg-bg py-24 md:py-36">
+  <div class="mx-auto max-w-[1600px] px-6 md:px-10">
+    <div class="grid md:grid-cols-12 gap-8 items-end mb-14">
+      <div class="md:col-span-8">
+        <p class="text-xs uppercase tracking-[.25em] text-accent mb-5">Opiniones verificadas de Google</p>
+        <h2 class="split-l text-[clamp(2.5rem,6.5vw,6.5rem)] leading-[.98]">Médicos multilingües, pacientes que lo cuentan</h2>
+      </div>
+      <div data-reveal class="md:col-span-4 border border-line p-6">
+        <div class="flex items-center gap-3"><svg class="h-5 w-5" aria-hidden="true"><use href="#gicon"/></svg><span class="font-display text-3xl">4,6 ★ en Google Maps</span></div>
+        <p class="text-sm text-muted mt-2">44 reseñas de pacientes</p>
+      </div>
+    </div>
+
+    <div data-reveal class="mb-14 border-y border-line py-6 grid md:grid-cols-12 gap-4 items-center">
+      <p class="md:col-span-3 text-xs uppercase tracking-[.25em] text-accent flex items-center gap-2"><i data-lucide="star" class="h-4 w-4"></i> El favorito de nuestros clientes</p>
+      <p class="md:col-span-9 font-display text-2xl md:text-3xl leading-snug">Profesionalidad y trato cercano del equipo médico. <span class="text-muted">3 de 3 reseñas elogian la atención del personal.</span></p>
+    </div>
+
+    <div class="car" id="car" aria-roledescription="carrusel" aria-label="Opiniones de pacientes">
+      <article class="pr-0 md:pr-24">
+        <svg class="h-5 w-5 mb-6" aria-hidden="true"><use href="#gicon"/></svg>
+        <blockquote class="font-display text-[clamp(1.75rem,4.4vw,4.25rem)] leading-[1.1]">«El mejor centro médico de la Costa Brava y Maresme. Profesionalidad absoluta y con el plus de disponer de doctores que hablan todos los idiomas.»</blockquote>
+        <footer class="mt-8 flex flex-wrap items-center gap-4 text-sm"><span class="text-accent tracking-widest" aria-label="5 estrellas">★★★★★</span><span class="font-medium">Monica Barrabes</span><span class="text-muted">Hace 2 años</span></footer>
+      </article>
+      <article class="pr-0 md:pr-24">
+        <svg class="h-5 w-5 mb-6" aria-hidden="true"><use href="#gicon"/></svg>
+        <blockquote class="font-display text-[clamp(1.5rem,3.6vw,3.5rem)] leading-[1.15]">«Fui con mi hijo en el Centro Médico por un problema de muñeca, el traumatólogo que nos atendió le arregló perfectamente. Fuimos atendidos excepcionalmente. Agradecidos. Traumatólogo fenomenal, mejor que en un Hospital.»</blockquote>
+        <footer class="mt-8 flex flex-wrap items-center gap-4 text-sm"><span class="text-accent tracking-widest" aria-label="5 estrellas">★★★★★</span><span class="font-medium">Joaquim Teira</span><span class="text-muted">Hace un año</span></footer>
+      </article>
+      <article class="pr-0 md:pr-24">
+        <svg class="h-5 w-5 mb-6" aria-hidden="true"><use href="#gicon"/></svg>
+        <blockquote class="font-display text-[clamp(1.75rem,4.4vw,4.25rem)] leading-[1.1]">«Servicio excelente. Me trataron con mucha atención y amabilidad, en recepción se aseguraron de atenderme inmediatamente.»</blockquote>
+        <footer class="mt-8 flex flex-wrap items-center gap-4 text-sm"><span class="text-accent tracking-widest" aria-label="5 estrellas">★★★★★</span><span class="font-medium">lena</span><span class="text-muted">Hace 2 meses</span></footer>
+      </article>
+    </div>
+    <div class="mt-12 flex items-center justify-between border-t border-line pt-6">
+      <p class="font-display text-xl"><span id="car-n" class="text-accent">01</span> <span class="text-muted">/ 03</span></p>
+      <div class="flex gap-3">
+        <button id="car-prev" aria-label="Opinión anterior" class="h-12 w-12 border border-line flex items-center justify-center hover:border-accent hover:text-accent transition-colors"><i data-lucide="chevron-left" class="h-5 w-5"></i></button>
+        <button id="car-next" aria-label="Opinión siguiente" class="h-12 w-12 border border-line flex items-center justify-center hover:border-accent hover:text-accent transition-colors"><i data-lucide="chevron-right" class="h-5 w-5"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTOR + LÍNEA DE TIEMPO -->
+<section id="tratamientos" class="bg-bg2 py-24 md:py-36">
+  <div class="mx-auto max-w-[1600px] px-6 md:px-10">
+    <div class="max-w-4xl mb-16">
+      <p class="text-xs uppercase tracking-[.25em] text-accent mb-5">Selector de consultas</p>
+      <h2 class="split-l text-[clamp(2.5rem,6vw,5.5rem)] leading-[.98]">Asesoramiento médico a tu medida</h2>
+      <p class="mt-6 text-muted max-w-xl">Elige el motivo que más se parece al tuyo. Las duraciones son orientativas y dependen de cada caso.</p>
+    </div>
+    <div class="grid lg:grid-cols-12 border border-line">
+      <div id="sel-list" class="lg:col-span-5 flex flex-col divide-y divide-line bg-bg2" role="tablist" aria-label="Tipos de consulta"></div>
+      <div class="lg:col-span-7 bg-bg p-8 md:p-14 border-t lg:border-t-0 lg:border-l border-line" role="tabpanel" aria-live="polite">
+        <p class="text-xs uppercase tracking-[.25em] text-accent" id="sel-k"></p>
+        <h3 id="sel-t" class="font-display text-4xl md:text-6xl mt-4 leading-none"></h3>
+        <p id="sel-d" class="mt-6 text-lg text-ink/85 leading-relaxed max-w-xl"></p>
+        <div class="mt-8 grid sm:grid-cols-2 gap-8 border-t border-line pt-8">
+          <div><p class="text-xs uppercase tracking-widest text-muted mb-2">Duración orientativa</p><p id="sel-m" class="font-display text-3xl text-accent"></p></div>
+          <div><p class="text-xs uppercase tracking-widest text-muted mb-3">Qué te aporta</p><ul id="sel-b" class="space-y-2 text-sm"></ul></div>
+        </div>
+        <div class="mt-10"><button id="sel-cta" data-open-contact data-prefill="" class="btn"><span class="t">Pedir cita</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="calendar-check"></i></span></button></div>
+      </div>
+    </div>
+
+    <div class="mt-24">
+      <p class="text-xs uppercase tracking-[.25em] text-accent mb-8">Cómo es el proceso</p>
+      <ol class="grid md:grid-cols-4 border-t border-line">
+        <li data-reveal class="p-6 md:p-8 md:border-r border-b md:border-b-0 border-line"><p class="font-display text-6xl text-accent">1</p><h3 class="font-display text-3xl mt-4">Primera visita</h3><p class="text-sm text-muted mt-3 leading-relaxed">Te recibimos en recepción y te escuchamos con calma.</p></li>
+        <li data-reveal class="p-6 md:p-8 md:border-r border-b md:border-b-0 border-line"><p class="font-display text-6xl text-accent">2</p><h3 class="font-display text-3xl mt-4">Diagnóstico</h3><p class="text-sm text-muted mt-3 leading-relaxed">El médico valora tu caso y te explica lo que ocurre, sin tecnicismos.</p></li>
+        <li data-reveal class="p-6 md:p-8 md:border-r border-b md:border-b-0 border-line"><p class="font-display text-6xl text-accent">3</p><h3 class="font-display text-3xl mt-4">Plan</h3><p class="text-sm text-muted mt-3 leading-relaxed">Un tratamiento individualizado, el que mejor se adapta a ti.</p></li>
+        <li data-reveal class="p-6 md:p-8"><p class="font-display text-6xl text-accent">4</p><h3 class="font-display text-3xl mt-4">Seguimiento</h3><p class="text-sm text-muted mt-3 leading-relaxed">Seguimos a tu lado para cuidar de tu salud y la de tu familia.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section id="nosotros" class="bg-bg py-24 md:py-36">
+  <div class="mx-auto max-w-[1600px] px-6 md:px-10 grid md:grid-cols-12 gap-10 md:gap-16 items-start">
+    <div class="md:col-span-5">
+      <div data-parallax-wrap class="overflow-hidden h-[70vh] md:h-[85vh]">
+        <img data-parallax src="./assets/photo-4.jpg" loading="lazy" alt="Recepción y pasillo con sillas y mostrador del centro" class="photo h-full w-full object-cover">
+      </div>
+      <p class="text-xs text-muted mt-3 border-t border-line pt-3">Recepción y pasillo con sillas y mostrador.</p>
+    </div>
+    <div class="md:col-span-7 md:pt-24" data-reveal>
+      <p class="text-xs uppercase tracking-[.25em] text-accent mb-5">Sobre nosotros</p>
+      <h2 class="split-l text-[clamp(2.5rem,6vw,5.5rem)] leading-[.98]">Atención a familias, con calma</h2>
+      <div class="mt-10 space-y-6 text-lg text-ink/85 leading-relaxed max-w-2xl">
         <p>Dedicamos nuestros esfuerzos a proporcionar la mejor asistencia sanitaria individualizada. Nuestra meta es maximizar la salud, la independencia y la comodidad de nuestros pacientes y sus familias.</p>
-        <p>Escuchamos a cada paciente con calma y le proporcionamos el tratamiento que mejor se adapta a sus necesidades. Si tú o alguno de tus seres queridos necesitáis asesoramiento o asistencia médica, estaremos encantados de ayudaros.</p>
+        <p>Escuchamos a nuestros pacientes con calma y les proporcionamos el tratamiento individualizado que mejor se adapta a sus necesidades.</p>
+        <p>Si tú o alguno de tus seres queridos necesitáis asesoramiento o asistencia médica, estaremos encantados de ayudaros. Nuestro nombre comercial incluye también Servimed Assistance, el servicio de asistencia asociado al centro.</p>
       </div>
-      <div class="mt-8 p-1"><button type="button" class="btn-db" data-open-contact data-prefill="Hola, me gustaría hacer una consulta al Centre Mèdic Salus Servimed.">Escríbenos una consulta</button></div>
+      <div class="mt-12 grid grid-cols-2 border-t border-line">
+        <div class="py-6 pr-4 border-r border-line"><p class="font-display text-5xl text-accent"><span data-count="44" data-suffix="">44</span></p><p class="text-sm text-muted mt-2">reseñas en Google</p></div>
+        <div class="py-6 pl-6"><p class="font-display text-5xl text-accent">4,6 ★</p><p class="text-sm text-muted mt-2">valoración media</p></div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- 10 FAQ -->
-<section id="faq" data-bg="#F1E3D3" class="px-5 sm:px-8 lg:px-10 py-20 lg:py-28">
-  <div class="grid lg:grid-cols-12 gap-10">
-    <h2 data-split class="lg:col-span-4 font-display text-5xl sm:text-6xl leading-[.92]">Preguntas antes de venir</h2>
-    <div class="lg:col-span-8 border-t border-ink" data-faq>
-      <div data-faq-item class="border-b border-line"><button data-faq-q class="w-full flex items-center justify-between gap-4 py-5 text-left font-display text-2xl sm:text-3xl">¿Cómo pido cita? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 text-sm leading-relaxed text-ink/85 max-w-2xl">Pulsa «Pedir cita» en esta web o llama al 972 36 85 61. Para confirmar horarios, lo más rápido es una llamada a recepción.</div></div></div>
-      <div data-faq-item class="border-b border-line"><button data-faq-q class="w-full flex items-center justify-between gap-4 py-5 text-left font-display text-2xl sm:text-3xl">¿En qué idiomas me atenderán? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 text-sm leading-relaxed text-ink/85 max-w-2xl">Nuestros pacientes destacan que contamos con doctores que hablan todos los idiomas. Si quieres asegurarte del tuyo, díselo al pedir cita.</div></div></div>
-      <div data-faq-item class="border-b border-line"><button data-faq-q class="w-full flex items-center justify-between gap-4 py-5 text-left font-display text-2xl sm:text-3xl">¿Atendéis lesiones de huesos y articulaciones? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 text-sm leading-relaxed text-ink/85 max-w-2xl">Sí, contamos con traumatología. Un paciente nos cuenta cómo el traumatólogo resolvió una lesión de muñeca de su hijo. Cada caso lo valora el médico en consulta.</div></div></div>
-      <div data-faq-item class="border-b border-line"><button data-faq-q class="w-full flex items-center justify-between gap-4 py-5 text-left font-display text-2xl sm:text-3xl">¿Cuánto cuesta una consulta? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 text-sm leading-relaxed text-ink/85 max-w-2xl">No publicamos tarifas en la web porque dependen de cada caso. Llámanos al 972 36 85 61 y te informamos antes de venir.</div></div></div>
-      <div data-faq-item class="border-b border-line"><button data-faq-q class="w-full flex items-center justify-between gap-4 py-5 text-left font-display text-2xl sm:text-3xl">¿Puedo ir con mi familia? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 text-sm leading-relaxed text-ink/85 max-w-2xl">Por supuesto. Atendemos a familias y tratamos a cada miembro de forma individual, escuchando sus necesidades.</div></div></div>
-      <div data-faq-item class="border-b border-line"><button data-faq-q class="w-full flex items-center justify-between gap-4 py-5 text-left font-display text-2xl sm:text-3xl">¿Dónde estáis? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 text-sm leading-relaxed text-ink/85 max-w-2xl">En el Carrer de Francesc Cambó, 41, 17310 Lloret de Mar (Girona). Tienes el mapa en la sección de contacto.</div></div></div>
+<!-- FAQ -->
+<section id="faq" class="bg-bg2 py-24 md:py-36">
+  <div class="mx-auto max-w-[1600px] px-6 md:px-10 grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-4">
+      <p class="text-xs uppercase tracking-[.25em] text-accent mb-5">Preguntas frecuentes</p>
+      <h2 class="split-l text-[clamp(2.5rem,5.5vw,5rem)] leading-[.98]">Antes de pedir cita</h2>
+    </div>
+    <div data-faq class="md:col-span-8 border-b border-line">
+      <div data-faq-item><button data-faq-q>¿Cómo pido cita?<span class="wra-plus">+</span></button><div data-faq-a><div>Pulsa «Pedir cita» y cuéntanos tu caso, o llama al 972 36 85 61. Si no sabes qué especialista necesitas, te orientamos.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Me pueden atender en mi idioma?<span class="wra-plus">+</span></button><div data-faq-a><div>Nuestros pacientes destacan que contamos con doctores que hablan todos los idiomas. Indícanos el tuyo al pedir cita y lo tendremos en cuenta.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Tratáis lesiones de traumatología?<span class="wra-plus">+</span></button><div data-faq-a><div>Sí, contamos con traumatólogo. Un paciente nos agradece cómo trató la lesión de muñeca de su hijo. Cuéntanos qué te ocurre y te indicamos los pasos.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Puedo venir con mis hijos o con mi familia?<span class="wra-plus">+</span></button><div data-faq-a><div>Sí. La atención a familias es parte de nuestra forma de trabajar: escuchamos a cada paciente y a quienes le acompañan.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Qué ocurre en la primera visita?<span class="wra-plus">+</span></button><div data-faq-a><div>Te recibimos en recepción, el médico te escucha con calma y valora tu caso. Después te explica el plan de tratamiento que mejor se adapta a ti.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Cuánto cuesta una consulta y cuál es el horario?<span class="wra-plus">+</span></button><div data-faq-a><div>El importe y la disponibilidad dependen de cada consulta. Llámanos al 972 36 85 61 y te lo confirmamos antes de venir.</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- 11 CONTACTO -->
+<!-- CONTACTO -->
 <!--kit:booking--><section id="pedir-cita" class="wrab-sec" data-tool-section data-bstyle="modern" aria-labelledby="wrab-title"><div class="wrab-inner"><div class="wrab" data-bstyle="modern"><span class="wrab-eyebrow">Primera cita</span><h2 class="wrab-h" id="wrab-title" data-split>Pide tu cita</h2><p class="wrab-sub">Cuéntanos el motivo y llegarás a recepción con tu consulta ya clara.</p><ul class="wrab-perks"><li>Atención prioritaria si es urgente</li><li>Sin esperas al teléfono</li><li>Respuesta directa de recepción</li></ul></div><div class="wrab-card" data-bstyle="modern"><div data-wrab-inline></div></div></div></section><!--/kit:booking-->
-<section id="contacto" data-bg="#FBF5EE" class="px-5 sm:px-8 lg:px-10 py-20 lg:py-28">
-  <p class="text-[.68rem] uppercase tracking-[.2em] text-gold mb-3">Contacto · Nº 06</p>
-  <h2 data-split class="font-display text-6xl sm:text-8xl leading-[.88] mb-12">Llámanos al 972 36 85 61</h2>
-  <div class="grid lg:grid-cols-12 border border-ink">
-    <div class="lg:col-span-5 p-6 sm:p-10 space-y-6 border-b lg:border-b-0 lg:border-r border-ink bg-sec/50">
-      <a href="tel:972368561" class="flex items-start gap-4 group"><i data-lucide="phone" class="h-5 w-5 text-acc mt-1"></i><span><span class="block text-[.68rem] uppercase tracking-[.18em] text-mute">Teléfono</span><span class="font-display text-4xl group-hover:text-acc">972 36 85 61</span></span></a>
-      <div class="flex items-start gap-4"><i data-lucide="map-pin" class="h-5 w-5 text-acc mt-1"></i><span><span class="block text-[.68rem] uppercase tracking-[.18em] text-mute">Dirección</span><span class="text-base">Carrer de Francesc Cambó, 41<br>17310 Lloret de Mar, Girona</span></span></div>
-      <div class="flex flex-wrap gap-x-8 gap-y-6 pt-4 p-1">
-        <a href="tel:972368561" class="btn-db pri"><i data-lucide="phone" class="h-4 w-4"></i>Llamar ahora</a>
-        <button type="button" class="btn-db" data-open-contact data-prefill="Hola, quisiera información sobre el Centre Mèdic Salus Servimed.">Escribir un mensaje</button>
+<section id="contacto" class="bg-bg py-24 md:py-36">
+  <div class="mx-auto max-w-[1600px] px-6 md:px-10">
+    <p class="text-xs uppercase tracking-[.25em] text-accent mb-5">Contacto</p>
+    <h2 class="split-l text-[clamp(2.5rem,7vw,7rem)] leading-[.95] max-w-5xl">Carrer de Francesc Cambó, 41, Lloret de Mar</h2>
+    <div class="mt-16 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5 border-t border-line">
+        <div class="py-6 border-b border-line flex gap-5"><i data-lucide="phone" class="h-5 w-5 text-accent mt-1 shrink-0"></i><div><p class="text-xs uppercase tracking-widest text-muted">Teléfono</p><a href="tel:972368561" class="font-display text-3xl md:text-4xl hover:text-accent transition-colors">972 36 85 61</a></div></div>
+        <div class="py-6 border-b border-line flex gap-5"><i data-lucide="map-pin" class="h-5 w-5 text-accent mt-1 shrink-0"></i><div><p class="text-xs uppercase tracking-widest text-muted">Dirección</p><p class="text-lg">Carrer de Francesc Cambó, 41<br>17310 Lloret de Mar, Girona</p></div></div>
+        <div class="py-6 border-b border-line flex gap-5"><i data-lucide="languages" class="h-5 w-5 text-accent mt-1 shrink-0"></i><div><p class="text-xs uppercase tracking-widest text-muted">Idiomas</p><p class="text-lg">Médicos multilingües. Llámanos para conocer disponibilidad y horarios.</p></div></div>
+        <div class="pt-8 flex flex-wrap gap-3">
+          <a href="tel:972368561" data-magnetic class="btn"><span class="t">Llamar ahora</span><span class="ic"><i data-lucide="phone"></i><i data-lucide="phone-call"></i></span></a>
+          <button data-open-contact data-prefill="Hola, tengo una consulta" class="btn btn-alt"><span class="t">Escribirnos</span><span class="ic"><i data-lucide="arrow-right"></i><i data-lucide="message-square"></i></span></button>
+        </div>
       </div>
-    </div>
-    <div class="lg:col-span-7 min-h-[22rem]">
-      <iframe title="Mapa del Centre Mèdic Salus Servimed en Lloret de Mar" src="https://www.google.com/maps?q=Carrer%20de%20Francesc%20Camb%C3%B3%2C%2041%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&output=embed" loading="lazy" class="w-full h-full min-h-[22rem] border-0" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="lg:col-span-7 border border-line">
+        <iframe title="Mapa: Centre Mèdic Salus Servimed, Lloret de Mar" src="https://www.google.com/maps?q=Carrer%20de%20Francesc%20Camb%C3%B3%2C%2041%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[420px] md:h-[520px] block" style="filter:grayscale(.5) contrast(1.05) brightness(.9)"></iframe>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- 12 FOOTER -->
-<footer class="bg-ink text-bg px-5 sm:px-8 lg:px-10 py-14">
-  <div class="grid md:grid-cols-12 gap-8 items-end">
-    <div class="md:col-span-7">
-      <p class="font-display text-5xl sm:text-6xl leading-[.9]">Centre Mèdic<br>Salus Servimed</p>
-      <p class="mt-4 text-sm text-bg/70">Carrer de Francesc Cambó, 41 · 17310 Lloret de Mar, Girona</p>
-    </div>
-    <div class="md:col-span-5 flex flex-wrap gap-x-8 gap-y-6 md:justify-end p-1">
-      <a href="tel:972368561" class="btn-db lt"><i data-lucide="phone" class="h-4 w-4"></i>972 36 85 61</a>
-      <button type="button" class="btn-db lt" data-open-contact data-prefill="Hola, me gustaría pedir información.">Consulta rápida</button>
-    </div>
-  </div>
-  <p class="mt-12 pt-6 border-t border-bg/20 text-xs text-bg/60">© <span id="yr">2026</span> Centre Mèdic Salus Servimed · Servimed Assistance</p>
-</footer>
 </main>
+
+<footer class="bg-bg2 border-t border-line">
+  <div class="mx-auto max-w-[1600px] px-6 md:px-10 py-12 grid md:grid-cols-3 gap-8 items-end">
+    <p class="font-display text-3xl leading-tight">Centre Mèdic Salus Servimed<br><span class="text-muted">Servimed Assistance</span></p>
+    <p class="text-sm text-muted">Carrer de Francesc Cambó, 41<br>17310 Lloret de Mar, Girona<br><a href="tel:972368561" class="text-ink hover:text-accent">972 36 85 61</a></p>
+    <p class="text-sm text-muted md:text-right">© <span id="yr">2026</span> Centre Mèdic Salus Servimed. Todos los derechos reservados.</p>
+  </div>
+</footer>
 
 <script>
 (function(){
-  document.getElementById('yr').textContent = new Date().getFullYear();
-  if (window.lucide) lucide.createIcons();
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Menú móvil: cerrar al elegir enlace
-  document.querySelectorAll('[data-menu] a, [data-menu] button').forEach(function(el){
-    el.addEventListener('click', function(){
-      var m=document.querySelector('[data-menu]'); if(m) m.classList.remove('is-open');
+  /* Accordion XL: solo una abierta */
+  var qs = document.querySelectorAll('.acc-q');
+  qs.forEach(function(b){
+    b.addEventListener('click', function(){
+      var open = b.getAttribute('aria-expanded') === 'true';
+      qs.forEach(function(o){ o.setAttribute('aria-expanded','false'); });
+      if(!open){ b.setAttribute('aria-expanded','true'); }
     });
   });
 
-  // Pistas arrastrables (ratón + teclado + flechas)
-  function makeTrack(el){
-    var down=false, sx=0, sl=0, moved=false;
-    el.addEventListener('pointerdown', function(e){
-      if(e.pointerType!=='mouse') return;
-      down=true; moved=false; sx=e.clientX; sl=el.scrollLeft; el.classList.add('drag');
-    });
-    window.addEventListener('pointermove', function(e){
-      if(!down) return; var dx=e.clientX-sx; if(Math.abs(dx)>4) moved=true; el.scrollLeft=sl-dx;
-    });
-    window.addEventListener('pointerup', function(){
-      if(!down) return; down=false; el.classList.remove('drag');
-    });
-    el.addEventListener('click', function(e){ if(moved){e.preventDefault(); e.stopPropagation(); moved=false;} }, true);
-    el.addEventListener('keydown', function(e){
-      if(e.key==='ArrowRight'){e.preventDefault(); step(el,1);}
-      if(e.key==='ArrowLeft'){e.preventDefault(); step(el,-1);}
-    });
-    document.querySelectorAll('[data-next="'+el.id+'"]').forEach(function(b){b.addEventListener('click',function(){step(el,1);});});
-    document.querySelectorAll('[data-prev="'+el.id+'"]').forEach(function(b){b.addEventListener('click',function(){step(el,-1);});});
-  }
-  function step(el,dir){
-    var c=el.children[0]; var w=c? c.getBoundingClientRect().width+24 : 300;
-    el.scrollBy({left:dir*w, behavior:'smooth'});
-  }
-  var hg=document.getElementById('hg'), sl=document.getElementById('sl');
-  makeTrack(hg); makeTrack(sl);
-  var sc=document.getElementById('sc');
-  function upd(){
-    var cards=[].slice.call(sl.children), best=0, bd=1e9, left=sl.getBoundingClientRect().left;
-    cards.forEach(function(c,i){var d=Math.abs(c.getBoundingClientRect().left-left-10); if(d<bd){bd=d;best=i;}});
-    if(sl.scrollLeft+sl.clientWidth>=sl.scrollWidth-4) best=cards.length-1;
-    sc.textContent=String(best+1).padStart(2,'0')+' / '+String(cards.length).padStart(2,'0');
-  }
-  sl.addEventListener('scroll', upd, {passive:true}); upd();
-
-  // Selector de tratamientos
-  var T=[
-    {n:'Traumatología',d:'Valoración de lesiones de huesos y articulaciones por un traumatólogo. Un paciente nos cuenta cómo resolvió la lesión de muñeca de su hijo.',t:'Orientativa: 30 – 45 min',b:['Atención por traumatólogo','Explicación clara del problema','Trato que los pacientes comparan con el de un hospital'],p:'Quiero pedir cita para Traumatología.'},
-    {n:'Asistencia sanitaria individualizada',d:'Tratamiento a medida de cada paciente, tras escuchar con calma sus necesidades y las de su familia.',t:'Orientativa: 30 – 45 min',b:['Escucha sin prisas','Tratamiento adaptado a ti','Pensado para tu comodidad e independencia'],p:'Quiero pedir cita para asistencia sanitaria individualizada.'},
-    {n:'Asesoramiento médico',d:'Orientación para ti o para cualquier ser querido que necesite consejo o asistencia sanitaria.',t:'Orientativa: 20 – 30 min',b:['Resolver dudas con un médico','Saber qué paso dar a continuación','Acompañamiento a tu familia'],p:'Quiero pedir cita para asesoramiento médico.'},
-    {n:'Médicos multilingües',d:'Consulta en tu idioma con doctores que hablan todos los idiomas. Ideal para residentes y visitantes de la Costa Brava.',t:'Orientativa: 30 – 45 min',b:['Te entiendes sin traductor','Sin malentendidos en tu diagnóstico','Para residentes y turistas'],p:'Quiero pedir cita con un médico que hable mi idioma.'},
-    {n:'Atención a familias',d:'Atendemos a pacientes y a sus familias con el mismo trato cercano, cuidando su salud, independencia y comodidad.',t:'Orientativa: según cada caso',b:['Trato cercano para todos','Cada miembro, atención individual','Un único centro de referencia'],p:'Quiero pedir cita para mi familia.'},
-    {n:'Servimed Assistance',d:'Servicio de asistencia asociado al centro, que aparece en su nombre comercial. Consúltanos por teléfono cómo te puede ayudar.',t:'Orientativa: consúltalo por teléfono',b:['Asistencia vinculada al centro','Información directa en recepción'],p:'Quiero información sobre Servimed Assistance.'}
+  /* Selector de consultas */
+  var T = [
+    {k:'Traumatología', t:'Lesión o dolor', d:'Si tú o tu hijo os habéis lesionado, el traumatólogo del centro valora el problema y te explica cómo tratarlo. Un paciente nos agradece cómo resolvió una lesión de muñeca.', m:'30–45 min', b:['Valoración por traumatólogo','Explicación clara, sin tecnicismos','Trato cercano, también para los más pequeños'], p:'Hola, quiero pedir cita de Traumatología'},
+    {k:'Asistencia individualizada', t:'Consulta personalizada', d:'Te escuchamos con calma y te proporcionamos el tratamiento individualizado que mejor se adapta a tus necesidades.', m:'20–30 min', b:['Tiempo para explicar tu caso','Tratamiento a medida','Atención en recepción inmediata'], p:'Hola, quiero pedir cita de asistencia sanitaria individualizada'},
+    {k:'Asesoramiento médico', t:'Consejo para un ser querido', d:'Orientación para ti o para cualquier persona cercana que necesite asesoramiento o asistencia médica, para saber cuál es el siguiente paso.', m:'20–30 min', b:['Orientación sobre qué hacer','Respuestas a tus dudas','Pensado para familias'], p:'Hola, necesito asesoramiento médico para un familiar'},
+    {k:'Médicos multilingües', t:'Consulta en tu idioma', d:'Para residentes y visitantes de la Costa Brava y el Maresme: doctores que hablan todos los idiomas, según cuentan nuestros pacientes.', m:'25–40 min', b:['Te explicas sin barreras','Entiendes cada indicación','Ideal si estás de visita'], p:'Hola, quiero una consulta con un médico que hable mi idioma'},
+    {k:'Atención a familias', t:'Visita en familia', d:'Cuidamos de la salud, la independencia y la comodidad de pacientes y familias. Puedes venir acompañado de quien necesites.', m:'30–45 min', b:['Acompañamiento en la consulta','Trato cercano para todos','Seguimiento tras la visita'], p:'Hola, quiero pedir cita para mi familia'}
   ];
-  var list=document.getElementById('tlist'), panel=document.getElementById('tpanel');
+  var list = document.getElementById('sel-list');
   T.forEach(function(x,i){
-    var b=document.createElement('button');
-    b.type='button'; b.setAttribute('role','tab'); b.className='tbtn w-full flex items-baseline gap-4 text-left px-6 py-5 border-b border-line last:border-b-0 transition-colors';
-    b.innerHTML='<span class="n text-xs font-semibold tracking-widest text-gold">'+String(i+1).padStart(2,'0')+'</span><span class="font-display text-2xl sm:text-3xl leading-none">'+x.n+'</span>';
-    b.addEventListener('click',function(){show(i);});
+    var b = document.createElement('button');
+    b.className = 'sel-b text-left p-6 md:p-8 flex items-baseline gap-5 transition-colors hover:text-accent';
+    b.setAttribute('role','tab'); b.setAttribute('aria-selected','false');
+    b.innerHTML = '<span class="sel-n font-display text-3xl text-muted">0'+(i+1)+'</span><span class="font-display text-2xl md:text-3xl leading-tight">'+x.t+'</span>';
+    b.addEventListener('click', function(){ show(i); });
     list.appendChild(b);
   });
   function show(i){
-    var x=T[i];
-    [].forEach.call(list.children,function(b,k){b.setAttribute('aria-selected',k===i?'true':'false');});
-    panel.innerHTML='<p class="text-xs uppercase tracking-[.2em] text-gold">'+String(i+1).padStart(2,'0')+' / '+String(T.length).padStart(2,'0')+'</p>'+
-      '<h3 class="font-display text-4xl sm:text-5xl leading-none mt-3">'+x.n+'</h3>'+
-      '<p class="mt-5 text-[.95rem] leading-relaxed text-ink/85 max-w-xl">'+x.d+'</p>'+
-      '<p class="mt-6 text-xs uppercase tracking-[.16em] text-mute border-t border-line pt-4">Duración '+x.t.toLowerCase()+'</p>'+
-      '<ul class="mt-4 space-y-2 text-sm">'+x.b.map(function(s){return '<li class="flex gap-3"><span class="text-acc">—</span>'+s+'</li>';}).join('')+'</ul>'+
-      '<div class="mt-8 p-1"><button type="button" class="btn-db pri" data-open-contact data-prefill="'+x.p+'">Pedir cita</button></div>';
+    var x = T[i];
+    list.querySelectorAll('.sel-b').forEach(function(b,j){ b.setAttribute('aria-selected', j===i?'true':'false'); });
+    document.getElementById('sel-k').textContent = x.k;
+    document.getElementById('sel-t').textContent = x.t;
+    document.getElementById('sel-d').textContent = x.d;
+    document.getElementById('sel-m').textContent = x.m;
+    document.getElementById('sel-b').innerHTML = x.b.map(function(s){ return '<li class="flex gap-3"><span class="text-accent">—</span>'+s+'</li>'; }).join('');
+    document.getElementById('sel-cta').setAttribute('data-prefill', x.p);
   }
   show(0);
 
-  window.addEventListener('load', function(){
-    if (window.lucide) lucide.createIcons();
-    var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if(rm || !window.gsap || !window.ScrollTrigger) return;
-    gsap.registerPlugin(ScrollTrigger);
+  /* Carrusel de reseñas */
+  var car = document.getElementById('car'), cn = document.getElementById('car-n');
+  document.getElementById('car-next').addEventListener('click', function(){ car.scrollBy({left:car.clientWidth, behavior: reduce?'auto':'smooth'}); });
+  document.getElementById('car-prev').addEventListener('click', function(){ car.scrollBy({left:-car.clientWidth, behavior: reduce?'auto':'smooth'}); });
+  car.addEventListener('scroll', function(){ cn.textContent = '0'+(Math.round(car.scrollLeft/car.clientWidth)+1); });
 
-    // Inclinación por velocidad de scroll
-    var els=[].slice.call(document.querySelectorAll('[data-skew]'));
-    var setters=els.map(function(e){return gsap.quickTo(e,'skewX',{duration:.4,ease:'power3'});});
-    ScrollTrigger.create({onUpdate:function(self){
-      var v=gsap.utils.clamp(-10,10,self.getVelocity()/-250);
-      setters.forEach(function(s){s(v);});
-    }});
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  if(window.lucide) lucide.createIcons();
 
-    // Titular gigante: cambia de sentido con el scroll
-    var g=document.getElementById('giant');
-    if(g){ gsap.fromTo(g,{x:'5%'},{x:'-45%',ease:'none',scrollTrigger:{trigger:g,start:'top bottom',end:'bottom top',scrub:true}}); }
-
-    // Fondo suave por sección
-    document.querySelectorAll('[data-bg]').forEach(function(s){
-      ScrollTrigger.create({trigger:s,start:'top 55%',end:'bottom 55%',
-        onToggle:function(self){ if(self.isActive) gsap.to(document.body,{backgroundColor:s.dataset.bg,duration:.8,ease:'power2.out'}); }});
+  /* Letra a letra */
+  function splitLetters(el){
+    var text = el.textContent.trim();
+    el.setAttribute('aria-label', text);
+    el.innerHTML = '';
+    text.split(/\s+/).forEach(function(w){
+      var ws = document.createElement('span'); ws.className='lw'; ws.setAttribute('aria-hidden','true');
+      Array.from(w).forEach(function(c){
+        var o=document.createElement('span'); o.className='lo';
+        var i=document.createElement('span'); i.className='li'; i.textContent=c;
+        o.appendChild(i); ws.appendChild(o);
+      });
+      el.appendChild(ws); el.appendChild(document.createTextNode(' '));
     });
+  }
+  var heads = Array.prototype.slice.call(document.querySelectorAll('.split-l'));
+  heads.forEach(splitLetters);
+
+  window.addEventListener('load', function(){
+    if(window.lucide) lucide.createIcons();
+    if(!window.gsap || reduce) return;
+    if(window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+    heads.forEach(function(h){
+      var chars = h.querySelectorAll('.li');
+      if(!chars.length) return;
+      var isHero = h.tagName === 'H1';
+      var cfg = {yPercent:110, duration:.9, ease:'power4.out', stagger:.02};
+      if(!isHero && window.ScrollTrigger){ cfg.scrollTrigger = {trigger:h, start:'top 85%'}; }
+      else if(isHero){ cfg.delay = .2; }
+      gsap.from(chars, cfg);
+    });
+    /* Galería horizontal fijada */
+    var sec = document.querySelector('[data-gallery]');
+    if(sec && window.ScrollTrigger && window.innerWidth >= 768){
+      var track = sec.querySelector('.g-track');
+      var dist = function(){ return Math.max(0, track.scrollWidth - window.innerWidth); };
+      gsap.to(track, {x:function(){ return -dist(); }, ease:'none',
+        scrollTrigger:{trigger:sec, pin:true, scrub:1, start:'top top', end:function(){ return '+='+dist(); }, invalidateOnRefresh:true}});
+    }
   });
 })();
 </script>
@@ -1441,6 +1452,5 @@ doc.addEventListener('click',function(e){
   e.preventDefault();e.stopImmediatePropagation();openTool();
 },true);
 })();</script><!--/kit:body-->
-<!--wra:lang--><style>#wra-lang{position:fixed;left:12px;bottom:12px;z-index:2147483000;display:flex;gap:2px;padding:3px;border-radius:10px;background:rgba(15,23,42,.9);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font:600 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 4px 18px rgba(0,0,0,.35)}#wra-lang a{color:#cbd5e1;text-decoration:none;padding:8px 9px;border-radius:7px}#wra-lang a:hover{color:#fff;background:rgba(255,255,255,.16)}#wra-lang a[aria-current=true]{background:#fff;color:#0f172a}@media(max-width:600px){#wra-lang{left:8px;bottom:8px}}</style><nav id="wra-lang" aria-label="Idioma / Language"><a href="./" hreflang="es" lang="es" title="Español" aria-current="true">ES</a><a href="./ca/" hreflang="ca" lang="ca" title="Català">CA</a><a href="./en/" hreflang="en" lang="en" title="English">EN</a><a href="./fr/" hreflang="fr" lang="fr" title="Français">FR</a></nav><!--/wra:lang-->
 </body>
 </html>
