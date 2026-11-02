@@ -4,22 +4,22 @@
 <!--wra:head--><meta name="robots" content="noindex, nofollow"><!--/wra:head-->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Medifutur · Centro médico en Lloret de Mar · Dr. Emmanuel Rottler</title>
-<meta name="description" content="Centro médico en Lloret de Mar (Costa Brava): urgencias, medicina familiar, medicina deportiva, mesoterapia y problemas articulares. Llame al 660 101 680.">
-<meta property="og:title" content="Medifutur · Centro médico en Lloret de Mar">
-<meta property="og:description" content="Urgencias, medicina familiar, medicina deportiva, mesoterapia y problemas articulares en la Costa Brava. Aparcamiento delante.">
+<title>Medifutur · Centro médico y urgencias en Lloret de Mar · Dr. Emmanuel Rottler</title>
+<meta name="description" content="Medifutur, centro médico en Lloret de Mar (Costa Brava): urgencias, medicina general, medicina deportiva, traumatología, mesoterapia y certificados médicos. Llame al 660 101 680.">
+<meta property="og:title" content="Medifutur · Centro médico y urgencias en Lloret de Mar">
+<meta property="og:description" content="Urgencias, medicina general y deportiva, traumatología y mesoterapia con el Dr. Emmanuel Rottler. Parking delante. Tel. 660 101 680.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="./assets/photo-1.jpg">
 <meta property="og:locale" content="es_ES">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
   theme: { extend: {
-    colors: { bg:'#F8F4F6', bg2:'#EFE9EB', fg:'#211218', accent:'#A5275E' },
-    fontFamily: { serif:['"Playfair Display"','serif'], sans:['Lato','sans-serif'] }
+    colors: { bg:'#F8F5F4', bg2:'#EFEAE9', ink:'#211412', brick:'#A53C27', cross:'#1F5FA8' },
+    fontFamily: { display:['"Schibsted Grotesk"','sans-serif'], serif:['Newsreader','serif'] }
   } }
 }
 </script>
@@ -29,45 +29,57 @@ tailwind.config = {
   "@context":"https://schema.org",
   "@type":"MedicalClinic",
   "name":"Medifutur",
-  "description":"Centro médico en Lloret de Mar (Costa Brava) del Dr. Emmanuel Rottler: urgencias, medicina familiar, medicina deportiva, mesoterapia y problemas articulares.",
   "url":"https://medifutur.com",
   "image":"./assets/photo-1.jpg",
-  "logo":"./assets/logo.png",
   "telephone":"+34660101680",
   "email":"medifutur@live.com",
-  "medicalSpecialty":["Emergency","PrimaryCare","SportsMedicine"],
   "address":{"@type":"PostalAddress","streetAddress":"Carrer de Costa de Carbonell, 59","postalCode":"17310","addressLocality":"Lloret de Mar","addressRegion":"Girona","addressCountry":"ES"},
+  "medicalSpecialty":["Emergency","GeneralPractice","SportsMedicine","Orthopedic"],
+  "employee":{"@type":"Physician","name":"Emmanuel Rottler"},
   "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"69","bestRating":"5"},
-  "sameAs":["https://www.facebook.com/Medifutur-1647260602158344"]
+  "sameAs":["https://www.facebook.com/Medifutur-1647260602158344"],
+  "availableService":[
+    {"@type":"MedicalProcedure","name":"Urgencias médicas"},
+    {"@type":"MedicalProcedure","name":"Medicina general"},
+    {"@type":"MedicalProcedure","name":"Medicina deportiva"},
+    {"@type":"MedicalProcedure","name":"Traumatología y problemas de articulaciones"},
+    {"@type":"MedicalProcedure","name":"Mesoterapia"},
+    {"@type":"MedicalProcedure","name":"Certificados médicos"}
+  ]
 }
 </script>
 <style>
-:root{--bg:#F8F4F6;--bg2:#EFE9EB;--fg:#211218;--accent:#A5275E;--radius:4px}
+:root{--bg:#F8F5F4;--bg2:#EFEAE9;--fg:#211412;--accent:#A53C27;--line:#211412;--radius:4px}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--fg);font-family:Lato,sans-serif;background-image:repeating-linear-gradient(0deg,transparent 0 47px,color-mix(in srgb,var(--fg) 5%,transparent) 47px 48px),repeating-linear-gradient(90deg,transparent 0 47px,color-mix(in srgb,var(--fg) 5%,transparent) 47px 48px)}
-.serif{font-family:'Playfair Display',serif}
-.rule{border-top:1px solid color-mix(in srgb,var(--fg) 25%,transparent)}
-.eyebrow{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--accent)}
-.vault-card{transition:background-color .5s}
-.vault-card:hover{background-image:radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--accent) 14%,transparent),transparent 65%)}
-.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.4rem;border-radius:var(--radius);font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;transition:all .3s}
-.btn-primary{background:var(--accent);color:#fff}
-.btn-primary:hover{background:var(--fg)}
-.btn-ghost{border:1px solid var(--fg)}
-.btn-ghost:hover{background:var(--fg);color:var(--bg)}
-.side a.nl{display:flex;gap:.6rem;padding:.45rem 0;font-size:.82rem;border-bottom:1px solid color-mix(in srgb,var(--fg) 12%,transparent);transition:color .2s,padding .3s}
-.side a.nl:hover{color:var(--accent);padding-left:.5rem}
-.side a.nl span{color:var(--accent);font-weight:700}
+body{background:var(--bg);color:var(--fg);font-family:'Newsreader',serif;font-size:18px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.f-d{font-family:'Schibsted Grotesk',sans-serif}
+.mono{font:500 .72rem ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase}
+.rule{border-top:6px solid var(--fg)}
+.rule-t{border-top:2px solid var(--fg)}
+.clay{background-image:linear-gradient(125deg,transparent 0 40%,color-mix(in srgb,var(--accent) 10%,transparent) 40% 60%,transparent 60%)}
+.huge{font-weight:800;letter-spacing:-.045em;line-height:.88}
+.huge em{font-family:'Newsreader',serif;font-style:italic;font-weight:400;color:var(--accent);letter-spacing:-.03em}
+.btn{display:inline-flex;align-items:center;gap:.75rem;padding:1rem 1.5rem;border:2px solid var(--fg);font-family:'Schibsted Grotesk',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:.85rem;border-radius:var(--radius);transition:background .25s,color .25s,transform .25s}
+.btn-solid{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-solid:hover{background:var(--fg);border-color:var(--fg)}
+.btn-line:hover{background:var(--fg);color:var(--bg)}
+.vault-card{border:2px solid var(--fg);background:var(--bg);transition:box-shadow .4s,border-color .3s}
+.vault-card:hover{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),0 18px 40px -18px color-mix(in srgb,var(--accent) 55%,transparent)}
+.is-open{display:flex}
 [data-menu]{display:none}
-[data-menu].is-open{display:flex}
-@media(min-width:1024px){[data-menu]{display:flex}}
-.wra-plus{transition:transform .3s;font-size:1.5rem;color:var(--accent)}
-[data-faq-a]{overflow:hidden}
-.opt{border:1px solid color-mix(in srgb,var(--fg) 25%,transparent);border-radius:var(--radius);padding:.7rem 1rem;text-align:left;transition:all .25s;font-size:.9rem;background:#fff8}
-.opt:hover,.opt.on{border-color:var(--accent);background:var(--accent);color:#fff}
-.dropcap::first-letter{font-family:'Playfair Display',serif;font-size:4.6rem;float:left;line-height:.8;padding:.4rem .6rem 0 0;color:var(--accent);font-weight:800}
+.svc{border-top:2px solid var(--fg);transition:background .3s,padding .3s}
+.svc:hover{background:var(--fg);color:var(--bg)}
+.svc:hover .svc-n{color:#fff}
+.wra-plus{font-family:'Schibsted Grotesk';font-weight:800;font-size:1.8rem;line-height:1;transition:transform .3s}
+[data-faq-item]{border-top:2px solid var(--fg)}
+[data-faq-q]{width:100%;display:flex;justify-content:space-between;gap:1.5rem;text-align:left;padding:1.4rem 0;font-family:'Schibsted Grotesk';font-weight:600;font-size:1.2rem}
+[data-faq-item].is-open .wra-plus,[data-faq-item].open .wra-plus{transform:rotate(45deg);color:var(--accent)}
+.pick{border:2px solid var(--fg);padding:.9rem 1.1rem;text-align:left;font-family:'Schibsted Grotesk';font-weight:600;transition:all .2s;border-radius:var(--radius);background:var(--bg)}
+.pick[aria-pressed="true"],.pick:hover{background:var(--fg);color:var(--bg)}
+.gmark{display:inline-block;vertical-align:middle}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 </style>
-<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(246,241,234,.86);--wra-bg:#F6F1EA;--wra-accent:#A5275E;--wra-on-accent:#ffffff;--wra-surface:#FFFFFF;--wra-fg:#1E1B18;--wra-muted:#7A7168;--wra-line:rgba(30,27,24,.12);--wra-display:'Fraunces', serif;--wra-body:'DM Sans', sans-serif}
+<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(248,250,252,.86);--wra-bg:#F8FAFC;--wra-accent:#A53C27;--wra-on-accent:#ffffff;--wra-surface:#FFFFFF;--wra-fg:#0F172A;--wra-muted:#64748B;--wra-line:#E2E8F0;--wra-display:'Instrument Sans', sans-serif;--wra-body:'Instrument Sans', sans-serif}
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
 .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
@@ -271,326 +283,376 @@ html.wrab-lock{overflow:hidden}
 .wrab-tip{margin:.7rem 0 0;font-size:.82rem;color:var(--wra-muted,#666)}
 </style><!--/kit:head-->
 </head>
-<body class="antialiased">
+<body>
 
-<!-- SIDEBAR / HEADER -->
-<header data-nav data-layout-nav="editorial-left-sidebar" class="side fixed top-0 inset-x-0 lg:right-auto lg:bottom-0 lg:w-64 z-50 bg-bg/90 backdrop-blur-md border-b lg:border-b-0 lg:border-r border-fg/20 flex flex-col">
-  <div class="flex items-center justify-between px-5 py-3 lg:flex-col lg:items-start lg:gap-5 lg:py-8">
-    <a href="#inicio" class="flex items-center gap-3">
+<header data-nav data-layout-nav="swiss-bar" class="fixed top-0 inset-x-0 z-50 bg-bg/90 backdrop-blur-md border-b-4 border-ink">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8 py-4 flex items-center justify-between gap-4">
+    <a href="#inicio" class="flex items-center gap-3" aria-label="Medifutur, inicio">
       <img src="./assets/logo.png" alt="Logo de Medifutur" class="h-9 w-auto">
-      <span class="serif text-2xl font-extrabold tracking-tight">Medifutur</span>
+      <span class="f-d font-extrabold tracking-tight text-xl uppercase">Medifutur</span>
     </a>
-    <button data-burger aria-label="Abrir menú" class="lg:hidden p-2 border border-fg/30 rounded"><i data-lucide="menu" class="h-5 w-5"></i></button>
-  </div>
-  <div data-menu class="flex-col px-5 pb-5 lg:flex-1 lg:justify-between bg-bg lg:bg-transparent">
-    <nav aria-label="Principal" class="flex flex-col">
-      <a class="nl" href="#inicio"><span>01</span>Inicio</a>
-      <a class="nl" href="#especialidades"><span>02</span>Especialidades</a>
-      <a class="nl" href="#triaje"><span>03</span>Orientación rápida</a>
-      <a class="nl" href="#opiniones"><span>04</span>Opiniones</a>
-      <a class="nl" href="#galeria"><span>05</span>La clínica</a>
-      <a class="nl" href="#doctor"><span>06</span>El doctor</a>
-      <a class="nl" href="#faq"><span>07</span>Preguntas</a>
-      <a class="nl" href="#contacto"><span>08</span>Contacto</a>
+    <nav class="hidden lg:flex items-center gap-8 mono" aria-label="Principal">
+      <a href="#especialidades" class="hover:text-brick">01 Especialidades</a>
+      <a href="#triaje" class="hover:text-brick">02 Triaje</a>
+      <a href="#opiniones" class="hover:text-brick">03 Opiniones</a>
+      <a href="#doctor" class="hover:text-brick">04 Doctor</a>
+      <a href="#contacto" class="hover:text-brick">05 Contacto</a>
     </nav>
-    <div class="mt-5 flex flex-col gap-2">
-      <a href="tel:660101680" class="btn btn-primary justify-center"><i data-lucide="phone" class="h-4 w-4"></i> 660 101 680</a>
-      <button data-open-contact data-prefill="Hola, quisiera pedir cita en Medifutur." class="btn btn-ghost justify-center"><i data-lucide="message-circle" class="h-4 w-4"></i> Escribir</button>
-      <p class="text-[.7rem] opacity-70 mt-1">Llamadas para cita: 10:00 h – 20:00 h</p>
+    <div class="flex items-center gap-3">
+      <a href="tel:+34660101680" class="btn btn-solid hidden sm:inline-flex !py-3" data-magnetic><i data-lucide="phone" class="h-4 w-4"></i>660 101 680</a>
+      <button data-burger class="lg:hidden border-2 border-ink p-2" aria-label="Abrir menú"><i data-lucide="menu" class="h-5 w-5"></i></button>
     </div>
+  </div>
+  <div data-menu class="lg:hidden flex-col border-t-2 border-ink bg-bg px-4 py-6 gap-4 f-d font-extrabold text-3xl uppercase">
+    <a href="#especialidades">Especialidades</a>
+    <a href="#triaje">Triaje</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#doctor">Doctor</a>
+    <a href="#faq">Preguntas</a>
+    <a href="#contacto">Contacto</a>
+    <a href="tel:+34660101680" class="text-brick">Llamar ahora</a>
   </div>
 </header>
 
-<main class="lg:pl-64 pt-16 lg:pt-0">
-
-<!-- 1 HERO -->
-<section id="inicio" data-hero data-layout-hero="editorial" class="relative px-5 sm:px-10 lg:px-14 pt-10 lg:pt-16 pb-16">
-  <div class="flex justify-between items-center eyebrow rule pt-3">
-    <span>Nº 01 · Lloret de Mar</span><span>Costa Brava</span>
-  </div>
-  <h1 data-split class="serif font-black leading-[.92] tracking-tight text-5xl sm:text-7xl xl:text-[8.5rem] mt-8">Medicina de <em class="text-accent font-normal">confianza</em> en Lloret de Mar</h1>
-  <div class="grid lg:grid-cols-12 gap-8 mt-10">
-    <div class="lg:col-span-5 order-2 lg:order-1">
-      <p data-hero-item class="dropcap text-lg leading-relaxed">Centro médico del Dr. Emmanuel Rottler en la Costa Brava. Urgencias, medicina familiar, medicina deportiva, mesoterapia y problemas articulares, con atención en varios idiomas y aparcamiento justo delante.</p>
-      <div data-hero-item class="flex flex-wrap gap-3 mt-8">
-        <a href="tel:660101680" data-magnetic class="btn btn-primary"><i data-lucide="phone" class="h-4 w-4"></i> Llamar ahora</a>
-        <button data-open-tool data-magnetic class="btn btn-ghost"><i data-lucide="stethoscope" class="h-4 w-4"></i> Orientación rápida</button>
-        <a href="https://wa.me/34660101680" data-magnetic class="btn btn-ghost"><i data-lucide="message-circle" class="h-4 w-4"></i> WhatsApp</a>
-      </div>
-      <div data-hero-item class="mt-8 flex items-center gap-3 text-sm">
-        <svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.1 5.5c4.3-4 6.8-9.9 6.8-16.4z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.9-6.1a24 24 0 0 0 0 21.6l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.1-5.5c-2 1.4-4.6 2.3-8.8 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg>
-        <span><b data-count="4.1" data-decimals="1">4,1</b> ★ en Google Maps · <b data-count="69">69</b> reseñas</span>
+<main>
+<!-- 00 HERO -->
+<section id="inicio" data-hero data-layout-hero="swiss-12" class="clay pt-28 md:pt-32">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8">
+    <div data-hero-item class="rule-t py-3 flex flex-wrap justify-between gap-x-8 gap-y-1 mono">
+      <span>00 — Centro médico</span><span class="text-brick">Lloret de Mar · Costa Brava</span><span>Urgencias incluso a domicilio</span>
+    </div>
+    <div class="grid grid-cols-12 gap-x-4 md:gap-x-6 pt-6 pb-10">
+      <h1 data-split class="huge col-span-12 lg:col-span-9 text-[17vw] lg:text-[11.5rem] uppercase">Médico <em>de verdad,</em> cerca de usted.</h1>
+      <div class="col-span-12 lg:col-span-3 lg:pt-6 flex flex-col justify-end gap-6 mt-8 lg:mt-0">
+        <p data-hero-item class="text-xl leading-snug">Medifutur es la consulta del <strong>Dr. Emmanuel Rottler</strong> en Lloret de Mar: urgencias, medicina general y deportiva, articulaciones y mesoterapia. Sin colas de hospital.</p>
+        <div data-hero-item class="flex flex-col gap-3">
+          <a href="tel:+34660101680" class="btn btn-solid wra-btn justify-between" data-magnetic><span class="flex items-center gap-2"><i data-lucide="phone" class="h-4 w-4"></i>Llamar ahora</span><span class="wra-ico">→</span></a>
+          <button data-open-tool class="btn btn-line justify-between" data-magnetic><span>Orientar mi caso</span><span class="wra-ico">→</span></button>
+          <a href="https://wa.me/34660101680" class="btn btn-line justify-between"><span class="flex items-center gap-2"><i data-lucide="message-circle" class="h-4 w-4"></i>Escribir por WhatsApp</span><span>↗</span></a>
+        </div>
       </div>
     </div>
-    <div class="lg:col-span-7 order-1 lg:order-2 group">
-      <div data-parallax-wrap class="relative overflow-hidden h-[340px] sm:h-[480px] lg:h-[560px]" style="border-radius:4px">
-        <img data-parallax src="./assets/photo-1.jpg" alt="Centro médico Medifutur en Lloret de Mar" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none"></div>
-        <p class="absolute bottom-4 left-5 text-white text-xs tracking-widest uppercase">Carrer de Costa de Carbonell, 59</p>
+    <div data-hero-item class="grid grid-cols-12 gap-px bg-ink border-2 border-ink">
+      <div class="col-span-12 md:col-span-8 bg-bg">
+        <div data-parallax-wrap class="overflow-hidden group h-[320px] md:h-[520px]">
+          <img data-parallax src="./assets/photo-1.jpg" alt="Fachada de la clínica Medifutur en Carrer de Costa de Carbonell, Lloret de Mar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 hover:scale-105">
+        </div>
+      </div>
+      <div class="col-span-12 md:col-span-4 grid grid-rows-3 gap-px">
+        <p class="bg-bg p-5 mono">Valoración<br><span class="f-d text-6xl font-extrabold text-brick tracking-tighter normal-case" data-count="4.1">4.1</span><span class="text-2xl"> / 5</span></p>
+        <p class="bg-bg p-5 mono">Reseñas en Google Maps<br><span class="f-d text-6xl font-extrabold tracking-tighter normal-case" data-count="69">69</span></p>
+        <p class="bg-ink text-bg p-5 mono">Parking<br><span class="f-d text-2xl font-extrabold normal-case tracking-tight">Delante de la puerta</span></p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- 2 MARQUESINA -->
-<section class="bg-fg text-bg py-5 overflow-hidden" aria-label="Especialidades">
+<!-- 01 MARQUESINA -->
+<section aria-label="Especialidades" class="mt-12 bg-ink text-bg py-5 overflow-hidden border-y-4 border-ink">
   <div data-marquee>
-    <div class="flex gap-10 serif italic text-2xl whitespace-nowrap">
-      <span>Urgencias médicas</span><span class="text-accent">●</span>
-      <span>Medicina familiar</span><span class="text-accent">●</span>
-      <span>Medicina deportiva</span><span class="text-accent">●</span>
-      <span>Mesoterapia</span><span class="text-accent">●</span>
-      <span>Problemas articulares</span><span class="text-accent">●</span>
-      <span>Parking delante</span><span class="text-accent">●</span>
+    <div class="flex gap-10 f-d font-extrabold uppercase text-3xl md:text-5xl tracking-tighter whitespace-nowrap">
+      <span>Urgencias</span><span class="text-brick">✚</span><span>Medicina general</span><span class="text-brick">✚</span><span>Medicina deportiva</span><span class="text-brick">✚</span><span>Articulaciones</span><span class="text-brick">✚</span><span>Traumatología</span><span class="text-brick">✚</span><span>Mesoterapia</span><span class="text-brick">✚</span><span>Certificados médicos</span><span class="text-brick">✚</span>
     </div>
   </div>
 </section>
 
-<!-- 3 CIFRAS -->
-<section class="px-5 sm:px-10 lg:px-14 py-16">
-  <p class="eyebrow">Nº 02 · Lo que dicen los pacientes</p>
-  <div class="grid sm:grid-cols-3 gap-0 mt-6 rule">
-    <div data-reveal class="py-8 sm:pr-8 sm:border-r border-fg/20">
-      <div class="serif text-7xl font-black text-accent"><span data-count="4.1" data-decimals="1">4,1</span></div>
-      <p class="text-sm mt-2 uppercase tracking-widest">Nota media en Google Maps</p>
+<!-- 02 ESPECIALIDADES -->
+<section id="especialidades" class="py-20 md:py-28">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8">
+    <div class="rule pt-4 grid grid-cols-12 gap-6">
+      <p class="col-span-12 md:col-span-3 mono">01 — Especialidades</p>
+      <h2 data-split class="huge col-span-12 md:col-span-9 text-6xl md:text-[8rem] uppercase">Siete <em>motivos</em> para cruzar la puerta.</h2>
     </div>
-    <div data-reveal class="py-8 sm:px-8 sm:border-r border-fg/20">
-      <div class="serif text-7xl font-black"><span data-count="69">69</span></div>
-      <p class="text-sm mt-2 uppercase tracking-widest">Reseñas de pacientes</p>
-    </div>
-    <div data-reveal class="py-8 sm:pl-8">
-      <div class="serif text-7xl font-black"><span data-count="5">5</span></div>
-      <p class="text-sm mt-2 uppercase tracking-widest">Áreas de atención médica</p>
+    <div data-reveal-group class="mt-14 md:ml-[25%]">
+      <article data-reveal class="svc grid grid-cols-12 gap-4 py-7 px-2 items-baseline">
+        <span class="svc-n col-span-2 f-d font-extrabold text-4xl md:text-6xl text-brick">01</span>
+        <h3 class="col-span-10 md:col-span-4 f-d font-extrabold text-3xl uppercase tracking-tight">Urgencias</h3>
+        <p class="col-span-12 md:col-span-6 md:text-lg">Atención médica urgente, incluso a domicilio según el rótulo de la consulta. Si no hay nadie, llame al teléfono de la puerta.</p>
+      </article>
+      <article data-reveal class="svc grid grid-cols-12 gap-4 py-7 px-2 items-baseline">
+        <span class="svc-n col-span-2 f-d font-extrabold text-4xl md:text-6xl text-brick">02</span>
+        <h3 class="col-span-10 md:col-span-4 f-d font-extrabold text-3xl uppercase tracking-tight">Medicina general</h3>
+        <p class="col-span-12 md:col-span-6 md:text-lg">Médico de familia para dolencias comunes, revisiones y dudas de salud: oído, infecciones, molestias del viaje y más.</p>
+      </article>
+      <article data-reveal class="svc grid grid-cols-12 gap-4 py-7 px-2 items-baseline">
+        <span class="svc-n col-span-2 f-d font-extrabold text-4xl md:text-6xl text-brick">03</span>
+        <h3 class="col-span-10 md:col-span-4 f-d font-extrabold text-3xl uppercase tracking-tight">Medicina deportiva</h3>
+        <p class="col-span-12 md:col-span-6 md:text-lg">Lesiones, sobrecargas y seguimiento para quien practica deporte, de forma ocasional o habitual.</p>
+      </article>
+      <article data-reveal class="svc grid grid-cols-12 gap-4 py-7 px-2 items-baseline">
+        <span class="svc-n col-span-2 f-d font-extrabold text-4xl md:text-6xl text-brick">04</span>
+        <h3 class="col-span-10 md:col-span-4 f-d font-extrabold text-3xl uppercase tracking-tight">Problemas de articulaciones</h3>
+        <p class="col-span-12 md:col-span-6 md:text-lg">Rodillas, hombros, espalda: valoración del dolor articular y plan de tratamiento personalizado.</p>
+      </article>
+      <article data-reveal class="svc grid grid-cols-12 gap-4 py-7 px-2 items-baseline">
+        <span class="svc-n col-span-2 f-d font-extrabold text-4xl md:text-6xl text-brick">05</span>
+        <h3 class="col-span-10 md:col-span-4 f-d font-extrabold text-3xl uppercase tracking-tight">Traumatología</h3>
+        <p class="col-span-12 md:col-span-6 md:text-lg">Golpes, esguinces y dolores del aparato locomotor, con orientación clara sobre qué hacer a continuación.</p>
+      </article>
+      <article data-reveal class="svc grid grid-cols-12 gap-4 py-7 px-2 items-baseline">
+        <span class="svc-n col-span-2 f-d font-extrabold text-4xl md:text-6xl text-brick">06</span>
+        <h3 class="col-span-10 md:col-span-4 f-d font-extrabold text-3xl uppercase tracking-tight">Mesoterapia</h3>
+        <p class="col-span-12 md:col-span-6 md:text-lg">Tratamiento con microinyecciones localizadas, indicado tras valoración médica.</p>
+      </article>
+      <article data-reveal class="svc grid grid-cols-12 gap-4 py-7 px-2 items-baseline border-b-2 border-ink">
+        <span class="svc-n col-span-2 f-d font-extrabold text-4xl md:text-6xl text-brick">07</span>
+        <h3 class="col-span-10 md:col-span-4 f-d font-extrabold text-3xl uppercase tracking-tight">Certificados médicos</h3>
+        <p class="col-span-12 md:col-span-6 md:text-lg">«Certificats mèdics» para trámites, deporte y otras gestiones. Consulte qué documentación necesita.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- 4 ESPECIALIDADES -->
-<section id="especialidades" data-layout-menu="editorial-index" class="px-5 sm:px-10 lg:px-14 py-16 bg-bg2/70">
-  <p class="eyebrow">Nº 03 · Especialidades</p>
-  <h2 data-split class="serif font-black text-4xl sm:text-6xl leading-none mt-4 max-w-3xl">Cinco motivos para <em class="text-accent font-normal">llamarnos</em></h2>
-  <div data-reveal-group class="mt-12 rule">
-    <article data-reveal class="vault-card grid md:grid-cols-12 gap-4 py-8 border-b border-fg/20 items-start">
-      <span class="serif text-5xl text-accent md:col-span-1">01</span>
-      <h3 class="serif text-3xl font-extrabold md:col-span-4 flex gap-3 items-center"><i data-lucide="siren" class="h-6 w-6 text-accent"></i>Urgencias médicas</h3>
-      <p class="md:col-span-7 leading-relaxed">Atención ante cualquier urgencia médica. Los pacientes destacan la rapidez y la disponibilidad del Dr. Rottler cuando más se le necesita. Ante una emergencia vital, llame siempre al 112.</p>
-    </article>
-    <article data-reveal class="vault-card grid md:grid-cols-12 gap-4 py-8 border-b border-fg/20 items-start">
-      <span class="serif text-5xl text-accent md:col-span-1">02</span>
-      <h3 class="serif text-3xl font-extrabold md:col-span-4 flex gap-3 items-center"><i data-lucide="heart-pulse" class="h-6 w-6 text-accent"></i>Medicina familiar</h3>
-      <p class="md:col-span-7 leading-relaxed">Un médico de cabecera que escucha, explica y busca la solución adecuada para cada paciente, residente o de paso por la Costa Brava.</p>
-    </article>
-    <article data-reveal class="vault-card grid md:grid-cols-12 gap-4 py-8 border-b border-fg/20 items-start">
-      <span class="serif text-5xl text-accent md:col-span-1">03</span>
-      <h3 class="serif text-3xl font-extrabold md:col-span-4 flex gap-3 items-center"><i data-lucide="activity" class="h-6 w-6 text-accent"></i>Medicina deportiva</h3>
-      <p class="md:col-span-7 leading-relaxed">Valoración y seguimiento de lesiones y molestias asociadas a la actividad física, con recomendaciones claras para volver a moverse.</p>
-    </article>
-    <article data-reveal class="vault-card grid md:grid-cols-12 gap-4 py-8 border-b border-fg/20 items-start">
-      <span class="serif text-5xl text-accent md:col-span-1">04</span>
-      <h3 class="serif text-3xl font-extrabold md:col-span-4 flex gap-3 items-center"><i data-lucide="syringe" class="h-6 w-6 text-accent"></i>Mesoterapia</h3>
-      <p class="md:col-span-7 leading-relaxed">Tratamiento por microinyecciones localizadas, orientado al dolor y a las molestias musculares y articulares. El profesional valorará en consulta si es adecuado para usted.</p>
-    </article>
-    <article data-reveal class="vault-card grid md:grid-cols-12 gap-4 py-8 border-b border-fg/20 items-start">
-      <span class="serif text-5xl text-accent md:col-span-1">05</span>
-      <h3 class="serif text-3xl font-extrabold md:col-span-4 flex gap-3 items-center"><i data-lucide="bone" class="h-6 w-6 text-accent"></i>Problemas articulares</h3>
-      <p class="md:col-span-7 leading-relaxed">Dolor de rodillas y otras articulaciones: una paciente cuenta que volvió a caminar tras unas sesiones y siguiendo las recomendaciones al pie de la letra.</p>
-    </article>
-  </div>
-</section>
-
-<!-- 5 TRIAJE -->
-<section id="triaje" class="px-5 sm:px-10 lg:px-14 py-16">
-  <div class="grid lg:grid-cols-12 gap-10">
-    <div class="lg:col-span-5">
-      <p class="eyebrow">Nº 04 · Orientación rápida</p>
-      <h2 data-split class="serif font-black text-4xl sm:text-5xl leading-none mt-4">¿Por dónde <em class="text-accent font-normal">empezar</em>?</h2>
-      <p class="mt-5 leading-relaxed">Elija el motivo de su consulta y le indicaremos cuál es el área más adecuada. Es una orientación, no un diagnóstico.</p>
-      <button data-open-tool data-magnetic class="btn btn-primary mt-6"><i data-lucide="stethoscope" class="h-4 w-4"></i> Abrir triaje completo</button>
+<!-- 03 TRIAJE -->
+<section id="triaje" class="bg-ink text-bg py-20 md:py-28">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8 grid grid-cols-12 gap-6 md:gap-10">
+    <div class="col-span-12 md:col-span-5">
+      <p class="mono text-bg/60 border-t-4 border-bg pt-4">02 — Orientación rápida</p>
+      <h2 data-split class="huge text-6xl md:text-8xl uppercase mt-6">¿Qué <em>le pasa?</em></h2>
+      <p class="mt-6 text-xl text-bg/80 max-w-md">Elija lo que mejor describe su situación. Es una orientación, no un diagnóstico: ante dudas, llame.</p>
+      <button data-open-tool data-magnetic class="btn btn-solid mt-8 wra-btn"><span>Abrir triaje completo</span><span class="wra-ico">→</span></button>
     </div>
-    <div class="lg:col-span-7 bg-white/60 border border-fg/20 p-6 sm:p-8" style="border-radius:4px" data-reveal>
-      <p class="eyebrow mb-4">Mi consulta es por…</p>
-      <div class="grid sm:grid-cols-2 gap-3" id="triage-opts">
-        <button class="opt" data-k="u">Algo urgente o que me preocupa ahora</button>
-        <button class="opt" data-k="f">Revisión, receta o síntomas generales</button>
-        <button class="opt" data-k="d">Lesión o dolor tras hacer deporte</button>
-        <button class="opt" data-k="m">Dolor persistente muscular</button>
-        <button class="opt" data-k="a">Dolor en rodillas u otras articulaciones</button>
-        <button class="opt" data-k="o">Otra cosa</button>
+    <div class="col-span-12 md:col-span-7 md:pt-4">
+      <div id="picks" class="grid sm:grid-cols-2 gap-3 text-ink">
+        <button class="pick" data-k="u" aria-pressed="false">Dolor fuerte, mareo o algo grave</button>
+        <button class="pick" data-k="a" aria-pressed="false">Dolor de rodilla, espalda o articulación</button>
+        <button class="pick" data-k="d" aria-pressed="false">Me he lesionado haciendo deporte</button>
+        <button class="pick" data-k="g" aria-pressed="false">Síntomas de infección, oído, fiebre…</button>
+        <button class="pick" data-k="c" aria-pressed="false">Necesito un certificado médico</button>
+        <button class="pick" data-k="m" aria-pressed="false">Me interesa la mesoterapia</button>
       </div>
-      <div id="triage-out" class="mt-6 p-5 bg-bg2 border-l-4 border-accent min-h-[6rem]" aria-live="polite">
-        <p class="text-sm opacity-70">Seleccione una opción para ver la orientación.</p>
-      </div>
-      <a id="triage-cta" href="tel:660101680" class="btn btn-primary mt-4"><i data-lucide="phone" class="h-4 w-4"></i> Llamar al 660 101 680</a>
-    </div>
-  </div>
-</section>
-
-<!-- 6 OPINIONES -->
-<section id="opiniones" class="px-5 sm:px-10 lg:px-14 py-16 bg-fg text-bg">
-  <p class="eyebrow !text-[#ff9ec6]">Nº 05 · Opiniones verificadas de Google</p>
-  <div class="flex flex-wrap items-end gap-6 mt-4">
-    <h2 data-split class="serif font-black text-4xl sm:text-6xl leading-none">Lo cuentan <em class="font-normal text-[#ff9ec6]">ellos</em></h2>
-    <div class="flex items-center gap-3 text-sm">
-      <svg class="h-6 w-6" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.1 5.5c4.3-4 6.8-9.9 6.8-16.4z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.9-6.1a24 24 0 0 0 0 21.6l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.1-5.5c-2 1.4-4.6 2.3-8.8 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg>
-      <span>4,1 ★ en Google Maps · 69 reseñas</span>
-    </div>
-  </div>
-  <div data-reveal-group class="grid md:grid-cols-6 gap-5 mt-10">
-    <figure data-reveal class="md:col-span-3 border border-bg/25 p-6" style="border-radius:4px">
-      <div class="flex justify-between"><span class="text-[#FBBC05]">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.1 5.5c4.3-4 6.8-9.9 6.8-16.4z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.9-6.1a24 24 0 0 0 0 21.6l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.1-5.5c-2 1.4-4.6 2.3-8.8 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg></div>
-      <blockquote class="serif text-xl mt-4 leading-snug">«Gracias al dr Emmanuel mi marido sigue con vida. Le detectó un infarto que se confirmó en el hospital. Un grandísimo profesional.»</blockquote>
-      <figcaption class="mt-4 text-sm opacity-80">carmen garcia alvarez · Hace 3 años</figcaption>
-    </figure>
-    <figure data-reveal class="md:col-span-3 border border-bg/25 p-6" style="border-radius:4px">
-      <div class="flex justify-between"><span class="text-[#FBBC05]">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.1 5.5c4.3-4 6.8-9.9 6.8-16.4z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.9-6.1a24 24 0 0 0 0 21.6l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.1-5.5c-2 1.4-4.6 2.3-8.8 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg></div>
-      <blockquote class="serif text-xl mt-4 leading-snug">«Muy agradecido a la clínica Medifutur, me atendieron muy rápido y amables. Tenía un fuerte dolor de oído causado por una mala descompresión del viaje en avión… Ha funcionado de maravilla. Los euros mejor invertidos en una visita médica.»</blockquote>
-      <figcaption class="mt-4 text-sm opacity-80">Manuel Jose Hita Rey · Hace 4 años</figcaption>
-    </figure>
-    <figure data-reveal class="md:col-span-2 border border-bg/25 p-6" style="border-radius:4px">
-      <div class="flex justify-between"><span class="text-[#FBBC05]">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.1 5.5c4.3-4 6.8-9.9 6.8-16.4z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.9-6.1a24 24 0 0 0 0 21.6l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.1-5.5c-2 1.4-4.6 2.3-8.8 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg></div>
-      <blockquote class="mt-4 leading-snug text-sm">«A mí me consta que es un excelente doctor, no podía caminar por el dolor de rodillas y con 4 sesiones, inyecciones y siguiendo al pie de la letra las recomendaciones, hasta el día de hoy estoy fenomenal.»</blockquote>
-      <figcaption class="mt-4 text-sm opacity-80">Carmelina Sosa Rodriguez · Hace 4 años</figcaption>
-    </figure>
-    <figure data-reveal class="md:col-span-2 border border-bg/25 p-6" style="border-radius:4px">
-      <div class="flex justify-between"><span class="text-[#FBBC05]">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.1 5.5c4.3-4 6.8-9.9 6.8-16.4z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.9-6.1a24 24 0 0 0 0 21.6l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.1-5.5c-2 1.4-4.6 2.3-8.8 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg></div>
-      <blockquote class="mt-4 leading-snug text-sm">«El Dr. Enmanuel es un buen profesional, atento a cualquier hora del día, noche o madrugada para atender todo tipo de urgencia. Estoy agradecida por su preocupación cuando enfermé.»</blockquote>
-      <figcaption class="mt-4 text-sm opacity-80">lidiaestevera@gmail.com Esteve · Hace 4 años</figcaption>
-    </figure>
-    <figure data-reveal class="md:col-span-2 border border-bg/25 p-6" style="border-radius:4px">
-      <div class="flex justify-between"><span class="text-[#FBBC05]">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.1 5.5c4.3-4 6.8-9.9 6.8-16.4z"/><path fill="#FBBC05" d="M10.5 28.7a14.5 14.5 0 0 1 0-9.4l-7.9-6.1a24 24 0 0 0 0 21.6l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.1-5.5c-2 1.4-4.6 2.3-8.8 2.3-6.3 0-11.6-4.1-13.5-9.8l-7.9 6.1C6.5 42.6 14.6 48 24 48z"/></svg></div>
-      <blockquote class="mt-4 leading-snug text-sm">«Gran doctor, sabe escuchar los problemas de los pacientes y buscar una solución apropiada para el paciente y su salud. Si tienen algún problema se lo recomiendo…»</blockquote>
-      <figcaption class="mt-4 text-sm opacity-80">Josep Del viejo · Hace un año</figcaption>
-    </figure>
-  </div>
-  <div class="mt-10 flex flex-wrap items-center gap-6 border-t border-bg/25 pt-8">
-    <img src="./review-qr.svg" alt="Código QR para dejar una reseña en Google" class="h-28 w-28 bg-white p-2" style="border-radius:4px">
-    <div>
-      <p class="serif text-2xl">¿Le atendimos? Cuéntelo en Google.</p>
-      <a href="./review.html" class="btn mt-3 bg-bg text-fg hover:bg-accent hover:text-white"><i data-lucide="star" class="h-4 w-4"></i> Dejar una reseña</a>
-    </div>
-  </div>
-</section>
-
-<!-- 7 GALERIA -->
-<section id="galeria" class="px-5 sm:px-10 lg:px-14 py-16">
-  <p class="eyebrow">Nº 06 · La clínica</p>
-  <h2 data-split class="serif font-black text-4xl sm:text-6xl leading-none mt-4">Un espacio <em class="text-accent font-normal">cercano</em></h2>
-  <div data-reveal-group class="grid grid-cols-2 md:grid-cols-6 gap-3 mt-10 auto-rows-[180px] md:auto-rows-[220px]">
-    <div data-reveal class="group overflow-hidden md:col-span-3 md:row-span-2 col-span-2" style="border-radius:4px"><img src="./assets/photo-2.jpg" alt="Interior de la clínica Medifutur" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-    <div data-reveal class="group overflow-hidden md:col-span-3" style="border-radius:4px"><img src="./assets/photo-4.jpg" alt="Consulta médica en Medifutur" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-    <div data-reveal class="group overflow-hidden md:col-span-2 row-span-2" style="border-radius:4px"><img src="./assets/photo-3.jpg" alt="Detalle de las instalaciones de Medifutur" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-    <div data-reveal class="group overflow-hidden md:col-span-1" style="border-radius:4px"><img src="./assets/photo-5.jpg" alt="Medifutur, centro médico en Lloret de Mar" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-    <div data-reveal class="group overflow-hidden md:col-span-3" style="border-radius:4px"><img src="./assets/photo-6.jpg" alt="Atención médica en Lloret de Mar" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
-  </div>
-</section>
-
-<!-- 8 DOCTOR -->
-<section id="doctor" class="px-5 sm:px-10 lg:px-14 py-16 bg-bg2/70">
-  <div class="grid lg:grid-cols-12 gap-10 items-center">
-    <div class="lg:col-span-6 group">
-      <div data-parallax-wrap class="overflow-hidden h-[380px] lg:h-[520px]" style="border-radius:4px">
-        <img data-parallax src="./assets/photo-10.jpg" alt="Urgencias, medicina deportiva y medicina de familia en Medifutur" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
+      <div id="answer" class="mt-6 border-2 border-bg p-6 md:p-8" aria-live="polite">
+        <p class="mono text-bg/60">Resultado</p>
+        <p id="ans-t" class="f-d font-extrabold text-3xl md:text-4xl uppercase tracking-tight mt-2">Seleccione una opción</p>
+        <p id="ans-p" class="mt-3 text-bg/80 text-lg">Le indicaremos la vía más rápida para ser atendido.</p>
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a id="ans-call" href="tel:+34660101680" class="btn btn-solid"><i data-lucide="phone" class="h-4 w-4"></i>Llamar 660 101 680</a>
+          <button id="ans-wa" data-open-contact data-prefill="Hola, necesito orientación médica." class="btn border-bg text-bg hover:bg-bg hover:text-ink">Escribir consulta</button>
+        </div>
       </div>
     </div>
-    <div class="lg:col-span-6" data-reveal>
-      <p class="eyebrow">Nº 07 · El doctor</p>
-      <h2 data-split class="serif font-black text-4xl sm:text-5xl leading-none mt-4">Dr. Emmanuel <em class="text-accent font-normal">Rottler</em></h2>
-      <p class="mt-6 leading-relaxed text-lg">Al frente de Medifutur, el Dr. Rottler atiende a vecinos y visitantes de Lloret de Mar y de toda la Costa Brava. Los pacientes coinciden en tres cosas: escucha, rapidez y disponibilidad ante urgencias.</p>
-      <p class="mt-4 leading-relaxed">El centro atiende en varios idiomas: la información de contacto está disponible en español, inglés y francés, para que nadie se quede sin ser entendido cuando se trata de su salud. Y si viene en coche, tiene aparcamiento justo enfrente.</p>
-      <button data-open-contact data-prefill="Hola, tengo una consulta para el Dr. Rottler." class="btn btn-primary mt-6"><i data-lucide="message-circle" class="h-4 w-4"></i> Consultar al doctor</button>
+  </div>
+</section>
+
+<!-- 04 CIFRAS -->
+<section class="py-20">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8">
+    <div class="rule pt-4 grid grid-cols-12 gap-px bg-transparent">
+      <p class="col-span-12 md:col-span-3 mono">03 — Datos reales</p>
+      <div class="col-span-6 md:col-span-3 border-l-2 border-ink pl-4"><p class="f-d huge text-7xl md:text-9xl text-brick" data-count="4.1">4.1</p><p class="mono mt-2">Nota media en Google Maps</p></div>
+      <div class="col-span-6 md:col-span-3 border-l-2 border-ink pl-4"><p class="f-d huge text-7xl md:text-9xl" data-count="69">69</p><p class="mono mt-2">Opiniones de pacientes</p></div>
+      <div class="col-span-12 md:col-span-3 border-l-2 border-ink pl-4"><p class="f-d huge text-7xl md:text-9xl" data-count="4">4</p><p class="mono mt-2">Idiomas de atención: ES · CA · FR · EN</p></div>
     </div>
   </div>
 </section>
 
-<!-- 9 PASOS -->
-<section class="px-5 sm:px-10 lg:px-14 py-16">
-  <p class="eyebrow">Nº 08 · Cómo funciona</p>
-  <h2 data-split class="serif font-black text-4xl sm:text-5xl leading-none mt-4">Pedir cita, <em class="text-accent font-normal">sin vueltas</em></h2>
-  <div data-reveal-group class="grid md:grid-cols-3 gap-0 mt-10 rule">
-    <div data-reveal class="py-8 md:pr-8 md:border-r border-fg/20"><span class="serif text-6xl text-accent">1</span><h3 class="serif text-2xl font-bold mt-2">Llame o escriba</h3><p class="mt-2 text-sm leading-relaxed">Al 660 101 680 de 10:00 h a 20:00 h, o por WhatsApp en cualquier momento.</p></div>
-    <div data-reveal class="py-8 md:px-8 md:border-r border-fg/20"><span class="serif text-6xl text-accent">2</span><h3 class="serif text-2xl font-bold mt-2">Cuéntenos su caso</h3><p class="mt-2 text-sm leading-relaxed">Le orientamos sobre el área adecuada y le damos hora.</p></div>
-    <div data-reveal class="py-8 md:pl-8"><span class="serif text-6xl text-accent">3</span><h3 class="serif text-2xl font-bold mt-2">Venga a consulta</h3><p class="mt-2 text-sm leading-relaxed">Carrer de Costa de Carbonell, 59, con aparcamiento delante.</p></div>
+<!-- 05 OPINIONES -->
+<section id="opiniones" class="py-20 md:py-28 bg-bg2">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8">
+    <div class="rule pt-4 grid grid-cols-12 gap-6 items-end">
+      <p class="col-span-12 md:col-span-3 mono">04 — Escudo de reseñas</p>
+      <h2 data-split class="huge col-span-12 md:col-span-6 text-5xl md:text-8xl uppercase">Opiniones <em>verificadas</em> de Google</h2>
+      <div class="col-span-12 md:col-span-3 flex items-center gap-3">
+        <svg class="gmark h-9 w-9" viewBox="0 0 48 48" aria-label="Google"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg>
+        <p class="f-d font-extrabold leading-tight"><span class="text-3xl">4,1 ★</span><br><span class="mono">69 reseñas en Google Maps</span></p>
+      </div>
+    </div>
+    <div data-reveal-group class="mt-14 grid grid-cols-12 gap-4 md:gap-6">
+      <figure data-reveal class="vault-card col-span-12 md:col-span-7 p-6 md:p-10">
+        <div class="flex items-center justify-between"><span class="text-brick text-xl" aria-label="5 estrellas">★★★★★</span><svg class="gmark h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg></div>
+        <blockquote class="mt-5 text-2xl md:text-3xl leading-snug italic">«Gracias al dr Emmanuel mi marido sigue con vida. Le detectó un infarto que se confirmó en el hospital. Un grandísimo profesional.»</blockquote>
+        <figcaption class="mt-6 mono">carmen garcia alvarez · Hace 3 años · en Google Maps</figcaption>
+      </figure>
+      <figure data-reveal class="vault-card col-span-12 md:col-span-5 p-6 md:p-8">
+        <div class="flex items-center justify-between"><span class="text-brick" aria-label="5 estrellas">★★★★★</span><svg class="gmark h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg></div>
+        <blockquote class="mt-4 text-xl leading-snug">«Gran doctor, sabe escuchar los problemas de los pacientes y buscar una solución apropiada para el paciente y su salud…»</blockquote>
+        <figcaption class="mt-5 mono">Josep Del viejo · Hace un año · en Google Maps</figcaption>
+      </figure>
+      <figure data-reveal class="vault-card col-span-12 md:col-span-4 p-6 md:p-8">
+        <div class="flex items-center justify-between"><span class="text-brick" aria-label="5 estrellas">★★★★★</span><svg class="gmark h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg></div>
+        <blockquote class="mt-4 text-lg leading-snug">«No podía caminar por el dolor de rodillas y con 4 sesiones, inyecciones y siguiendo al pie de la letra las recomendaciones, hasta el día de hoy estoy fenomenal.»</blockquote>
+        <figcaption class="mt-5 mono">Carmelina Sosa Rodriguez · Hace 4 años · en Google Maps</figcaption>
+      </figure>
+      <figure data-reveal class="vault-card col-span-12 md:col-span-4 p-6 md:p-8">
+        <div class="flex items-center justify-between"><span class="text-brick" aria-label="5 estrellas">★★★★★</span><svg class="gmark h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg></div>
+        <blockquote class="mt-4 text-lg leading-snug">«Me atendieron muy rápido y amables. Tenía un fuerte dolor de oído causado por una mala descompresión del viaje en avión… Ha funcionado de maravilla.»</blockquote>
+        <figcaption class="mt-5 mono">Manuel Jose Hita Rey · Hace 4 años · en Google Maps</figcaption>
+      </figure>
+      <figure data-reveal class="vault-card col-span-12 md:col-span-4 p-6 md:p-8">
+        <div class="flex items-center justify-between"><span class="text-brick" aria-label="5 estrellas">★★★★★</span><svg class="gmark h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg></div>
+        <blockquote class="mt-4 text-lg leading-snug">«El Dr. Enmanuel es un buen profesional, atento a cualquier hora del día, noche o madrugada para atender todo tipo de urgencia.»</blockquote>
+        <figcaption class="mt-5 mono">Esteve · Hace 4 años · en Google Maps</figcaption>
+      </figure>
+    </div>
+    <div data-reveal class="mt-10 border-2 border-ink bg-bg p-6 flex flex-col sm:flex-row items-center gap-6">
+      <img src="./review-qr.svg" alt="Código QR para dejar una reseña de Medifutur" class="h-28 w-28 border-2 border-ink" loading="lazy">
+      <div class="flex-1">
+        <p class="f-d font-extrabold text-2xl uppercase tracking-tight">¿Le hemos atendido? Cuéntelo.</p>
+        <p class="mt-1">Escanee el código o pulse el botón: su opinión ayuda a otros pacientes.</p>
+      </div>
+      <a href="./review.html" class="btn btn-solid">Dejar mi reseña <span>→</span></a>
+    </div>
   </div>
 </section>
 
-<!-- 10 FAQ -->
-<section id="faq" class="px-5 sm:px-10 lg:px-14 py-16 bg-bg2/70">
-  <p class="eyebrow">Nº 09 · Preguntas frecuentes</p>
-  <h2 data-split class="serif font-black text-4xl sm:text-5xl leading-none mt-4">Dudas <em class="text-accent font-normal">habituales</em></h2>
-  <div data-faq class="mt-10 max-w-3xl rule">
-    <div data-faq-item class="border-b border-fg/20"><button data-faq-q class="w-full flex justify-between items-center py-5 text-left serif text-xl font-bold">¿Cómo pido cita? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 leading-relaxed">Llamando al 660 101 680 (10:00 h – 20:00 h), por WhatsApp o desde el botón de contacto de esta página.</div></div></div>
-    <div data-faq-item class="border-b border-fg/20"><button data-faq-q class="w-full flex justify-between items-center py-5 text-left serif text-xl font-bold">¿Atienden urgencias? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 leading-relaxed">Sí, la clínica atiende urgencias médicas. Ante una emergencia vital, llame antes al 112.</div></div></div>
-    <div data-faq-item class="border-b border-fg/20"><button data-faq-q class="w-full flex justify-between items-center py-5 text-left serif text-xl font-bold">¿Atienden a turistas y visitantes? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 leading-relaxed">Sí. Medifutur atiende a residentes y a quienes pasan por la Costa Brava, en español, inglés y francés.</div></div></div>
-    <div data-faq-item class="border-b border-fg/20"><button data-faq-q class="w-full flex justify-between items-center py-5 text-left serif text-xl font-bold">¿Cuánto cuesta la consulta? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 leading-relaxed">La tarifa depende del tipo de consulta. Llámenos o escríbanos y se la indicamos antes de venir.</div></div></div>
-    <div data-faq-item class="border-b border-fg/20"><button data-faq-q class="w-full flex justify-between items-center py-5 text-left serif text-xl font-bold">¿Hay aparcamiento? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 leading-relaxed">Sí, hay aparcamiento justo delante de la clínica.</div></div></div>
-    <div data-faq-item class="border-b border-fg/20"><button data-faq-q class="w-full flex justify-between items-center py-5 text-left serif text-xl font-bold">¿En qué consiste la mesoterapia? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-5 leading-relaxed">Es un tratamiento con microinyecciones localizadas. El doctor valora en consulta si es adecuado para su caso.</div></div></div>
+<!-- 06 DOCTOR -->
+<section id="doctor" class="py-20 md:py-28">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8 grid grid-cols-12 gap-6 md:gap-10 items-start">
+    <div class="col-span-12 md:col-span-6 order-2 md:order-1">
+      <div data-parallax-wrap data-reveal class="overflow-hidden group h-[420px] md:h-[680px] border-2 border-ink">
+        <img data-parallax src="./assets/photo-2.jpg" alt="El Dr. Emmanuel Rottler en la consulta de Medifutur" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 hover:scale-105">
+      </div>
+      <p class="mono mt-3">Fig. 02 — La consulta, Carrer de Costa de Carbonell 59</p>
+    </div>
+    <div class="col-span-12 md:col-span-6 order-1 md:order-2">
+      <p class="mono rule pt-4">05 — Sobre nosotros</p>
+      <h2 data-split class="huge text-6xl md:text-8xl uppercase mt-6">Un <em>doctor,</em> un teléfono.</h2>
+      <div data-reveal class="mt-8 space-y-5 text-xl leading-relaxed max-w-xl">
+        <p>Medifutur es el centro médico del <strong>Dr. Emmanuel Rottler</strong> en pleno Lloret de Mar. Una consulta cercana donde se escucha primero y se actúa después.</p>
+        <p>Los pacientes lo describen como un médico atento, que busca una solución adecuada a cada persona y que responde ante las urgencias. Residentes y viajeros pueden pedir cita o llamar directamente.</p>
+        <p class="border-l-4 border-brick pl-4 italic">Atención en español, català, français y English. Aparcamiento justo delante.</p>
+      </div>
+      <button data-open-contact data-prefill="Hola, quisiera pedir cita con el Dr. Rottler." data-magnetic class="btn btn-line mt-8 wra-btn"><span>Pedir cita por mensaje</span><span class="wra-ico">→</span></button>
+    </div>
   </div>
 </section>
 
-<!-- 11 CONTACTO -->
+<!-- 07 GALERIA -->
+<section class="py-20 bg-ink text-bg">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8">
+    <p class="mono border-t-4 border-bg pt-4">06 — La clínica por dentro y por fuera</p>
+    <div class="mt-10 grid grid-cols-12 gap-4">
+      <div data-reveal class="col-span-12 md:col-span-7 group overflow-hidden border-2 border-bg h-[300px] md:h-[460px]">
+        <img src="./assets/photo-10.jpg" alt="Sala de exploración de Medifutur con camilla" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+      </div>
+      <div data-reveal class="col-span-6 md:col-span-3 group overflow-hidden border-2 border-bg h-[300px] md:h-[460px]">
+        <img src="./assets/photo-3.jpg" alt="Puerta de entrada de Medifutur con rótulo de urgencias y teléfono" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+      </div>
+      <div class="col-span-6 md:col-span-2 flex flex-col justify-between border-2 border-bg p-4">
+        <span class="f-d huge text-7xl text-brick">24</span>
+        <p class="mono">Rótulo de la puerta: «24 hr». Llame siempre antes.</p>
+      </div>
+    </div>
+    <div data-reveal class="mt-4 grid grid-cols-12 gap-4">
+      <div class="col-span-12 md:col-span-4 group overflow-hidden border-2 border-bg h-[240px]">
+        <img src="./assets/photo-1.jpg" alt="Entrada y escaparate con listado de especialidades" loading="lazy" class="w-full h-full object-cover object-right transition-transform duration-700 group-hover:scale-105">
+      </div>
+      <p class="col-span-12 md:col-span-8 f-d font-extrabold text-3xl md:text-5xl uppercase tracking-tighter leading-none self-center">Emergencias · Medicina general · Deportiva · Articulaciones · Traumatología · Mesoterapia · Certificados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 08 COMO FUNCIONA -->
+<section class="py-20 md:py-28">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8">
+    <div class="rule pt-4 grid grid-cols-12 gap-6">
+      <p class="col-span-12 md:col-span-3 mono">07 — Cómo se pide cita</p>
+      <h2 data-split class="huge col-span-12 md:col-span-9 text-6xl md:text-[7.5rem] uppercase">Tres pasos, <em>cero</em> burocracia.</h2>
+    </div>
+    <div data-reveal-group class="mt-12 grid grid-cols-12 gap-0 border-2 border-ink">
+      <div data-reveal class="col-span-12 md:col-span-5 p-8 border-b-2 md:border-b-0 md:border-r-2 border-ink">
+        <p class="f-d huge text-8xl text-brick">1</p>
+        <h3 class="f-d font-extrabold text-2xl uppercase mt-4">Llame</h3>
+        <p class="mt-2">Al 660 101 680. Para citas, su web actual indica llamar de 10:00 a 20:00 h.</p>
+      </div>
+      <div data-reveal class="col-span-12 md:col-span-4 p-8 border-b-2 md:border-b-0 md:border-r-2 border-ink bg-bg2">
+        <p class="f-d huge text-8xl">2</p>
+        <h3 class="f-d font-extrabold text-2xl uppercase mt-4">Cuéntenos</h3>
+        <p class="mt-2">Explíquenos su caso por teléfono, WhatsApp o con la orientación rápida de esta web.</p>
+      </div>
+      <div data-reveal class="col-span-12 md:col-span-3 p-8 bg-ink text-bg">
+        <p class="f-d huge text-8xl text-brick">3</p>
+        <h3 class="f-d font-extrabold text-2xl uppercase mt-4">Acuda</h3>
+        <p class="mt-2">Con parking delante, en Carrer de Costa de Carbonell, 59.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 FAQ -->
+<section id="faq" class="py-20 md:py-28 bg-bg2">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8 grid grid-cols-12 gap-6 md:gap-10">
+    <div class="col-span-12 md:col-span-4">
+      <p class="mono rule pt-4">08 — Preguntas frecuentes</p>
+      <h2 data-split class="huge text-6xl md:text-8xl uppercase mt-6">Dudas <em>claras.</em></h2>
+    </div>
+    <div data-faq class="col-span-12 md:col-span-8 border-b-2 border-ink">
+      <div data-faq-item><button data-faq-q>¿Atienden urgencias? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-lg max-w-2xl">Sí, la consulta ofrece atención de urgencias, incluso a domicilio según su rótulo. Llame al 660 101 680 y le indicaremos cómo proceder.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Cómo pido cita? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-lg max-w-2xl">Por teléfono, por WhatsApp o escribiendo desde el botón de contacto de esta página. Para citas, su web actual indica llamar entre las 10:00 y las 20:00 h.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿En qué idiomas me atienden? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-lg max-w-2xl">La consulta comunica en español, català, français y English, pensado para residentes y visitantes de la Costa Brava.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Puedo ir si solo estoy de vacaciones? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-lg max-w-2xl">Sí. Varios pacientes cuentan que fueron atendidos rápido durante un viaje. Llame y le diremos cómo organizar la visita.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Qué tratan en articulaciones y deporte? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-lg max-w-2xl">Dolor de rodillas, espalda y otras articulaciones, lesiones deportivas y traumatología. El tratamiento se decide tras valorar su caso.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Cuánto cuesta una consulta? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-lg max-w-2xl">Las tarifas dependen del tipo de visita. Pregúntelas por teléfono o WhatsApp antes de acudir y se las indicaremos.</div></div></div>
+      <div data-faq-item><button data-faq-q>¿Dónde aparco? <span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-lg max-w-2xl">Hay aparcamiento delante de la consulta, en Carrer de Costa de Carbonell, 59.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 CONTACTO -->
 <!--kit:booking--><section id="pedir-cita" class="wrab-sec" data-tool-section data-bstyle="soft" aria-labelledby="wrab-title"><div class="wrab-inner"><div class="wrab" data-bstyle="soft"><span class="wrab-eyebrow">Primera cita</span><h2 class="wrab-h" id="wrab-title" data-split>Pide tu cita</h2><p class="wrab-sub">Cuéntanos el motivo y llegarás a recepción con tu consulta ya clara.</p><ul class="wrab-perks"><li>Atención prioritaria si es urgente</li><li>Sin esperas al teléfono</li><li>Respuesta directa de recepción</li></ul></div><div class="wrab-card" data-bstyle="soft"><div data-wrab-inline></div></div></div></section><!--/kit:booking-->
-<section id="contacto" class="px-5 sm:px-10 lg:px-14 py-16">
-  <p class="eyebrow">Nº 10 · Contacto</p>
-  <h2 data-split class="serif font-black text-4xl sm:text-7xl leading-none mt-4">Estamos en <em class="text-accent font-normal">Lloret</em></h2>
-  <div class="grid lg:grid-cols-2 gap-10 mt-10">
-    <div data-reveal class="space-y-5">
-      <p class="flex gap-3"><i data-lucide="map-pin" class="h-5 w-5 text-accent shrink-0"></i>Carrer de Costa de Carbonell, 59, 17310 Lloret de Mar, Girona</p>
-      <p class="flex gap-3"><i data-lucide="phone" class="h-5 w-5 text-accent shrink-0"></i><a class="underline" href="tel:660101680">660 101 680</a></p>
-      <p class="flex gap-3"><i data-lucide="message-circle" class="h-5 w-5 text-accent shrink-0"></i><a class="underline" href="https://wa.me/34660101680">WhatsApp: +34 660 101 680</a></p>
-      <p class="flex gap-3"><i data-lucide="mail" class="h-5 w-5 text-accent shrink-0"></i><a class="underline" href="mailto:medifutur@live.com">medifutur@live.com</a></p>
-      <p class="flex gap-3"><i data-lucide="clock" class="h-5 w-5 text-accent shrink-0"></i>Llamadas para citas: 10:00 h – 20:00 h</p>
-      <p class="flex gap-3"><i data-lucide="facebook" class="h-5 w-5 text-accent shrink-0"></i><a class="underline" href="https://www.facebook.com/Medifutur-1647260602158344">Facebook de Medifutur</a></p>
-      <div class="flex flex-wrap gap-3 pt-2">
-        <a href="tel:660101680" data-magnetic class="btn btn-primary"><i data-lucide="phone" class="h-4 w-4"></i> Llamar ahora</a>
-        <button data-open-contact data-prefill="Hola, quisiera pedir cita en Medifutur." class="btn btn-ghost"><i data-lucide="send" class="h-4 w-4"></i> Escribirnos</button>
-        <button data-open-tool class="btn btn-ghost"><i data-lucide="stethoscope" class="h-4 w-4"></i> Triaje</button>
-      </div>
+<section id="contacto" class="py-20 md:py-28">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8">
+    <div class="rule pt-4 grid grid-cols-12 gap-6">
+      <p class="col-span-12 md:col-span-3 mono">09 — Contacto</p>
+      <h2 data-split class="huge col-span-12 md:col-span-9 text-6xl md:text-[9rem] uppercase"><a href="tel:+34660101680" class="hover:text-brick">660 101 680</a></h2>
     </div>
-    <div data-reveal class="overflow-hidden border border-fg/20 h-[380px]" style="border-radius:4px">
-      <iframe title="Mapa de Medifutur" src="https://www.google.com/maps?q=Carrer%20de%20Costa%20de%20Carbonell%2C%2059%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&output=embed" loading="lazy" class="w-full h-full border-0"></iframe>
+    <div class="mt-12 grid grid-cols-12 gap-6">
+      <div class="col-span-12 md:col-span-5 space-y-6">
+        <div class="border-t-2 border-ink pt-3"><p class="mono">Teléfono</p><a href="tel:+34660101680" class="f-d font-extrabold text-2xl">+34 660 101 680</a></div>
+        <div class="border-t-2 border-ink pt-3"><p class="mono">WhatsApp</p><a href="https://wa.me/34660101680" class="f-d font-extrabold text-2xl">Escribir al 660 101 680</a></div>
+        <div class="border-t-2 border-ink pt-3"><p class="mono">Email</p><a href="mailto:medifutur@live.com" class="f-d font-extrabold text-2xl break-all">medifutur@live.com</a></div>
+        <div class="border-t-2 border-ink pt-3"><p class="mono">Dirección</p><p class="f-d font-extrabold text-2xl">Carrer de Costa de Carbonell, 59<br>17310 Lloret de Mar, Girona</p></div>
+        <div class="border-t-2 border-ink pt-3"><p class="mono">Redes</p><a href="https://www.facebook.com/Medifutur-1647260602158344" class="f-d font-extrabold text-2xl underline">Facebook de Medifutur</a></div>
+        <div class="flex flex-wrap gap-3">
+          <button data-open-tool data-magnetic class="btn btn-solid wra-btn"><span>Orientar mi caso</span><span class="wra-ico">→</span></button>
+          <button data-open-contact data-prefill="Hola, tengo una consulta para Medifutur." class="btn btn-line">Escribir mensaje</button>
+        </div>
+      </div>
+      <div class="col-span-12 md:col-span-7 border-2 border-ink h-[420px] md:h-auto min-h-[420px]">
+        <iframe title="Mapa de Medifutur en Lloret de Mar" src="https://www.google.com/maps?q=Carrer%20de%20Costa%20de%20Carbonell%2C%2059%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&output=embed" loading="lazy" class="w-full h-full min-h-[420px] grayscale hover:grayscale-0 transition" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </div>
 </section>
-
 </main>
 
-<footer class="lg:pl-64 bg-fg text-bg">
-  <div class="px-5 sm:px-10 lg:px-14 py-10 flex flex-wrap justify-between gap-4 text-sm">
-    <div><p class="serif text-2xl font-extrabold">Medifutur</p><p class="opacity-70">Carrer de Costa de Carbonell, 59, 17310 Lloret de Mar, Girona</p></div>
-    <p class="opacity-70 self-end">© <span id="yr">2026</span> Medifutur · Dr. Emmanuel Rottler</p>
+<footer class="bg-ink text-bg py-10 border-t-8 border-brick">
+  <div class="max-w-[1500px] mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between gap-6">
+    <div>
+      <p class="f-d huge text-5xl uppercase">Medifutur</p>
+      <p class="mono mt-3 text-bg/70">Carrer de Costa de Carbonell, 59 · 17310 Lloret de Mar, Girona</p>
+    </div>
+    <div class="mono text-bg/70 md:text-right">
+      <p><a href="tel:+34660101680" class="hover:text-white">Tel. 660 101 680</a></p>
+      <p class="mt-2">© <span id="yr">2026</span> Medifutur · Dr. Emmanuel Rottler</p>
+    </div>
   </div>
 </footer>
 
 <script>
 (function(){
-  try{
-    document.getElementById('yr').textContent = new Date().getFullYear();
-    var R = {
-      u:["Urgencias médicas","Llámenos de inmediato. Si hay riesgo vital (dolor en el pecho, dificultad grave para respirar, pérdida de conciencia), llame al 112.","Hola, tengo una urgencia médica."],
-      f:["Medicina familiar","Una consulta de medicina familiar es el punto de partida ideal para revisiones, recetas y síntomas generales.","Hola, quisiera una consulta de medicina familiar."],
-      d:["Medicina deportiva","Valoraremos la lesión y le daremos recomendaciones para recuperarse y volver a la actividad.","Hola, tengo una lesión deportiva y quisiera cita."],
-      m:["Mesoterapia","Si el dolor muscular persiste, el doctor valorará en consulta si la mesoterapia es adecuada.","Hola, me interesa información sobre mesoterapia."],
-      a:["Problemas articulares","Valoración de rodillas y otras articulaciones, con plan de tratamiento y seguimiento.","Hola, tengo dolor articular y quisiera cita."],
-      o:["Consulta general","Cuéntenos su caso y le indicaremos el área más adecuada.","Hola, tengo una consulta."]
-    };
-    var out=document.getElementById('triage-out'), cta=document.getElementById('triage-cta');
-    document.querySelectorAll('#triage-opts .opt').forEach(function(b){
-      b.addEventListener('click',function(){
-        document.querySelectorAll('#triage-opts .opt').forEach(function(x){x.classList.remove('on')});
-        b.classList.add('on');
-        var r=R[b.dataset.k];
-        out.innerHTML='<p class="eyebrow">Área recomendada</p><p class="serif text-2xl font-bold mt-1"></p><p class="mt-2 text-sm leading-relaxed"></p>';
-        out.children[1].textContent=r[0]; out.children[2].textContent=r[1];
-        cta.setAttribute('href','https://wa.me/34660101680?text='+encodeURIComponent(r[2]));
-        cta.innerHTML='<i data-lucide="message-circle" class="h-4 w-4"></i> Pedir cita por WhatsApp';
-        if(window.lucide) lucide.createIcons();
-      });
+  var y=document.getElementById('yr'); if(y) y.textContent=new Date().getFullYear();
+  var data={
+    u:['Llame ahora','Es una posible urgencia. No espere: llame al 660 101 680. Si hay peligro vital inmediato, marque también el 112.'],
+    a:['Valoración de articulaciones','Dolor de rodilla, espalda u otras articulaciones: pida cita para valorar el caso y el tratamiento.'],
+    d:['Medicina deportiva','Lesión deportiva: llame o escriba y le orientamos sobre cuándo acudir a la consulta.'],
+    g:['Medicina general','Consulta de medicina general: llame para concertar visita en el menor plazo posible.'],
+    c:['Certificado médico','Díganos qué trámite necesita y qué documento le piden, y le indicamos cómo gestionarlo.'],
+    m:['Mesoterapia','Se indica tras valoración médica. Pida cita para estudiar si es adecuada en su caso.']
+  };
+  var t=document.getElementById('ans-t'),p=document.getElementById('ans-p'),w=document.getElementById('ans-wa');
+  document.querySelectorAll('#picks .pick').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('#picks .pick').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      var d=data[b.dataset.k]; t.textContent=d[0]; p.textContent=d[1];
+      w.setAttribute('data-prefill','Hola, necesito orientación: '+b.textContent.trim());
     });
-    if(window.lucide) lucide.createIcons();
-  }catch(e){}
+  });
+  if(window.lucide) lucide.createIcons();
 })();
 </script>
-<!--wra:body--><script>window.__WRA__={"name":"Medifutur","wa":"https://wa.me/34670256353?text=Hola%2C%20acabo%20de%20ver%20la%20propuesta%20de%20dise%C3%B1o%20para%20mi%20web%20Medifutur%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s","original":"./original.jpg","nw":false,"id":183,"slug":"medifutur","phone":"660101680","lang":"es","pk":"BLWCUkRwvbZ4WF6ry+cfQF+SaFP2J3fTyGxCFzgDOLCKSxgORfMrzFS5/pN0IReMjwUOEaP70DNXvbLga1+AyKw=","ntfy":{"alerts":"https://ntfy.sh/autoweb-alerts-7f74a1f4afc54cf8","updates":"https://ntfy.sh/autoweb-updates-7f74a1f4afc54cf8"},"ocss":"\n:host{all:initial}\n*{box-sizing:border-box}\n.trig{font:500 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;background:transparent;color:inherit;border:1px solid currentColor;opacity:.5;border-radius:6px;padding:7px 11px;cursor:pointer}\n.trig:hover{opacity:.9}\n.dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);z-index:2147483646;background:#fff;color:#0f172a;box-shadow:-10px 0 40px rgba(2,8,23,.35);display:flex;flex-direction:column;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;transform:translateX(105%);transition:transform .3s}\n.dr.on{transform:none}\n.hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;background:#0f172a;color:#fff}\n.hd h2{margin:0;font-size:15px;font-weight:650}\n.x{background:transparent;border:0;color:#cbd5e1;font-size:22px;cursor:pointer;line-height:1}\n.bd{flex:1;overflow:auto;padding:18px;display:grid;gap:12px;align-content:start}\nlabel{font-weight:600;font-size:13px;display:block;margin-bottom:5px}\ninput,textarea{width:100%;font:inherit;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;color:#0f172a;background:#fff}\ntextarea{min-height:120px;resize:vertical}\ninput:focus,textarea:focus{outline:2px solid #2563eb;border-color:#2563eb}\n.pin{letter-spacing:.6em;text-align:center;font-size:22px}\n.b{font:600 14px/1 inherit;border:0;border-radius:10px;padding:12px 14px;cursor:pointer;background:#e2e8f0;color:#0f172a}\n.b.p{background:#16a34a;color:#fff}\n.b.on{background:#f59e0b;color:#1c1100}\n.b[disabled]{opacity:.5;cursor:wait}\n.note{font-size:12px;color:#64748b}\n.st{font-size:13px;font-weight:600;min-height:18px}\n.ok{color:#15803d}.er{color:#b91c1c}\n\n.dr.wide{width:min(760px,100vw)}\n.tabs2{display:none;background:#0f172a;padding:0 12px;gap:4px}\n.tabs2.on{display:flex}\n.tb{flex:1;font:600 13px/1 inherit;background:transparent;color:#94a3b8;border:0;border-bottom:3px solid transparent;padding:12px 8px;cursor:pointer}\n.tb.on{color:#fff;border-bottom-color:#f59e0b}\n.ag-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}\n.ag-k{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:10px 12px}\n.ag-k b{display:block;font-size:20px;line-height:1.1;color:#0f172a}\n.ag-k span{font-size:11px;color:#64748b}\n.ag-k.sv b{color:#15803d}\n.ag-demo{background:#fffbeb;border:1px solid #fcd34d;color:#92400e;border-radius:10px;padding:8px 10px;font-size:12px;font-weight:600}\n.ag-conn{font-size:11px;color:#64748b}\n.ag-bar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}\n.ag-v{font:600 12px/1 inherit;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:7px 12px;cursor:pointer;color:#0f172a}\n.ag-v.on{background:#0f172a;color:#fff;border-color:#0f172a}\n.ag-add{margin-left:auto;font:700 12px/1 inherit;background:#16a34a;color:#fff;border:0;border-radius:999px;padding:8px 13px;cursor:pointer}\n.ag-day{font-size:12px;font-weight:700;color:#475569;text-transform:uppercase;letter-spacing:.06em;margin-top:6px}\n.ag-card{display:grid;grid-template-columns:62px 1fr;gap:10px;border:1px solid #e2e8f0;border-left:4px solid #16a34a;border-radius:12px;padding:10px 12px;background:#fff}\n.ag-card.s-PENDIENTE{border-left-color:#f59e0b}.ag-card.s-COMPLETADA{border-left-color:#2563eb}.ag-card.s-CANCELADA{border-left-color:#dc2626;opacity:.6}\n.ag-t{font-weight:800;font-size:17px;color:#0f172a}\n.ag-n{font-weight:700}\n.ag-m{font-size:12px;color:#64748b;margin-top:2px}\n.ag-a{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;align-items:center}\n.ag-wa{font:600 12px/1 inherit;background:#dcfce7;color:#166534;border-radius:999px;padding:7px 10px;text-decoration:none}\n.ag-a select{font:600 12px/1 inherit;border:1px solid #cbd5e1;border-radius:8px;padding:6px 8px;width:auto;background:#fff}\n.ag-form{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px}\n.ag-form .full{grid-column:1/-1}\n.ag-form label{font-size:11px;margin-bottom:3px}\n.ag-empty{text-align:center;color:#64748b;padding:20px 0;font-size:13px}\n","wan":"34670256353","plans":{"lang":"es","kind":"hair","A":{"setup":249,"monthly":29},"B":{"setup":0,"monthly":59}},"bk":{"url":"https://ntfy.sh/autoweb-bookings-medifutur-ec4201c5729ee8","pub":"BK661FwO14hF+PIbYEatxiY3f/ytBLdn+HjWrimLBwJ9Ebqzdq01VMFaRgD5s+4fH5A3KIQ1KPQkuaoqFkVvDJ8=","kind":"hair"},"edit":"https://wa.me/34670256353?text=Hola%2C%20he%20visto%20el%20boceto%20de%20Medifutur%20y%20me%20gustar%C3%ADa%20cambiar%20algunas%20fotos%20o%20textos","editText":"🎨 Boceto 100% editable con tus propias fotos, textos y sugerencias","improvements":[{"title":"Portada sin llamada a la acción visible","before":"Sobre el pliegue en escritorio solo hay un título, una lista de localidades en azul y una lista de servicios en rojo. No hay botón de llamar, de pedir cita ni de WhatsApp. El teléfono aparece únicamente en letra minúscula en la barra superior y dentro del logo. En móvil tampoco hay ningún botón de contacto antes del scroll. Un paciente con urgencia no ve cómo contactar de inmediato.","fix":"El rediseño pone un botón grande de «Llamar ahora» y otro de WhatsApp fijos y visibles desde el primer segundo, también en el móvil."},{"title":"Tipografía caótica con rojo y azul saturados","before":"Los titulares compiten entre sí: un H1 negro, una línea de localidades en azul eléctrico y una línea de servicios en MAYÚSCULAS rojo puro con puntos «●» como separadores. Los tres tienen un tamaño parecido, así que no hay jerarquía. El rojo y el azul chillones resultan agresivos y poco propios de una clínica. En móvil las líneas se parten de forma torpe, por ejemplo «ALL MEDICAL / EMERGENCIES».","fix":"El rediseño ordena los textos con una jerarquía clara, un titular principal, un subtítulo y los servicios en tarjetas, usando los colores de la marca de forma sobria y profesional."},{"title":"Aspecto de plantilla antigua y foto de fachada de baja calidad","before":"La imagen principal es una foto de la fachada, de baja resolución y con compresión visible. Va alineada a la izquierda sin encajar con el resto de la rejilla, ocupa casi toda la pantalla y empuja el contenido hacia abajo. Hay mucho espacio vacío a la derecha y la página parece un blog de WordPress básico. No hay iconos de servicios, ni reservas, ni opiniones destacadas, ni elementos que inspiren confianza.","fix":"El rediseño presenta la clínica con una portada moderna, fotografía cuidada, servicios con iconos, opiniones de pacientes y una reserva de cita sencilla que transmite confianza desde el primer vistazo."}],"tool":{"text":"Incluye asistente de triaje y primera cita directo a tu recepción por WhatsApp/Email","button":"Probar Triaje","target":"pedir-cita"},"track":null,"ping":null,"css":"\n:host{all:initial}\n*{box-sizing:border-box}\n.bar{position:fixed;top:0;left:0;right:0;z-index:2147483647;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 14px;background:linear-gradient(90deg,#0b1220,#16233f);color:#e6ecf7;font:500 13px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;box-shadow:0 2px 14px rgba(2,8,23,.35);border-bottom:1px solid rgba(255,255,255,.08)}\n.txt{display:flex;align-items:center;gap:9px;min-width:0}\n.txt span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.txt b{font-weight:650;color:#fff}\n.tag{flex:0 0 auto;max-width:46vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:6px 11px;border-radius:999px;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.4);color:#fde68a;font-size:12px;font-weight:600;text-decoration:none}\na.tag:hover{background:rgba(251,191,36,.24);color:#fff}\n@media (max-width:1560px){.sub{display:none}}\n.sub{color:#9fb0cf}\n.dot{flex:none;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.7);animation:p 2s infinite}\n@keyframes p{70%{box-shadow:0 0 0 7px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}\n.act{display:flex;align-items:center;gap:8px;flex:none}\nbutton,a.cta{font:inherit;cursor:pointer;border-radius:999px;border:0;text-decoration:none;line-height:1}\n.ghost{padding:8px 13px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18);transition:background .15s}\n.ghost:hover{background:rgba(255,255,255,.18)}\n.cta{display:inline-flex;align-items:center;gap:7px;padding:9px 15px;background:#16a34a;color:#fff;font-weight:650;box-shadow:0 2px 10px rgba(22,163,74,.4);transition:transform .15s,background .15s}\n.cta:hover{background:#15803d;transform:translateY(-1px)}\n.cta.plans{background:linear-gradient(135deg,#f59e0b,#ef4444);box-shadow:0 2px 12px rgba(245,158,11,.5)}\n.cta.plans:hover{background:linear-gradient(135deg,#d97706,#dc2626)}\n@media (max-width:900px){.cta.plans{padding:8px 11px;font-size:12px}}\n.cta svg{width:15px;height:15px;fill:currentColor}\n.cta small{font-weight:500;opacity:.9}\n.min{width:28px;height:28px;padding:0;background:transparent;color:#9fb0cf;font-size:18px}\n.min:hover{color:#fff}\n.pill{position:fixed;top:8px;right:10px;z-index:2147483647;padding:8px 13px;background:#0f1b33;color:#fff;border:1px solid rgba(255,255,255,.2);box-shadow:0 2px 10px rgba(2,8,23,.4);font:600 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,sans-serif;display:flex;align-items:center;gap:7px}\n.pill[hidden],.bar[hidden],.ov[hidden]{display:none}\n.ov{position:fixed;left:0;right:0;bottom:0;z-index:2147483646;background:#f4f6fb;color:#0f172a;font:400 15px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;display:flex;flex-direction:column}\n.tabs{display:flex;gap:6px;padding:10px 14px;background:#fff;border-bottom:1px solid #e2e8f0}\n.tab{padding:8px 14px;background:#eef2f9;color:#334155;font-weight:600}\n.tab[aria-selected=true]{background:#0f172a;color:#fff}\n.pane{flex:1;overflow:auto;padding:18px 14px}\n.pane img{display:block;width:100%;max-width:1100px;margin:0 auto;border-radius:10px;box-shadow:0 6px 30px rgba(15,23,42,.18);border:1px solid #dbe2ee}\n.cap{max-width:1100px;margin:10px auto 0;color:#64748b;font-size:13px;text-align:center}\n.list{max-width:820px;margin:0 auto;display:grid;gap:12px;counter-reset:i}\n.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 16px 58px;position:relative;counter-increment:i}\n.card::before{content:counter(i);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:#16a34a;color:#fff;display:grid;place-items:center;font-weight:700}\n.card h3{margin:0 0 4px;font-size:16px}\n.card p{margin:0;color:#475569;font-size:14px}\n.card .b{color:#b45309}\n.card .f{color:#15803d;margin-top:4px}\n.vs{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.vsc{border-radius:14px;padding:18px;border:1px solid #e2e8f0;background:#fff}\n.vsc.bad{border-color:#fecaca;background:#fff5f5}\n.vsc.good{border-color:#bbf7d0;background:#f0fdf4}\n.vsc h3{margin:0 0 12px;font-size:13px;letter-spacing:.06em;text-transform:uppercase}\n.vsc.bad h3{color:#b91c1c}\n.vsc.good h3{color:#15803d}\n.vsc ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}\n.vsc li{font-size:14.5px;color:#334155}\n@media (max-width:720px){.vs{grid-template-columns:1fr}}\n.short{display:none}\n@media (max-width:720px){\n  .bar{flex-wrap:wrap;padding:7px 10px;gap:7px}\n  .sub,.long{display:none}\n  .short{display:inline}\n  .txt{flex:1 1 100%}\n  .tag{flex:1 1 100%;white-space:normal;text-align:center;border-radius:10px}\n  .act{flex:1 1 100%;justify-content:space-between}\n  .cta{flex:1;justify-content:center;white-space:nowrap;padding:9px 10px}\n  .ghost{white-space:nowrap;padding:8px 11px}\n  button,a.cta{font-size:12.5px}\n}\n"};</script><script>(function(){
+<!--wra:body--><script>window.__WRA__={"name":"Medifutur","wa":"https://wa.me/34670256353?text=Hola%2C%20acabo%20de%20ver%20la%20propuesta%20de%20dise%C3%B1o%20para%20mi%20web%20Medifutur%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s","original":"./original.jpg","nw":false,"id":255,"slug":"medifutur","phone":"660101680","lang":"es","pk":"BLWCUkRwvbZ4WF6ry+cfQF+SaFP2J3fTyGxCFzgDOLCKSxgORfMrzFS5/pN0IReMjwUOEaP70DNXvbLga1+AyKw=","ntfy":{"alerts":"https://ntfy.sh/autoweb-alerts-7f74a1f4afc54cf8","updates":"https://ntfy.sh/autoweb-updates-7f74a1f4afc54cf8"},"ocss":"\n:host{all:initial}\n*{box-sizing:border-box}\n.trig{font:500 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;background:transparent;color:inherit;border:1px solid currentColor;opacity:.5;border-radius:6px;padding:7px 11px;cursor:pointer}\n.trig:hover{opacity:.9}\n.dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);z-index:2147483646;background:#fff;color:#0f172a;box-shadow:-10px 0 40px rgba(2,8,23,.35);display:flex;flex-direction:column;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;transform:translateX(105%);transition:transform .3s}\n.dr.on{transform:none}\n.hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;background:#0f172a;color:#fff}\n.hd h2{margin:0;font-size:15px;font-weight:650}\n.x{background:transparent;border:0;color:#cbd5e1;font-size:22px;cursor:pointer;line-height:1}\n.bd{flex:1;overflow:auto;padding:18px;display:grid;gap:12px;align-content:start}\nlabel{font-weight:600;font-size:13px;display:block;margin-bottom:5px}\ninput,textarea{width:100%;font:inherit;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;color:#0f172a;background:#fff}\ntextarea{min-height:120px;resize:vertical}\ninput:focus,textarea:focus{outline:2px solid #2563eb;border-color:#2563eb}\n.pin{letter-spacing:.6em;text-align:center;font-size:22px}\n.b{font:600 14px/1 inherit;border:0;border-radius:10px;padding:12px 14px;cursor:pointer;background:#e2e8f0;color:#0f172a}\n.b.p{background:#16a34a;color:#fff}\n.b.on{background:#f59e0b;color:#1c1100}\n.b[disabled]{opacity:.5;cursor:wait}\n.note{font-size:12px;color:#64748b}\n.st{font-size:13px;font-weight:600;min-height:18px}\n.ok{color:#15803d}.er{color:#b91c1c}\n\n.dr.wide{width:min(760px,100vw)}\n.tabs2{display:none;background:#0f172a;padding:0 12px;gap:4px}\n.tabs2.on{display:flex}\n.tb{flex:1;font:600 13px/1 inherit;background:transparent;color:#94a3b8;border:0;border-bottom:3px solid transparent;padding:12px 8px;cursor:pointer}\n.tb.on{color:#fff;border-bottom-color:#f59e0b}\n.ag-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}\n.ag-k{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:10px 12px}\n.ag-k b{display:block;font-size:20px;line-height:1.1;color:#0f172a}\n.ag-k span{font-size:11px;color:#64748b}\n.ag-k.sv b{color:#15803d}\n.ag-demo{background:#fffbeb;border:1px solid #fcd34d;color:#92400e;border-radius:10px;padding:8px 10px;font-size:12px;font-weight:600}\n.ag-conn{font-size:11px;color:#64748b}\n.ag-bar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}\n.ag-v{font:600 12px/1 inherit;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:7px 12px;cursor:pointer;color:#0f172a}\n.ag-v.on{background:#0f172a;color:#fff;border-color:#0f172a}\n.ag-add{margin-left:auto;font:700 12px/1 inherit;background:#16a34a;color:#fff;border:0;border-radius:999px;padding:8px 13px;cursor:pointer}\n.ag-day{font-size:12px;font-weight:700;color:#475569;text-transform:uppercase;letter-spacing:.06em;margin-top:6px}\n.ag-card{display:grid;grid-template-columns:62px 1fr;gap:10px;border:1px solid #e2e8f0;border-left:4px solid #16a34a;border-radius:12px;padding:10px 12px;background:#fff}\n.ag-card.s-PENDIENTE{border-left-color:#f59e0b}.ag-card.s-COMPLETADA{border-left-color:#2563eb}.ag-card.s-CANCELADA{border-left-color:#dc2626;opacity:.6}\n.ag-t{font-weight:800;font-size:17px;color:#0f172a}\n.ag-n{font-weight:700}\n.ag-m{font-size:12px;color:#64748b;margin-top:2px}\n.ag-a{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;align-items:center}\n.ag-wa{font:600 12px/1 inherit;background:#dcfce7;color:#166534;border-radius:999px;padding:7px 10px;text-decoration:none}\n.ag-a select{font:600 12px/1 inherit;border:1px solid #cbd5e1;border-radius:8px;padding:6px 8px;width:auto;background:#fff}\n.ag-form{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px}\n.ag-form .full{grid-column:1/-1}\n.ag-form label{font-size:11px;margin-bottom:3px}\n.ag-empty{text-align:center;color:#64748b;padding:20px 0;font-size:13px}\n","wan":"34670256353","plans":{"lang":"es","kind":"clinic","A":{"setup":399,"monthly":39},"B":{"setup":0,"monthly":79}},"bk":{"url":"https://ntfy.sh/autoweb-bookings-medifutur-ec4201c5729ee8","pub":"BK661FwO14hF+PIbYEatxiY3f/ytBLdn+HjWrimLBwJ9Ebqzdq01VMFaRgD5s+4fH5A3KIQ1KPQkuaoqFkVvDJ8=","kind":"clinic"},"edit":"https://wa.me/34670256353?text=Hola%2C%20he%20visto%20el%20boceto%20de%20Medifutur%20y%20me%20gustar%C3%ADa%20cambiar%20algunas%20fotos%20o%20textos","editText":"🎨 Boceto 100% editable con tus propias fotos, textos y sugerencias","improvements":[{"title":"Sin botón de llamada ni de cita sobre el pliegue","before":"En escritorio y en móvil, lo primero que se ve es un título, una lista de pueblos y una lista de servicios. No hay ningún botón de llamar, de pedir cita ni de WhatsApp. El teléfono solo aparece como texto pequeño en la barra superior y dentro del logo. En una clínica con urgencias, el paciente tiene que buscar cómo contactar.","fix":"El rediseño pone un botón grande de «Llamar ahora» y de «Pedir cita» (con WhatsApp) visible desde el primer segundo, también fijo en el móvil."},{"title":"Tipografía caótica, con bloques de texto en azul y rojo saturados","before":"Hay tres bloques seguidos con estilos distintos. El título es gris oscuro. La lista de localidades va en azul eléctrico y negrita, con puntos como separadores. Los servicios van en mayúsculas rojo puro (#FF0000), que cansa la vista. En móvil esos bloques ocupan más de media pantalla y el texto se corta de forma torpe, por ejemplo «ALL MEDICAL / EMERGENCIES ● FAMILY». No hay jerarquía clara y el rojo puro transmite alarma, no confianza.","fix":"El rediseño ordena el texto con una jerarquía clara (un título, un subtítulo y servicios en tarjetas con icono) y usa el azul y el rojo corporativos con moderación."},{"title":"Foto de fachada antigua, sin tratar y sin imagen de equipo","before":"El elemento visual principal es una foto de la fachada de baja resolución, con un rótulo desgastado, sin recorte ni cuidado. Se ve pixelada y ocupa una columna descentrada, que deja un hueco vacío a la derecha en escritorio. No hay fotos del doctor, de las consultas ni del equipo, así que no se transmite cercanía ni profesionalidad sanitaria. La web parece una plantilla de WordPress básica de hace años.","fix":"El rediseño presenta la clínica con imágenes cuidadas y modernas, con el doctor y las instalaciones, para que el paciente sienta confianza antes de llamar."}],"tool":{"text":"Incluye asistente de triaje y primera cita directo a tu recepción por WhatsApp/Email","button":"Probar Triaje","target":"pedir-cita"},"track":null,"ping":null,"css":"\n:host{all:initial}\n*{box-sizing:border-box}\n.bar{position:fixed;top:0;left:0;right:0;z-index:2147483647;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 14px;background:linear-gradient(90deg,#0b1220,#16233f);color:#e6ecf7;font:500 13px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;box-shadow:0 2px 14px rgba(2,8,23,.35);border-bottom:1px solid rgba(255,255,255,.08)}\n.txt{display:flex;align-items:center;gap:9px;min-width:0}\n.txt span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.txt b{font-weight:650;color:#fff}\n.tag{flex:0 0 auto;max-width:46vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:6px 11px;border-radius:999px;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.4);color:#fde68a;font-size:12px;font-weight:600;text-decoration:none}\na.tag:hover{background:rgba(251,191,36,.24);color:#fff}\n@media (max-width:1560px){.sub{display:none}}\n.sub{color:#9fb0cf}\n.dot{flex:none;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.7);animation:p 2s infinite}\n@keyframes p{70%{box-shadow:0 0 0 7px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}\n.act{display:flex;align-items:center;gap:8px;flex:none}\nbutton,a.cta{font:inherit;cursor:pointer;border-radius:999px;border:0;text-decoration:none;line-height:1}\n.ghost{padding:8px 13px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18);transition:background .15s}\n.ghost:hover{background:rgba(255,255,255,.18)}\n.cta{display:inline-flex;align-items:center;gap:7px;padding:9px 15px;background:#16a34a;color:#fff;font-weight:650;box-shadow:0 2px 10px rgba(22,163,74,.4);transition:transform .15s,background .15s}\n.cta:hover{background:#15803d;transform:translateY(-1px)}\n.cta.plans{background:linear-gradient(135deg,#f59e0b,#ef4444);box-shadow:0 2px 12px rgba(245,158,11,.5)}\n.cta.plans:hover{background:linear-gradient(135deg,#d97706,#dc2626)}\n@media (max-width:900px){.cta.plans{padding:8px 11px;font-size:12px}}\n.cta svg{width:15px;height:15px;fill:currentColor}\n.cta small{font-weight:500;opacity:.9}\n.min{width:28px;height:28px;padding:0;background:transparent;color:#9fb0cf;font-size:18px}\n.min:hover{color:#fff}\n.pill{position:fixed;top:8px;right:10px;z-index:2147483647;padding:8px 13px;background:#0f1b33;color:#fff;border:1px solid rgba(255,255,255,.2);box-shadow:0 2px 10px rgba(2,8,23,.4);font:600 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,sans-serif;display:flex;align-items:center;gap:7px}\n.pill[hidden],.bar[hidden],.ov[hidden]{display:none}\n.ov{position:fixed;left:0;right:0;bottom:0;z-index:2147483646;background:#f4f6fb;color:#0f172a;font:400 15px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;display:flex;flex-direction:column}\n.tabs{display:flex;gap:6px;padding:10px 14px;background:#fff;border-bottom:1px solid #e2e8f0}\n.tab{padding:8px 14px;background:#eef2f9;color:#334155;font-weight:600}\n.tab[aria-selected=true]{background:#0f172a;color:#fff}\n.pane{flex:1;overflow:auto;padding:18px 14px}\n.pane img{display:block;width:100%;max-width:1100px;margin:0 auto;border-radius:10px;box-shadow:0 6px 30px rgba(15,23,42,.18);border:1px solid #dbe2ee}\n.cap{max-width:1100px;margin:10px auto 0;color:#64748b;font-size:13px;text-align:center}\n.list{max-width:820px;margin:0 auto;display:grid;gap:12px;counter-reset:i}\n.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 16px 58px;position:relative;counter-increment:i}\n.card::before{content:counter(i);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:#16a34a;color:#fff;display:grid;place-items:center;font-weight:700}\n.card h3{margin:0 0 4px;font-size:16px}\n.card p{margin:0;color:#475569;font-size:14px}\n.card .b{color:#b45309}\n.card .f{color:#15803d;margin-top:4px}\n.vs{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.vsc{border-radius:14px;padding:18px;border:1px solid #e2e8f0;background:#fff}\n.vsc.bad{border-color:#fecaca;background:#fff5f5}\n.vsc.good{border-color:#bbf7d0;background:#f0fdf4}\n.vsc h3{margin:0 0 12px;font-size:13px;letter-spacing:.06em;text-transform:uppercase}\n.vsc.bad h3{color:#b91c1c}\n.vsc.good h3{color:#15803d}\n.vsc ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}\n.vsc li{font-size:14.5px;color:#334155}\n@media (max-width:720px){.vs{grid-template-columns:1fr}}\n.short{display:none}\n@media (max-width:720px){\n  .bar{flex-wrap:wrap;padding:7px 10px;gap:7px}\n  .sub,.long{display:none}\n  .short{display:inline}\n  .txt{flex:1 1 100%}\n  .tag{flex:1 1 100%;white-space:normal;text-align:center;border-radius:10px}\n  .act{flex:1 1 100%;justify-content:space-between}\n  .cta{flex:1;justify-content:center;white-space:nowrap;padding:9px 10px}\n  .ghost{white-space:nowrap;padding:8px 11px}\n  button,a.cta{font-size:12.5px}\n}\n"};</script><script>(function(){
 var C=window.__WRA__;
 if(!C||window.__WRA_AGENDA__)return;
 window.__WRA_AGENDA__=true;
@@ -1585,6 +1647,5 @@ doc.addEventListener('click',function(e){
   e.preventDefault();e.stopImmediatePropagation();openTool();
 },true);
 })();</script><!--/kit:body-->
-<!--wra:lang--><style>#wra-lang{position:fixed;left:12px;bottom:12px;z-index:2147483000;display:flex;gap:2px;padding:3px;border-radius:10px;background:rgba(15,23,42,.9);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font:600 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 4px 18px rgba(0,0,0,.35)}#wra-lang a{color:#cbd5e1;text-decoration:none;padding:8px 9px;border-radius:7px}#wra-lang a:hover{color:#fff;background:rgba(255,255,255,.16)}#wra-lang a[aria-current=true]{background:#fff;color:#0f172a}@media(max-width:600px){#wra-lang{left:8px;bottom:8px}}</style><nav id="wra-lang" aria-label="Idioma / Language"><a href="./" hreflang="es" lang="es" title="Español" aria-current="true">ES</a><a href="./ca/" hreflang="ca" lang="ca" title="Català">CA</a><a href="./en/" hreflang="en" lang="en" title="English">EN</a><a href="./fr/" hreflang="fr" lang="fr" title="Français">FR</a></nav><!--/wra:lang-->
 </body>
 </html>
