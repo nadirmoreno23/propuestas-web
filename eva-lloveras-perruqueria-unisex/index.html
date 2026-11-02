@@ -2,72 +2,76 @@
 <html lang="es">
 <head>
 <!--wra:head--><meta name="robots" content="noindex, nofollow"><!--/wra:head-->
-
-
-
-
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eva Lloveras · Peluquería unisex en Lloret de Mar, cerca de Fenals</title>
-<meta name="description" content="Peluquería unisex en Lloret de Mar (Girona), a dos pasos de la playa de Fenals. Mechas naturales, color, corte, peinado y asesoramiento capilar con Kérastase, L'Oréal Professionnel, INOA y ghd.">
+<title>EVA LLOVERAS Perruqueria Unisex · Peluquería en Lloret de Mar (Fenals)</title>
+<meta name="description" content="Peluquería unisex en Lloret de Mar, cerca de la playa de Fenals. Corte, color y mechas naturales con asesoramiento profesional. 4,7 ★ en Google Maps con 185 reseñas.">
+<meta property="og:title" content="EVA LLOVERAS Perruqueria Unisex · Lloret de Mar">
+<meta property="og:description" content="Corte, color y mechas naturales en un ambiente familiar. 4,7 ★ en Google Maps (185 reseñas).">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./assets/photo-1.jpg">
+<meta property="og:locale" content="es_ES">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
   theme: { extend: {
-    colors: { bg:'#1F1B1B', bg2:'#2F2929', acc:'#C9C9CC', acc2:'#CAC9CC', ink:'#F4F2F0', mute:'#8A8786' },
-    fontFamily: { display:['Fraunces','serif'], body:['"Schibsted Grotesk"','sans-serif'] }
+    colors: { bg:'#F8F5F4', bg2:'#EFEBE9', ink:'#211712', accent:'#855C47', rose:'#C98F78' },
+    fontFamily: { serif:['"Playfair Display"','serif'], sans:['Lato','sans-serif'] }
   } }
 }
 </script>
 <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HairSalon",
+  "name":"EVA LLOVERAS perruqueria unisex",
+  "description":"Peluquería unisex en Lloret de Mar (Girona), Costa Brava, cerca de la playa de Fenals.",
+  "url":"http://www.evalloveras.com",
+  "image":"./assets/photo-1.jpg",
+  "logo":"./assets/logo.png",
+  "telephone":"+34972361038",
+  "email":"info@evalloveras.com",
+  "address":{"@type":"PostalAddress","streetAddress":"Carrer de Narcís Macià i Domènech, 15, 17","postalCode":"17310","addressLocality":"Lloret de Mar","addressRegion":"Girona","addressCountry":"ES"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"185"},
+  "sameAs":["http://www.facebook.com/PerruqueriaEvaLloveras"],
+  "review":[
+    {"@type":"Review","author":{"@type":"Person","name":"Guillem Donoso"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"Absolutamente fenomenal en todos los aspectos; el peinado exactamente tal y como lo deseaba, el trato excepcional y se nota de largo que son profesionales."},
+    {"@type":"Review","author":{"@type":"Person","name":"Natalya Rykova"},"reviewRating":{"@type":"Rating","ratingValue":"5"},"reviewBody":"¡Una experiencia genial! Productos de muy buena calidad para el pelo y una atmósfera muy agradable y familiar."}
+  ]
+}
+</script>
 <style>
-:root{--bg:#1F1B1B;--bg2:#2F2929;--acc:#C9C9CC;--ink:#F4F2F0;--mute:#8A8786;--acc2:#CAC9CC;--line:rgba(244,242,240,.16)}
-html{scroll-behavior:auto}
-body{background:var(--bg);color:var(--ink);font-family:'Schibsted Grotesk',sans-serif;-webkit-font-smoothing:antialiased}
-.font-display{font-family:'Fraunces',serif;font-weight:300;letter-spacing:-.02em}
-.hairline{border-color:var(--line)}
-/* Botón etiqueta con numeración */
-.stamp{display:inline-flex;align-items:stretch;border:1px solid var(--ink);color:var(--ink);background:transparent;border-radius:0;font-size:.8rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;transition:background .3s,color .3s,border-color .3s;cursor:pointer}
-.stamp-n{display:inline-flex;align-items:center;justify-content:center;min-width:3.4rem;padding:.75rem .8rem;border-right:1px solid currentColor;font-variant-numeric:tabular-nums}
-.stamp-n i{display:none;font-style:normal}
-.stamp-t{display:inline-flex;align-items:center;padding:.75rem 1.1rem;white-space:nowrap}
-.stamp:hover,.stamp:focus-visible{background:var(--acc);border-color:var(--acc);color:#1F1B1B}
-.stamp:hover .stamp-n b,.stamp:focus-visible .stamp-n b{display:none}
-.stamp:hover .stamp-n i,.stamp:focus-visible .stamp-n i{display:inline}
-.stamp.solid{background:var(--acc);border-color:var(--acc);color:#1F1B1B}
-.stamp.solid:hover{background:transparent;color:var(--ink);border-color:var(--ink)}
-.stamp.sm .stamp-n{min-width:2.8rem;padding:.5rem .6rem}.stamp.sm .stamp-t{padding:.5rem .8rem;font-size:.72rem}
-/* Menú móvil */
-[data-menu]{display:none}
-[data-menu].is-open{display:flex}
-/* Ledger */
-.ledger-row{border-top:1px solid var(--line);position:relative}
-.ledger-row::after{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:0;background:var(--acc);transition:width .6s}
-.ledger-row:hover::after{width:100%}
-.ledger-row:hover .ledger-name{transform:translateX(10px)}
-.ledger-name{transition:transform .5s}
-/* Chips */
-.chip{border:1px solid var(--line);padding:.5rem 1rem;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);transition:all .3s;border-radius:0;background:transparent}
-.chip:hover{color:var(--ink);border-color:var(--ink)}
-.chip.on{background:var(--acc);color:#1F1B1B;border-color:var(--acc)}
-/* FAQ */
-[data-faq-item]{border-top:1px solid var(--line)}
-[data-faq-q]{width:100%;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;text-align:left;padding:1.5rem 0;font-family:'Fraunces',serif;font-weight:300;font-size:1.35rem}
-.wra-plus{font-family:'Schibsted Grotesk',sans-serif;color:var(--acc);font-size:1.6rem;transition:transform .3s}
-select{background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:0;padding:.85rem 1rem;width:100%;font-size:.95rem}
-select:focus{outline:1px solid var(--acc)}
-a:focus-visible,button:focus-visible{outline:1px solid var(--acc);outline-offset:3px}
+:root{--bg:#F8F5F4;--bg2:#EFEBE9;--fg:#211712;--accent:#855C47;--radius:14px}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:Lato,sans-serif;overflow-x:hidden}
+.ink-grad{background:linear-gradient(-300deg,transparent 0 40%,color-mix(in srgb,var(--accent) 14%,transparent) 40% 60%,transparent 60%)}
+.veil{background:linear-gradient(to top,rgba(20,12,8,.85),rgba(20,12,8,.4) 50%,rgba(20,12,8,.25))}
+.scene{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;color:#fff}
+.scene .bg{position:absolute;inset:0}
+.scene .bg img{width:100%;height:115%;object-fit:cover}
+.scene .copy{position:relative;z-index:2}
+.frame-num{font-family:'Playfair Display',serif;font-style:italic}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.7rem;border-radius:999px;font-weight:700;letter-spacing:.04em;transition:all .35s;cursor:pointer}
+.btn-solid{background:var(--accent);color:#fff}.btn-solid:hover{background:#6c4938}
+.btn-line{border:1px solid currentColor}.btn-line:hover{background:#fff;color:var(--fg)}
+.menu-panel{display:none}.menu-panel.is-open{display:flex}
+.vault-card{transition:background .35s,color .35s}
+.vault-card:hover{background:var(--accent)!important;color:var(--bg)!important}
+.vault-card:hover *{color:inherit!important}
+[data-faq-a]{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s}
+[data-faq-a]>div{overflow:hidden}
+[data-faq-item].is-open [data-faq-a]{grid-template-rows:1fr}
+.wra-plus{display:inline-block;transition:transform .3s}
+[data-faq-item].is-open .wra-plus{transform:rotate(45deg)}
+.tab-btn{border-bottom:2px solid transparent;opacity:.6;transition:.3s}
+.tab-btn.on{border-color:var(--accent);opacity:1;color:var(--accent)}
+.letterbox{height:2.5rem;background:var(--fg)}
 </style>
-
-
-
-
-
-<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(31,27,27,.86);--wra-bg:#1F1B1B;--wra-accent:#C9C9CC;--wra-on-accent:#0b0b0b;--wra-surface:#2F2929;--wra-fg:#F4F2F0;--wra-muted:#8A8786;--wra-line:rgba(244,242,240,.16);--wra-display:'Fraunces', serif;--wra-body:'Schibsted Grotesk', sans-serif}
+<!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(246,241,234,.86);--wra-bg:#F6F1EA;--wra-accent:#855C47;--wra-on-accent:#ffffff;--wra-surface:#FFFFFF;--wra-fg:#1E1B18;--wra-muted:#7A7168;--wra-line:rgba(30,27,24,.12);--wra-display:'Fraunces', serif;--wra-body:'DM Sans', sans-serif}
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
 .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
@@ -271,395 +275,311 @@ html.wrab-lock{overflow:hidden}
 .wrab-tip{margin:.7rem 0 0;font-size:.82rem;color:var(--wra-muted,#666)}
 </style><!--/kit:head-->
 </head>
-<body data-layout-motion="MOTION_STAGGER_CARDS">
+<body class="font-sans antialiased">
 
-<!-- HEADER -->
-<header data-nav data-layout-nav="NAV_SPLIT_CENTER_LOGO" class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-bg/80 border-b hairline">
-  <div class="mx-auto max-w-[1500px] px-5 lg:px-10 py-4 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
-    <div class="flex items-center">
-      <button data-burger class="lg:hidden p-2 -ml-2" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
-      <nav class="hidden lg:flex gap-8 text-xs uppercase tracking-[.16em]" aria-label="Principal">
-        <a href="#servicios" class="hover:text-acc transition-colors">Servicios</a>
-        <a href="#equipo" class="hover:text-acc transition-colors">Equipo</a>
-        <a href="#opiniones" class="hover:text-acc transition-colors">Opiniones</a>
-        <a href="#reservar-cita" class="hover:text-acc transition-colors">Reservar</a>
-        <a href="#contacto" class="hover:text-acc transition-colors">Contacto</a>
-      </nav>
-    </div>
-    <a href="#inicio" class="flex items-center gap-3 justify-center" aria-label="Eva Lloveras, peluquería unisex">
-      <span class="bg-ink p-1 hidden sm:block"><img src="./assets/logo.png" alt="Logo de Eva Lloveras perruqueria unisex" class="h-9 w-auto"></span>
-      <span class="font-display text-2xl sm:text-3xl lg:text-4xl leading-none whitespace-nowrap">Eva <em class="italic">Lloveras</em></span>
+<header data-nav data-layout-nav="glass-bar" class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-black/25 text-white transition-all">
+  <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+    <a href="#inicio" class="flex items-center gap-3" aria-label="EVA LLOVERAS inicio">
+      <img src="./assets/logo.png" alt="Logo de EVA LLOVERAS perruqueria unisex" class="h-9 w-auto">
+      <span class="font-serif text-lg tracking-wide hidden sm:block">Eva Lloveras</span>
     </a>
-    <div class="flex items-center justify-end gap-3">
-      <a href="tel:972361038" class="stamp sm hidden sm:inline-flex lg:inline-flex" aria-label="Llamar al 972 361 038"><span class="stamp-n"><b>01 →</b><i>→</i></span><span class="stamp-t">Llamar</span></a>
-      <button data-open-tool data-magnetic class="stamp sm solid hidden lg:inline-flex"><span class="stamp-n"><b>02 →</b><i>→</i></span><span class="stamp-t">Reservar cita</span></button>
-      <a href="tel:972361038" class="sm:hidden p-2 -mr-2 border hairline" aria-label="Llamar ahora"><i data-lucide="phone"></i></a>
+    <nav class="hidden lg:flex gap-8 text-sm tracking-widest uppercase">
+      <a href="#servicios" class="hover:text-rose">Servicios</a>
+      <a href="#salon" class="hover:text-rose">Tu cita</a>
+      <a href="#opiniones" class="hover:text-rose">Opiniones</a>
+      <a href="#galeria" class="hover:text-rose">Galería</a>
+      <a href="#contacto" class="hover:text-rose">Contacto</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+34972361038" class="hidden md:inline-flex btn btn-line !py-2 !px-4 text-sm"><i data-lucide="phone" class="h-4 w-4"></i>972 36 10 38</a>
+      <button data-open-tool data-magnetic class="btn btn-solid !py-2 !px-4 text-sm">Reservar cita</button>
+      <button data-burger class="lg:hidden p-2" aria-label="Abrir menú"><i data-lucide="menu" class="h-6 w-6"></i></button>
     </div>
   </div>
-  <div data-menu class="lg:hidden flex-col gap-1 px-5 pb-6 border-t hairline bg-bg text-lg font-display">
-    <a href="#servicios" class="py-3 border-b hairline">Servicios</a>
-    <a href="#equipo" class="py-3 border-b hairline">Equipo y trabajos</a>
-    <a href="#opiniones" class="py-3 border-b hairline">Opiniones</a>
-    <a href="#reservar-cita" class="py-3 border-b hairline">Reservar cita</a>
-    <a href="#contacto" class="py-3 mb-3 border-b hairline">Contacto</a>
-    <button data-open-tool class="stamp solid w-fit"><span class="stamp-n"><b>01 →</b><i>→</i></span><span class="stamp-t">Reservar cita</span></button>
+  <div data-menu class="menu-panel lg:hidden flex-col gap-4 px-5 pb-6 text-lg font-serif bg-ink/90">
+    <a href="#servicios">Servicios</a><a href="#salon">Tu cita</a><a href="#opiniones">Opiniones</a><a href="#galeria">Galería</a><a href="#contacto">Contacto</a>
   </div>
 </header>
 
-<main id="inicio">
-
-<!-- HERO -->
-<section data-hero data-layout-hero="HERO_SPLIT_SCREEN_50" class="grid lg:grid-cols-2 min-h-screen pt-[72px] lg:pt-0">
-  <div class="order-1 lg:order-2 group relative overflow-hidden h-[50vh] lg:h-auto lg:min-h-screen">
-    <div data-parallax-wrap class="absolute inset-0 overflow-hidden">
-      <div class="h-full w-full transition-transform duration-700 group-hover:scale-105">
-        <img data-parallax src="./assets/photo-1.jpg" alt="Fachada del salón Eva Lloveras con escaparate, en Lloret de Mar" width="1600" height="1200" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105">
-      </div>
+<!-- ESCENA 1 · HERO -->
+<section id="inicio" data-hero data-layout-hero="full-bleed" class="scene">
+  <div class="bg" data-parallax-wrap><img data-parallax src="./assets/photo-1.jpg" alt="Interior de la peluquería EVA LLOVERAS en Lloret de Mar" class="hover:scale-105 transition-transform duration-700"></div>
+  <div class="absolute inset-0 veil z-[1]"></div>
+  <div class="copy max-w-7xl mx-auto px-5 pb-20 pt-40 w-full">
+    <p data-hero-item class="uppercase tracking-[.35em] text-xs mb-6 text-rose">Perruqueria unisex · Lloret de Mar · Fenals</p>
+    <h1 data-split class="font-serif text-5xl sm:text-7xl lg:text-[8.5rem] leading-[.95] font-extrabold max-w-5xl">Tu pelo, en <em class="font-normal">buenas manos</em></h1>
+    <p data-hero-item class="mt-8 max-w-xl text-lg text-white/85">Corte, color y mechas naturales con asesoramiento de verdad, a pocos pasos de la playa de Fenals.</p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a data-hero-item data-magnetic href="tel:+34972361038" class="btn btn-solid"><i data-lucide="phone" class="h-5 w-5"></i>Llamar ahora · 972 36 10 38</a>
+      <button data-hero-item data-open-tool data-magnetic class="btn btn-line">Reservar mi cita</button>
+      <button data-hero-item data-open-contact data-prefill="Hola, me gustaría pedir cita en la peluquería" class="btn btn-line">Escribirnos</button>
     </div>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent pointer-events-none"></div>
-  </div>
-  <div class="order-2 lg:order-1 bg-bg flex flex-col justify-end px-5 lg:px-10 xl:px-16 pt-12 pb-10 lg:pt-40 lg:pb-12">
-    <p data-hero-item class="text-xs uppercase tracking-[.22em] text-acc mb-6">Peluquería unisex · Lloret de Mar · Martes a sábado</p>
-    <h1 data-split class="font-display text-[3.2rem] sm:text-7xl xl:text-[6.5rem] leading-[.95]">Mechas naturales y <em class="italic">manos que escuchan</em></h1>
-    <p data-hero-item class="mt-8 max-w-xl text-mute text-base leading-relaxed">Peluquería unisex en Lloret de Mar con productos Kérastase, L'Oréal Professionnel, INOA y ghd. Cortes, color y mechas naturales con asesoramiento sincero, de martes a sábado.</p>
-    <div data-hero-item class="mt-9 flex flex-wrap gap-4">
-      <button data-open-tool data-magnetic data-layout-btn="BTN_STAMP_TAG" class="stamp solid"><span class="stamp-n"><b>01 →</b><i>→</i></span><span class="stamp-t">Reservar cita</span></button>
-      <a href="tel:972361038" data-magnetic class="stamp"><span class="stamp-n"><b>02 →</b><i>→</i></span><span class="stamp-t">Llamar ahora</span></a>
+    <div data-hero-item class="mt-12 flex items-center gap-3 text-sm">
+      <svg viewBox="0 0 48 48" class="h-5 w-5" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700A14.500 14.500 0 0 1 9.500 24c0-1.600.3-3.200.8-4.700l-7.900-6.100A24 24 0 0 0 0 24c0 3.900.9 7.500 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg>
+      <span>4,7 ★ en Google Maps · 185 reseñas</span>
     </div>
-    <dl data-hero-item class="mt-12 grid sm:grid-cols-3 border-t hairline text-sm">
-      <div class="py-4 sm:pr-4"><dt class="text-mute text-xs uppercase tracking-widest">Google Maps</dt><dd class="mt-1 font-display text-xl">4,7 ★ · 185 reseñas</dd></div>
-      <div class="py-4 sm:px-4 sm:border-l hairline"><dt class="text-mute text-xs uppercase tracking-widest">Dirección</dt><dd class="mt-1">C/ Narcís Macià i Domènech, 15-17</dd></div>
-      <div class="py-4 sm:pl-4 sm:border-l hairline"><dt class="text-mute text-xs uppercase tracking-widest">Teléfono</dt><dd class="mt-1"><a href="tel:972361038" class="hover:text-acc">972 361 038</a></dd></div>
-    </dl>
   </div>
 </section>
 
 <!-- MARQUESINA -->
-<section class="bg-bg2 border-y hairline py-6 overflow-hidden" aria-label="Especialidades">
+<div class="bg-ink text-bg py-5 overflow-hidden">
   <div data-marquee>
-    <div class="flex gap-12 font-display text-3xl sm:text-5xl whitespace-nowrap items-center">
-      <span>Peluquería unisex</span><span class="text-acc">/</span><span class="italic">Mechas naturales</span><span class="text-acc">/</span><span>Color</span><span class="text-acc">/</span><span class="italic">Corte</span><span class="text-acc">/</span><span>Peinado</span><span class="text-acc">/</span><span class="italic">Asesoramiento capilar</span><span class="text-acc">/</span>
+    <div class="flex gap-12 font-serif italic text-2xl whitespace-nowrap">
+      <span>Corte a medida</span><span class="text-rose">✦</span><span>Mechas naturales</span><span class="text-rose">✦</span><span>Color</span><span class="text-rose">✦</span><span>Productos de calidad</span><span class="text-rose">✦</span><span>Peinados</span><span class="text-rose">✦</span><span>Trato familiar</span><span class="text-rose">✦</span><span>Unisex</span><span class="text-rose">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ESCENA 2 · CIFRAS -->
+<section class="ink-grad bg-bg py-24">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-12 gap-10 items-end">
+    <div class="md:col-span-6" data-reveal>
+      <p class="frame-num text-accent text-lg">Escena I</p>
+      <h2 data-split class="font-serif text-4xl md:text-6xl font-semibold leading-tight mt-3">Una peluquería que se gana la <em>confianza</em></h2>
+    </div>
+    <div class="md:col-span-6 grid grid-cols-2 gap-px bg-ink/15" data-reveal-group>
+      <div class="bg-bg p-8" data-reveal><div class="font-serif text-6xl text-accent"><span data-count="185">185</span></div><p class="mt-2 text-sm uppercase tracking-widest">Reseñas en Google Maps</p></div>
+      <div class="bg-bg p-8" data-reveal><div class="font-serif text-6xl text-accent">4,7<span class="text-3xl"> ★</span></div><p class="mt-2 text-sm uppercase tracking-widest">Valoración media</p></div>
     </div>
   </div>
 </section>
 
-<!-- CIFRAS -->
-<section class="bg-bg py-20 lg:py-28 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px] grid lg:grid-cols-12 gap-10">
-    <h2 data-split class="lg:col-span-5 font-display text-4xl sm:text-6xl leading-[1]">Peluquería unisex con <em class="italic">detalle en cada corte</em></h2>
-    <div data-reveal-group class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 border-l border-t hairline self-end">
-      <div data-reveal class="p-6 border-r border-b hairline"><p class="font-display text-5xl text-acc">4,7<span class="text-2xl">★</span></p><p class="mt-3 text-xs uppercase tracking-widest text-mute">Nota en Google Maps</p></div>
-      <div data-reveal class="p-6 border-r border-b hairline"><p class="font-display text-5xl text-acc" data-count="185">185</p><p class="mt-3 text-xs uppercase tracking-widest text-mute">Reseñas en Google</p></div>
-      <div data-reveal class="p-6 border-r border-b hairline"><p class="font-display text-5xl text-acc" data-count="4">4</p><p class="mt-3 text-xs uppercase tracking-widest text-mute">Marcas profesionales</p></div>
-      <div data-reveal class="p-6 border-r border-b hairline"><p class="font-display text-3xl text-acc leading-[1.6]">Mar–Sáb</p><p class="mt-3 text-xs uppercase tracking-widest text-mute">Días de apertura</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICIOS · LEDGER -->
-<section id="servicios" data-layout-menu="MENU_TYPE_LEDGER" class="bg-bg2 py-20 lg:py-32 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px]">
-    <p class="text-xs uppercase tracking-[.22em] text-acc mb-4">Carta de servicios</p>
-    <h2 data-split class="font-display text-5xl sm:text-7xl lg:text-8xl leading-[.95] mb-16 max-w-5xl">Color, corte y peinado <em class="italic">sin prisas</em></h2>
-
-    <div class="grid lg:grid-cols-12 gap-x-12 border-t hairline">
-      <div class="lg:col-span-4 pt-8"><div class="lg:sticky lg:top-32">
-        <p class="font-display text-8xl text-acc leading-none">01</p>
-        <h3 class="font-display text-4xl mt-4">Color</h3>
-        <p class="text-mute text-sm mt-3 max-w-xs">Mechas y tintes trabajados con las estilistas del equipo.</p>
-      </div></div>
-      <div data-reveal-group class="lg:col-span-8 pt-8 pb-12">
-        <div data-reveal class="ledger-row py-8 grid sm:grid-cols-[1fr_auto] gap-3 sm:gap-10 items-baseline">
-          <div><h4 class="ledger-name font-display text-3xl sm:text-4xl">Mechas naturales</h4><p class="text-mute text-sm mt-2 max-w-lg">Mechas muy naturales y finitas, trabajadas con asesoramiento personalizado sobre el color.</p></div>
-          <a href="#reservar-cita" class="text-xs uppercase tracking-widest text-acc">Consultar precio →</a>
-        </div>
-        <div data-reveal class="ledger-row py-8 grid sm:grid-cols-[1fr_auto] gap-3 sm:gap-10 items-baseline">
-          <div><h4 class="ledger-name font-display text-3xl sm:text-4xl">Color</h4><p class="text-mute text-sm mt-2 max-w-lg">Tintes y color a medida realizados por las estilistas del equipo.</p></div>
-          <a href="#reservar-cita" class="text-xs uppercase tracking-widest text-acc">Consultar precio →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid lg:grid-cols-12 gap-x-12 border-t hairline">
-      <div class="lg:col-span-4 pt-8"><div class="lg:sticky lg:top-32">
-        <p class="font-display text-8xl text-acc leading-none">02</p>
-        <h3 class="font-display text-4xl mt-4">Corte y peinado</h3>
-        <p class="text-mute text-sm mt-3 max-w-xs">Unisex, para quien vive en Lloret y para quien viene de vacaciones.</p>
-      </div></div>
-      <div data-reveal-group class="lg:col-span-8 pt-8 pb-12">
-        <div data-reveal class="ledger-row py-8 grid sm:grid-cols-[1fr_auto] gap-3 sm:gap-10 items-baseline">
-          <div><h4 class="ledger-name font-display text-3xl sm:text-4xl">Corte sutil y detallista</h4><p class="text-mute text-sm mt-2 max-w-lg">Cortes pensados al detalle, con explicación de los productos que tu cabello necesita.</p></div>
-          <a href="#reservar-cita" class="text-xs uppercase tracking-widest text-acc">Consultar precio →</a>
-        </div>
-        <div data-reveal class="ledger-row py-8 grid sm:grid-cols-[1fr_auto] gap-3 sm:gap-10 items-baseline">
-          <div><h4 class="ledger-name font-display text-3xl sm:text-4xl">Peinado</h4><p class="text-mute text-sm mt-2 max-w-lg">Peinados que quedan tal y como los imaginabas.</p></div>
-          <a href="#reservar-cita" class="text-xs uppercase tracking-widest text-acc">Consultar precio →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid lg:grid-cols-12 gap-x-12 border-t border-b hairline">
-      <div class="lg:col-span-4 pt-8"><div class="lg:sticky lg:top-32">
-        <p class="font-display text-8xl text-acc leading-none">03</p>
-        <h3 class="font-display text-4xl mt-4">Asesoramiento capilar</h3>
-        <p class="text-mute text-sm mt-3 max-w-xs">Kérastase, L'Oréal Professionnel, INOA y ghd.</p>
-      </div></div>
-      <div data-reveal-group class="lg:col-span-8 pt-8 pb-12">
-        <div data-reveal class="ledger-row py-8 grid sm:grid-cols-[1fr_auto] gap-3 sm:gap-10 items-baseline">
-          <div><h4 class="ledger-name font-display text-3xl sm:text-4xl">Asesoramiento de productos</h4><p class="text-mute text-sm mt-2 max-w-lg">Recomendación de productos profesionales de calidad según las necesidades de tu pelo.</p></div>
-          <a href="#reservar-cita" class="text-xs uppercase tracking-widest text-acc">Consultar precio →</a>
-        </div>
-      </div>
-    </div>
-    <p class="mt-6 text-xs text-mute">Los precios se confirman al reservar: llámanos al <a class="underline hover:text-acc" href="tel:972361038">972 361 038</a>.</p>
-  </div>
-</section>
-
-<!-- EL FAVORITO -->
-<section class="bg-bg py-20 lg:py-28 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px] grid lg:grid-cols-12 border hairline">
-    <div data-reveal class="lg:col-span-4 p-8 lg:p-12 border-b lg:border-b-0 lg:border-r hairline flex flex-col justify-between gap-10">
-      <p class="text-xs uppercase tracking-[.22em] text-acc">El favorito de nuestros clientes</p>
-      <p class="font-display text-7xl text-acc leading-none">4<span class="text-3xl text-mute"> de 4</span></p>
-    </div>
-    <div data-reveal class="lg:col-span-8 p-8 lg:p-12">
-      <h2 data-split class="font-display text-4xl sm:text-6xl leading-[1]">Atención profesional y cercana de <em class="italic">Eli y Araceli</em>, con color y mechas naturales</h2>
-      <p class="mt-6 text-mute max-w-2xl">Las cuatro reseñas que destacamos elogian el trato y la profesionalidad; dos subrayan las mechas finas y naturales y dos nombran a Eli. «Sois muy profesionales las chicas de aquí, especialmente Eli».</p>
-    </div>
-  </div>
-</section>
-
-<!-- EQUIPO / CATÁLOGO INTERACTIVO -->
-<section id="equipo" class="bg-bg2 py-20 lg:py-32 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px]">
-    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
-      <h2 data-split class="font-display text-5xl sm:text-7xl leading-[.95] max-w-3xl">Equipo, productos y <em class="italic">trabajos reales</em></h2>
-      <div class="flex flex-wrap gap-2" role="group" aria-label="Filtrar por categoría" id="chips">
-        <button class="chip on" data-f="todos">Todos</button>
-        <button class="chip" data-f="equipo">Equipo</button>
-        <button class="chip" data-f="color">Color y mechas</button>
-        <button class="chip" data-f="cortes">Cortes y peinados</button>
-        <button class="chip" data-f="productos">Productos</button>
-      </div>
-    </div>
-    <div class="grid lg:grid-cols-12 gap-px bg-[rgba(244,242,240,.16)] border hairline">
-      <div id="cards" class="lg:col-span-7 bg-bg2 grid grid-cols-2 sm:grid-cols-3 gap-px bg-[rgba(244,242,240,.16)]"></div>
-      <aside id="detail" class="lg:col-span-5 bg-bg2 p-6 lg:p-10 lg:sticky lg:top-28 self-start" aria-live="polite"></aside>
-    </div>
-  </div>
-</section>
-
-<!-- PEDIR CITA POR WHATSAPP -->
-<section class="bg-bg py-20 lg:py-28 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px] grid lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-5">
-      <p class="text-xs uppercase tracking-[.22em] text-acc mb-4">Pide cita en dos pasos</p>
-      <h2 data-split class="font-display text-5xl sm:text-6xl leading-[1]">Elige servicio y día, <em class="italic">nosotras respondemos</em></h2>
-      <p class="mt-6 text-mute max-w-md">Te preparamos el mensaje para que nos lo envíes. Confirmamos disponibilidad contigo; el salón abre de martes a sábado.</p>
-    </div>
-    <div data-reveal class="lg:col-span-7 border hairline p-6 lg:p-10 grid sm:grid-cols-2 gap-6">
-      <label class="block"><span class="text-xs uppercase tracking-widest text-mute">Servicio</span>
-        <select id="sel-serv" class="mt-2">
-          <option>Mechas naturales</option><option>Color</option><option>Corte</option><option>Peinado</option><option>Asesoramiento capilar</option>
-        </select></label>
-      <label class="block"><span class="text-xs uppercase tracking-widest text-mute">Día preferido</span>
-        <select id="sel-dia" class="mt-2">
-          <option>Martes</option><option>Miércoles</option><option>Jueves</option><option>Viernes</option><option>Sábado</option>
-        </select></label>
-      <p id="msg-prev" class="sm:col-span-2 text-sm text-mute border-t hairline pt-5"></p>
-      <div class="sm:col-span-2"><a id="send-wa" href="#contacto" target="_blank" rel="noopener" data-magnetic class="stamp solid"><span class="stamp-n"><b>01 →</b><i>→</i></span><span class="stamp-t">Enviar mi petición</span></a></div>
-    </div>
-  </div>
-</section>
-
-<!-- OPINIONES -->
-<section id="opiniones" class="bg-bg2 py-20 lg:py-32 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px]">
-    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
-      <h2 data-split class="font-display text-5xl sm:text-7xl leading-[.95]">Opiniones verificadas <em class="italic">de Google</em></h2>
-      <p class="font-display text-3xl"><span class="text-acc">4,7 ★</span> en Google Maps <span class="block text-sm font-body text-mute mt-1">185 reseñas</span></p>
-    </div>
-    <div data-reveal-group class="grid md:grid-cols-2 lg:grid-cols-12 gap-px bg-[rgba(244,242,240,.16)] border hairline">
-      <?php /* tarjetas */ ?>
-      <article data-reveal class="lg:col-span-7 bg-bg2 p-8 lg:p-12">
-        <div class="flex justify-between items-start mb-6"><span class="text-acc tracking-widest" aria-label="5 estrellas">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-        <blockquote class="font-display text-2xl sm:text-3xl leading-snug">«Sois muy profesionales las chicas de aquí especialmente Eli que me ha hecho un corte muy sutil, recomendando buenos productos que mi cabello necesitaba… También me hice unas mechas muy naturales con Araceli y quedé fascinada.»</blockquote>
-        <p class="mt-6 text-sm"><strong class="font-medium">Aldana Smufer</strong> <span class="text-mute">· Hace 6 meses</span></p>
+<!-- ESCENA 3 · SERVICIOS full-bleed -->
+<section id="servicios" class="scene" style="min-height:120vh">
+  <div class="bg" data-parallax-wrap><img data-parallax loading="lazy" src="./assets/photo-3.jpg" alt="Trabajo de peluquería en EVA LLOVERAS" class="hover:scale-105 transition-transform duration-700"></div>
+  <div class="absolute inset-0 veil z-[1]"></div>
+  <div class="copy max-w-7xl mx-auto px-5 py-24 w-full">
+    <p class="frame-num text-rose text-lg">Escena II · Lo que hacemos</p>
+    <h2 data-split class="font-serif text-5xl md:text-7xl font-extrabold max-w-3xl mt-3 mb-14">Cada cabello, un <em class="font-normal">proyecto</em></h2>
+    <div class="grid md:grid-cols-12 gap-4" data-reveal-group>
+      <article data-reveal class="vault-card md:col-span-5 backdrop-blur-md bg-white/10 border border-white/25 p-8 rounded-[14px]">
+        <span class="frame-num text-3xl text-rose">01</span><i data-lucide="scissors" class="h-6 w-6 mt-4"></i>
+        <h3 class="font-serif text-2xl mt-3">Corte detallista</h3>
+        <p class="mt-2 text-white/80">Cortes sutiles, mirando cada detalle y explicando qué productos usar para mantenerlo en casa.</p>
       </article>
-      <article data-reveal class="lg:col-span-5 bg-bg2 p-8 lg:p-12">
-        <div class="flex justify-between items-start mb-6"><span class="text-acc tracking-widest" aria-label="5 estrellas">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-        <blockquote class="font-display text-xl sm:text-2xl leading-snug">«Absolutamente fenomenal en todos los aspectos; el peinado exactamente tal y como lo deseaba, el trato excepcional y se nota de largo que son profesionales. Estaba de vacaciones unos días por Lloret…»</blockquote>
-        <p class="mt-6 text-sm"><strong class="font-medium">Guillem Donoso</strong> <span class="text-mute">· Hace 2 meses</span></p>
+      <article data-reveal class="vault-card md:col-span-7 md:mt-12 backdrop-blur-md bg-white/10 border border-white/25 p-8 rounded-[14px]">
+        <span class="frame-num text-3xl text-rose">02</span><i data-lucide="sparkles" class="h-6 w-6 mt-4"></i>
+        <h3 class="font-serif text-2xl mt-3">Mechas y color naturales</h3>
+        <p class="mt-2 text-white/80">Mechas finitas y color con resultado natural, pensados para tu tono y tu estilo.</p>
       </article>
-      <article data-reveal class="lg:col-span-5 bg-bg2 p-8 lg:p-12">
-        <div class="flex justify-between items-start mb-6"><span class="text-acc tracking-widest" aria-label="5 estrellas">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-        <blockquote class="font-display text-xl sm:text-2xl leading-snug">«¡Una experiencia genial! Productos de muy buena calidad para el pelo y una atmósfera muy agradable y familiar. Eli, ¡gracias por tu atención y tu buena energía!…»</blockquote>
-        <p class="mt-6 text-sm"><strong class="font-medium">Natalya Rykova</strong> <span class="text-mute">· Hace 4 meses</span></p>
+      <article data-reveal class="vault-card md:col-span-7 backdrop-blur-md bg-white/10 border border-white/25 p-8 rounded-[14px]">
+        <span class="frame-num text-3xl text-rose">03</span><i data-lucide="wand-2" class="h-6 w-6 mt-4"></i>
+        <h3 class="font-serif text-2xl mt-3">Peinados</h3>
+        <p class="mt-2 text-white/80">Peinados tal y como los imaginas, para cada día o para una ocasión especial.</p>
       </article>
-      <article data-reveal class="lg:col-span-7 bg-bg2 p-8 lg:p-12">
-        <div class="flex justify-between items-start mb-6"><span class="text-acc tracking-widest" aria-label="5 estrellas">★★★★★</span><svg class="h-5 w-5" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></div>
-        <blockquote class="font-display text-2xl sm:text-3xl leading-snug">«Muy buena atención ayer he tenido, en esta peluquería la estilista que me ha atendido me hizo color y mechas finitas excelente…»</blockquote>
-        <p class="mt-6 text-sm"><strong class="font-medium">Maria Concepcion Zorzetto</strong> <span class="text-mute">· Hace 4 meses</span></p>
+      <article data-reveal class="vault-card md:col-span-5 md:mt-8 backdrop-blur-md bg-white/10 border border-white/25 p-8 rounded-[14px]">
+        <span class="frame-num text-3xl text-rose">04</span><i data-lucide="droplets" class="h-6 w-6 mt-4"></i>
+        <h3 class="font-serif text-2xl mt-3">Asesoramiento y productos</h3>
+        <p class="mt-2 text-white/80">Productos de muy buena calidad y recomendaciones según lo que tu cabello necesita.</p>
       </article>
     </div>
   </div>
 </section>
 
-<!-- GALERÍA BENTO -->
-<section class="bg-bg py-20 lg:py-32 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px]">
-    <h2 data-split class="font-display text-5xl sm:text-7xl leading-[.95] mb-12 max-w-4xl">Peinado y corte, <em class="italic">visto desde atrás</em></h2>
-    <div data-reveal-group class="grid grid-cols-2 lg:grid-cols-12 auto-rows-[220px] sm:auto-rows-[300px] gap-px bg-[rgba(244,242,240,.16)] border hairline">
-      <figure data-reveal class="group overflow-hidden relative col-span-1 lg:col-span-4 row-span-2 bg-bg"><img src="./assets/photo-7.jpg" alt="Melena larga lisa con mechas rubias, vista de espaldas" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"><figcaption class="absolute bottom-0 inset-x-0 p-3 text-xs bg-gradient-to-t from-black/70 to-transparent">Melena larga lisa con mechas rubias</figcaption></figure>
-      <figure data-reveal class="group overflow-hidden relative col-span-1 lg:col-span-4 bg-bg"><img src="./assets/photo-6.jpg" alt="Corte bob asimétrico negro visto de nuca" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"><figcaption class="absolute bottom-0 inset-x-0 p-3 text-xs bg-gradient-to-t from-black/70 to-transparent">Bob asimétrico negro</figcaption></figure>
-      <figure data-reveal class="group overflow-hidden relative col-span-1 lg:col-span-4 row-span-2 bg-bg"><img src="./assets/photo-2.jpg" alt="Trenza larga castaña vista de espaldas en el salón" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"><figcaption class="absolute bottom-0 inset-x-0 p-3 text-xs bg-gradient-to-t from-black/70 to-transparent">Trenza larga castaña</figcaption></figure>
-      <figure data-reveal class="group overflow-hidden relative col-span-1 lg:col-span-4 bg-bg"><img src="./assets/photo-10.jpg" alt="Trenza castaña adornada con flores secas rosas" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"><figcaption class="absolute bottom-0 inset-x-0 p-3 text-xs bg-gradient-to-t from-black/70 to-transparent">Trenza con flores secas rosas</figcaption></figure>
-      <figure data-reveal class="group overflow-hidden relative col-span-1 lg:col-span-4 bg-bg"><img src="./assets/photo-8.jpg" alt="Coleta trenzada con gomas florales frente al local" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"><figcaption class="absolute bottom-0 inset-x-0 p-3 text-xs bg-gradient-to-t from-black/70 to-transparent">Coleta trenzada con gomas florales</figcaption></figure>
-      <figure data-reveal class="group overflow-hidden relative col-span-1 lg:col-span-4 bg-bg"><img src="./assets/photo-4.jpg" alt="Dos mujeres con vestido de fiesta junto a una piscina" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"><figcaption class="absolute bottom-0 inset-x-0 p-3 text-xs bg-gradient-to-t from-black/70 to-transparent">Clientas de fiesta junto a una piscina</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- SOBRE NOSOTROS -->
-<section id="nosotros" class="bg-bg2 py-20 lg:py-32 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px] grid lg:grid-cols-12 gap-12 items-center">
-    <div data-reveal class="lg:col-span-5">
-      <p class="text-xs uppercase tracking-[.22em] text-acc mb-4">Sobre el salón</p>
-      <h2 data-split class="font-display text-5xl sm:text-6xl leading-[1]">Un salón de barrio, <em class="italic">a dos pasos de Fenals</em></h2>
-      <p class="mt-6 text-mute leading-relaxed">Eva Lloveras es una peluquería unisex en Lloret de Mar: sillones de cuero negro, madera wengué y suelo gris cálido. Un ambiente familiar y profesional donde te explicamos qué hacemos y qué productos necesita tu pelo, vivas aquí todo el año o estés de paso unos días.</p>
-      <p class="mt-4 text-mute leading-relaxed">Trabajamos con Kérastase, L'Oréal Professionnel, INOA y ghd, y con un enfoque simple: escuchar primero, cortar y colorear después.</p>
-      <button data-open-contact data-prefill="Hola, me gustaría información sobre la peluquería." class="stamp mt-8"><span class="stamp-n"><b>01 →</b><i>→</i></span><span class="stamp-t">Escríbenos</span></button>
-    </div>
-    <div class="lg:col-span-7 grid grid-cols-5 gap-px bg-[rgba(244,242,240,.16)] border hairline">
-      <div data-parallax-wrap class="group overflow-hidden col-span-5 h-[320px] sm:h-[420px] relative bg-bg">
-        <img data-parallax src="./assets/photo-11.jpg" alt="Interior del salón con sillones y tocadores" loading="lazy" width="980" height="893" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105">
-        <div class="absolute inset-0 bg-black/20 pointer-events-none"></div>
+<!-- ESCENA 4 · HERRAMIENTA SALÓN -->
+<section id="salon" class="bg-bg2 py-28">
+  <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-12 gap-12 items-center">
+    <div class="md:col-span-5" data-reveal>
+      <p class="frame-num text-accent text-lg">Escena III</p>
+      <h2 data-split class="font-serif text-4xl md:text-6xl font-semibold leading-tight mt-3">Elige tu servicio, <em>reserva tu hueco</em></h2>
+      <p class="mt-6 text-ink/75">Selecciona qué te gustaría hacerte y pide cita en un par de toques. Te confirmamos por teléfono o WhatsApp del salón.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <button data-open-tool data-magnetic class="btn btn-solid"><i data-lucide="calendar-check" class="h-5 w-5"></i>Reservar cita</button>
+        <a href="tel:+34972361038" class="btn btn-line text-accent">972 36 10 38</a>
       </div>
-      <figure class="group overflow-hidden col-span-3 h-[260px] bg-bg"><img src="./assets/photo-9.jpg" alt="Peluquera secando el pelo a una clienta" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"></figure>
-      <figure class="group overflow-hidden col-span-2 h-[260px] bg-bg"><img src="./assets/photo-3.jpg" alt="Productos Kérastase rojos bajo un póster de modelo" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"></figure>
+    </div>
+    <div class="md:col-span-7 bg-bg p-6 md:p-10 border border-ink/10 rounded-[14px]" data-reveal>
+      <div class="flex gap-6 border-b border-ink/10 mb-6" role="tablist">
+        <button class="tab-btn on pb-3 font-bold" data-tab="corte">Corte</button>
+        <button class="tab-btn pb-3 font-bold" data-tab="color">Color y mechas</button>
+        <button class="tab-btn pb-3 font-bold" data-tab="peinado">Peinado</button>
+      </div>
+      <div id="tab-text" class="min-h-[8rem]">
+        <h3 class="font-serif text-2xl" id="tab-title">Corte a tu medida</h3>
+        <p class="mt-3 text-ink/75" id="tab-desc">Hablamos de lo que buscas, miramos tu cabello y cortamos con detalle. Unisex: para ellas y para ellos.</p>
+      </div>
+      <button id="tab-cta" class="mt-6 btn btn-solid" type="button">Consultar por este servicio <i data-lucide="arrow-right" class="h-4 w-4"></i></button>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="bg-bg py-20 lg:py-32 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px] grid lg:grid-cols-12 gap-12">
-    <h2 data-split class="lg:col-span-4 font-display text-5xl sm:text-6xl leading-[1]">Lo que suelen <em class="italic">preguntarnos</em></h2>
-    <div data-faq class="lg:col-span-8 border-b hairline">
-      <div data-faq-item><button data-faq-q>¿Cómo pido cita?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-mute max-w-2xl">Pulsa «Reservar cita», elige tus servicios y envíanos la petición, o llama al 972 361 038. Confirmamos disponibilidad contigo.</div></div></div>
-      <div data-faq-item><button data-faq-q>¿Cuánto cuesta una sesión de mechas o color?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-mute max-w-2xl">Depende de tu pelo y del resultado que busques. Te orientamos con un presupuesto antes de empezar, por teléfono o en el salón.</div></div></div>
-      <div data-faq-item><button data-faq-q>¿Puedo ir sin cita si estoy de vacaciones en Lloret?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-mute max-w-2xl">Lo mejor es avisar antes para reservarte hueco. Varias clientas de visita nos han encontrado así; llámanos o escríbenos y lo vemos.</div></div></div>
-      <div data-faq-item><button data-faq-q>¿Atendéis a hombres y mujeres?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-mute max-w-2xl">Sí, somos una peluquería unisex: cortes, color y peinados para todos.</div></div></div>
-      <div data-faq-item><button data-faq-q>¿Qué productos utilizáis?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-mute max-w-2xl">Trabajamos con Kérastase, L'Oréal Professionnel, INOA y ghd, y te recomendamos lo que tu cabello necesita en cada caso.</div></div></div>
-      <div data-faq-item><button data-faq-q>¿Qué días abrís?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-mute max-w-2xl">De martes a sábado. Para concretar el horario del día que te interesa, llámanos al 972 361 038.</div></div></div>
+<!-- ESCENA 5 · SOBRE NOSOTROS full-bleed -->
+<section class="scene" id="nosotros">
+  <div class="bg" data-parallax-wrap><img data-parallax loading="lazy" src="./assets/photo-2.jpg" alt="Ambiente del salón de peluquería en Lloret de Mar" class="hover:scale-105 transition-transform duration-700 object-top"></div>
+  <div class="absolute inset-0 veil z-[1]"></div>
+  <div class="copy max-w-7xl mx-auto px-5 pb-24 pt-32 w-full grid md:grid-cols-12">
+    <div class="md:col-span-7 md:col-start-6" data-reveal>
+      <p class="frame-num text-rose text-lg">Escena IV · Sobre nosotros</p>
+      <h2 data-split class="font-serif text-4xl md:text-6xl font-extrabold mt-3">Atmósfera familiar, <em class="font-normal">manos profesionales</em></h2>
+      <p class="mt-6 text-lg text-white/85">En Lloret de Mar, junto a la playa de Fenals, Eva y su equipo atienden a vecinos y a quienes llegan de vacaciones. Nuestras clientas destacan el trato cercano, la atención al detalle y el cuidado en recomendar los productos que realmente necesita tu pelo.</p>
+      <p class="mt-4 text-white/75">Aquí no hay prisas ni resultados de catálogo: hay conversación, criterio y un peinado que se parezca a lo que tenías en mente.</p>
     </div>
   </div>
 </section>
 
-<!-- CONTACTO -->
+<!-- ESCENA 6 · OPINIONES -->
+<section id="opiniones" class="bg-bg py-28 ink-grad">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14" data-reveal>
+      <div>
+        <p class="frame-num text-accent text-lg">Escena V · Escudo de reseñas</p>
+        <h2 data-split class="font-serif text-4xl md:text-6xl font-semibold mt-3">Opiniones verificadas <em>de Google</em></h2>
+      </div>
+      <div class="flex items-center gap-3 bg-white px-5 py-3 border border-ink/10 rounded-[14px]">
+        <svg viewBox="0 0 48 48" class="h-7 w-7" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700A14.500 14.500 0 0 1 9.500 24c0-1.600.3-3.200.8-4.700l-7.900-6.100A24 24 0 0 0 0 24c0 3.900.9 7.500 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg>
+        <div><strong class="font-serif text-xl">4,7 ★ en Google Maps</strong><div class="text-xs text-ink/60">185 reseñas</div></div>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5" data-reveal-group>
+      <figure data-reveal class="bg-white p-6 border border-ink/10 rounded-[14px] flex flex-col">
+        <div class="flex justify-between"><span class="text-amber-500">★★★★★</span><svg viewBox="0 0 48 48" class="h-5 w-5" aria-label="Google"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700A14.500 14.500 0 0 1 9.500 24c0-1.600.3-3.200.8-4.700l-7.900-6.100A24 24 0 0 0 0 24c0 3.900.9 7.500 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg></div>
+        <blockquote class="mt-4 text-sm leading-relaxed flex-1">Absolutamente fenomenal en todos los aspectos; el peinado exactamente tal y como lo deseaba, el trato excepcional y se nota de largo que son profesionales. Estaba de vacaciones unos días por Lloret, y me daba miedo ponerme en manos de alguien que no conocía, y gratamente sorprendido.</blockquote>
+        <figcaption class="mt-5 text-sm"><strong>Guillem Donoso</strong><br><span class="text-ink/55">Hace 2 meses</span></figcaption>
+      </figure>
+      <figure data-reveal class="bg-white p-6 border border-ink/10 rounded-[14px] flex flex-col lg:mt-10">
+        <div class="flex justify-between"><span class="text-amber-500">★★★★★</span><svg viewBox="0 0 48 48" class="h-5 w-5" aria-label="Google"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700A14.500 14.500 0 0 1 9.500 24c0-1.600.3-3.200.8-4.700l-7.900-6.100A24 24 0 0 0 0 24c0 3.900.9 7.500 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg></div>
+        <blockquote class="mt-4 text-sm leading-relaxed flex-1">¡Una experiencia genial! Productos de muy buena calidad para el pelo y una atmósfera muy agradable y familiar. Eli, ¡gracias por tu atención y tu buena energía! 💇‍♀️✨…</blockquote>
+        <figcaption class="mt-5 text-sm"><strong>Natalya Rykova</strong><br><span class="text-ink/55">Hace 4 meses</span></figcaption>
+      </figure>
+      <figure data-reveal class="bg-white p-6 border border-ink/10 rounded-[14px] flex flex-col">
+        <div class="flex justify-between"><span class="text-amber-500">★★★★★</span><svg viewBox="0 0 48 48" class="h-5 w-5" aria-label="Google"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700A14.500 14.500 0 0 1 9.500 24c0-1.600.3-3.200.8-4.700l-7.900-6.100A24 24 0 0 0 0 24c0 3.900.9 7.500 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg></div>
+        <blockquote class="mt-4 text-sm leading-relaxed flex-1">Sois muy profesionales las chicas de aquí especialmente Eli que me ha hecho un corte muy sutil, recomendando buenos productos que mi cabello necesitaba, muy detallista a la hora de cortarme el cabello mirando cada detalle explicándome que productos usar. También me hice unas mechas muy naturales con Araceli y quedé fascinada… cambiaron mi look! Gracias ❤️</blockquote>
+        <figcaption class="mt-5 text-sm"><strong>Aldana Smufer</strong><br><span class="text-ink/55">Hace 6 meses</span></figcaption>
+      </figure>
+      <figure data-reveal class="bg-white p-6 border border-ink/10 rounded-[14px] flex flex-col lg:mt-10">
+        <div class="flex justify-between"><span class="text-amber-500">★★★★★</span><svg viewBox="0 0 48 48" class="h-5 w-5" aria-label="Google"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.800 2.400 30.300 0 24 0 14.600 0 6.500 5.400 2.600 13.200l7.900 6.100C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.600 5.900c4.400-4.100 7-10.100 7-17.600z"/><path fill="#FBBC05" d="M10.500 28.700A14.500 14.500 0 0 1 9.500 24c0-1.600.3-3.200.8-4.700l-7.900-6.100A24 24 0 0 0 0 24c0 3.900.9 7.500 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.600-5.900c-2.100 1.400-4.900 2.300-8.300 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg></div>
+        <blockquote class="mt-4 text-sm leading-relaxed flex-1">Muy buena atención ayer he tenido, en esta peluquería la estilista que me ha atendido me hizo color y mechas finitas excelente ...</blockquote>
+        <figcaption class="mt-5 text-sm"><strong>Maria Concepcion Zorzetto</strong><br><span class="text-ink/55">Hace 4 meses</span></figcaption>
+      </figure>
+    </div>
+    <div class="mt-14 flex flex-wrap items-center gap-8 bg-bg2 p-6 rounded-[14px]" data-reveal>
+      <img src="./review-qr.svg" alt="Código QR para dejar una reseña en Google" class="h-28 w-28 bg-white p-2">
+      <div class="flex-1 min-w-[220px]">
+        <h3 class="font-serif text-2xl">¿Has estado con nosotras?</h3>
+        <p class="text-ink/70 mt-1">Cuéntanos tu experiencia: escanea el QR o pulsa el botón.</p>
+      </div>
+      <a href="./review.html" class="btn btn-solid" data-magnetic>Dejar una reseña</a>
+    </div>
+  </div>
+</section>
 
+<!-- ESCENA 7 · FOTO FULL-BLEED CITA -->
+<section class="scene" style="min-height:90vh">
+  <div class="bg" data-parallax-wrap><img data-parallax loading="lazy" src="./assets/photo-4.jpg" alt="Detalle del trabajo de color y peinado" class="hover:scale-105 transition-transform duration-700"></div>
+  <div class="absolute inset-0 veil z-[1]"></div>
+  <div class="copy max-w-5xl mx-auto px-5 pb-24 w-full text-center" data-reveal>
+    <h2 data-split class="font-serif text-4xl md:text-7xl font-extrabold">«Me fío y les agradezco: <em class="font-normal">cambiaron mi look</em>»</h2>
+    <p class="mt-4 text-rose">Aldana S., reseña de Google Maps</p>
+    <button data-open-tool data-magnetic class="btn btn-solid mt-8">Quiero cambiar de look</button>
+  </div>
+</section>
 
+<!-- ESCENA 8 · GALERÍA -->
+<section id="galeria" class="bg-ink text-bg py-28">
+  <div class="max-w-7xl mx-auto px-5">
+    <p class="frame-num text-rose text-lg">Escena VI · Galería</p>
+    <h2 data-split class="font-serif text-4xl md:text-6xl font-semibold mt-3 mb-12">El salón, <em>fotograma a fotograma</em></h2>
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-3 auto-rows-[200px] md:auto-rows-[260px]" data-reveal-group>
+      <div data-reveal class="group overflow-hidden md:col-span-2 md:row-span-2 rounded-[14px]"><img loading="lazy" src="./assets/photo-5.jpg" alt="Peluquería EVA LLOVERAS, trabajo 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <div data-reveal class="group overflow-hidden md:col-span-2 rounded-[14px]"><img loading="lazy" src="./assets/photo-6.jpg" alt="Peluquería EVA LLOVERAS, trabajo 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <div data-reveal class="group overflow-hidden md:col-span-2 md:row-span-2 rounded-[14px]"><img loading="lazy" src="./assets/photo-7.jpg" alt="Peluquería EVA LLOVERAS, trabajo 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <div data-reveal class="group overflow-hidden md:col-span-2 rounded-[14px]"><img loading="lazy" src="./assets/photo-8.jpg" alt="Peluquería EVA LLOVERAS, trabajo 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <div data-reveal class="group overflow-hidden md:col-span-2 rounded-[14px]"><img loading="lazy" src="./assets/photo-9.jpg" alt="Peluquería EVA LLOVERAS, trabajo 5" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <div data-reveal class="group overflow-hidden md:col-span-2 rounded-[14px]"><img loading="lazy" src="./assets/photo-10.jpg" alt="Peluquería EVA LLOVERAS, trabajo 6" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+      <div data-reveal class="group overflow-hidden md:col-span-2 rounded-[14px]"><img loading="lazy" src="./assets/photo-11.jpg" alt="Peluquería EVA LLOVERAS, detalle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></div>
+    </div>
+  </div>
+</section>
 
+<!-- ESCENA 9 · CÓMO TRABAJAMOS -->
+<section class="bg-bg py-28">
+  <div class="max-w-6xl mx-auto px-5">
+    <p class="frame-num text-accent text-lg">Escena VII · El método</p>
+    <h2 data-split class="font-serif text-4xl md:text-6xl font-semibold mt-3 mb-14 max-w-3xl">Tres tomas para un <em>resultado natural</em></h2>
+    <ol class="divide-y divide-ink/15 border-y border-ink/15" data-reveal-group>
+      <li data-reveal class="grid md:grid-cols-12 gap-4 py-8 items-baseline"><span class="md:col-span-2 frame-num text-5xl text-accent">01</span><h3 class="md:col-span-4 font-serif text-2xl">Escuchamos</h3><p class="md:col-span-6 text-ink/75">Nos cuentas qué buscas y miramos el estado y las necesidades de tu cabello.</p></li>
+      <li data-reveal class="grid md:grid-cols-12 gap-4 py-8 items-baseline"><span class="md:col-span-2 frame-num text-5xl text-accent">02</span><h3 class="md:col-span-4 font-serif text-2xl">Asesoramos</h3><p class="md:col-span-6 text-ink/75">Te proponemos el corte o color que mejor te sienta y los productos adecuados.</p></li>
+      <li data-reveal class="grid md:grid-cols-12 gap-4 py-8 items-baseline"><span class="md:col-span-2 frame-num text-5xl text-accent">03</span><h3 class="md:col-span-4 font-serif text-2xl">Cuidamos el detalle</h3><p class="md:col-span-6 text-ink/75">Trabajamos con calma, mirando cada detalle, hasta que el resultado sea el que imaginabas.</p></li>
+    </ol>
+  </div>
+</section>
 
+<!-- ESCENA 10 · FAQ -->
+<section class="bg-bg2 py-28">
+  <div class="max-w-4xl mx-auto px-5">
+    <p class="frame-num text-accent text-lg">Escena VIII · Preguntas</p>
+    <h2 data-split class="font-serif text-4xl md:text-6xl font-semibold mt-3 mb-12">Lo que suelen <em>preguntarnos</em></h2>
+    <div data-faq class="divide-y divide-ink/15 border-y border-ink/15">
+      <div data-faq-item><button data-faq-q class="w-full flex justify-between items-center py-6 text-left font-serif text-xl">¿Cómo puedo pedir cita? <span class="wra-plus text-2xl">+</span></button><div data-faq-a><div><p class="pb-6 text-ink/75">Llamando al 972 36 10 38, desde el botón «Reservar cita» de esta página o escribiéndonos con el cajón de contacto.</p></div></div></div>
+      <div data-faq-item><button data-faq-q class="w-full flex justify-between items-center py-6 text-left font-serif text-xl">¿Atendéis a hombres y mujeres? <span class="wra-plus text-2xl">+</span></button><div data-faq-a><div><p class="pb-6 text-ink/75">Sí, somos una peluquería unisex: cortes, color y peinados para todos.</p></div></div></div>
+      <div data-faq-item><button data-faq-q class="w-full flex justify-between items-center py-6 text-left font-serif text-xl">Estoy de vacaciones en Lloret, ¿puedo pedir cita? <span class="wra-plus text-2xl">+</span></button><div data-faq-a><div><p class="pb-6 text-ink/75">Por supuesto. Varios clientes que visitaban Lloret nos han dejado su opinión en Google Maps. Llámanos y buscamos un hueco.</p></div></div></div>
+      <div data-faq-item><button data-faq-q class="w-full flex justify-between items-center py-6 text-left font-serif text-xl">¿Cuánto cuesta un servicio? <span class="wra-plus text-2xl">+</span></button><div data-faq-a><div><p class="pb-6 text-ink/75">Depende del servicio y del cabello. Llámanos o escríbenos con lo que necesitas y te informamos antes de empezar.</p></div></div></div>
+      <div data-faq-item><button data-faq-q class="w-full flex justify-between items-center py-6 text-left font-serif text-xl">¿Me aconsejáis sobre qué producto usar en casa? <span class="wra-plus text-2xl">+</span></button><div data-faq-a><div><p class="pb-6 text-ink/75">Sí. Es parte de nuestro trabajo: te explicamos qué productos necesita tu cabello y cómo usarlos.</p></div></div></div>
+      <div data-faq-item><button data-faq-q class="w-full flex justify-between items-center py-6 text-left font-serif text-xl">¿Dónde estáis? <span class="wra-plus text-2xl">+</span></button><div data-faq-a><div><p class="pb-6 text-ink/75">En el Carrer de Narcís Macià i Domènech, 15, 17310 Lloret de Mar, cerca de la playa de Fenals.</p></div></div></div>
+    </div>
+  </div>
+</section>
 
-<!--kit:booking--><section id="reservar-cita" class="wrab-sec" data-tool-section data-bstyle="modern" aria-labelledby="wrab-title"><div class="wrab-inner"><div class="wrab" data-bstyle="modern"><span class="wrab-eyebrow">0 % de comisión</span><h2 class="wrab-h" id="wrab-title" data-split>Reserva tu cita</h2><p class="wrab-sub">Elige tus servicios y te calculamos el tiempo. La cita llega directa al salón.</p><ul class="wrab-perks"><li>Duración total calculada al momento</li><li>Sin comisiones ni plataformas</li><li>Confirmación directa del salón</li></ul></div><div class="wrab-card" data-bstyle="modern"><div data-wrab-inline></div></div></div></section><!--/kit:booking-->
-<section id="contacto" class="bg-bg2 py-20 lg:py-32 px-5 lg:px-10">
-  <div class="mx-auto max-w-[1500px] grid lg:grid-cols-2 gap-px bg-[rgba(244,242,240,.16)] border hairline">
-    <div class="bg-bg2 p-8 lg:p-14">
-      <p class="text-xs uppercase tracking-[.22em] text-acc mb-4">Contacto</p>
-      <h2 data-split class="font-display text-5xl sm:text-6xl leading-[1] mb-10">Pasa por el salón o <em class="italic">llámanos</em></h2>
-      <ul class="space-y-5 text-lg">
-        <li class="flex gap-4 items-start"><i data-lucide="phone" class="mt-1 text-acc"></i><a href="tel:972361038" class="hover:text-acc">972 361 038</a></li>
-        <li class="flex gap-4 items-start"><i data-lucide="mail" class="mt-1 text-acc"></i><a href="mailto:info@evalloveras.com" class="hover:text-acc break-all">info@evalloveras.com</a></li>
-        <li class="flex gap-4 items-start"><i data-lucide="map-pin" class="mt-1 text-acc"></i><span>Carrer de Narcís Macià i Domènech, 15, 17, 17310 Lloret de Mar, Girona</span></li>
-        <li class="flex gap-4 items-start"><i data-lucide="calendar" class="mt-1 text-acc"></i><span>Martes a sábado</span></li>
+<!-- ESCENA 11 · CONTACTO -->
+<!--kit:booking--><section id="reservar-cita" class="wrab-sec" data-tool-section data-bstyle="soft" aria-labelledby="wrab-title"><div class="wrab-inner"><div class="wrab" data-bstyle="soft"><span class="wrab-eyebrow">0 % de comisión</span><h2 class="wrab-h" id="wrab-title" data-split>Reserva tu cita</h2><p class="wrab-sub">Elige tus servicios y te calculamos el tiempo. La cita llega directa al salón.</p><ul class="wrab-perks"><li>Duración total calculada al momento</li><li>Sin comisiones ni plataformas</li><li>Confirmación directa del salón</li></ul></div><div class="wrab-card" data-bstyle="soft"><div data-wrab-inline></div></div></div></section><!--/kit:booking-->
+<section id="contacto" class="bg-ink text-bg py-28">
+  <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12">
+    <div data-reveal>
+      <p class="frame-num text-rose text-lg">Escena final · Contacto</p>
+      <h2 data-split class="font-serif text-4xl md:text-6xl font-semibold mt-3">Te esperamos en <em>Fenals</em></h2>
+      <ul class="mt-10 space-y-5 text-lg">
+        <li class="flex gap-4"><i data-lucide="phone" class="h-6 w-6 text-rose"></i><a href="tel:+34972361038" class="hover:text-rose">972 36 10 38</a></li>
+        <li class="flex gap-4"><i data-lucide="mail" class="h-6 w-6 text-rose"></i><a href="mailto:info@evalloveras.com" class="hover:text-rose">info@evalloveras.com</a></li>
+        <li class="flex gap-4"><i data-lucide="map-pin" class="h-6 w-6 text-rose"></i><span>Carrer de Narcís Macià i Domènech, 15, 17<br>17310 Lloret de Mar, Girona</span></li>
+        <li class="flex gap-4"><i data-lucide="facebook" class="h-6 w-6 text-rose"></i><a href="http://www.facebook.com/PerruqueriaEvaLloveras" target="_blank" rel="noopener" class="hover:text-rose">Facebook</a></li>
       </ul>
       <div class="mt-10 flex flex-wrap gap-4">
-        <a href="tel:972361038" class="stamp solid" data-magnetic><span class="stamp-n"><b>01 →</b><i>→</i></span><span class="stamp-t">Llamar ahora</span></a>
-        <button data-open-contact data-prefill="Hola, quería hacer una consulta sobre la peluquería." class="stamp"><span class="stamp-n"><b>02 →</b><i>→</i></span><span class="stamp-t">Escribir un mensaje</span></button>
+        <a href="tel:+34972361038" data-magnetic class="btn btn-solid">Llamar ahora</a>
+        <button data-open-contact data-prefill="Hola, quisiera información sobre vuestros servicios" class="btn btn-line">Escribir un mensaje</button>
+        <button data-open-tool class="btn btn-line">Reservar cita</button>
       </div>
     </div>
-    <div class="bg-bg2 min-h-[380px]">
-      <iframe title="Mapa de Eva Lloveras perruqueria unisex en Lloret de Mar" src="https://www.google.com/maps?q=Carrer%20de%20Narc%C3%ADs%20Maci%C3%A0%20i%20Dom%C3%A8nech%2C%2015%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full min-h-[380px] border-0" style="filter:grayscale(1) contrast(1.05) brightness(.85)"></iframe>
+    <div class="min-h-[420px] overflow-hidden rounded-[14px]" data-reveal>
+      <iframe title="Mapa de EVA LLOVERAS perruqueria unisex" src="https://www.google.com/maps?q=Carrer%20de%20Narc%C3%ADs%20Maci%C3%A0%20i%20Dom%C3%A8nech%2015%2017310%20Lloret%20de%20Mar&output=embed" loading="lazy" class="w-full h-full min-h-[420px] border-0"></iframe>
     </div>
   </div>
 </section>
-</main>
 
-<footer class="bg-bg border-t hairline px-5 lg:px-10 py-10">
-  <div class="mx-auto max-w-[1500px] flex flex-col md:flex-row justify-between gap-6 text-sm text-mute">
-    <div><p class="font-display text-2xl text-ink">Eva <em class="italic">Lloveras</em></p><p class="mt-1">Perruqueria unisex · Carrer de Narcís Macià i Domènech, 15-17, 17310 Lloret de Mar</p></div>
-    <div class="md:text-right"><p><a href="tel:972361038" class="hover:text-acc">972 361 038</a> · <a href="https://www.facebook.com/PerruqueriaEvaLloveras" target="_blank" rel="noopener" class="hover:text-acc">Facebook</a></p><p class="mt-1">© <span id="yr">2026</span> Eva Lloveras. Todos los derechos reservados.</p></div>
+<footer class="bg-black text-bg/70 py-8 text-sm">
+  <div class="max-w-7xl mx-auto px-5 flex flex-wrap justify-between gap-3">
+    <span>© <span id="yr">2026</span> EVA LLOVERAS perruqueria unisex</span>
+    <span>Carrer de Narcís Macià i Domènech, 15, 17310 Lloret de Mar</span>
   </div>
 </footer>
 
 <script>
-window.addEventListener('load', function () {
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // Catálogo interactivo
-  var items = [
-    {id:'eli', cat:['equipo','cortes'], t:'Eli', k:'Equipo', img:'./assets/photo-9.jpg', alt:'Peluquera secando el pelo a una clienta', d:'Citada por las clientas por sus cortes sutiles y detallistas y por recomendar los productos que tu cabello necesita.', s:'Corte'},
-    {id:'araceli', cat:['equipo','color'], t:'Araceli', k:'Equipo', img:'./assets/photo-7.jpg', alt:'Melena larga lisa con mechas rubias de espaldas', d:'Mechas muy naturales: una clienta quedó «fascinada» con el resultado. Color con asesoramiento personalizado.', s:'Mechas naturales'},
-    {id:'mechas', cat:['color'], t:'Mechas rubias en melena larga', k:'Color y mechas', img:'./assets/photo-7.jpg', alt:'Melena larga lisa con mechas rubias de espaldas', d:'Melena larga lisa con mechas rubias, vista de espaldas.', s:'Mechas naturales'},
-    {id:'bob', cat:['cortes'], t:'Bob asimétrico negro', k:'Cortes y peinados', img:'./assets/photo-6.jpg', alt:'Corte bob asimétrico negro visto de nuca', d:'Corte bob asimétrico en negro, visto de nuca.', s:'Corte'},
-    {id:'trenza', cat:['cortes'], t:'Trenza con flores secas', k:'Cortes y peinados', img:'./assets/photo-10.jpg', alt:'Trenza castaña adornada con flores secas rosas', d:'Trenza castaña adornada con flores secas rosas.', s:'Peinado'},
-    {id:'kerastase', cat:['productos'], t:'Kérastase', k:'Productos', img:'./assets/photo-3.jpg', alt:'Productos Kérastase rojos bajo póster de modelo', d:'Productos Kérastase en el salón, junto a L\'Oréal Professionnel, INOA y ghd. Te aconsejamos cuál encaja con tu pelo.', s:'Asesoramiento capilar'},
-    {id:'biopygma', cat:['productos','color'], t:'Biopygma', k:'Productos y color', img:'./assets/photo-5.jpg', alt:'Folleto Biopygma sobre coloración con ingredientes naturales', d:'Folleto Biopygma sobre coloración con ingredientes naturales, visible en el salón.', s:'Color'}
-  ];
-  var cards = document.getElementById('cards'), detail = document.getElementById('detail');
-  function esc(s){return s.replace(/'/g,'&#39;')}
-  function render(f){
-    cards.innerHTML = '';
-    items.filter(function(i){return f==='todos'||i.cat.indexOf(f)>-1}).forEach(function(i){
-      var b = document.createElement('button');
-      b.className = 'group overflow-hidden relative bg-bg2 text-left aspect-[3/4]';
-      b.setAttribute('aria-label','Ver detalle: '+i.t);
-      b.innerHTML = '<img src="'+i.img+'" alt="'+esc(i.alt)+'" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"><span class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-black/80 to-transparent"><span class="block text-[10px] uppercase tracking-widest text-acc">'+i.k+'</span><span class="block font-display text-lg leading-tight">'+i.t+'</span></span>';
-      b.addEventListener('click', function(){show(i)});
-      cards.appendChild(b);
+(function(){
+  try{
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    var data = {
+      corte:['Corte a tu medida','Hablamos de lo que buscas, miramos tu cabello y cortamos con detalle. Unisex: para ellas y para ellos.','corte de pelo'],
+      color:['Color y mechas naturales','Mechas finitas y color con acabado natural, adaptados a tu tono y a tu estilo.','color o mechas'],
+      peinado:['Peinados','Peinados tal y como los imaginas, para el día a día o para una ocasión especial.','un peinado']
+    };
+    var cur='corte';
+    document.querySelectorAll('[data-tab]').forEach(function(b){
+      b.addEventListener('click',function(){
+        cur=b.getAttribute('data-tab');
+        document.querySelectorAll('[data-tab]').forEach(function(x){x.classList.remove('on')});
+        b.classList.add('on');
+        document.getElementById('tab-title').textContent=data[cur][0];
+        document.getElementById('tab-desc').textContent=data[cur][1];
+      });
     });
-    if (window.gsap && !matchMedia('(prefers-reduced-motion: reduce)').matches) gsap.from(cards.children,{y:40,opacity:0,stagger:.08,duration:.6,ease:'power2.out'});
-  }
-  function show(i){
-    detail.innerHTML = '<div class="group overflow-hidden aspect-[4/3] mb-6"><img src="'+i.img+'" alt="'+esc(i.alt)+'" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105 group-hover:scale-105"></div><p class="text-xs uppercase tracking-widest text-acc">'+i.k+'</p><h3 class="font-display text-4xl mt-2">'+i.t+'</h3><p class="text-mute mt-3">'+i.d+'</p><button id="d-ask" class="stamp mt-6"><span class="stamp-n"><b>01 →</b><i>→</i></span><span class="stamp-t">Preguntar por esto</span></button>';
-    document.getElementById('d-ask').addEventListener('click', function(){
-      var txt = 'Hola, me interesa: '+i.s+' ('+i.t+'). ¿Me podéis dar información?';
-      if (window.wraContact) window.wraContact(txt); else location.href='tel:972361038';
+    document.getElementById('tab-cta').addEventListener('click',function(){
+      var t='Hola, me gustaría información y cita para '+data[cur][2];
+      if(window.wraContact){window.wraContact(t);}else{location.href='tel:+34972361038';}
     });
-  }
-  document.getElementById('chips').addEventListener('click', function(e){
-    var c = e.target.closest('.chip'); if(!c) return;
-    document.querySelectorAll('#chips .chip').forEach(function(x){x.classList.remove('on')});
-    c.classList.add('on'); render(c.dataset.f);
-  });
-  render('todos'); show(items[0]);
-
-  // Servicio + día → mensaje
-  var ss = document.getElementById('sel-serv'), sd = document.getElementById('sel-dia'), prev = document.getElementById('msg-prev'), wa = document.getElementById('send-wa');
-  function upd(){
-    var txt = 'Hola, quería pedir cita para '+ss.value+' el '+sd.value.toLowerCase()+'. ¿Tenéis disponibilidad?';
-    prev.textContent = '«'+txt+'»';
-    wa.href = window.wraWhatsApp ? window.wraWhatsApp(txt) : 'tel:972361038';
-  }
-  ss.addEventListener('change', upd); sd.addEventListener('change', upd); upd();
-
-  if (window.lucide) lucide.createIcons();
-});
-if (window.lucide) lucide.createIcons();
+    if(window.lucide){lucide.createIcons();}
+  }catch(e){}
+})();
 </script>
-
-
-
-
-
-
-
-
-
-
-
-<!--wra:body--><script>window.__WRA__={"name":"EVA LLOVERAS perruqueria unisex","wa":"https://wa.me/34670256353?text=Hola%2C%20acabo%20de%20ver%20la%20propuesta%20de%20dise%C3%B1o%20para%20mi%20web%20EVA%20LLOVERAS%20perruqueria%20unisex%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s","original":"./original.jpg","id":86,"slug":"eva-lloveras-perruqueria-unisex","phone":"972361038","lang":"es","pk":"BLWCUkRwvbZ4WF6ry+cfQF+SaFP2J3fTyGxCFzgDOLCKSxgORfMrzFS5/pN0IReMjwUOEaP70DNXvbLga1+AyKw=","ntfy":{"alerts":"https://ntfy.sh/autoweb-alerts-7f74a1f4afc54cf8","updates":"https://ntfy.sh/autoweb-updates-7f74a1f4afc54cf8"},"ocss":"\n:host{all:initial}\n*{box-sizing:border-box}\n.trig{font:500 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;background:transparent;color:inherit;border:1px solid currentColor;opacity:.5;border-radius:6px;padding:7px 11px;cursor:pointer}\n.trig:hover{opacity:.9}\n.dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);z-index:2147483646;background:#fff;color:#0f172a;box-shadow:-10px 0 40px rgba(2,8,23,.35);display:flex;flex-direction:column;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;transform:translateX(105%);transition:transform .3s}\n.dr.on{transform:none}\n.hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;background:#0f172a;color:#fff}\n.hd h2{margin:0;font-size:15px;font-weight:650}\n.x{background:transparent;border:0;color:#cbd5e1;font-size:22px;cursor:pointer;line-height:1}\n.bd{flex:1;overflow:auto;padding:18px;display:grid;gap:12px;align-content:start}\nlabel{font-weight:600;font-size:13px;display:block;margin-bottom:5px}\ninput,textarea{width:100%;font:inherit;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;color:#0f172a;background:#fff}\ntextarea{min-height:120px;resize:vertical}\ninput:focus,textarea:focus{outline:2px solid #2563eb;border-color:#2563eb}\n.pin{letter-spacing:.6em;text-align:center;font-size:22px}\n.b{font:600 14px/1 inherit;border:0;border-radius:10px;padding:12px 14px;cursor:pointer;background:#e2e8f0;color:#0f172a}\n.b.p{background:#16a34a;color:#fff}\n.b.on{background:#f59e0b;color:#1c1100}\n.b[disabled]{opacity:.5;cursor:wait}\n.note{font-size:12px;color:#64748b}\n.st{font-size:13px;font-weight:600;min-height:18px}\n.ok{color:#15803d}.er{color:#b91c1c}\n\n.dr.wide{width:min(760px,100vw)}\n.tabs2{display:none;background:#0f172a;padding:0 12px;gap:4px}\n.tabs2.on{display:flex}\n.tb{flex:1;font:600 13px/1 inherit;background:transparent;color:#94a3b8;border:0;border-bottom:3px solid transparent;padding:12px 8px;cursor:pointer}\n.tb.on{color:#fff;border-bottom-color:#f59e0b}\n.ag-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}\n.ag-k{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:10px 12px}\n.ag-k b{display:block;font-size:20px;line-height:1.1;color:#0f172a}\n.ag-k span{font-size:11px;color:#64748b}\n.ag-k.sv b{color:#15803d}\n.ag-demo{background:#fffbeb;border:1px solid #fcd34d;color:#92400e;border-radius:10px;padding:8px 10px;font-size:12px;font-weight:600}\n.ag-conn{font-size:11px;color:#64748b}\n.ag-bar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}\n.ag-v{font:600 12px/1 inherit;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:7px 12px;cursor:pointer;color:#0f172a}\n.ag-v.on{background:#0f172a;color:#fff;border-color:#0f172a}\n.ag-add{margin-left:auto;font:700 12px/1 inherit;background:#16a34a;color:#fff;border:0;border-radius:999px;padding:8px 13px;cursor:pointer}\n.ag-day{font-size:12px;font-weight:700;color:#475569;text-transform:uppercase;letter-spacing:.06em;margin-top:6px}\n.ag-card{display:grid;grid-template-columns:62px 1fr;gap:10px;border:1px solid #e2e8f0;border-left:4px solid #16a34a;border-radius:12px;padding:10px 12px;background:#fff}\n.ag-card.s-PENDIENTE{border-left-color:#f59e0b}.ag-card.s-COMPLETADA{border-left-color:#2563eb}.ag-card.s-CANCELADA{border-left-color:#dc2626;opacity:.6}\n.ag-t{font-weight:800;font-size:17px;color:#0f172a}\n.ag-n{font-weight:700}\n.ag-m{font-size:12px;color:#64748b;margin-top:2px}\n.ag-a{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;align-items:center}\n.ag-wa{font:600 12px/1 inherit;background:#dcfce7;color:#166534;border-radius:999px;padding:7px 10px;text-decoration:none}\n.ag-a select{font:600 12px/1 inherit;border:1px solid #cbd5e1;border-radius:8px;padding:6px 8px;width:auto;background:#fff}\n.ag-form{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px}\n.ag-form .full{grid-column:1/-1}\n.ag-form label{font-size:11px;margin-bottom:3px}\n.ag-empty{text-align:center;color:#64748b;padding:20px 0;font-size:13px}\n","wan":"34670256353","plans":{"lang":"es","kind":"hair","A":{"setup":249,"monthly":29},"B":{"setup":0,"monthly":59}},"bk":{"url":"https://ntfy.sh/autoweb-bookings-evalloverasperruquer-2f9b2c6f0630be","pub":"BBH2g1QtdMHHM0NkgwNT4YYZN9g8bPAbzwtM7xaJ97umtVENKUAN5cWovqipzSdVAf2XhK29Makbxc3UCTD+Gts=","kind":"hair"},"edit":"https://wa.me/34670256353?text=Hola%2C%20he%20visto%20el%20boceto%20de%20EVA%20LLOVERAS%20perruqueria%20unisex%20y%20me%20gustar%C3%ADa%20cambiar%20algunas%20fotos%20o%20textos","editText":"🎨 Boceto 100% editable con tus propias fotos, textos y sugerencias","improvements":[{"title":"Estética de plantilla de principios de los 2010","before":"El fondo de madera oscura texturizada, los bordes ondulados tipo 'sello' que separan las secciones, los marcos grises biselados de las fotos y los degradados metalizados dan un aspecto de web de hace más de diez años. En escritorio todo el contenido queda encajonado en una columna estrecha de unos 980 px, con enormes bandas vacías de madera a ambos lados.","fix":"El rediseño ofrece una imagen limpia, luminosa y actual, a ancho completo, que refleja la calidad real de su salón y transmite profesionalidad desde el primer segundo."},{"title":"Menú en imágenes, sin texto, sin CTA y sin herramientas de reserva","before":"La navegación son rótulos en gris sobre gris, que parecen imágenes, en cinco idiomas (castellano, francés, inglés, alemán y ruso) sin jerarquía. No hay botón de 'Pedir cita', ni WhatsApp, ni teléfono visible sobre el pliegue. El teléfono y el horario solo aparecen en el pie de la versión móvil, en texto diminuto. Además no hay H1 ni etiquetas semánticas (header, nav, main), lo que perjudica el SEO local.","fix":"Tendrás un botón de 'Reservar cita' y de WhatsApp siempre a la vista, con teléfono y horario visibles de inmediato, para que cada visita pueda convertirse en una cita."},{"title":"Sin viewport: la web móvil es el escritorio reducido","before":"No existe la meta viewport. En la captura móvil se ve la página de escritorio encogida, con el menú de idiomas ilegible, el texto del pie (dirección, horario, email en rojo sobre negro) minúsculo y la barra de marcas casi invisible. Las seis fotos con marcos pesados ocupan mucho espacio sin aportar información, y la parte inferior queda como un gran vacío de madera.","fix":"El nuevo diseño se adapta perfectamente al móvil, con textos legibles, botón de llamada con un toque y una galería ágil, porque la mayoría de tus clientas te buscan desde el teléfono."}],"tool":{"text":"Incluye reservador de citas multi-servicio directo a tu WhatsApp/Email (0% comisión)","button":"Probar Cita","target":"reservar-cita"},"track":null,"ping":null,"css":"\n:host{all:initial}\n*{box-sizing:border-box}\n.bar{position:fixed;top:0;left:0;right:0;z-index:2147483647;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 14px;background:linear-gradient(90deg,#0b1220,#16233f);color:#e6ecf7;font:500 13px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;box-shadow:0 2px 14px rgba(2,8,23,.35);border-bottom:1px solid rgba(255,255,255,.08)}\n.txt{display:flex;align-items:center;gap:9px;min-width:0}\n.txt span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.txt b{font-weight:650;color:#fff}\n.tag{flex:0 0 auto;max-width:46vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:6px 11px;border-radius:999px;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.4);color:#fde68a;font-size:12px;font-weight:600;text-decoration:none}\na.tag:hover{background:rgba(251,191,36,.24);color:#fff}\n@media (max-width:1560px){.sub{display:none}}\n.sub{color:#9fb0cf}\n.dot{flex:none;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.7);animation:p 2s infinite}\n@keyframes p{70%{box-shadow:0 0 0 7px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}\n.act{display:flex;align-items:center;gap:8px;flex:none}\nbutton,a.cta{font:inherit;cursor:pointer;border-radius:999px;border:0;text-decoration:none;line-height:1}\n.ghost{padding:8px 13px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18);transition:background .15s}\n.ghost:hover{background:rgba(255,255,255,.18)}\n.cta{display:inline-flex;align-items:center;gap:7px;padding:9px 15px;background:#16a34a;color:#fff;font-weight:650;box-shadow:0 2px 10px rgba(22,163,74,.4);transition:transform .15s,background .15s}\n.cta:hover{background:#15803d;transform:translateY(-1px)}\n.cta.plans{background:linear-gradient(135deg,#f59e0b,#ef4444);box-shadow:0 2px 12px rgba(245,158,11,.5)}\n.cta.plans:hover{background:linear-gradient(135deg,#d97706,#dc2626)}\n@media (max-width:900px){.cta.plans{padding:8px 11px;font-size:12px}}\n.cta svg{width:15px;height:15px;fill:currentColor}\n.cta small{font-weight:500;opacity:.9}\n.min{width:28px;height:28px;padding:0;background:transparent;color:#9fb0cf;font-size:18px}\n.min:hover{color:#fff}\n.pill{position:fixed;top:8px;right:10px;z-index:2147483647;padding:8px 13px;background:#0f1b33;color:#fff;border:1px solid rgba(255,255,255,.2);box-shadow:0 2px 10px rgba(2,8,23,.4);font:600 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,sans-serif;display:flex;align-items:center;gap:7px}\n.pill[hidden],.bar[hidden],.ov[hidden]{display:none}\n.ov{position:fixed;left:0;right:0;bottom:0;z-index:2147483646;background:#f4f6fb;color:#0f172a;font:400 15px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;display:flex;flex-direction:column}\n.tabs{display:flex;gap:6px;padding:10px 14px;background:#fff;border-bottom:1px solid #e2e8f0}\n.tab{padding:8px 14px;background:#eef2f9;color:#334155;font-weight:600}\n.tab[aria-selected=true]{background:#0f172a;color:#fff}\n.pane{flex:1;overflow:auto;padding:18px 14px}\n.pane img{display:block;width:100%;max-width:1100px;margin:0 auto;border-radius:10px;box-shadow:0 6px 30px rgba(15,23,42,.18);border:1px solid #dbe2ee}\n.cap{max-width:1100px;margin:10px auto 0;color:#64748b;font-size:13px;text-align:center}\n.list{max-width:820px;margin:0 auto;display:grid;gap:12px;counter-reset:i}\n.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 16px 58px;position:relative;counter-increment:i}\n.card::before{content:counter(i);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:#16a34a;color:#fff;display:grid;place-items:center;font-weight:700}\n.card h3{margin:0 0 4px;font-size:16px}\n.card p{margin:0;color:#475569;font-size:14px}\n.card .b{color:#b45309}\n.card .f{color:#15803d;margin-top:4px}\n.short{display:none}\n@media (max-width:720px){\n  .bar{flex-wrap:wrap;padding:7px 10px;gap:7px}\n  .sub,.long{display:none}\n  .short{display:inline}\n  .txt{flex:1 1 100%}\n  .tag{flex:1 1 100%;white-space:normal;text-align:center;border-radius:10px}\n  .act{flex:1 1 100%;justify-content:space-between}\n  .cta{flex:1;justify-content:center;white-space:nowrap;padding:9px 10px}\n  .ghost{white-space:nowrap;padding:8px 11px}\n  button,a.cta{font-size:12.5px}\n}\n"};</script><script>(function(){
+<!--wra:body--><script>window.__WRA__={"name":"EVA LLOVERAS perruqueria unisex","wa":"https://wa.me/34670256353?text=Hola%2C%20acabo%20de%20ver%20la%20propuesta%20de%20dise%C3%B1o%20para%20mi%20web%20EVA%20LLOVERAS%20perruqueria%20unisex%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s","original":"./original.jpg","nw":false,"id":210,"slug":"eva-lloveras-perruqueria-unisex","phone":"972361038","lang":"es","pk":"BLWCUkRwvbZ4WF6ry+cfQF+SaFP2J3fTyGxCFzgDOLCKSxgORfMrzFS5/pN0IReMjwUOEaP70DNXvbLga1+AyKw=","ntfy":{"alerts":"https://ntfy.sh/autoweb-alerts-7f74a1f4afc54cf8","updates":"https://ntfy.sh/autoweb-updates-7f74a1f4afc54cf8"},"ocss":"\n:host{all:initial}\n*{box-sizing:border-box}\n.trig{font:500 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;background:transparent;color:inherit;border:1px solid currentColor;opacity:.5;border-radius:6px;padding:7px 11px;cursor:pointer}\n.trig:hover{opacity:.9}\n.dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);z-index:2147483646;background:#fff;color:#0f172a;box-shadow:-10px 0 40px rgba(2,8,23,.35);display:flex;flex-direction:column;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;transform:translateX(105%);transition:transform .3s}\n.dr.on{transform:none}\n.hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;background:#0f172a;color:#fff}\n.hd h2{margin:0;font-size:15px;font-weight:650}\n.x{background:transparent;border:0;color:#cbd5e1;font-size:22px;cursor:pointer;line-height:1}\n.bd{flex:1;overflow:auto;padding:18px;display:grid;gap:12px;align-content:start}\nlabel{font-weight:600;font-size:13px;display:block;margin-bottom:5px}\ninput,textarea{width:100%;font:inherit;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;color:#0f172a;background:#fff}\ntextarea{min-height:120px;resize:vertical}\ninput:focus,textarea:focus{outline:2px solid #2563eb;border-color:#2563eb}\n.pin{letter-spacing:.6em;text-align:center;font-size:22px}\n.b{font:600 14px/1 inherit;border:0;border-radius:10px;padding:12px 14px;cursor:pointer;background:#e2e8f0;color:#0f172a}\n.b.p{background:#16a34a;color:#fff}\n.b.on{background:#f59e0b;color:#1c1100}\n.b[disabled]{opacity:.5;cursor:wait}\n.note{font-size:12px;color:#64748b}\n.st{font-size:13px;font-weight:600;min-height:18px}\n.ok{color:#15803d}.er{color:#b91c1c}\n\n.dr.wide{width:min(760px,100vw)}\n.tabs2{display:none;background:#0f172a;padding:0 12px;gap:4px}\n.tabs2.on{display:flex}\n.tb{flex:1;font:600 13px/1 inherit;background:transparent;color:#94a3b8;border:0;border-bottom:3px solid transparent;padding:12px 8px;cursor:pointer}\n.tb.on{color:#fff;border-bottom-color:#f59e0b}\n.ag-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}\n.ag-k{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:10px 12px}\n.ag-k b{display:block;font-size:20px;line-height:1.1;color:#0f172a}\n.ag-k span{font-size:11px;color:#64748b}\n.ag-k.sv b{color:#15803d}\n.ag-demo{background:#fffbeb;border:1px solid #fcd34d;color:#92400e;border-radius:10px;padding:8px 10px;font-size:12px;font-weight:600}\n.ag-conn{font-size:11px;color:#64748b}\n.ag-bar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}\n.ag-v{font:600 12px/1 inherit;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:7px 12px;cursor:pointer;color:#0f172a}\n.ag-v.on{background:#0f172a;color:#fff;border-color:#0f172a}\n.ag-add{margin-left:auto;font:700 12px/1 inherit;background:#16a34a;color:#fff;border:0;border-radius:999px;padding:8px 13px;cursor:pointer}\n.ag-day{font-size:12px;font-weight:700;color:#475569;text-transform:uppercase;letter-spacing:.06em;margin-top:6px}\n.ag-card{display:grid;grid-template-columns:62px 1fr;gap:10px;border:1px solid #e2e8f0;border-left:4px solid #16a34a;border-radius:12px;padding:10px 12px;background:#fff}\n.ag-card.s-PENDIENTE{border-left-color:#f59e0b}.ag-card.s-COMPLETADA{border-left-color:#2563eb}.ag-card.s-CANCELADA{border-left-color:#dc2626;opacity:.6}\n.ag-t{font-weight:800;font-size:17px;color:#0f172a}\n.ag-n{font-weight:700}\n.ag-m{font-size:12px;color:#64748b;margin-top:2px}\n.ag-a{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;align-items:center}\n.ag-wa{font:600 12px/1 inherit;background:#dcfce7;color:#166534;border-radius:999px;padding:7px 10px;text-decoration:none}\n.ag-a select{font:600 12px/1 inherit;border:1px solid #cbd5e1;border-radius:8px;padding:6px 8px;width:auto;background:#fff}\n.ag-form{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px}\n.ag-form .full{grid-column:1/-1}\n.ag-form label{font-size:11px;margin-bottom:3px}\n.ag-empty{text-align:center;color:#64748b;padding:20px 0;font-size:13px}\n","wan":"34670256353","plans":{"lang":"es","kind":"hair","A":{"setup":249,"monthly":29},"B":{"setup":0,"monthly":59}},"bk":{"url":"https://ntfy.sh/autoweb-bookings-evalloverasperruquer-2f9b2c6f0630be","pub":"BBH2g1QtdMHHM0NkgwNT4YYZN9g8bPAbzwtM7xaJ97umtVENKUAN5cWovqipzSdVAf2XhK29Makbxc3UCTD+Gts=","kind":"hair"},"edit":"https://wa.me/34670256353?text=Hola%2C%20he%20visto%20el%20boceto%20de%20EVA%20LLOVERAS%20perruqueria%20unisex%20y%20me%20gustar%C3%ADa%20cambiar%20algunas%20fotos%20o%20textos","editText":"🎨 Boceto 100% editable con tus propias fotos, textos y sugerencias","improvements":[{"title":"Diseño anticuado de imagen sobre fondo de madera","before":"La web usa un fondo de madera texturizado, un contenedor estrecho de unos 980 px centrado en una pantalla de 1920 px, y menús y banners hechos con imágenes. Los bordes con efecto dentado, las ondas y los marcos grises con relieve parecen de 2010. Dos tercios de la pantalla de escritorio quedan vacíos, y el resultado resta profesionalidad a un salón que en realidad tiene un local cuidado.","fix":"El rediseño presenta tu salón con una web limpia, a pantalla completa y con la estética elegante y actual que tu local ya tiene."},{"title":"Sin vista móvil adaptada (falta el viewport)","before":"No existe la etiqueta meta viewport. En el móvil se ve la página de escritorio reducida, con el menú de idiomas en texto diminuto, el pie ilegible y mucho espacio vacío al final. No hay botón de llamada ni de WhatsApp. Un cliente con el móvil tiene que hacer zoom para leer el horario o el teléfono.","fix":"El rediseño se adapta a cualquier móvil, con texto legible y botones grandes de llamar y de WhatsApp, para que tus clientas te contacten con un solo toque."},{"title":"Sin llamada a la acción, servicios, precios ni reservas","before":"Sobre el pliegue solo hay el logo, una foto y un menú de cinco idiomas, con el teléfono y el horario escondidos en el pie. Las secciones no tienen texto ni servicios, y no se puede reservar cita. Además, el menú son imágenes y no hay ningún h1, así que Google tampoco entiende de qué trata la página.","fix":"El rediseño muestra tus servicios, el horario y un botón de reservar cita bien visibles desde el primer vistazo, y ayuda a que Google te encuentre."}],"tool":{"text":"Incluye reservador de citas multi-servicio directo a tu WhatsApp/Email (0% comisión)","button":"Probar Cita","target":"reservar-cita"},"track":null,"ping":null,"css":"\n:host{all:initial}\n*{box-sizing:border-box}\n.bar{position:fixed;top:0;left:0;right:0;z-index:2147483647;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 14px;background:linear-gradient(90deg,#0b1220,#16233f);color:#e6ecf7;font:500 13px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;box-shadow:0 2px 14px rgba(2,8,23,.35);border-bottom:1px solid rgba(255,255,255,.08)}\n.txt{display:flex;align-items:center;gap:9px;min-width:0}\n.txt span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.txt b{font-weight:650;color:#fff}\n.tag{flex:0 0 auto;max-width:46vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:6px 11px;border-radius:999px;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.4);color:#fde68a;font-size:12px;font-weight:600;text-decoration:none}\na.tag:hover{background:rgba(251,191,36,.24);color:#fff}\n@media (max-width:1560px){.sub{display:none}}\n.sub{color:#9fb0cf}\n.dot{flex:none;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.7);animation:p 2s infinite}\n@keyframes p{70%{box-shadow:0 0 0 7px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}\n.act{display:flex;align-items:center;gap:8px;flex:none}\nbutton,a.cta{font:inherit;cursor:pointer;border-radius:999px;border:0;text-decoration:none;line-height:1}\n.ghost{padding:8px 13px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18);transition:background .15s}\n.ghost:hover{background:rgba(255,255,255,.18)}\n.cta{display:inline-flex;align-items:center;gap:7px;padding:9px 15px;background:#16a34a;color:#fff;font-weight:650;box-shadow:0 2px 10px rgba(22,163,74,.4);transition:transform .15s,background .15s}\n.cta:hover{background:#15803d;transform:translateY(-1px)}\n.cta.plans{background:linear-gradient(135deg,#f59e0b,#ef4444);box-shadow:0 2px 12px rgba(245,158,11,.5)}\n.cta.plans:hover{background:linear-gradient(135deg,#d97706,#dc2626)}\n@media (max-width:900px){.cta.plans{padding:8px 11px;font-size:12px}}\n.cta svg{width:15px;height:15px;fill:currentColor}\n.cta small{font-weight:500;opacity:.9}\n.min{width:28px;height:28px;padding:0;background:transparent;color:#9fb0cf;font-size:18px}\n.min:hover{color:#fff}\n.pill{position:fixed;top:8px;right:10px;z-index:2147483647;padding:8px 13px;background:#0f1b33;color:#fff;border:1px solid rgba(255,255,255,.2);box-shadow:0 2px 10px rgba(2,8,23,.4);font:600 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,sans-serif;display:flex;align-items:center;gap:7px}\n.pill[hidden],.bar[hidden],.ov[hidden]{display:none}\n.ov{position:fixed;left:0;right:0;bottom:0;z-index:2147483646;background:#f4f6fb;color:#0f172a;font:400 15px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;display:flex;flex-direction:column}\n.tabs{display:flex;gap:6px;padding:10px 14px;background:#fff;border-bottom:1px solid #e2e8f0}\n.tab{padding:8px 14px;background:#eef2f9;color:#334155;font-weight:600}\n.tab[aria-selected=true]{background:#0f172a;color:#fff}\n.pane{flex:1;overflow:auto;padding:18px 14px}\n.pane img{display:block;width:100%;max-width:1100px;margin:0 auto;border-radius:10px;box-shadow:0 6px 30px rgba(15,23,42,.18);border:1px solid #dbe2ee}\n.cap{max-width:1100px;margin:10px auto 0;color:#64748b;font-size:13px;text-align:center}\n.list{max-width:820px;margin:0 auto;display:grid;gap:12px;counter-reset:i}\n.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 16px 58px;position:relative;counter-increment:i}\n.card::before{content:counter(i);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:#16a34a;color:#fff;display:grid;place-items:center;font-weight:700}\n.card h3{margin:0 0 4px;font-size:16px}\n.card p{margin:0;color:#475569;font-size:14px}\n.card .b{color:#b45309}\n.card .f{color:#15803d;margin-top:4px}\n.vs{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.vsc{border-radius:14px;padding:18px;border:1px solid #e2e8f0;background:#fff}\n.vsc.bad{border-color:#fecaca;background:#fff5f5}\n.vsc.good{border-color:#bbf7d0;background:#f0fdf4}\n.vsc h3{margin:0 0 12px;font-size:13px;letter-spacing:.06em;text-transform:uppercase}\n.vsc.bad h3{color:#b91c1c}\n.vsc.good h3{color:#15803d}\n.vsc ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}\n.vsc li{font-size:14.5px;color:#334155}\n@media (max-width:720px){.vs{grid-template-columns:1fr}}\n.short{display:none}\n@media (max-width:720px){\n  .bar{flex-wrap:wrap;padding:7px 10px;gap:7px}\n  .sub,.long{display:none}\n  .short{display:inline}\n  .txt{flex:1 1 100%}\n  .tag{flex:1 1 100%;white-space:normal;text-align:center;border-radius:10px}\n  .act{flex:1 1 100%;justify-content:space-between}\n  .cta{flex:1;justify-content:center;white-space:nowrap;padding:9px 10px}\n  .ghost{white-space:nowrap;padding:8px 11px}\n  button,a.cta{font-size:12.5px}\n}\n"};</script><script>(function(){
 var C=window.__WRA__;
 if(!C||window.__WRA_AGENDA__)return;
 window.__WRA_AGENDA__=true;
@@ -949,7 +869,7 @@ var html='<style>'+C.css+'</style>'
  +(C.wa?'<a class="cta" id="wa" href="'+esc(C.wa)+'" target="_blank" rel="noopener">'+waIcon+'<span><span class="long">Me gusta este diseño <small>(Hablar por WhatsApp)</small></span><span class="short">Me gusta · WhatsApp</span></span></a>':'')
  +'<button class="min" id="min" type="button" aria-label="Minimizar barra">&minus;</button></div></div>'
  +'<button class="pill" id="pill" type="button" hidden><i class="dot"></i>Propuesta para '+esc(C.name)+' &#9662;</button>'
- +'<div class="ov" id="ov" hidden><div class="tabs" role="tablist"><button class="tab ghost-tab" id="t1" role="tab" aria-selected="true" type="button">'+(C.original?'Antes: tu web actual':'3 puntos mejorados')+'</button>'
+ +'<div class="ov" id="ov" hidden><div class="tabs" role="tablist"><button class="tab ghost-tab" id="t1" role="tab" aria-selected="true" type="button">'+(C.nw?(C.lang==='fr'?'Aujourd’hui vs. dès aujourd’hui':'Hoy vs. desde hoy'):C.original?'Antes: tu web actual':'3 puntos mejorados')+'</button>'
  +(C.original?'<button class="tab" id="t2" role="tab" aria-selected="false" type="button">3 puntos mejorados</button>':'')+'</div><div class="pane" id="pane"></div></div>';
 root.innerHTML=html;
 document.body.appendChild(host);
@@ -957,7 +877,15 @@ var $=function(id){return root.getElementById?root.getElementById(id):root.query
 var bar=root.querySelector('.bar'),pill=$('pill'),ov=$('ov'),cmp=$('cmp'),pane=$('pane');
 var open=false,minimized=false;
 
+function nwHtml(){
+  var fr=C.lang==='fr';
+  var no=fr?['❌ Vous apparaissez « Sans site web » sur Google Maps (vous perdez jusqu’à 60 % des clics face aux concurrents de la même rue)','❌ Les touristes étrangers ne peuvent pas voir vos services/votre carte dans leur langue','❌ Vous dépendez des appels téléphoniques ou de plateformes avec commission']:['❌ Apareces "Sin sitio web" en Google Maps (pierdes hasta el 60% de clics frente a competidores de la misma calle)','❌ Turistas extranjeros no pueden ver tus servicios/carta en su idioma','❌ Dependes de llamadas telefónicas o plataformas con comisión'];
+  var yes=fr?['✅ Votre nouveau site prêt à publier, domaine .com / .es inclus','✅ Réservations directes style Booksy, sans commission','✅ SEO local actif : vous apparaissez quand on vous cherche dans votre quartier','✅ En 4 langues (ES / CA / FR / EN)']:['✅ Tu nueva web lista para publicar, con dominio .com / .es incluido','✅ Reservas directas estilo Booksy, sin comisiones','✅ SEO Local activo: apareces cuando te buscan en tu zona','✅ En 4 idiomas (ES / CA / FR / EN)'];
+  var li=function(a){return a.map(function(t){return'<li>'+esc(t)+'</li>'}).join('')};
+  return'<div class="vs"><div class="vsc bad"><h3>'+(fr?'AUJOURD’HUI - Sans site officiel':'HOY - Sin Web Oficial')+'</h3><ul>'+li(no)+'</ul></div><div class="vsc good"><h3>'+(fr?'DÈS AUJOURD’HUI - Votre premier site officiel 24/7':'DESDE HOY - Tu Primera Web Oficial 24/7')+'</h3><ul>'+li(yes)+'</ul></div></div>';
+}
 function improvementsHtml(){
+  if(C.nw)return nwHtml();
   var l=C.improvements||[];
   if(!l.length)return'<p class="cap">Diseño más moderno, claro y pensado para móvil.</p>';
   return'<div class="list">'+l.map(function(i){return'<div class="card"><h3>'+esc(i.title)+'</h3>'+(i.before?'<p class="b"><b>Antes:</b> '+esc(i.before)+'</p>':'')+'<p class="f"><b>Ahora:</b> '+esc(i.fix||'Resuelto en la nueva propuesta.')+'</p></div>'}).join('')+'</div>';
@@ -999,7 +927,8 @@ function setOpen(v){
   open=v;
   ov.hidden=!v;
   var small=window.matchMedia&&matchMedia('(max-width:720px)').matches;
-  cmp.textContent=v?(small?'Ver propuesta':'Volver a la propuesta nueva'):(small?'3 mejoras':'Ver los 3 puntos mejorados respecto a tu web actual');
+  var fr=C.lang==='fr';
+  cmp.textContent=v?(small?(fr?'Voir la maquette':'Ver propuesta'):(fr?'Retour à la nouvelle maquette':'Volver a la propuesta nueva')):C.nw?(small?(fr?'🚨 Ce que vous perdez':'🚨 Lo que pierdes'):(fr?'🚨 Voir ce que vous perdez sans site vs. avec votre nouveau site':'🚨 Ver lo que pierdes hoy sin web vs. Con tu nueva web')):(small?'3 mejoras':'Ver los 3 puntos mejorados respecto a tu web actual');
   document.documentElement.style.overflow=v?'hidden':'';
   if(v)show(1);
 }
@@ -1331,7 +1260,7 @@ window.wraWhatsApp=function(text){
 };
 window.wraContact=function(text){if(window.wraOpenContact)window.wraOpenContact(text);else window.open(window.wraWhatsApp(text),'_blank','noopener')};
 doc.documentElement.setAttribute('data-wra-kit','ready');
-})();</script><div class="wrab-ov" aria-hidden="true"></div><aside class="wrab-drawer" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Reservar cita en EVA LLOVERAS perruqueria unisex" data-bstyle="modern" data-lenis-prevent><div class="wrab" data-bstyle="modern"><div class="wrab-drawer-head"><h2 class="wrab-h">Reserva tu cita</h2><button type="button" class="wrab-x" aria-label="Cerrar">&times;</button></div><div class="wrab-card"><div data-wrab-drawer></div></div></div></aside><script>window.__WRATOOL__={"kind":"salon","name":"EVA LLOVERAS perruqueria unisex","lang":"es","style":"modern","wa":"","tel":"+34972361038","telShow":"972 36 10 38","email":"info@evalloveras.com","agency":"34670256353","sim":true,"cd":[],"cs":[],"s":{"locale":"es-ES","today":"Hoy","tomorrow":"Mañana","other":"Otra fecha","closedBadge":"Cerrado","closedDay":"Ese día cerramos ({day}). Elige otro día.","errStep":"Completa este paso para continuar.","errName":"Escribe tu nombre.","errPhone":"Escribe un teléfono válido.","resTitle":"Solicitud lista","resSub":"Envíala con un toque:","resWa":"Enviar por WhatsApp","resMail":"📩 Enviar por email en 1 clic","resCall":"📞 Llamada rápida","resCopy":"Copiar solicitud","resCopied":"Copiado","resEdit":"Modificar","resNoChannel":"Copia la solicitud y envíala al negocio.","simTitle":"Vista para el propietario","simTry":"Probar envío real a mi WhatsApp/Email","simActivate":"Quiero activar esta herramienta en mi negocio","simClose":"Cerrar","simMail":"Correo","simCall":"Llamada","simNow":"ahora","min":"min","total":"Total","totalFrom":"desde","and":"y","tName":"A nombre de:"},"match":"(pedir|reservar|solicitar|demanar|prendre|book)[^.]{0,24}(cita|rendez|rdv)|cita (previa|prèvia)|reserva|reservar|rendez-vous|prendre rdv|book","ui":{"eyebrow":"0 % de comisión","title":"Reserva tu cita","sub":"Elige tus servicios y te calculamos el tiempo. La cita llega directa al salón.","perks":["Duración total calculada al momento","Sin comisiones ni plataformas","Confirmación directa del salón"],"confirm":"Confirmar solicitud de cita","dialog":"Reservar cita en {name}"},"steps":[{"id":"svc","type":"cart","title":"Elige tus servicios","items":[{"v":"p0","label":"Corte","min":30,"price":null},{"v":"p1","label":"Arreglo de barba","min":20,"price":null},{"v":"p2","label":"Lavado y peinado","min":30,"price":null},{"v":"p3","label":"Coloración / mechas","min":90,"price":null},{"v":"p4","label":"Tratamiento capilar","min":45,"price":null}],"minUnit":"min","currency":"€"},{"id":"when","type":"when","title":"Día y hora","times":true,"useDuration":"svc","shifts":[{"v":"am","label":"Mañana 10:00 - 13:30","from":600,"to":810,"times":["10:00","10:30","11:00","11:30","12:00","12:30","13:00"]},{"v":"pm","label":"Tarde 15:30 - 19:30","from":930,"to":1170,"times":["15:30","16:00","16:30","17:00","17:30","18:00","18:30","19:00"]}]},{"id":"contact","type":"fields","title":"Tus datos","fields":[{"key":"name","label":"Nombre","ph":"Tu nombre","req":true},{"key":"phone","label":"Teléfono de contacto","ph":"600 000 000","type":"tel","req":true}]}],"t":{"head":"✂️ *NUEVA SOLICITUD DE CITA WEB*","rows":[["✂️","Servicios:","svc"],["⏱️","Duración total:","@time"],["💶","Importe:","@price"],["💇","Profesional:","staff"],["📅","Fecha:","when.date"],["🕒","Hora:","when.time"]],"notes":[],"foot":"Enviado desde la nueva web oficial (0% comisiones)","subject":"Solicitud de cita","subjectSrc":["svc","@time","when.date"]},"simNote":"💡 Así recibirás tus citas con servicios y tiempos ya calculados en tu móvil, sin pagar comisiones a Treatwell, Planity ni Booksy.","agencyMsg":"Hola, he visto el reservador de citas de {name} y quiero activarlo en mi negocio."};</script><script>(function(){
+})();</script><div class="wrab-ov" aria-hidden="true"></div><aside class="wrab-drawer" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Reservar cita en EVA LLOVERAS perruqueria unisex" data-bstyle="soft" data-lenis-prevent><div class="wrab" data-bstyle="soft"><div class="wrab-drawer-head"><h2 class="wrab-h">Reserva tu cita</h2><button type="button" class="wrab-x" aria-label="Cerrar">&times;</button></div><div class="wrab-card"><div data-wrab-drawer></div></div></div></aside><script>window.__WRATOOL__={"kind":"salon","name":"EVA LLOVERAS perruqueria unisex","lang":"es","style":"soft","wa":"","tel":"+34972361038","telShow":"972 36 10 38","email":"info@evalloveras.com","agency":"34670256353","sim":true,"cd":[],"cs":[],"s":{"locale":"es-ES","today":"Hoy","tomorrow":"Mañana","other":"Otra fecha","closedBadge":"Cerrado","closedDay":"Ese día cerramos ({day}). Elige otro día.","errStep":"Completa este paso para continuar.","errName":"Escribe tu nombre.","errPhone":"Escribe un teléfono válido.","resTitle":"Solicitud lista","resSub":"Envíala con un toque:","resWa":"Enviar por WhatsApp","resMail":"📩 Enviar por email en 1 clic","resCall":"📞 Llamada rápida","resCopy":"Copiar solicitud","resCopied":"Copiado","resEdit":"Modificar","resNoChannel":"Copia la solicitud y envíala al negocio.","simTitle":"Vista para el propietario","simTry":"Probar envío real a mi WhatsApp/Email","simActivate":"Quiero activar esta herramienta en mi negocio","simClose":"Cerrar","simMail":"Correo","simCall":"Llamada","simNow":"ahora","min":"min","total":"Total","totalFrom":"desde","and":"y","tName":"A nombre de:"},"match":"(pedir|reservar|solicitar|demanar|prendre|book)[^.]{0,24}(cita|rendez|rdv)|cita (previa|prèvia)|reserva|reservar|rendez-vous|prendre rdv|book","ui":{"eyebrow":"0 % de comisión","title":"Reserva tu cita","sub":"Elige tus servicios y te calculamos el tiempo. La cita llega directa al salón.","perks":["Duración total calculada al momento","Sin comisiones ni plataformas","Confirmación directa del salón"],"confirm":"Confirmar solicitud de cita","dialog":"Reservar cita en {name}"},"steps":[{"id":"svc","type":"cart","title":"Elige tus servicios","items":[{"v":"p0","label":"Corte","min":30,"price":null},{"v":"p1","label":"Arreglo de barba","min":20,"price":null},{"v":"p2","label":"Lavado y peinado","min":30,"price":null},{"v":"p3","label":"Coloración / mechas","min":90,"price":null},{"v":"p4","label":"Tratamiento capilar","min":45,"price":null}],"minUnit":"min","currency":"€"},{"id":"when","type":"when","title":"Día y hora","times":true,"useDuration":"svc","shifts":[{"v":"am","label":"Mañana 10:00 - 13:30","from":600,"to":810,"times":["10:00","10:30","11:00","11:30","12:00","12:30","13:00"]},{"v":"pm","label":"Tarde 15:30 - 19:30","from":930,"to":1170,"times":["15:30","16:00","16:30","17:00","17:30","18:00","18:30","19:00"]}]},{"id":"contact","type":"fields","title":"Tus datos","fields":[{"key":"name","label":"Nombre","ph":"Tu nombre","req":true},{"key":"phone","label":"Teléfono de contacto","ph":"600 000 000","type":"tel","req":true}]}],"t":{"head":"✂️ *NUEVA SOLICITUD DE CITA WEB*","rows":[["✂️","Servicios:","svc"],["⏱️","Duración total:","@time"],["💶","Importe:","@price"],["💇","Profesional:","staff"],["📅","Fecha:","when.date"],["🕒","Hora:","when.time"]],"notes":[],"foot":"Enviado desde la nueva web oficial (0% comisiones)","subject":"Solicitud de cita","subjectSrc":["svc","@time","when.date"]},"simNote":"💡 Así recibirás tus citas con servicios y tiempos ya calculados en tu móvil, sin pagar comisiones a Treatwell, Planity ni Booksy.","agencyMsg":"Hola, he visto el reservador de citas de {name} y quiero activarlo en mi negocio."};</script><script>(function(){
 var T=window.__WRATOOL__;
 if(!T||window.__WRATOOL_LOADED__)return;
 window.__WRATOOL_LOADED__=true;
