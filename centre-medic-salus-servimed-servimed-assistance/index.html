@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <!--wra:head--><meta name="robots" content="noindex, nofollow"><!--/wra:head-->
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Centre Mèdic Salus Servimed · Centro médico en Lloret de Mar</title>
@@ -17,7 +18,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: {
-  colors: { ink:'#15130F', ink2:'#27231C', paper:'#EFEEEB', rose:'#D85A88' },
+  colors: { ink:'#0E1821', ink2:'#16242F', paper:'#EDF1F3', rose:'#5FA8B5' },
   fontFamily: { display:['"Bricolage Grotesque"','sans-serif'], serif:['"Instrument Serif"','serif'] }
 }}};
 </script>
@@ -38,17 +39,17 @@ tailwind.config = { theme: { extend: {
 }
 </script>
 <style>
-:root{--bg:#15130F;--bg2:#27231C;--fg:#EFEEEB;--accent:#D85A88;--line:rgba(239,238,235,.18)}
+:root{--bg:#0E1821;--bg2:#16242F;--fg:#EDF1F3;--accent:#5FA8B5;--line:rgba(237,241,243,.18)}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--fg);font-family:'Bricolage Grotesque',sans-serif;overflow-x:hidden}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(40% 40% at 0% 0%,color-mix(in srgb,var(--accent) 20%,transparent),transparent),radial-gradient(40% 40% at 100% 100%,color-mix(in srgb,var(--accent) 14%,transparent),transparent)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(40% 40% at 0% 0%,color-mix(in srgb,var(--accent) 10%,transparent),transparent),radial-gradient(40% 40% at 100% 100%,color-mix(in srgb,var(--accent) 8%,transparent),transparent)}
 main,header,footer{position:relative;z-index:1}
 .serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
 .vault-card{transition:transform .25s,box-shadow .25s}
-.vault-card:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--accent)}
-.zine-btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.5rem;font-weight:800;border:2px solid var(--fg);transition:transform .2s,box-shadow .2s;cursor:pointer}
-.zine-btn:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--accent)}
-.zine-btn.fill{background:var(--accent);color:#15130F;border-color:var(--accent)}
+.vault-card:hover{transform:translate(0,-3px);box-shadow:0 10px 24px -8px var(--accent)}
+.zine-btn{border-radius:2px;display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.5rem;font-weight:800;border:2px solid var(--fg);transition:transform .2s,box-shadow .2s;cursor:pointer}
+.zine-btn:hover{transform:translate(0,-2px);box-shadow:0 8px 20px -6px var(--accent)}
+.zine-btn.fill{background:var(--accent);color:#0E1821;border-color:var(--accent)}
 .zine-btn.fill:hover{box-shadow:5px 5px 0 var(--fg)}
 .scrawl{background-image:linear-gradient(var(--accent),var(--accent));background-repeat:no-repeat;background-size:100% .18em;background-position:0 92%}
 .tag{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--accent)}
@@ -57,11 +58,12 @@ main,header,footer{position:relative;z-index:1}
 [data-menu].is-open{display:flex}
 .wra-plus{transition:transform .3s;font-size:1.6rem;color:var(--accent)}
 [data-faq-item].is-open .wra-plus,[data-faq-item].open .wra-plus{transform:rotate(45deg)}
-.tab-btn[aria-selected="true"]{background:var(--accent);color:#15130F}
-.tilt1{transform:rotate(-2deg)}.tilt2{transform:rotate(1.5deg)}
-.stamp{border:2px dashed var(--accent);color:var(--accent);padding:.3rem .8rem;display:inline-block;transform:rotate(-4deg);font-weight:800;font-size:.8rem;letter-spacing:.1em}
+.tab-btn[aria-selected="true"]{background:var(--accent);color:#0E1821}
+.tilt1{transform:rotate(0deg)}.tilt2{transform:rotate(0deg)}
+.stamp{border:2px dashed var(--accent);color:var(--accent);padding:.3rem .8rem;display:inline-block;transform:rotate(0deg);font-weight:800;font-size:.8rem;letter-spacing:.1em}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
+
 <!--kit:head--><script>document.documentElement.classList.add('wra-js')</script><style>:root{--wra-nav-bg-scrolled:rgba(12,12,14,.86);--wra-bg:#0C0C0E;--wra-accent:#D85A88;--wra-on-accent:#ffffff;--wra-surface:#161618;--wra-fg:#F4F2EE;--wra-muted:#9A968F;--wra-line:rgba(244,242,238,.14);--wra-display:'Instrument Sans', sans-serif;--wra-body:'Instrument Sans', sans-serif}
 html.lenis,html.lenis body{height:auto}
 .lenis.lenis-smooth{scroll-behavior:auto!important}
@@ -297,7 +299,7 @@ html.wrab-lock{overflow:hidden}
 <section id="inicio" data-hero data-layout-hero="zine-offset" class="relative pt-32 pb-24 px-5">
   <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-8 items-start">
     <div class="lg:col-span-7 lg:pt-10">
-      <p data-hero-item class="tag mb-5">Capítulo 01 · Lloret de Mar</p>
+      <p data-hero-item class="tag mb-5">Lloret de Mar</p>
       <h1 data-split class="font-display font-extrabold text-5xl sm:text-7xl xl:text-8xl leading-[.95] tracking-tight">Tu salud, contada <em class="serif text-rose">con calma</em> y sin prisas.</h1>
       <p data-hero-item class="mt-8 max-w-xl text-lg text-paper/80">Dedicamos nuestros esfuerzos a proporcionar la mejor asistencia sanitaria individualizada. Escuchamos con calma y buscamos el tratamiento que mejor se adapta a ti.</p>
       <div data-hero-item class="mt-9 flex flex-wrap gap-4">
@@ -310,7 +312,7 @@ html.wrab-lock{overflow:hidden}
       </div>
     </div>
     <div class="lg:col-span-5 relative lg:mt-24">
-      <div data-parallax-wrap class="group overflow-hidden photo h-[420px] sm:h-[520px] tilt2 shadow-[10px_10px_0_#D85A88]">
+      <div data-parallax-wrap class="group overflow-hidden photo h-[420px] sm:h-[520px] tilt2 shadow-[0_24px_50px_-20px_rgba(0,0,0,.6)]">
         <img data-parallax src="./assets/photo-1.jpg" alt="Entrada del Centre Mèdic Salus Servimed en Lloret de Mar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 hover:scale-105">
       </div>
       <span class="stamp absolute -bottom-5 -left-3 bg-ink">Carrer de Francesc Cambó, 41</span>
@@ -335,7 +337,7 @@ html.wrab-lock{overflow:hidden}
 <section id="historia" class="py-28 px-5">
   <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-10">
     <div class="md:col-span-5 md:sticky md:top-28 self-start">
-      <p class="tag mb-4">Capítulo 02 · Quiénes somos</p>
+      <p class="tag mb-4">Quiénes somos</p>
       <h2 data-split class="font-display font-extrabold text-4xl sm:text-6xl leading-[.98]">Un centro médico que <em class="serif text-rose">te escucha</em> primero.</h2>
     </div>
     <div class="md:col-span-6 md:col-start-7 space-y-8 text-lg text-paper/85" data-reveal-group>
@@ -358,7 +360,7 @@ html.wrab-lock{overflow:hidden}
 <!-- 5 CAPITULOS (componente interactivo propio) -->
 <section id="capitulos" class="py-28 px-5 bg-ink2">
   <div class="max-w-6xl mx-auto">
-    <p class="tag mb-4">Capítulo 03 · Tu visita</p>
+    <p class="tag mb-4">Tu visita</p>
     <h2 data-split class="font-display font-extrabold text-4xl sm:text-6xl mb-12 max-w-3xl">Así se escribe <em class="serif text-rose">una consulta</em> con nosotros.</h2>
     <div role="tablist" class="flex flex-wrap gap-3 mb-8">
       <button class="tab-btn zine-btn" role="tab" aria-selected="true" data-tab="0">01 · Cuéntanos</button>
@@ -382,7 +384,7 @@ html.wrab-lock{overflow:hidden}
 <!-- 6 SERVICIOS / PILARES -->
 <section class="py-28 px-5">
   <div class="max-w-7xl mx-auto">
-    <p class="tag mb-4">Capítulo 04 · Lo que nos define</p>
+    <p class="tag mb-4">Lo que nos define</p>
     <h2 data-split class="font-display font-extrabold text-4xl sm:text-6xl mb-14 max-w-3xl">Cuatro razones para <em class="serif text-rose">confiar</em>.</h2>
     <div class="grid md:grid-cols-12 gap-6" data-reveal-group>
       <article data-reveal class="vault-card md:col-span-7 border-2 border-paper p-8 bg-ink2"><span class="font-serif text-6xl text-rose">01</span><h3 class="font-display font-extrabold text-3xl mt-2">Asistencia individualizada</h3><p class="mt-3 text-paper/80">Cada paciente es distinto. Diseñamos el tratamiento a partir de lo que necesita, no de un guion.</p></article>
@@ -398,8 +400,8 @@ html.wrab-lock{overflow:hidden}
   <div class="max-w-7xl mx-auto">
     <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
       <div>
-        <p class="tag !text-[#b13a66] mb-3">Capítulo 05 · Escudo de reseñas</p>
-        <h2 data-split class="font-display font-extrabold text-4xl sm:text-6xl">Lo cuentan <em class="serif text-[#b13a66]">ellos</em>.</h2>
+        <p class="tag !text-[#1F6A78] mb-3">Escudo de reseñas</p>
+        <h2 data-split class="font-display font-extrabold text-4xl sm:text-6xl">Lo cuentan <em class="serif text-[#1F6A78]">ellos</em>.</h2>
       </div>
       <div class="flex items-center gap-3 border-2 border-ink px-5 py-3">
         <svg class="h-7 w-7" viewBox="0 0 48 48" aria-label="Google"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.400 13.600 17.700 9.500 24 9.500z"/><path fill="#4285F4" d="M46.500 24.500c0-1.600-.1-3.100-.4-4.500H24v9h12.700c-.6 3-2.300 5.500-4.800 7.200l7.500 5.800c4.400-4.100 7.100-10.100 7.100-17.500z"/><path fill="#FBBC05" d="M10.500 28.700c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.500-5.800c-2.100 1.400-4.800 2.300-8.400 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg>
@@ -409,19 +411,19 @@ html.wrab-lock{overflow:hidden}
     <div class="grid md:grid-cols-3 gap-8" data-reveal-group>
       <figure data-reveal class="vault-card border-2 border-ink p-7 bg-white tilt1">
         <svg class="h-5 w-5 mb-3" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.100-.4-4.500H24v9h12.7c-.6 3-2.300 5.500-4.800 7.200l7.500 5.800c4.400-4.100 7.100-10.100 7.100-17.500z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.500-5.800c-2.100 1.400-4.800 2.300-8.400 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg>
-        <p class="text-[#b13a66] tracking-widest">★★★★★</p>
+        <p class="text-[#1F6A78] tracking-widest">★★★★★</p>
         <blockquote class="mt-3 text-lg">«El mejor centro medico de la Costa Brava y Maresme. Profesionalidad absoluta y con el plus de disponer de doctores que hablan todos los idiomas.»</blockquote>
         <figcaption class="mt-4 text-sm font-semibold">Monica Barrabes <span class="font-normal opacity-60">· Hace 2 años</span></figcaption>
       </figure>
       <figure data-reveal class="vault-card border-2 border-ink p-7 bg-white md:mt-12">
         <svg class="h-5 w-5 mb-3" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.100-.4-4.500H24v9h12.7c-.6 3-2.300 5.500-4.800 7.200l7.500 5.800c4.400-4.100 7.100-10.100 7.100-17.500z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.500-5.800c-2.100 1.400-4.800 2.300-8.400 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg>
-        <p class="text-[#b13a66] tracking-widest">★★★★★</p>
+        <p class="text-[#1F6A78] tracking-widest">★★★★★</p>
         <blockquote class="mt-3 text-lg">«Fui con mi hijo en el Centro Médico por un problema de muñeca, el traumatólogo que nos atendió le arreglo perfectamente. Fuimos atendidos excepcionalmente. Agradecidos Traumatólogo fenomenal, mejor que en un Hospital»</blockquote>
         <figcaption class="mt-4 text-sm font-semibold">Joaquim Teira <span class="font-normal opacity-60">· Hace un año</span></figcaption>
       </figure>
       <figure data-reveal class="vault-card border-2 border-ink p-7 bg-white tilt2">
         <svg class="h-5 w-5 mb-3" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.9 6.1C12.4 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.100-.4-4.500H24v9h12.7c-.6 3-2.300 5.500-4.800 7.200l7.500 5.800c4.400-4.100 7.100-10.100 7.100-17.500z"/><path fill="#FBBC05" d="M10.5 28.7c-.5-1.400-.8-3-.8-4.700s.3-3.200.8-4.700l-7.900-6.100C.9 16.400 0 20.100 0 24s.9 7.600 2.600 10.800l7.900-6.100z"/><path fill="#34A853" d="M24 48c6.500 0 11.900-2.100 15.900-5.800l-7.500-5.800c-2.100 1.400-4.800 2.300-8.400 2.300-6.300 0-11.600-4.100-13.500-9.800l-7.900 6.100C6.500 42.600 14.600 48 24 48z"/></svg>
-        <p class="text-[#b13a66] tracking-widest">★★★★★</p>
+        <p class="text-[#1F6A78] tracking-widest">★★★★★</p>
         <blockquote class="mt-3 text-lg">«Servicio excelente! Me trataron con mucha atención y amabilidad, en recepción se aseguraron de atenderme inmediatamente.»</blockquote>
         <figcaption class="mt-4 text-sm font-semibold">lena <span class="font-normal opacity-60">· Hace 2 meses</span></figcaption>
       </figure>
@@ -429,7 +431,7 @@ html.wrab-lock{overflow:hidden}
     <div class="mt-16 flex flex-wrap items-center gap-8 border-t-2 border-ink pt-8">
       <img src="./review-qr.svg" alt="Código QR para dejar una reseña en Google" class="h-28 w-28 border-2 border-ink bg-white p-1">
       <div><p class="font-display font-extrabold text-2xl">¿Has estado con nosotros?</p><p class="mb-4">Escanea el código o deja tu opinión en un minuto.</p>
-      <a href="./review.html" class="zine-btn !border-ink hover:!shadow-[5px_5px_0_#15130F] !bg-ink !text-paper">Dejar una reseña</a></div>
+      <a href="./review.html" class="zine-btn !border-ink hover:!opacity-90 !bg-ink !text-paper">Dejar una reseña</a></div>
     </div>
   </div>
 </section>
@@ -437,7 +439,7 @@ html.wrab-lock{overflow:hidden}
 <!-- 8 GALERIA -->
 <section class="py-28 px-5">
   <div class="max-w-7xl mx-auto">
-    <p class="tag mb-4">Capítulo 06 · El centro</p>
+    <p class="tag mb-4">El centro</p>
     <h2 data-split class="font-display font-extrabold text-4xl sm:text-6xl mb-14 max-w-3xl">Un vistazo <em class="serif text-rose">por dentro</em>.</h2>
     <div class="grid grid-cols-12 gap-5">
       <div data-parallax-wrap class="group overflow-hidden photo col-span-12 md:col-span-7 h-[340px] md:h-[460px]"><img data-parallax src="./assets/photo-2.jpg" alt="Instalaciones del Centre Mèdic Salus Servimed" loading="lazy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 hover:scale-105"></div>
@@ -450,7 +452,7 @@ html.wrab-lock{overflow:hidden}
 <!-- 9 FAQ -->
 <section id="faq" class="py-28 px-5 bg-ink2">
   <div class="max-w-4xl mx-auto">
-    <p class="tag mb-4">Capítulo 07 · Dudas frecuentes</p>
+    <p class="tag mb-4">Dudas frecuentes</p>
     <h2 data-split class="font-display font-extrabold text-4xl sm:text-6xl mb-12">Lo que suelen <em class="serif text-rose">preguntarnos</em>.</h2>
     <div data-faq class="divide-y divide-paper/20 border-y border-paper/20">
       <div data-faq-item><button data-faq-q class="w-full flex justify-between items-center py-6 text-left text-xl font-semibold">¿Cómo pido cita?<span class="wra-plus">+</span></button><div data-faq-a><div class="pb-6 text-paper/80">Llámanos al 972 36 85 61 o pulsa «Escríbenos» para enviarnos tu consulta; te responderemos lo antes posible.</div></div></div>
@@ -464,11 +466,12 @@ html.wrab-lock{overflow:hidden}
 </section>
 
 <!-- 10 CONTACTO -->
+
 <!--kit:booking--><section id="pedir-cita" class="wrab-sec" data-tool-section data-bstyle="soft" aria-labelledby="wrab-title"><div class="wrab-inner"><div class="wrab" data-bstyle="soft"><span class="wrab-eyebrow">Primera cita</span><h2 class="wrab-h" id="wrab-title" data-split>Pide tu cita</h2><p class="wrab-sub">Cuéntanos el motivo y llegarás a recepción con tu consulta ya clara.</p><ul class="wrab-perks"><li>Atención prioritaria si es urgente</li><li>Sin esperas al teléfono</li><li>Respuesta directa de recepción</li></ul></div><div class="wrab-card" data-bstyle="soft"><div data-wrab-inline></div></div></div></section><!--/kit:booking-->
 <section id="contacto" class="py-28 px-5">
   <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10">
     <div class="lg:col-span-5">
-      <p class="tag mb-4">Capítulo final · Contacto</p>
+      <p class="tag mb-4">Contacto</p>
       <h2 data-split class="font-display font-extrabold text-4xl sm:text-6xl mb-8">Pasa la página: <em class="serif text-rose">llámanos</em>.</h2>
       <ul class="space-y-5 text-lg">
         <li class="flex gap-3"><i data-lucide="phone" class="h-6 w-6 text-rose shrink-0"></i><a href="tel:972368561" class="hover:text-rose font-bold">972 36 85 61</a></li>
@@ -480,7 +483,7 @@ html.wrab-lock{overflow:hidden}
         <button data-open-tool class="zine-btn"><i data-lucide="stethoscope" class="h-5 w-5"></i>Orientar consulta</button>
       </div>
     </div>
-    <div class="lg:col-span-7 photo shadow-[10px_10px_0_#D85A88]">
+    <div class="lg:col-span-7 photo shadow-[0_24px_50px_-20px_rgba(0,0,0,.6)]">
       <iframe title="Mapa del Centre Mèdic Salus Servimed" src="https://www.google.com/maps?q=Carrer%20de%20Francesc%20Camb%C3%B3%2C%2041%2C%2017310%20Lloret%20de%20Mar%2C%20Girona&output=embed" loading="lazy" class="w-full h-[420px] border-0"></iframe>
     </div>
   </div>
@@ -505,6 +508,8 @@ document.querySelectorAll('[data-tab]').forEach(function(b){
 });
 if(window.lucide){lucide.createIcons();}
 </script>
+
+
 <!--wra:body--><script>window.__WRA__={"name":"Centre Mèdic Salus Servimed - Servimed Assistance","wa":"https://wa.me/34670256353?text=Hola%2C%20acabo%20de%20ver%20la%20propuesta%20de%20dise%C3%B1o%20para%20mi%20web%20Centre%20M%C3%A8dic%20Salus%20Servimed%20-%20Servimed%20Assistance%20y%20me%20gustar%C3%ADa%20saber%20m%C3%A1s","original":"./original.jpg","nw":false,"id":260,"slug":"centre-medic-salus-servimed-servimed-assistance","phone":"972368561","lang":"es","pk":"BLWCUkRwvbZ4WF6ry+cfQF+SaFP2J3fTyGxCFzgDOLCKSxgORfMrzFS5/pN0IReMjwUOEaP70DNXvbLga1+AyKw=","ntfy":{"alerts":"https://ntfy.sh/autoweb-alerts-7f74a1f4afc54cf8","updates":"https://ntfy.sh/autoweb-updates-7f74a1f4afc54cf8"},"ocss":"\n:host{all:initial}\n*{box-sizing:border-box}\n.trig{font:500 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;background:transparent;color:inherit;border:1px solid currentColor;opacity:.5;border-radius:6px;padding:7px 11px;cursor:pointer}\n.trig:hover{opacity:.9}\n.dr{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);z-index:2147483646;background:#fff;color:#0f172a;box-shadow:-10px 0 40px rgba(2,8,23,.35);display:flex;flex-direction:column;font:400 14px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",sans-serif;transform:translateX(105%);transition:transform .3s}\n.dr.on{transform:none}\n.hd{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 18px;background:#0f172a;color:#fff}\n.hd h2{margin:0;font-size:15px;font-weight:650}\n.x{background:transparent;border:0;color:#cbd5e1;font-size:22px;cursor:pointer;line-height:1}\n.bd{flex:1;overflow:auto;padding:18px;display:grid;gap:12px;align-content:start}\nlabel{font-weight:600;font-size:13px;display:block;margin-bottom:5px}\ninput,textarea{width:100%;font:inherit;border:1px solid #cbd5e1;border-radius:10px;padding:10px 12px;color:#0f172a;background:#fff}\ntextarea{min-height:120px;resize:vertical}\ninput:focus,textarea:focus{outline:2px solid #2563eb;border-color:#2563eb}\n.pin{letter-spacing:.6em;text-align:center;font-size:22px}\n.b{font:600 14px/1 inherit;border:0;border-radius:10px;padding:12px 14px;cursor:pointer;background:#e2e8f0;color:#0f172a}\n.b.p{background:#16a34a;color:#fff}\n.b.on{background:#f59e0b;color:#1c1100}\n.b[disabled]{opacity:.5;cursor:wait}\n.note{font-size:12px;color:#64748b}\n.st{font-size:13px;font-weight:600;min-height:18px}\n.ok{color:#15803d}.er{color:#b91c1c}\n\n.dr.wide{width:min(760px,100vw)}\n.tabs2{display:none;background:#0f172a;padding:0 12px;gap:4px}\n.tabs2.on{display:flex}\n.tb{flex:1;font:600 13px/1 inherit;background:transparent;color:#94a3b8;border:0;border-bottom:3px solid transparent;padding:12px 8px;cursor:pointer}\n.tb.on{color:#fff;border-bottom-color:#f59e0b}\n.ag-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}\n.ag-k{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:10px 12px}\n.ag-k b{display:block;font-size:20px;line-height:1.1;color:#0f172a}\n.ag-k span{font-size:11px;color:#64748b}\n.ag-k.sv b{color:#15803d}\n.ag-demo{background:#fffbeb;border:1px solid #fcd34d;color:#92400e;border-radius:10px;padding:8px 10px;font-size:12px;font-weight:600}\n.ag-conn{font-size:11px;color:#64748b}\n.ag-bar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}\n.ag-v{font:600 12px/1 inherit;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:7px 12px;cursor:pointer;color:#0f172a}\n.ag-v.on{background:#0f172a;color:#fff;border-color:#0f172a}\n.ag-add{margin-left:auto;font:700 12px/1 inherit;background:#16a34a;color:#fff;border:0;border-radius:999px;padding:8px 13px;cursor:pointer}\n.ag-day{font-size:12px;font-weight:700;color:#475569;text-transform:uppercase;letter-spacing:.06em;margin-top:6px}\n.ag-card{display:grid;grid-template-columns:62px 1fr;gap:10px;border:1px solid #e2e8f0;border-left:4px solid #16a34a;border-radius:12px;padding:10px 12px;background:#fff}\n.ag-card.s-PENDIENTE{border-left-color:#f59e0b}.ag-card.s-COMPLETADA{border-left-color:#2563eb}.ag-card.s-CANCELADA{border-left-color:#dc2626;opacity:.6}\n.ag-t{font-weight:800;font-size:17px;color:#0f172a}\n.ag-n{font-weight:700}\n.ag-m{font-size:12px;color:#64748b;margin-top:2px}\n.ag-a{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;align-items:center}\n.ag-wa{font:600 12px/1 inherit;background:#dcfce7;color:#166534;border-radius:999px;padding:7px 10px;text-decoration:none}\n.ag-a select{font:600 12px/1 inherit;border:1px solid #cbd5e1;border-radius:8px;padding:6px 8px;width:auto;background:#fff}\n.ag-form{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px}\n.ag-form .full{grid-column:1/-1}\n.ag-form label{font-size:11px;margin-bottom:3px}\n.ag-empty{text-align:center;color:#64748b;padding:20px 0;font-size:13px}\n","wan":"34670256353","plans":{"lang":"es","kind":"clinic","A":{"setup":399,"monthly":39},"B":{"setup":0,"monthly":79}},"bk":{"url":"https://ntfy.sh/autoweb-bookings-centremedicsalusserv-f738deb0e949bd","pub":"BLEIMtPO4VS0HakI5NsAJwvqubn7ti9QNpadagjmt80o3IgPc8gEdauz23g/6kTtoUTiHtB+GGI/PPLBDqX2d1w=","kind":"clinic"},"edit":"https://wa.me/34670256353?text=Hola%2C%20he%20visto%20el%20boceto%20de%20Centre%20M%C3%A8dic%20Salus%20Servimed%20-%20Servimed%20Assistance%20y%20me%20gustar%C3%ADa%20cambiar%20algunas%20fotos%20o%20textos","editText":"🎨 Boceto 100% editable con tus propias fotos, textos y sugerencias","improvements":[{"title":"Portada hecha de imágenes gigantes recortadas","before":"El hero son pancartas enormes («Tel. 972 36 85 61», «DOCTOR ARZT 24 H») con baja resolución y pixeladas. En escritorio ocupan toda la pantalla y en móvil quedan cortadas por los lados («CENTRE MÈ», «DOCTO», «+ 24 H.»). El logotipo y el teléfono no se leen enteros y no hay una imagen real de la clínica ni del equipo, así que no transmite profesionalidad ni confianza.","fix":"El rediseño sustituye las pancartas por un hero limpio con foto real de la clínica, logotipo nítido y un mensaje claro de atención 24 horas."},{"title":"Título en Times New Roman azul eléctrico superpuesto","before":"El nombre «Centre Medic Salus Servimed» aparece en serif por defecto (Times/Noto Serif) en azul #0000FF puro. Se monta encima de las imágenes, con interlineado pisado en móvil («Servimed» tapa el teléfono rojo) y poco contraste. Además hay tres fuentes distintas mezcladas y ninguna jerarquía de títulos: no hay ningún H2 en toda la página.","fix":"Con una tipografía moderna y legible, una escala de títulos coherente y los colores de su marca, el nombre y los servicios se leerán de un vistazo."},{"title":"Sin llamada a la acción ni información útil sobre el pliegue","before":"Tras el menú de solo 3 enlaces («Inicio», «Acerca de nosotros», «Nuestro equipo») no hay botón de llamar, de pedir cita ni de WhatsApp, ni horarios, servicios o dirección. El teléfono es solo una imagen no pulsable, repetida tres veces como texto rojo. La página no tiene secciones, formulario ni mapa, así que un paciente no sabe qué servicios hay ni cómo llegar.","fix":"El rediseño añade botones visibles de «Llamar», «WhatsApp» y «Pedir cita», con servicios, horarios y mapa para que el paciente contacte en segundos."}],"tool":{"text":"Incluye asistente de triaje y primera cita directo a tu recepción por WhatsApp/Email","button":"Probar Triaje","target":"pedir-cita"},"track":null,"ping":null,"css":"\n:host{all:initial}\n*{box-sizing:border-box}\n.bar{position:fixed;top:0;left:0;right:0;z-index:2147483647;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 14px;background:linear-gradient(90deg,#0b1220,#16233f);color:#e6ecf7;font:500 13px/1.3 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;box-shadow:0 2px 14px rgba(2,8,23,.35);border-bottom:1px solid rgba(255,255,255,.08)}\n.txt{display:flex;align-items:center;gap:9px;min-width:0}\n.txt span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.txt b{font-weight:650;color:#fff}\n.tag{flex:0 0 auto;max-width:46vw;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:6px 11px;border-radius:999px;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.4);color:#fde68a;font-size:12px;font-weight:600;text-decoration:none}\na.tag:hover{background:rgba(251,191,36,.24);color:#fff}\n@media (max-width:1560px){.sub{display:none}}\n.sub{color:#9fb0cf}\n.dot{flex:none;width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.7);animation:p 2s infinite}\n@keyframes p{70%{box-shadow:0 0 0 7px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}\n.act{display:flex;align-items:center;gap:8px;flex:none}\nbutton,a.cta{font:inherit;cursor:pointer;border-radius:999px;border:0;text-decoration:none;line-height:1}\n.ghost{padding:8px 13px;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.18);transition:background .15s}\n.ghost:hover{background:rgba(255,255,255,.18)}\n.cta{display:inline-flex;align-items:center;gap:7px;padding:9px 15px;background:#16a34a;color:#fff;font-weight:650;box-shadow:0 2px 10px rgba(22,163,74,.4);transition:transform .15s,background .15s}\n.cta:hover{background:#15803d;transform:translateY(-1px)}\n.cta.plans{background:linear-gradient(135deg,#f59e0b,#ef4444);box-shadow:0 2px 12px rgba(245,158,11,.5)}\n.cta.plans:hover{background:linear-gradient(135deg,#d97706,#dc2626)}\n@media (max-width:900px){.cta.plans{padding:8px 11px;font-size:12px}}\n.cta svg{width:15px;height:15px;fill:currentColor}\n.cta small{font-weight:500;opacity:.9}\n.min{width:28px;height:28px;padding:0;background:transparent;color:#9fb0cf;font-size:18px}\n.min:hover{color:#fff}\n.pill{position:fixed;top:8px;right:10px;z-index:2147483647;padding:8px 13px;background:#0f1b33;color:#fff;border:1px solid rgba(255,255,255,.2);box-shadow:0 2px 10px rgba(2,8,23,.4);font:600 12px/1 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,sans-serif;display:flex;align-items:center;gap:7px}\n.pill[hidden],.bar[hidden],.ov[hidden]{display:none}\n.ov{position:fixed;left:0;right:0;bottom:0;z-index:2147483646;background:#f4f6fb;color:#0f172a;font:400 15px/1.5 -apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;display:flex;flex-direction:column}\n.tabs{display:flex;gap:6px;padding:10px 14px;background:#fff;border-bottom:1px solid #e2e8f0}\n.tab{padding:8px 14px;background:#eef2f9;color:#334155;font-weight:600}\n.tab[aria-selected=true]{background:#0f172a;color:#fff}\n.pane{flex:1;overflow:auto;padding:18px 14px}\n.pane img{display:block;width:100%;max-width:1100px;margin:0 auto;border-radius:10px;box-shadow:0 6px 30px rgba(15,23,42,.18);border:1px solid #dbe2ee}\n.cap{max-width:1100px;margin:10px auto 0;color:#64748b;font-size:13px;text-align:center}\n.list{max-width:820px;margin:0 auto;display:grid;gap:12px;counter-reset:i}\n.card{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 16px 58px;position:relative;counter-increment:i}\n.card::before{content:counter(i);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;background:#16a34a;color:#fff;display:grid;place-items:center;font-weight:700}\n.card h3{margin:0 0 4px;font-size:16px}\n.card p{margin:0;color:#475569;font-size:14px}\n.card .b{color:#b45309}\n.card .f{color:#15803d;margin-top:4px}\n.vs{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:14px}\n.vsc{border-radius:14px;padding:18px;border:1px solid #e2e8f0;background:#fff}\n.vsc.bad{border-color:#fecaca;background:#fff5f5}\n.vsc.good{border-color:#bbf7d0;background:#f0fdf4}\n.vsc h3{margin:0 0 12px;font-size:13px;letter-spacing:.06em;text-transform:uppercase}\n.vsc.bad h3{color:#b91c1c}\n.vsc.good h3{color:#15803d}\n.vsc ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}\n.vsc li{font-size:14.5px;color:#334155}\n@media (max-width:720px){.vs{grid-template-columns:1fr}}\n.short{display:none}\n@media (max-width:720px){\n  .bar{flex-wrap:wrap;padding:7px 10px;gap:7px}\n  .sub,.long{display:none}\n  .short{display:inline}\n  .txt{flex:1 1 100%}\n  .tag{flex:1 1 100%;white-space:normal;text-align:center;border-radius:10px}\n  .act{flex:1 1 100%;justify-content:space-between}\n  .cta{flex:1;justify-content:center;white-space:nowrap;padding:9px 10px}\n  .ghost{white-space:nowrap;padding:8px 11px}\n  button,a.cta{font-size:12.5px}\n}\n"};</script><script>(function(){
 var C=window.__WRA__;
 if(!C||window.__WRA_AGENDA__)return;
@@ -862,6 +867,7 @@ setOpen(false);
 cmp.addEventListener('click',function(){setOpen(!open)});
 var plBtn=$('plans');
 if(plBtn)plBtn.addEventListener('click',function(){if(window.wraOpenPlans)window.wraOpenPlans()});
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('[data-action="open-pricing"]');if(a&&window.wraOpenPlans){e.preventDefault();window.wraOpenPlans()}});
 var bkBtn=$('bk');
 if(bkBtn)bkBtn.addEventListener('click',function(){
   var t=document.getElementById(C.tool.target)||document.querySelector('[data-tool-section],[data-booking-section]');
@@ -1500,5 +1506,6 @@ doc.addEventListener('click',function(e){
   e.preventDefault();e.stopImmediatePropagation();openTool();
 },true);
 })();</script><!--/kit:body-->
+<!--wra:lang--><style>#wra-lang{position:fixed;left:12px;bottom:12px;z-index:2147483000;display:flex;gap:2px;padding:3px;border-radius:10px;background:rgba(15,23,42,.9);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);font:600 12px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 4px 18px rgba(0,0,0,.35)}#wra-lang a{color:#cbd5e1;text-decoration:none;padding:8px 9px;border-radius:7px}#wra-lang a:hover{color:#fff;background:rgba(255,255,255,.16)}#wra-lang a[aria-current=true]{background:#fff;color:#0f172a}@media(max-width:600px){#wra-lang{left:8px;bottom:8px}}</style><nav id="wra-lang" aria-label="Idioma / Language"><a href="./" hreflang="es" lang="es" title="Español" aria-current="true">ES</a><a href="./ca/" hreflang="ca" lang="ca" title="Català">CA</a><a href="./en/" hreflang="en" lang="en" title="English">EN</a><a href="./fr/" hreflang="fr" lang="fr" title="Français">FR</a></nav><!--/wra:lang-->
 </body>
 </html>
